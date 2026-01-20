@@ -49,12 +49,14 @@ The project includes a complete [AGENTS.md](AGENTS.md) file for these assistants
 
 ## Dev Setup
 
-Clone the repository and install dependencies to a virtual environment:
+Clone the repository and install dependencies:
 
 ```console
 cd agent-starter-python
 uv sync
 ```
+
+**Important:** This project uses `uv` for dependency management. Always use `uv run` to execute commands (e.g., `uv run python src/agent.py`). Do not manually activate the virtual environment - `uv run` handles this automatically. If your IDE or shell auto-activates `.venv`, you can safely ignore it and continue using `uv run` for all commands.
 
 Sign up for [LiveKit Cloud](https://cloud.livekit.io/) then set up the environment by copying `.env.example` to `.env.local` and filling in the required keys:
 
