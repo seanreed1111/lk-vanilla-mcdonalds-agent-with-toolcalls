@@ -90,6 +90,11 @@ class VoiceAgentApp:
 
 
 if __name__ == "__main__":
-    config = AppConfig(pipeline=PipelineConfig(llm_model="mock"))
+    config = AppConfig(
+        pipeline=PipelineConfig(
+            llm_model="mock",
+            enable_keyword_intercept=True,
+        )
+    )
     app = VoiceAgentApp(config=config)
     app.run()

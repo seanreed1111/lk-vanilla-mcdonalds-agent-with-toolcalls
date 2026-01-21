@@ -26,23 +26,21 @@ format:
 	uv run ruff format
 
 lint:
-	uv run ruff check
+	uv run ruff check --fix
 
-check: lint test
+check: format lint test
 
 # Run targets (requires API keys configured for the chosen models)
 console:
-	uv run python src/agent.py console
+	uv run python src/app.py console
 
 dev:
-	uv run python src/agent.py dev
+	uv run python src/app.py dev
 
-start:
-	uv run python src/agent.py start
 
 # Download required model files
 download-files:
-	uv run python src/agent.py download-files
+	uv run python src/app.py download-files
 
 # Clean generated files
 clean:
@@ -52,5 +50,4 @@ clean:
 	rm -rf src/**/__pycache__
 	rm -rf tests/__pycache__
 	rm -rf .ruff_cache
-	rm -f demo_tone.wav demo_beep.wav
 	@echo "Cleaned generated files and caches"
