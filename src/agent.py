@@ -11,7 +11,6 @@ from loguru import logger
 
 from config import AppConfig
 from factories import create_llm, create_stt, create_tts
-from protocols import LLMProtocol, STTProtocol, TTSProtocol
 from session_handler import SessionHandler
 
 load_dotenv(".env.local")
@@ -35,23 +34,6 @@ You are curious, friendly, and have a sense of humor."""
             instructions=instructions or default_instructions,
         )
 
-    # To add tools, use the @function_tool decorator.
-    # Here's an example that adds a simple weather tool.
-    # You also have to add `from livekit.agents import function_tool, RunContext` to the top of this file
-    # @function_tool
-    # async def lookup_weather(self, context: RunContext, location: str):
-    #     """Use this tool to look up current weather information in the given location.
-    #
-    #     If the location is not supported by the weather service, the tool will indicate this. You must tell the user the location's weather is unavailable.
-    #
-    #     Args:
-    #         location: The location to look up weather information for (e.g. city name)
-    #     """
-    #
-    #     logger.info(f"Looking up weather for {location}")
-    #
-    #     return "sunny with a temperature of 70 degrees."
-
 
 class VoiceAgentApp:
     """Voice agent application with dependency injection.
@@ -62,9 +44,9 @@ class VoiceAgentApp:
 
     def __init__(
         self,
-        stt: STTProtocol | None = None,
-        llm: LLMProtocol | None = None,
-        tts: TTSProtocol | None = None,
+        stt=None,
+        llm=None,
+        tts=None,
         config: AppConfig | None = None,
     ):
         """Initialize the voice agent application.
@@ -99,10 +81,7 @@ class VoiceAgentApp:
         self.server = AgentServer()
         self._setup_server()
 
-        logger.info(
-            "VoiceAgentApp initialized with adapter type: {}",
-            self.config.pipeline.adapter_type,
-        )
+        logger.info("VoiceAgentApp initialized")
 
     def _setup_server(self):
         """Configure the server with prewarm and session handler."""

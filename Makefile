@@ -1,4 +1,4 @@
-.PHONY: help test format lint check mock-console mock-dev console dev start download-files clean
+.PHONY: help test format lint check console dev start download-files clean
 
 # Default target
 help:
@@ -8,11 +8,7 @@ help:
 	@echo "  make lint           - Lint code with ruff"
 	@echo "  make check          - Run linting and tests"
 	@echo ""
-	@echo "Mock adapter targets (use MockSTT, MockLLM, MockTTS):"
-	@echo "  make mock-console   - Run agent in console mode with mock adapters"
-	@echo "  make mock-dev       - Run agent in dev mode with mock adapters"
-	@echo ""
-	@echo "Production targets (use LiveKit adapters):"
+	@echo "Run targets:"
 	@echo "  make console        - Run agent in console mode"
 	@echo "  make dev            - Run agent in dev mode"
 	@echo "  make start          - Run agent in production mode"
@@ -34,18 +30,7 @@ lint:
 
 check: lint test
 
-# Mock adapter targets - uses MockSTT, MockLLM, MockTTS
-mock-console:
-	@echo "Running agent in console mode with MOCK adapters..."
-	@echo "(Using MockSTT, MockLLM, MockTTS - no external API calls)"
-	PIPELINE__ADAPTER_TYPE=mock uv run python src/agent.py console
-
-mock-dev:
-	@echo "Running agent in dev mode with MOCK adapters..."
-	@echo "(Using MockSTT, MockLLM, MockTTS - no external API calls)"
-	PIPELINE__ADAPTER_TYPE=mock uv run python src/agent.py dev
-
-# Production targets - uses LiveKit adapters (requires API keys)
+# Run targets (requires API keys configured for the chosen models)
 console:
 	uv run python src/agent.py console
 

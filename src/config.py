@@ -3,8 +3,6 @@
 Uses Pydantic v2 for type-safe configuration with environment variable support.
 """
 
-from typing import Literal
-
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -23,11 +21,6 @@ You are curious, friendly, and have a sense of humor.""",
 
 class PipelineConfig(BaseModel):
     """Configuration for the voice pipeline components (STT, LLM, TTS)."""
-
-    adapter_type: Literal["livekit", "mock"] = Field(
-        default="livekit",
-        description="Type of adapter to use: 'livekit' for production, 'mock' for testing/development",
-    )
 
     # STT configuration
     stt_model: str = Field(
