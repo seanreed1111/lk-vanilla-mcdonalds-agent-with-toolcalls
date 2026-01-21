@@ -6,6 +6,8 @@ enabling dependency injection and allowing different adapters (LiveKit, mock, et
 
 from typing import Protocol, runtime_checkable
 
+from livekit.agents.llm import ChatContext, LLMStream
+
 
 @runtime_checkable
 class STTProtocol(Protocol):
@@ -29,10 +31,22 @@ class LLMProtocol(Protocol):
     to be compatible with the voice pipeline.
     """
 
-    # LLM implementations in LiveKit Agents are typically used as context managers
-    # and passed directly to AgentSession. The actual interface is internal to LiveKit,
-    # so we define a minimal protocol that allows type checking while maintaining
-    # compatibility with livekit.agents.inference.LLM
+    def chat(
+        self,
+        *,
+        chat_ctx: ChatContext,
+        **kwargs,
+    ) -> LLMStream:
+        """Generate a response stream for the given chat context.
+
+        Args:
+            chat_ctx: The conversation context containing message history
+            **kwargs: Additional arguments passed to the LLM (e.g., tools, conn_options)
+
+        Returns:
+            A stream of chat responses from the LLM
+        """
+        ...
 
 
 @runtime_checkable

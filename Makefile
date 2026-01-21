@@ -1,4 +1,4 @@
-.PHONY: help test format lint check mock-console mock-dev console dev start download-files clean
+.PHONY: help test format lint check mock-console mock-dev mock-llm-console mock-llm-dev console dev start download-files clean
 
 # Default target
 help:
@@ -9,8 +9,10 @@ help:
 	@echo "  make check          - Run linting and tests"
 	@echo ""
 	@echo "Mock adapter targets (use MockSTT, MockLLM, MockTTS):"
-	@echo "  make mock-console   - Run agent in console mode with mock adapters"
-	@echo "  make mock-dev       - Run agent in dev mode with mock adapters"
+	@echo "  make mock-console      - Run agent in console mode with mock adapters"
+	@echo "  make mock-dev          - Run agent in dev mode with mock adapters"
+	@echo "  make mock-llm-console  - Run agent in console mode with only LLM mocked"
+	@echo "  make mock-llm-dev      - Run agent in dev mode with only LLM mocked"
 	@echo ""
 	@echo "Production targets (use LiveKit adapters):"
 	@echo "  make console        - Run agent in console mode"
@@ -44,6 +46,17 @@ mock-dev:
 	@echo "Running agent in dev mode with MOCK adapters..."
 	@echo "(Using MockSTT, MockLLM, MockTTS - no external API calls)"
 	PIPELINE__ADAPTER_TYPE=mock uv run python src/agent.py dev
+
+# Mock LLM only targets - uses MockLLM with custom response, LiveKit STT/TTS
+mock-llm-console:
+	@echo "Running agent in console mode with MOCK LLM only..."
+	@echo "(MockLLM: 'Thank you sir may I have another?' - LiveKit STT/TTS)"
+	PIPELINE__LLM_ADAPTER_TYPE=mock PIPELINE__MOCK_LLM_RESPONSES='["Thank you sir may I have another?"]' uv run python src/agent.py console
+
+mock-llm-dev:
+	@echo "Running agent in dev mode with MOCK LLM only..."
+	@echo "(MockLLM: 'Thank you sir may I have another?' - LiveKit STT/TTS)"
+	PIPELINE__LLM_ADAPTER_TYPE=mock PIPELINE__MOCK_LLM_RESPONSES='["Thank you sir may I have another?"]' uv run python src/agent.py dev
 
 # Production targets - uses LiveKit adapters (requires API keys)
 console:

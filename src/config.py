@@ -29,6 +29,26 @@ class PipelineConfig(BaseModel):
         description="Type of adapter to use: 'livekit' for production, 'mock' for testing/development",
     )
 
+    # Individual adapter type overrides (optional)
+    stt_adapter_type: Literal["livekit", "mock"] | None = Field(
+        default=None,
+        description="Override adapter type for STT. If None, uses adapter_type.",
+    )
+    llm_adapter_type: Literal["livekit", "mock"] | None = Field(
+        default=None,
+        description="Override adapter type for LLM. If None, uses adapter_type.",
+    )
+    tts_adapter_type: Literal["livekit", "mock"] | None = Field(
+        default=None,
+        description="Override adapter type for TTS. If None, uses adapter_type.",
+    )
+
+    # Mock LLM custom responses (for testing)
+    mock_llm_responses: list[str] | None = Field(
+        default=None,
+        description="Custom responses for MockLLM. If None, uses default responses.",
+    )
+
     # STT configuration
     stt_model: str = Field(
         default="assemblyai/universal-streaming",

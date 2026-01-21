@@ -21,7 +21,9 @@ def create_stt(config: PipelineConfig) -> STTProtocol:
     Returns:
         STT adapter implementation (LiveKit or mock)
     """
-    if config.adapter_type == "mock":
+    adapter_type = config.stt_adapter_type or config.adapter_type
+
+    if adapter_type == "mock":
         logger.info("Creating mock STT adapter")
         return MockSTT()  # type: ignore
 
@@ -38,8 +40,14 @@ def create_llm(config: PipelineConfig) -> LLMProtocol:
     Returns:
         LLM adapter implementation (LiveKit or mock)
     """
-    if config.adapter_type == "mock":
+    adapter_type = config.llm_adapter_type or config.adapter_type
+
+    if adapter_type == "mock":
         logger.info("Creating mock LLM adapter")
+        # Use custom responses if provided, otherwise use defaults
+        if config.mock_llm_responses:
+            logger.info(f"Using custom MockLLM responses: {config.mock_llm_responses}")
+            return MockLLM(responses=config.mock_llm_responses)  # type: ignore
         return MockLLM()  # type: ignore
 
     logger.info(f"Creating LiveKit LLM adapter with model: {config.llm_model}")
@@ -55,7 +63,9 @@ def create_tts(config: PipelineConfig) -> TTSProtocol:
     Returns:
         TTS adapter implementation (LiveKit or mock)
     """
-    if config.adapter_type == "mock":
+    adapter_type = config.tts_adapter_type or config.adapter_type
+
+    if adapter_type == "mock":
         logger.info("Creating mock TTS adapter")
         return MockTTS()  # type: ignore
 
