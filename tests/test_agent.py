@@ -7,7 +7,7 @@ agent behavior using LiveKit Agents' evaluation framework.
 import pytest
 from livekit.agents import AgentSession, inference, llm
 
-from agent import Assistant
+from app import Assistant
 
 
 def _llm() -> llm.LLM:

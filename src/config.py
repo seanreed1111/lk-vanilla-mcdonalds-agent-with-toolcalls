@@ -48,6 +48,20 @@ class PipelineConfig(BaseModel):
         description="Voice identifier for text-to-speech",
     )
 
+    # Keyword interception configuration
+    enable_keyword_intercept: bool = Field(
+        default=False,
+        description="Enable keyword interception for LLM responses",
+    )
+    intercept_keywords: list[str] = Field(
+        default_factory=lambda: ["cherries", "cherry", "banana", "apple", "fruit"],
+        description="Keywords that trigger interception",
+    )
+    intercept_response: str = Field(
+        default="I don't like fruit",
+        description="Response to return when keywords are detected",
+    )
+
 
 class SessionConfig(BaseModel):
     """Configuration for session management and turn detection."""

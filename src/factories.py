@@ -13,6 +13,7 @@ from livekit.agents import inference
 from loguru import logger
 
 from config import PipelineConfig
+from keyword_intercept_llm import KeywordInterceptLLM
 from mock_llm import SimpleMockLLM
 
 
@@ -24,14 +25,29 @@ def create_stt(config: PipelineConfig) -> inference.STT:
     return inference.STT(model=config.stt_model, language=config.stt_language)
 
 
-def create_llm(config: PipelineConfig) -> inference.LLM | SimpleMockLLM:
+def create_llm(
+    config: PipelineConfig,
+) -> inference.LLM | SimpleMockLLM | KeywordInterceptLLM:
     """Create an LLM component from configuration."""
     logger.info(f"Creating LLM with model: {config.llm_model}")
+
+    # Create base LLM
     match config.llm_model:
         case "mock":
-            return SimpleMockLLM()
+            base_llm = SimpleMockLLM()
         case _:
-            return inference.LLM(model=config.llm_model)
+            base_llm = inference.LLM(model=config.llm_model)
+
+    # Wrap with keyword interceptor if enabled
+    if config.enable_keyword_intercept:
+        logger.info("Wrapping LLM with keyword interceptor")
+        return KeywordInterceptLLM(
+            wrapped_llm=base_llm,
+            keywords=config.intercept_keywords,
+            response_text=config.intercept_response,
+        )
+
+    return base_llm
 
 
 def create_tts(config: PipelineConfig) -> inference.TTS:

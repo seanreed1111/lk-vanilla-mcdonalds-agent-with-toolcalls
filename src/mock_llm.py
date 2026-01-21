@@ -98,7 +98,9 @@ class SimpleMockLLMStream(LLMStream):
         # Stream the response in chunks
         num_chunks = max(1, len(self._response_text) // self._chunk_size + 1)
         for i in range(num_chunks):
-            chunk_text = self._response_text[i * self._chunk_size : (i + 1) * self._chunk_size]
+            chunk_text = self._response_text[
+                i * self._chunk_size : (i + 1) * self._chunk_size
+            ]
             if chunk_text:  # Only send non-empty chunks
                 self._send_chunk(delta=chunk_text)
 
