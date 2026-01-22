@@ -17,6 +17,56 @@ The original monolithic plan (`mcdonalds-drive-thru-agent-plan.md`) has been ana
 
 ---
 
+## Implementation Status Checklist
+
+**Last Updated**: 2026-01-21
+
+Track completion of all implementation plans. Check off each plan as it's completed and verified.
+
+- [x] **Plan 01: Menu Models and Validation** ✅ COMPLETED
+  - Enhanced `Item` class with `quantity` and `item_id` fields
+  - Implemented `__add__()` method for combining items
+  - Created pure validation functions (`fuzzy_match_item`, `validate_item_exists`, `validate_modifiers`, `validate_order_item`)
+  - 67 tests passing in 0.08s
+  - Files: `menus/mcdonalds/models.py`, `src/menu_validation.py`
+  - Tests: `tests/test_menu_models.py`, `tests/test_menu_validation.py`
+
+- [x] **Plan 02: MenuProvider** ✅ COMPLETED
+  - Created `MenuProvider` class with read-only menu access
+  - Implemented query methods: `search_items()`, `get_category()`, `get_item()`, `get_all_categories()`, etc.
+  - All methods return immutable copies via `model_copy()`
+  - Built lookup indices for O(1) category access
+  - 28 tests passing in 0.06s
+  - Files: `src/menu_provider.py`
+  - Tests: `tests/test_menu_provider.py`
+  - Depends on: Plan 01
+
+- [ ] **Plan 03: OrderStateManager**
+  - Not yet started
+  - Depends on: Plan 01
+
+- [ ] **Plan 04: OrderTools**
+  - Not yet started
+  - Depends on: Plans 01, 02, 03
+
+- [ ] **Plan 05: DriveThruLLM**
+  - Not yet started
+  - Depends on: Plan 02
+
+- [ ] **Plan 06: DriveThruAgent**
+  - Not yet started
+  - Depends on: Plans 02, 03, 04, 05
+
+- [ ] **Plan 07: Integration and Wiring**
+  - Not yet started
+  - Depends on: Plans 01-06
+
+- [ ] **Plan 08: Accuracy Optimization**
+  - Not yet started (Optional/Future Work)
+  - Depends on: Plan 07
+
+---
+
 ## Dependency Graph
 
 ```

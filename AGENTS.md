@@ -122,6 +122,48 @@ If you use the LiveKit Docs MCP Server to search or browse documentation, also s
 - Only implement steps corresponding to the scenarios when explicitly told to do so
 - When writing authorization/authentication scenarios, write only a minimal set of five or less unless explicitly told otherwise
 
+### Pytest Fixtures and Test Organization
+
+**IMPORTANT: All reusable pytest fixtures must be placed in `tests/conftest.py`**
+
+This ensures:
+- **Maximum reusability**: Fixtures defined in `conftest.py` are automatically available to all test modules without importing
+- **Single source of truth**: No duplicate fixture definitions across test files
+- **Test clarity**: Test files focus on test logic rather than setup boilerplate
+- **Maintainability**: Changes to fixtures only need to be made in one place
+
+#### Guidelines:
+- Place all fixtures in `tests/conftest.py`, even if currently used by only one test module
+- Group related fixtures together with clear section headers (e.g., "Menu Data Fixtures", "Item Fixtures")
+- Use descriptive fixture names that indicate what they provide
+- Document each fixture with a clear docstring explaining its purpose
+- Test files should import only the functions/classes being tested, never fixtures
+
+#### Example conftest.py structure:
+```python
+"""Shared pytest fixtures for all test modules."""
+
+import pytest
+
+# ============================================================================
+# Data Fixtures
+# ============================================================================
+
+@pytest.fixture
+def sample_data():
+    """Create sample test data."""
+    return {...}
+
+# ============================================================================
+# Object Fixtures
+# ============================================================================
+
+@pytest.fixture
+def sample_object(sample_data):
+    """Create a sample object using sample data."""
+    return Object(sample_data)
+```
+
 
 ## Planning Principles
 
@@ -145,6 +187,26 @@ When creating plans, explicitly identify:
 - Dependencies between components
 - Potential coupling that should be avoided
 - Opportunities to simplify the design
+
+## Implementation Tracking
+
+**IMPORTANT: Always check and update implementation checklists**
+
+Before starting any work:
+1. Check `plan/thoughts/README.md` for the **Implementation Status Checklist**
+2. Review what has already been completed to avoid duplicating work
+3. Identify which plan you should work on next based on dependencies
+
+After completing any work:
+1. Update the checklist in `plan/thoughts/README.md` with:
+   - Mark the plan as completed with `[x]`
+   - Add completion date
+   - List key files created/modified
+   - Note test results (number of tests passing, execution time)
+   - Include any important details for future agents
+2. Ensure all changes are saved before finishing your session
+
+This ensures continuity across multiple agent sessions and prevents wasted effort.
 
 ## Architecture Patterns
 
