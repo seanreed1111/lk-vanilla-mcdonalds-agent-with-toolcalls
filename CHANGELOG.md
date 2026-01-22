@@ -1,6 +1,85 @@
 # Changelog
 
-Combined changelog for commits 420b4cd to 55367d6 (January 18-22, 2026)
+## Combined changelog for commits c6ae5c1 to db75b2e (January 21, 2026)
+
+### Features
+
+#### Hybrid LLM System
+- **Keyword intercept LLM** - Added intelligent keyword detection for faster responses
+  - Intercepts common keywords/phrases and provides immediate responses
+  - Falls back to full LLM when keywords don't match
+  - Significantly reduces latency for common interactions
+- **Mock LLM implementation** - Complete mock LLM for testing and development
+  - Supports offline development without API calls
+  - Configurable responses for testing scenarios
+  - Integration with existing factory pattern
+
+#### Architecture Improvements
+- **Simplified architecture** - Removed protocol layer for more direct LiveKit integration
+  - Eliminated custom protocol abstractions in favor of concrete LiveKit components
+  - Direct use of `livekit.agents.inference.STT/LLM/TTS`
+  - Cleaner dependency injection through factories
+- **Agent renamed to app** - Refactored `agent.py` to `app.py` for clarity
+- **Enhanced configuration** - Extended config support for keyword intercept and mock LLM options
+
+### Testing
+- **Keyword intercept tests** - Comprehensive test suite for keyword detection and fallback behavior
+  - 250+ lines of test coverage for keyword intercept functionality
+  - Tests for exact matches, partial matches, and LLM fallback scenarios
+- **Mock LLM examples** - Added `examples/basic_agent_with_mock_llm.py` demonstrating usage
+
+### Build & Development
+- **Makefile updates** - Streamlined build commands and targets
+- **Audio samples organization** - Moved demo audio files to `audio-samples/` directory
+- **Dependency updates** - Updated `uv.lock` with new dependencies
+
+### Refactoring & Cleanup
+- **Removed protocol abstractions** - Eliminated `src/protocols.py` and protocol-based adapters
+- **Removed mock adapters** - Cleaned up old mock adapter implementations
+  - Removed `src/adapters/livekit_adapters.py`
+  - Removed `src/adapters/mock_adapters.py`
+  - Streamlined `src/adapters/` to focus on utilities only
+- **Documentation cleanup** - Removed outdated documentation:
+  - Removed `MOCK_ADAPTERS.md` (no longer relevant)
+  - Simplified `AGENTS.md` (removed 393 lines of outdated content)
+  - Removed refactoring examples from `past-plans/`
+- **Test cleanup** - Removed obsolete test files:
+  - Removed `tests/test_mock_tts_audio.py`
+  - Updated `tests/test_agent.py` for simplified architecture
+
+### Files Modified
+
+#### Core Application
+- `src/app.py` (renamed from `src/agent.py`) - Refactored for hybrid LLM support
+- `src/factories.py` - Updated to create mock LLM and keyword intercept LLM instances
+- `src/config.py` - Added configuration for new LLM options
+- `src/session_handler.py` - Simplified for direct LiveKit integration
+
+#### New Modules
+- `src/mock_llm.py` - Mock LLM implementation for testing (116 lines)
+- `src/keyword_intercept_llm.py` - Keyword intercept LLM wrapper (219 lines)
+
+#### Testing
+- `tests/test_keyword_intercept.py` - New comprehensive test suite (250 lines)
+- `tests/test_agent.py` - Updated for new architecture
+
+#### Examples
+- `examples/basic_agent_with_mock_llm.py` - Demo of mock LLM usage (141 lines)
+
+### Migration Notes
+
+This version represents a significant architectural shift:
+- **No more protocol layer**: Direct use of LiveKit components instead of custom abstractions
+- **Hybrid LLM approach**: Keyword intercept for common phrases with LLM fallback
+- **Cleaner codebase**: Removed ~1,940 lines of unnecessary abstraction code
+- **Better performance**: Faster responses through keyword intercept system
+- **Simpler testing**: Mock LLM enables offline development and testing
+
+The changes maintain the dependency injection pattern while significantly simplifying the codebase and improving response times.
+
+---
+
+## Combined changelog for commits 420b4cd to 55367d6 (January 18-22, 2026)
 
 ## Features
 
