@@ -13,10 +13,10 @@ Key Principles:
 
 from livekit.agents import Agent
 
-from src.drive_thru_llm import DriveThruLLM
-from src.menu_provider import MenuProvider
-from src.order_state_manager import OrderStateManager
-from src.tools.order_tools import create_order_tools
+from drive_thru_llm import DriveThruLLM
+from menu_provider import MenuProvider
+from order_state_manager import OrderStateManager
+from tools.order_tools import create_order_tools
 
 
 class DriveThruAgent(Agent):

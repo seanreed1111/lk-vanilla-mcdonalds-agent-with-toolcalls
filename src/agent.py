@@ -38,7 +38,6 @@ def console():
     async def run_console():
         """Async console runner."""
         from livekit.agents import AgentSession, NOT_GIVEN
-        from livekit.plugins.turn_detector.multilingual import MultilingualModel
 
         from factories import create_stt, create_tts
 
@@ -59,11 +58,8 @@ def console():
         tts = create_tts(config.pipeline)
 
         # Create AgentSession with drive-thru LLM
-        turn_detection = (
-            MultilingualModel()
-            if config.session.use_multilingual_turn_detector
-            else NOT_GIVEN
-        )
+        # Console mode doesn't support MultilingualModel (requires job context)
+        turn_detection = NOT_GIVEN
 
         session = AgentSession(
             stt=stt,
