@@ -64,8 +64,14 @@ Track completion of all implementation plans. Check off each plan as it's comple
   - Fixtures added to: `tests/conftest.py`
   - Depends on: Plans 01, 02, 03
 
-- [ ] **Plan 05: DriveThruLLM**
-  - Not yet started
+- [x] **Plan 05: DriveThruLLM** ✅ COMPLETED
+  - Created `DriveThruLLM` stateless wrapper class
+  - Implemented keyword extraction from user messages
+  - Implemented menu item search and context injection
+  - Implemented chat() method that intercepts and injects menu context
+  - 19 tests passing in 0.40s
+  - Files: `src/drive_thru_llm.py`
+  - Tests: `tests/test_drive_thru_llm.py`
   - Depends on: Plan 02
 
 - [ ] **Plan 06: DriveThruAgent**
