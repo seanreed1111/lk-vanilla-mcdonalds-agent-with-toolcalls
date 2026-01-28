@@ -43,6 +43,7 @@ class SessionHandler:
         self.session_config = session_config
         logger.info("SessionHandler initialized")
 
+    @logger.catch
     async def handle_session(self, ctx: JobContext) -> None:
         """Handle an RTC session.
 
@@ -107,6 +108,7 @@ class SessionHandler:
 class DriveThruSessionHandler:
     """Handles creation of drive-thru agent sessions."""
 
+    @logger.catch
     def __init__(self, config):
         """Initialize session handler with config.
 
@@ -122,6 +124,7 @@ class DriveThruSessionHandler:
 
         logger.info("DriveThruSessionHandler initialized")
 
+    @logger.catch
     async def create_agent(self, session_id: str):
         """Create a new DriveThruAgent for a session.
 

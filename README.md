@@ -4,10 +4,7 @@
 
 # McDonald's Drive-Thru Voice AI Agent
 
-A voice AI agent system built with [LiveKit Agents for Python](https://github.com/livekit/agents) and [LiveKit Cloud](https://cloud.livekit.io/). This repository contains **two main applications**:
-
-1. **McDonald's Drive-Thru Agent** (`src/agent.py`) - A specialized AI agent that takes drive-thru orders using McDonald's menu data
-2. **Generic Voice Assistant** (`src/app.py`) - A general-purpose voice AI assistant
+A specialized voice AI agent built with [LiveKit Agents for Python](https://github.com/livekit/agents) and [LiveKit Cloud](https://cloud.livekit.io/). This McDonald's Drive-Thru Agent takes customer orders using real menu data and natural language processing.
 
 ## Table of Contents
 
@@ -28,9 +25,6 @@ A voice AI agent system built with [LiveKit Agents for Python](https://github.co
       - [Production Mode](#production-mode)
     - [Menu Data](#menu-data)
     - [Order Output](#order-output)
-  - [Generic Voice Assistant](#generic-voice-assistant)
-    - [What It Does](#what-it-does-1)
-    - [Running the Voice Assistant](#running-the-voice-assistant)
   - [Development](#development)
     - [Project Structure](#project-structure)
     - [Testing](#testing)
@@ -47,12 +41,7 @@ A voice AI agent system built with [LiveKit Agents for Python](https://github.co
 
 ## Overview
 
-This repository demonstrates how to build specialized voice AI agents using LiveKit. The codebase is organized around **two distinct entry points**:
-
-- **`src/agent.py`** - McDonald's Drive-Thru Agent (specialized ordering system)
-- **`src/app.py`** - Generic Voice Assistant (general-purpose AI)
-
-Both applications share common infrastructure (STT, TTS, LLM) but serve different purposes.
+This repository demonstrates how to build a specialized voice AI agent using LiveKit. The Drive-Thru Agent (`src/agent.py`) handles customer orders with menu validation, item search, and order tracking capabilities.
 
 ## Quick Start
 
@@ -104,15 +93,16 @@ lk app env -w -d .env.local
 
 ### Download Model Files
 
-Before running either application for the first time, download required models:
+Before running the agent for the first time, download required models:
 
 ```bash
 uv run python src/agent.py download-files
 ```
 
-This downloads:
+This automatically downloads files for all registered LiveKit plugins:
 - Silero VAD (Voice Activity Detection) model
-- LiveKit multilingual turn detector model
+- Multilingual turn detector model
+- Any other plugin-required models
 
 ## McDonald's Drive-Thru Agent
 
@@ -157,16 +147,47 @@ The Drive-Thru Agent consists of several components:
 
 #### Console Mode (Testing)
 
-Test the agent directly in your terminal:
+Test the agent directly in your terminal using LiveKit's built-in console:
 
 ```bash
 uv run python src/agent.py console
 ```
 
+**Console Options:**
+
+- `--text`: Start in text mode instead of audio mode
+- `--input-device DEVICE`: Select specific input audio device
+- `--output-device DEVICE`: Select specific output audio device
+- `--list-devices`: Show all available audio devices
+- `--record`: Record the session to disk
+
+**Examples:**
+
+```bash
+# Text-based chat mode (no audio)
+uv run python src/agent.py console --text
+
+# List available audio devices
+uv run python src/agent.py console --list-devices
+
+# Use specific microphone
+uv run python src/agent.py console --input-device "USB Microphone"
+
+# Record the session
+uv run python src/agent.py console --record
+```
+
+**Interactive Features:**
+
+- Press `Ctrl+T` during a session to toggle between audio and text modes
+- In audio mode, see real-time frequency visualization of your microphone input
+- Automatic device selection if not specified
+
 This mode is perfect for:
 - Quick testing and debugging
 - Trying out the ordering flow
 - Experimenting with menu items
+- Testing without a frontend application
 
 #### Dev Mode (LiveKit Connection)
 
@@ -230,28 +251,6 @@ Completed orders are saved to the `orders/` directory as JSON files:
 }
 ```
 
-## Generic Voice Assistant
-
-### What It Does
-
-The Generic Voice Assistant is a general-purpose AI that:
-
-- Answers questions on various topics
-- Provides helpful information
-- Maintains a friendly, conversational tone
-- Works with any topic (not menu-specific)
-
-### Running the Voice Assistant
-
-```bash
-uv run python src/app.py
-```
-
-This runs a generic voice assistant without menu integration. Use this for:
-- General Q&A applications
-- Non-specialized voice interactions
-- Testing the base voice pipeline
-
 ## Development
 
 ### Project Structure
@@ -259,7 +258,6 @@ This runs a generic voice assistant without menu integration. Use this for:
 ```
 src/
 ├── agent.py                  # Drive-Thru Agent CLI (main entry point)
-├── app.py                    # Generic Voice Assistant
 ├── config.py                 # Pydantic configuration models
 ├── factories.py              # Creates STT/LLM/TTS instances
 ├── session_handler.py        # Session orchestration
@@ -370,7 +368,7 @@ This codebase uses dependency injection (DI) to construct components:
 
 1. **Configuration** - `src/config.py` (Pydantic v2 models, env-driven)
 2. **Construction** - `src/factories.py` (builds STT/LLM/TTS)
-3. **Wiring** - `src/agent.py` or `src/app.py` (creates app + server)
+3. **Wiring** - `src/agent.py` (creates app + server)
 4. **Runtime** - `src/session_handler.py` (manages sessions)
 
 No custom adapters or protocols are used - components are constructed directly using LiveKit's concrete types.

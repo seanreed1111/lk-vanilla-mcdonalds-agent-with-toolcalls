@@ -356,8 +356,197 @@ src/
     └── audio_utils.py  # Shared audio helpers only
 ```
 
-## LiveKit CLI
+## CLI Framework
 
-You can make use of the LiveKit CLI (`lk`) for various tasks, with user approval.
+**IMPORTANT: Always use LiveKit's built-in CLI - never create custom Click/Typer commands**
+
+This project uses LiveKit's official CLI framework via `cli.run_app()`. This provides standard commands (console, start, dev, download-files) with full feature support.
+
+### Required Pattern
+
+The `src/agent.py` file must follow this pattern:
+
+```python
+from livekit.agents import AgentServer, cli
+
+def create_server() -> AgentServer:
+    """Create and configure the AgentServer."""
+    server = AgentServer()
+    server.setup_fnc = _prewarm
+    server.rtc_session()(_handle_rtc_session)
+    return server
+
+if __name__ == "__main__":
+    server = create_server()
+    cli.run_app(server)
+```
+
+### Why Use LiveKit's CLI
+
+✅ **DO use `cli.run_app(server)`:**
+- Provides console, start, dev, download-files commands automatically
+- Includes audio/text mode console with frequency visualizer
+- Handles device selection, recording, mode toggling (Ctrl+T)
+- Manages HTTP sessions for STT/TTS plugins automatically
+- Gets updates and bug fixes from LiveKit SDK
+- Officially supported and documented
+
+❌ **DO NOT create custom Click/Typer commands:**
+- Breaks when LiveKit SDK updates (e.g., AgentsConsole API changes)
+- Requires manual HTTP session management for plugins
+- Missing LiveKit's console features (visualizer, device selection)
+- Duplicates functionality already in the SDK
+- Creates maintenance burden
+
+### Available Commands
+
+When using `cli.run_app(server)`, users automatically get:
+
+```bash
+# Console mode (interactive testing)
+uv run python src/agent.py console
+uv run python src/agent.py console --text          # Text mode
+uv run python src/agent.py console --list-devices  # Show audio devices
+uv run python src/agent.py console --record        # Record session
+
+# Development mode (with auto-reload)
+uv run python src/agent.py dev
+
+# Production mode
+uv run python src/agent.py start
+
+# Download plugin files
+uv run python src/agent.py download-files
+```
+
+### Console Mode Features
+
+LiveKit's console provides:
+- **Audio Mode**: Real microphone/speaker with frequency visualizer
+- **Text Mode**: Text-based chat interface (--text flag)
+- **Device Selection**: Choose specific input/output devices
+- **Mode Toggle**: Press Ctrl+T to switch between audio/text
+- **Recording**: Save sessions to disk (--record flag)
+- **Automatic HTTP Session Management**: No manual aiohttp.ClientSession needed
+
+### Migration from Custom CLI
+
+If you find custom Click commands in `src/agent.py`, replace them:
+
+```python
+# ❌ OLD - Custom Click commands (DON'T DO THIS)
+import click
+
+@click.group()
+def agent_cli():
+    pass
+
+@agent_cli.command()
+def console():
+    # Custom console implementation
+    pass
+
+if __name__ == "__main__":
+    agent_cli()
+
+# ✅ NEW - LiveKit CLI framework
+from livekit.agents import AgentServer, cli
+
+def create_server() -> AgentServer:
+    server = AgentServer()
+    server.setup_fnc = _prewarm
+    server.rtc_session()(_handle_rtc_session)
+    return server
+
+if __name__ == "__main__":
+    server = create_server()
+    cli.run_app(server)
+```
+
+## LLM Wrapping Pattern
+
+**IMPORTANT: When wrapping an LLM, the `chat()` method is NOT async**
+
+When creating custom LLM wrappers (e.g., to inject context or modify behavior), you must understand that `LLM.chat()` is a **regular (non-async) method** that returns an `LLMStream`.
+
+### The Pattern
+
+```python
+from livekit.agents.llm import LLM, ChatContext, LLMStream
+
+class CustomLLM(LLM):
+    def __init__(self, wrapped_llm: LLM):
+        super().__init__()
+        self._wrapped_llm = wrapped_llm
+
+    # ✅ CORRECT: Regular method (not async)
+    def chat(
+        self,
+        *,
+        chat_ctx: ChatContext,
+        tools: list[Any] | None = None,
+        **kwargs: Any,
+    ) -> LLMStream:
+        # Modify chat_ctx if needed
+        modified_ctx = self._modify_context(chat_ctx)
+
+        # Return directly (no await)
+        return self._wrapped_llm.chat(
+            chat_ctx=modified_ctx,
+            tools=tools,
+            **kwargs
+        )
+```
+
+### Common Mistake
+
+```python
+# ❌ WRONG: Do NOT use async def
+async def chat(
+    self,
+    *,
+    chat_ctx: ChatContext,
+    tools: list[Any] | None = None,
+    **kwargs: Any,
+) -> LLMStream:
+    modified_ctx = self._modify_context(chat_ctx)
+
+    # ❌ WRONG: Do NOT use await
+    return await self._wrapped_llm.chat(
+        chat_ctx=modified_ctx,
+        tools=tools,
+        **kwargs
+    )
+```
+
+### Why This Matters
+
+- **`LLM.chat()` is NOT async**: It's defined as a regular method in the base class
+- **`LLMStream` IS async**: The returned `LLMStream` is an async context manager (has `__aenter__` and `__aexit__`)
+- **Framework compatibility**: LiveKit's agent framework expects to use `chat()` with `async with`, like:
+  ```python
+  async with llm.chat(chat_ctx=ctx) as stream:
+      async for chunk in stream:
+          # process chunk
+  ```
+- **Making `chat()` async breaks this**: If you define `chat()` as `async def`, it returns a coroutine instead of an `LLMStream`, causing a `TypeError: 'coroutine' object does not support the asynchronous context manager protocol`
+
+### Real Example
+
+See `src/drive_thru_llm.py` for a working example of an LLM wrapper that injects menu context:
+
+```python
+class DriveThruLLM(LLM):
+    def chat(self, *, chat_ctx: ChatContext, tools: list[Any] | None = None, **kwargs: Any) -> LLMStream:
+        # Extract keywords and inject menu context
+        modified_ctx = self._inject_menu_context(chat_ctx)
+
+        # Delegate to wrapped LLM (no async, no await)
+        return self._wrapped_llm.chat(chat_ctx=modified_ctx, tools=tools, **kwargs)
+```
+
+## LiveKit CLI Tool
+
+You can also make use of the LiveKit CLI tool (`lk`) for cloud operations and debugging, with user approval.
 
 

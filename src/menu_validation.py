@@ -7,8 +7,10 @@ All functions are pure and deterministic for easy testing.
 
 from dataclasses import dataclass
 
+from loguru import logger
 from rapidfuzz import fuzz, process
 
+from common_modifiers import is_common_modifier_for_category
 from menus.mcdonalds.models import Item, Menu
 
 
@@ -124,6 +126,10 @@ def validate_modifiers(
     """
     Validate that all requested modifiers are available for the item.
 
+    If the item has predefined modifiers, validates strictly against them.
+    If the item has no predefined modifiers, falls back to common modifiers
+    for the item's category.
+
     Args:
         item: The menu item
         requested_modifiers: List of modifier names requested
@@ -133,8 +139,9 @@ def validate_modifiers(
         ValidationResult indicating if all modifiers are valid
 
     Examples:
-        - Item: Big Mac, Modifiers: ["No Pickles"] → valid
-        - Item: Big Mac, Modifiers: ["Anchovies"] → invalid
+        - Item: Big Mac (no modifiers), Modifiers: ["Extra Cheese"] → valid (common modifier)
+        - Item: Big Mac (no modifiers), Modifiers: ["Anchovies"] → invalid
+        - Item: McCafe (with modifiers), Modifiers: ["Decaf"] → strict validation
     """
     if not requested_modifiers:
         # Empty modifier list is valid
@@ -142,40 +149,60 @@ def validate_modifiers(
             is_valid=True, matched_item=item, confidence_score=100.0
         )
 
-    if not item.modifiers:
-        # Item has no available modifiers
+    # Check if item has predefined modifiers
+    if item.modifiers:
+        # Use strict validation with predefined modifiers
+        available_modifier_names = [m.modifier_name for m in item.modifiers]
+
+        invalid_modifiers = []
+        for requested in requested_modifiers:
+            # Try exact match first
+            exact_match = any(
+                m.lower() == requested.lower() for m in available_modifier_names
+            )
+            if exact_match:
+                continue
+
+            # Try fuzzy match
+            result = process.extractOne(
+                requested,
+                available_modifier_names,
+                scorer=fuzz.ratio,
+                score_cutoff=fuzzy_threshold,
+            )
+
+            if result is None:
+                invalid_modifiers.append(requested)
+
+        if invalid_modifiers:
+            return ValidationResult(
+                is_valid=False,
+                error_message=f"Invalid modifiers for '{item.item_name}': {invalid_modifiers}. Available modifiers: {available_modifier_names}",
+            )
+
         return ValidationResult(
-            is_valid=False,
-            error_message=f"Item '{item.item_name}' has no modifiers available, but modifiers were requested: {requested_modifiers}",
+            is_valid=True, matched_item=item, confidence_score=100.0
         )
 
-    # Build mapping of available modifiers
-    available_modifier_names = [m.modifier_name for m in item.modifiers]
+    # Item has no predefined modifiers - fall back to common modifiers
+    logger.warning(
+        f"Item '{item.item_name}' has no predefined modifiers, "
+        f"using common modifiers for category '{item.category_name}'"
+    )
 
     invalid_modifiers = []
     for requested in requested_modifiers:
-        # Try exact match first
-        exact_match = any(
-            m.lower() == requested.lower() for m in available_modifier_names
+        is_valid, matched_name = is_common_modifier_for_category(
+            requested, item.category_name, threshold=fuzzy_threshold
         )
-        if exact_match:
-            continue
-
-        # Try fuzzy match
-        result = process.extractOne(
-            requested,
-            available_modifier_names,
-            scorer=fuzz.ratio,
-            score_cutoff=fuzzy_threshold,
-        )
-
-        if result is None:
+        if not is_valid:
             invalid_modifiers.append(requested)
 
     if invalid_modifiers:
         return ValidationResult(
             is_valid=False,
-            error_message=f"Invalid modifiers for '{item.item_name}': {invalid_modifiers}. Available modifiers: {available_modifier_names}",
+            error_message=f"Invalid modifiers for '{item.item_name}': {invalid_modifiers}. "
+            f"These modifiers are not commonly available for {item.category_name} items.",
         )
 
     return ValidationResult(is_valid=True, matched_item=item, confidence_score=100.0)

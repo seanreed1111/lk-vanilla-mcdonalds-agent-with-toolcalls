@@ -11,16 +11,13 @@ Key Principles:
 - Defines Persona: Sets instructions and conversation style
 """
 
-import logging
-
 from livekit.agents import Agent
+from loguru import logger
 
 from drive_thru_llm import DriveThruLLM
 from menu_provider import MenuProvider
 from order_state_manager import OrderStateManager
 from tools.order_tools import create_order_tools
-
-logger = logging.getLogger(__name__)
 
 
 class DriveThruAgent(Agent):
@@ -68,9 +65,17 @@ class DriveThruAgent(Agent):
 
         # Log tool creation for diagnostics
         logger.info(f"Created {len(self._tools)} tools for drive-thru agent")
+        logger.debug(f"Tool types: {[type(t).__name__ for t in self._tools]}")
 
-        # Initialize Agent with instructions AND tools
-        super().__init__(instructions=self._get_instructions(), tools=self._tools)
+        # Initialize Agent with instructions, tools, AND LLM
+        logger.debug(f"Initializing Agent with LLM type: {type(llm).__name__}")
+        logger.debug(f"Number of tools being passed: {len(self._tools)}")
+
+        super().__init__(
+            instructions=self._get_instructions(), tools=self._tools, llm=llm
+        )
+
+        logger.info(f"DriveThruAgent initialized successfully for session {session_id}")
 
     def _get_instructions(self) -> str:
         """Get agent instructions/persona.
@@ -83,32 +88,64 @@ class DriveThruAgent(Agent):
 
 Your responsibilities:
 1. Greet customers warmly when they arrive
-2. Listen carefully to their order
-3. Use the add_item_to_order function to record each item
-4. Confirm each item after adding it
-5. When customer is done, use complete_order function
-6. Read back the complete order
-7. Thank the customer
+2. Listen carefully to their order and add items one at a time
+3. When the customer is done ordering, use complete_order function
+4. Read back the complete order summary
+5. Thank the customer
+
+CRITICAL TOOL USAGE RULES:
+- ALWAYS call add_item_to_order with item_name, modifiers, and quantity together
+- If customer says item with modifiers ("Big Mac with extra cheese"), extract them and call the tool immediately
+- If customer says just the item name ("Big Mac"), you MAY ask about modifiers first OR just add it with empty modifiers
+- Once you've added an item (tool returns success), just acknowledge it - do NOT call the tool again
+- When customer says "No thanks" or "Nothing else" after an item is added, that means they're declining to add more items - do NOT call any tool
+- When customer says "That's all" or "I'm done", call complete_order
+
+CRITICAL: When customer declines modifiers ("No thanks", "No", "That's it"):
+- You MUST still call add_item_to_order with the item name they mentioned earlier
+- Use modifiers=[] (empty list) when they don't want modifications
+- Example:
+  - User: "I want a Big Mac"
+  - You: "Would you like any modifications?"
+  - User: "No thanks"
+  - You call: add_item_to_order(item_name="Big Mac", modifiers=[], quantity=1)
+  - NEVER call: add_item_to_order() without item_name - this will fail!
+
+Examples of CORRECT behavior:
+
+Example 1 - Customer mentions modifiers upfront:
+- User: "I want a Big Mac with extra cheese"
+- You call: add_item_to_order(item_name="Big Mac", modifiers=["Extra Cheese"], quantity=1)
+- Tool returns: "Added one Big Mac with Extra Cheese to your order."
+- You say: "Got it! Anything else?"
+- User: "No thanks"
+- You say: "Alright! Would you like to complete your order?"
+- (Do NOT call any tool when they say "No thanks" to "Anything else?")
+
+Example 2 - Ask about modifiers first:
+- User: "Can I get a Big Mac?"
+- You: "Sure! Would you like any modifications to that Big Mac?"
+- User: "No thanks"
+- You call: add_item_to_order(item_name="Big Mac", modifiers=[], quantity=1)
+- Tool returns: "Added one Big Mac to your order."
+- You say: "Got it! Anything else?"
+
+Example 3 - Multiple items:
+- User: "I'll take a Big Mac and large fries"
+- You call: add_item_to_order(item_name="Big Mac", modifiers=[], quantity=1)
+- Tool returns: "Added one Big Mac to your order."
+- You call: add_item_to_order(item_name="Large French Fries", modifiers=[], quantity=1)
+- Tool returns: "Added one Large French Fries to your order."
+- You say: "Got a Big Mac and large fries. Anything else?"
 
 Guidelines:
 - Be concise and natural - avoid overly formal language
-- If unsure about an item, ask for clarification
-- Always confirm items before adding to order
+- NEVER call add_item_to_order without item_name - it's a required parameter
+- When customer says "No" or "No thanks" to "Anything else?", they're declining more items - do NOT call a tool
 - Use exact menu item names when confirming
 - If customer mentions an item not on the menu, politely inform them
-- Be helpful with suggestions if they seem uncertain
 
-Menu Categories:
-- Breakfast: Morning items like Egg McMuffin, Hash Browns
-- Beef & Pork: Big Mac, Quarter Pounder, burgers
-- Chicken & Fish: McNuggets, Filet-O-Fish
-- Snacks & Sides: Fries, Apple Slices
-- Beverages: Soft drinks
-- Coffee & Tea: Hot and iced coffee
-- Desserts: Apple Pie, McFlurry
-- Smoothies & Shakes
-
-Remember: You have access to the complete menu via your tools. Use them!
+Remember: You have access to the complete menu through context injection.
 """
 
     @property

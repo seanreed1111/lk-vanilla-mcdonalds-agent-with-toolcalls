@@ -9,8 +9,8 @@ from pathlib import Path
 
 import pytest
 
-from menus.mcdonalds.models import Item, Menu, Modifier
 from menu_provider import MenuProvider
+from menus.mcdonalds.models import Item, Menu, Modifier
 
 # ============================================================================
 # Menu Data Fixtures
@@ -113,10 +113,13 @@ def big_mac_with_modifiers():
 
 @pytest.fixture
 def item_without_modifiers():
-    """Create an item with no available modifiers."""
+    """Create an item with no available modifiers.
+
+    Uses Beef & Pork category to test common modifier fallback.
+    """
     return Item(
-        category_name="Beverages",
-        item_name="Coca-Cola",
+        category_name="Beef & Pork",
+        item_name="Plain Burger",
         available_as_base=True,
         modifiers=[],
     )
@@ -232,6 +235,7 @@ def order_tools(order_state_manager, menu_provider):
 def mock_drive_thru_llm():
     """Create a mock DriveThruLLM for testing."""
     from unittest.mock import Mock
+
     from drive_thru_llm import DriveThruLLM
 
     return Mock(spec=DriveThruLLM)
@@ -241,7 +245,9 @@ def mock_drive_thru_llm():
 def drive_thru_llm(real_menu_provider):
     """Create real DriveThruLLM with menu context injection."""
     from unittest.mock import Mock
+
     from livekit.agents.llm import LLM
+
     from drive_thru_llm import DriveThruLLM
 
     # Create a mock base LLM
@@ -251,7 +257,7 @@ def drive_thru_llm(real_menu_provider):
     return DriveThruLLM(
         wrapped_llm=mock_base_llm,
         menu_provider=real_menu_provider,
-        max_context_items=50
+        max_context_items=50,
     )
 
 
@@ -269,7 +275,7 @@ def drive_thru_agent(mock_drive_thru_llm, real_menu_provider, tmp_path):
         session_id="test-agent-session",
         llm=mock_drive_thru_llm,
         menu_provider=real_menu_provider,
-        output_dir=str(tmp_path / "orders")
+        output_dir=str(tmp_path / "orders"),
     )
 
 
@@ -282,5 +288,5 @@ def real_drive_thru_agent(drive_thru_llm, real_menu_provider, tmp_path):
         session_id="test-e2e-session",
         llm=drive_thru_llm,
         menu_provider=real_menu_provider,
-        output_dir=str(tmp_path / "orders")
+        output_dir=str(tmp_path / "orders"),
     )

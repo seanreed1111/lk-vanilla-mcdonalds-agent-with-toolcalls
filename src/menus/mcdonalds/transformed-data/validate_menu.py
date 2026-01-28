@@ -4,7 +4,7 @@
 import json
 from pathlib import Path
 
-from jsonschema import validate, ValidationError
+from jsonschema import ValidationError, validate
 
 
 def validate_menu():
@@ -13,19 +13,19 @@ def validate_menu():
 
     # Load the schema
     schema_path = base_dir / "menu-structure-schema.json"
-    with open(schema_path, "r") as f:
+    with open(schema_path) as f:
         schema = json.load(f)
 
     # Load the data
     data_path = base_dir / "menu-structure-2026-01-21.json"
-    with open(data_path, "r") as f:
+    with open(data_path) as f:
         data = json.load(f)
 
     # Validate using jsonschema
     try:
         validate(instance=data, schema=schema)
         print("✓ Validation successful! The JSON file conforms to the schema.")
-        print(f"\n  Statistics:")
+        print("\n  Statistics:")
         print(f"  - Categories: {len(data)}")
 
         total_items = 0
@@ -55,7 +55,7 @@ def validate_menu():
         print(f"  Path: {' > '.join(str(p) for p in e.path)}")
         print(f"  Error: {e.message}")
         if e.context:
-            print(f"\n  Additional errors:")
+            print("\n  Additional errors:")
             for error in e.context:
                 print(f"    - {error.message}")
         return False
