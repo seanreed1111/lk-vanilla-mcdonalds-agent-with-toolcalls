@@ -20,6 +20,35 @@ from menu_validation import validate_order_item
 from order_state_manager import OrderStateManager
 
 
+def _strip_category_suffix(item_name: str) -> str:
+    """Strip category suffix from item name if present.
+
+    LLM sometimes includes category in item name (e.g., "Big Mac (Beef & Pork)").
+    This helper strips the category to get clean item name.
+
+    Args:
+        item_name: Item name, possibly with category suffix
+
+    Returns:
+        Clean item name without category
+
+    Examples:
+        >>> _strip_category_suffix("Big Mac (Beef & Pork)")
+        "Big Mac"
+        >>> _strip_category_suffix("Big Mac")
+        "Big Mac"
+    """
+    if not item_name:
+        return item_name
+
+    # Check if item name has category in parentheses
+    if '(' in item_name and ')' in item_name:
+        # Split on '(' and take first part, strip whitespace
+        return item_name.split('(')[0].strip()
+
+    return item_name
+
+
 def create_order_tools(
     order_state: OrderStateManager,
     menu_provider: MenuProvider,
@@ -94,6 +123,9 @@ def create_order_tools(
                 "prompting user for item"
             )
             return "I need to know which item you'd like to add. What would you like to order?"
+
+        # Strip category suffix if LLM included it (e.g., "Big Mac (Beef & Pork)" -> "Big Mac")
+        item_name = _strip_category_suffix(item_name)
 
         # Normalize inputs
         modifiers = modifiers or []
@@ -249,6 +281,9 @@ def create_order_tools(
         Returns:
             Confirmation message if successful, error message if item not found
         """
+        # Strip category suffix if LLM included it
+        item_name = _strip_category_suffix(item_name)
+
         # Find item by name (use latest item with that name)
         items = order_state.get_items()
         item_to_remove = None
