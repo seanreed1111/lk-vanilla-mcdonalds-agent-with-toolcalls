@@ -8,6 +8,7 @@ ground the LLM in actual menu items and reduces hallucination.
 from typing import Any
 
 from livekit.agents.llm import LLM, ChatContext, LLMStream
+from loguru import logger
 
 from menu_provider import MenuProvider
 from menus.mcdonalds.models import Item
@@ -43,7 +44,8 @@ class DriveThruLLM(LLM):
         self._menu_provider = menu_provider
         self._max_context_items = max_context_items
 
-    async def chat(
+    @logger.catch
+    def chat(
         self,
         *,
         chat_ctx: ChatContext,
@@ -66,26 +68,34 @@ class DriveThruLLM(LLM):
         Returns:
             LLMStream from wrapped LLM
         """
+        logger.debug(f"DriveThruLLM.chat() called with {len(tools or [])} tools")
+
         # 1. Extract keywords from latest user message
         latest_message = self._get_latest_user_message(chat_ctx)
+        logger.debug(f"Latest user message: {latest_message}")
+
         augmented_ctx = chat_ctx
 
         if latest_message:
             keywords = self._extract_keywords(latest_message)
+            logger.debug(f"Extracted keywords: {keywords}")
 
             if keywords:  # Only search if we have keywords
                 # 2. Search for relevant menu items
                 relevant_items = self._find_relevant_items(keywords)
+                logger.debug(f"Found {len(relevant_items)} relevant menu items")
 
                 # 3. Inject into context
                 if relevant_items:
                     augmented_ctx = self._inject_menu_context(chat_ctx, relevant_items)
+                    logger.debug(f"Injected {len(relevant_items)} items into context")
 
-        # 4. Delegate to wrapped LLM
-        return await self._wrapped_llm.chat(
+        # 4. Delegate to wrapped LLM (no await needed - chat() is not async)
+        logger.debug(f"Delegating to wrapped LLM: {type(self._wrapped_llm).__name__}")
+        return self._wrapped_llm.chat(
             chat_ctx=augmented_ctx, tools=tools, **kwargs
         )
-
+    @logger.catch
     def _get_latest_user_message(self, chat_ctx: ChatContext) -> str | None:
         """Get the latest user message from chat context.
 
@@ -119,6 +129,7 @@ class DriveThruLLM(LLM):
 
         return None
 
+    @logger.catch
     def _extract_keywords(self, message: str) -> list[str]:
         """Extract potential menu-related keywords from user message.
 
@@ -156,6 +167,7 @@ class DriveThruLLM(LLM):
 
         return keywords
 
+    @logger.catch
     def _find_relevant_items(self, keywords: list[str]) -> list[Item]:
         """Find menu items matching keywords.
 
@@ -188,6 +200,7 @@ class DriveThruLLM(LLM):
 
         return all_matches
 
+    @logger.catch
     def _inject_menu_context(
         self, chat_ctx: ChatContext, items: list[Item]
     ) -> ChatContext:
@@ -244,6 +257,7 @@ class DriveThruLLM(LLM):
 
         return new_ctx
 
+    @logger.catch
     def _format_items_for_context(self, items: list[Item]) -> str:
         """Format menu items for LLM context.
 

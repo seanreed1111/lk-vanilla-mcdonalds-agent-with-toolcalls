@@ -19,7 +19,7 @@ async def test_add_item_valid_item(order_tools, order_state_manager):
     add_item_tool = order_tools[0]  # add_item_to_order
 
     result = await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", quantity=1
+        item_name="Big Mac", quantity=1
     )
 
     # Check response
@@ -40,7 +40,6 @@ async def test_add_item_with_modifiers(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Breakfast",
         item_name="Big Breakfast (Large Biscuit)",
         modifiers=["Egg Whites", "Hotcakes"],
         quantity=1,
@@ -65,7 +64,7 @@ async def test_add_item_with_quantity_greater_than_one(
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Snacks & Sides", item_name="Medium French Fries", quantity=3
+        item_name="Medium French Fries", quantity=3
     )
 
     # Check response
@@ -84,7 +83,7 @@ async def test_add_item_fuzzy_match_success(order_tools, order_state_manager):
 
     # Intentional typo: "Big Mack" instead of "Big Mac"
     result = await add_item_tool(
-        category="Beef & Pork", item_name="Big Mack", quantity=1
+        item_name="Big Mack", quantity=1
     )
 
     # Should succeed via fuzzy match
@@ -102,11 +101,11 @@ async def test_add_item_invalid_item(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Beef & Pork", item_name="Whopper", quantity=1
+        item_name="Whopper", quantity=1
     )
 
     # Check error message
-    assert "couldn't add" in result.lower() or "not" in result.lower()
+    assert "couldn't find" in result.lower() or "couldn't add" in result.lower() or "not" in result.lower()
 
     # Verify state is unchanged
     assert order_state_manager.is_empty()
@@ -118,7 +117,6 @@ async def test_add_item_invalid_modifier(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Beef & Pork",
         item_name="Big Mac",
         modifiers=["InvalidModifier123"],
         quantity=1,
@@ -133,17 +131,20 @@ async def test_add_item_invalid_modifier(order_tools, order_state_manager):
 
 @pytest.mark.asyncio
 async def test_add_item_wrong_category(order_tools, order_state_manager):
-    """Adding an item with wrong category fails."""
+    """Adding an item now automatically finds the correct category."""
     add_item_tool = order_tools[0]
 
-    # Big Mac is in "Beef & Pork", not "Breakfast"
-    result = await add_item_tool(category="Breakfast", item_name="Big Mac", quantity=1)
+    # Big Mac will be automatically found in "Beef & Pork" category
+    result = await add_item_tool(item_name="Big Mac", quantity=1)
 
-    # Should fail validation
-    assert "couldn't add" in result.lower() or "not" in result.lower()
+    # Should succeed - category is automatic
+    assert "Added one Big Mac" in result
 
-    # Verify state is unchanged
-    assert order_state_manager.is_empty()
+    # Verify state was updated
+    items = order_state_manager.get_items()
+    assert len(items) == 1
+    assert items[0].item_name == "Big Mac"
+    assert items[0].category == "Beef & Pork"
 
 
 @pytest.mark.asyncio
@@ -152,7 +153,7 @@ async def test_add_item_case_insensitive(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Beef & Pork", item_name="big mac", quantity=1
+        item_name="big mac", quantity=1
     )
 
     # Should succeed
@@ -170,7 +171,7 @@ async def test_add_item_with_empty_modifiers_list(order_tools, order_state_manag
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", modifiers=[], quantity=1
+        item_name="Big Mac", modifiers=[], quantity=1
     )
 
     # Should succeed
@@ -188,16 +189,16 @@ async def test_add_multiple_different_items(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     # Add first item
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac", quantity=1)
+    await add_item_tool(item_name="Big Mac", quantity=1)
 
     # Add second item
     await add_item_tool(
-        category="Snacks & Sides", item_name="Medium French Fries", quantity=1
+        item_name="Medium French Fries", quantity=1
     )
 
     # Add third item
     await add_item_tool(
-        category="Beverages", item_name="Coca-Cola Classic (Medium)", quantity=1
+        item_name="Coca-Cola Classic (Medium)", quantity=1
     )
 
     # Check state
@@ -222,8 +223,8 @@ async def test_complete_order_success(order_tools, order_state_manager, tmp_path
     complete_tool = order_tools[1]
 
     # Add items
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac")
-    await add_item_tool(category="Snacks & Sides", item_name="Medium French Fries")
+    await add_item_tool(item_name="Big Mac")
+    await add_item_tool(item_name="Medium French Fries")
 
     # Complete order
     result = await complete_tool()
@@ -265,9 +266,9 @@ async def test_complete_order_with_multiple_quantities(
     complete_tool = order_tools[1]
 
     # Add items with quantities
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac", quantity=2)
+    await add_item_tool(item_name="Big Mac", quantity=2)
     await add_item_tool(
-        category="Snacks & Sides", item_name="Medium French Fries", quantity=3
+        item_name="Medium French Fries", quantity=3
     )
 
     # Complete order
@@ -289,8 +290,8 @@ async def test_remove_existing_item(order_tools, order_state_manager):
     remove_tool = order_tools[2]
 
     # Add items
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac")
-    await add_item_tool(category="Snacks & Sides", item_name="Medium French Fries")
+    await add_item_tool(item_name="Big Mac")
+    await add_item_tool(item_name="Medium French Fries")
 
     # Remove one item
     result = await remove_tool(item_name="Big Mac")
@@ -311,7 +312,7 @@ async def test_remove_non_existent_item(order_tools, order_state_manager):
     remove_tool = order_tools[2]
 
     # Add one item
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac")
+    await add_item_tool(item_name="Big Mac")
 
     # Try to remove different item
     result = await remove_tool(item_name="Whopper")
@@ -345,11 +346,11 @@ async def test_remove_specific_item_when_duplicates_exist(
     remove_tool = order_tools[2]
 
     # Add same item twice
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac", quantity=1)
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac", quantity=1)
+    await add_item_tool(item_name="Big Mac", quantity=1)
+    await add_item_tool(item_name="Big Mac", quantity=1)
 
     # Add different item in between
-    await add_item_tool(category="Snacks & Sides", item_name="Medium French Fries")
+    await add_item_tool(item_name="Medium French Fries")
 
     # Remove Big Mac (should remove the most recent one)
     result = await remove_tool(item_name="Big Mac")
@@ -371,7 +372,7 @@ async def test_remove_item_case_insensitive(order_tools, order_state_manager):
     remove_tool = order_tools[2]
 
     # Add item
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac")
+    await add_item_tool(item_name="Big Mac")
 
     # Remove with different case
     result = await remove_tool(item_name="big mac")
@@ -395,12 +396,11 @@ async def test_validation_error_doesnt_mutate_state(order_tools, order_state_man
 
     # Try to add invalid item
     result = await add_item_tool(
-        category="Beef & Pork",
         item_name="Whopper",  # Not on menu
     )
 
     # Check error message returned
-    assert "couldn't add" in result.lower()
+    assert "couldn't find" in result.lower() or "couldn't add" in result.lower()
 
     # Verify state is unchanged
     assert order_state_manager.is_empty()
@@ -414,10 +414,10 @@ async def test_partial_validation_failure_preserves_valid_items(
     add_item_tool = order_tools[0]
 
     # Add valid item
-    await add_item_tool(category="Beef & Pork", item_name="Big Mac")
+    await add_item_tool(item_name="Big Mac")
 
     # Try to add invalid item
-    await add_item_tool(category="Beef & Pork", item_name="Whopper")
+    await add_item_tool(item_name="Whopper")
 
     # Check state still has the valid item
     items = order_state_manager.get_items()
@@ -436,13 +436,12 @@ async def test_add_item_with_very_long_item_name(order_tools, order_state_manage
     add_item_tool = order_tools[0]
 
     result = await add_item_tool(
-        category="Beef & Pork",
         item_name="X" * 200,  # Very long invalid name
         quantity=1,
     )
 
     # Should fail validation
-    assert "couldn't add" in result.lower()
+    assert "couldn't find" in result.lower() or "couldn't add" in result.lower()
 
     # State should be empty
     assert order_state_manager.is_empty()
@@ -458,7 +457,7 @@ async def test_add_item_with_special_characters_in_name(
     # Try a real item with special characters (if exists)
     # This should test fuzzy matching with special chars
     result = await add_item_tool(
-        category="Coffee & Tea", item_name="Caffe Latte", quantity=1
+        item_name="Caffe Latte", quantity=1
     )
 
     # Should either succeed or fail gracefully

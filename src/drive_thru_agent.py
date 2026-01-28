@@ -1,3 +1,4 @@
+
 """DriveThruAgent - Orchestrator for McDonald's drive-thru ordering.
 
 This module provides the DriveThruAgent class that brings together all components
@@ -11,16 +12,13 @@ Key Principles:
 - Defines Persona: Sets instructions and conversation style
 """
 
-import logging
-
 from livekit.agents import Agent
+from loguru import logger
 
 from drive_thru_llm import DriveThruLLM
 from menu_provider import MenuProvider
 from order_state_manager import OrderStateManager
 from tools.order_tools import create_order_tools
-
-logger = logging.getLogger(__name__)
 
 
 class DriveThruAgent(Agent):
@@ -68,9 +66,19 @@ class DriveThruAgent(Agent):
 
         # Log tool creation for diagnostics
         logger.info(f"Created {len(self._tools)} tools for drive-thru agent")
+        logger.debug(f"Tool types: {[type(t).__name__ for t in self._tools]}")
 
-        # Initialize Agent with instructions AND tools
-        super().__init__(instructions=self._get_instructions(), tools=self._tools)
+        # Initialize Agent with instructions, tools, AND LLM
+        logger.debug(f"Initializing Agent with LLM type: {type(llm).__name__}")
+        logger.debug(f"Number of tools being passed: {len(self._tools)}")
+
+        super().__init__(
+            instructions=self._get_instructions(),
+            tools=self._tools,
+            llm=llm
+        )
+
+        logger.info(f"DriveThruAgent initialized successfully for session {session_id}")
 
     def _get_instructions(self) -> str:
         """Get agent instructions/persona.
@@ -84,7 +92,7 @@ class DriveThruAgent(Agent):
 Your responsibilities:
 1. Greet customers warmly when they arrive
 2. Listen carefully to their order
-3. Use the add_item_to_order function to record each item
+3. Use the add_item_to_order function to record each item (just provide the item name - categories are automatic)
 4. Confirm each item after adding it
 5. When customer is done, use complete_order function
 6. Read back the complete order
@@ -98,17 +106,7 @@ Guidelines:
 - If customer mentions an item not on the menu, politely inform them
 - Be helpful with suggestions if they seem uncertain
 
-Menu Categories:
-- Breakfast: Morning items like Egg McMuffin, Hash Browns
-- Beef & Pork: Big Mac, Quarter Pounder, burgers
-- Chicken & Fish: McNuggets, Filet-O-Fish
-- Snacks & Sides: Fries, Apple Slices
-- Beverages: Soft drinks
-- Coffee & Tea: Hot and iced coffee
-- Desserts: Apple Pie, McFlurry
-- Smoothies & Shakes
-
-Remember: You have access to the complete menu via your tools. Use them!
+Remember: You have access to the complete menu. When adding items, you only need to provide the item name - the system will automatically find it in the right category.
 """
 
     @property

@@ -68,7 +68,9 @@
       "Bash(! grep -qi \"generic voice\" README.md)",
       "Bash(make lint:*)",
       "Bash(make format:*)",
-      "Bash(make run:*)"
+      "Bash(make run:*)",
+      "Bash(find:*)",
+      "Bash(head:*)"
     ]
   }
 }

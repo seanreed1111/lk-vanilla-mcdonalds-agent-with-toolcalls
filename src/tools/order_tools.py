@@ -12,6 +12,8 @@ Key Principles:
 
 from livekit.agents import llm
 from livekit.agents.llm import function_tool
+from loguru import logger
+from rapidfuzz import fuzz, process
 
 from menu_provider import MenuProvider
 from menu_validation import validate_order_item
@@ -48,33 +50,20 @@ def create_order_tools(
         description=(
             "Add a menu item to the customer's order. Always validate the item "
             "exists on the menu before adding. Use this when the customer requests "
-            "a menu item."
+            "a menu item. You don't need to specify the category - it will be "
+            "automatically determined from the item name."
         ),
         raw_schema={
             "name": "add_item_to_order",
             "description": (
                 "Add a menu item to the customer's order. Always validate the item "
                 "exists on the menu before adding. Use this when the customer requests "
-                "a menu item."
+                "a menu item. You don't need to specify the category - it will be "
+                "automatically determined from the item name."
             ),
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "category": {
-                        "type": "string",
-                        "description": "The menu category (e.g., 'Beef & Pork', 'Breakfast', 'Beverages')",
-                        "enum": [
-                            "Breakfast",
-                            "Beef & Pork",
-                            "Chicken & Fish",
-                            "Salads",
-                            "Snacks & Sides",
-                            "Desserts",
-                            "Beverages",
-                            "Coffee & Tea",
-                            "Smoothies & Shakes",
-                        ],
-                    },
                     "item_name": {
                         "type": "string",
                         "description": "The exact name of the menu item (e.g., 'Big Mac', 'Egg McMuffin')",
@@ -91,24 +80,24 @@ def create_order_tools(
                         "minimum": 1,
                     },
                 },
-                "required": ["category", "item_name"],
+                "required": ["item_name"],
             },
         },
     )
     async def add_item_to_order(
-        category: str,
         item_name: str,
         modifiers: list[str] | None = None,
         quantity: int = 1,
     ) -> str:
+        logger.debug(f"add_item_to_order called: item_name={item_name}, modifiers={modifiers}, quantity={quantity}")
         """
         Add a menu item to the customer's order.
 
         This tool validates the item against the menu before adding it to the order.
         If validation fails, it returns an error message without mutating state.
+        The category is automatically determined by searching the menu.
 
         Args:
-            category: Menu category (e.g., 'Beef & Pork', 'Breakfast')
             item_name: Name of the menu item (e.g., 'Big Mac')
             modifiers: Optional list of modifiers (e.g., ['No Pickles', 'Extra Sauce'])
             quantity: Number of items to add (default: 1)
@@ -118,10 +107,54 @@ def create_order_tools(
         """
         # Normalize inputs
         modifiers = modifiers or []
+        logger.debug(f"Looking up item: {item_name}")
 
-        # Validate item exists and modifiers are valid
+        # Get all items from the menu
+        all_items = []
+        for category_name in menu_provider.get_all_categories():
+            all_items.extend(menu_provider.get_category(category_name))
+
+        # Try exact match first (case-insensitive)
+        exact_match = None
+        for item in all_items:
+            if item.item_name.lower() == item_name.lower():
+                exact_match = item
+                break
+
+        if exact_match:
+            matched_item = exact_match
+            category = matched_item.category_name
+            logger.debug(f"Found exact match: {matched_item.item_name} in category {category}")
+        else:
+            # Use fuzzy matching with rapidfuzz (case-insensitive)
+            item_names = [item.item_name for item in all_items]
+            # Create lowercase mapping for case-insensitive search
+            lowercase_mapping = {name.lower(): name for name in item_names}
+            lowercase_names = list(lowercase_mapping.keys())
+
+            fuzzy_result = process.extractOne(
+                item_name.lower(),  # Convert query to lowercase
+                lowercase_names,
+                scorer=fuzz.ratio,
+                score_cutoff=80  # Slightly lower threshold for better matches (was 85)
+            )
+
+            if fuzzy_result:
+                matched_lowercase, score, _ = fuzzy_result
+                # Map back to original case
+                original_name = lowercase_mapping[matched_lowercase]
+                # Find the item with this name
+                matched_item = next(item for item in all_items if item.item_name == original_name)
+                category = matched_item.category_name
+                logger.debug(f"Found fuzzy match: {matched_item.item_name} (score: {score}) in category {category}")
+            else:
+                # No match found
+                logger.warning(f"Item '{item_name}' not found in menu")
+                return f"Sorry, I couldn't find '{item_name}' on our menu. Could you try a different item?"
+
+        # Now validate with the found category
         validation_result = validate_order_item(
-            item_name=item_name,
+            item_name=matched_item.item_name,
             category=category,
             modifiers=modifiers,
             menu=menu_provider.get_menu(),
@@ -130,12 +163,15 @@ def create_order_tools(
 
         # If invalid, return error message without mutating state
         if not validation_result.is_valid:
+            logger.warning(f"Validation failed: {validation_result.error_message}")
             return f"Sorry, I couldn't add that item: {validation_result.error_message}"
 
-        # Use matched item (might be fuzzy matched to correct spelling)
-        matched_item = validation_result.matched_item
+        # Use matched item from validation (might be fuzzy matched to correct spelling)
+        validated_item = validation_result.matched_item
+        logger.debug(f"Validation successful, matched item: {validated_item.item_name}")
+
         order_state.add_item(
-            item_name=matched_item.item_name,  # Use exact match from menu
+            item_name=validated_item.item_name,  # Use exact match from menu
             category=category,
             modifiers=modifiers,
             quantity=quantity,
@@ -147,9 +183,12 @@ def create_order_tools(
             modifier_text = f" with {', '.join(modifiers)}"
 
         if quantity > 1:
-            return f"Added {quantity} {matched_item.item_name}{modifier_text} to your order."
+            response = f"Added {quantity} {validated_item.item_name}{modifier_text} to your order."
         else:
-            return f"Added one {matched_item.item_name}{modifier_text} to your order."
+            response = f"Added one {validated_item.item_name}{modifier_text} to your order."
+
+        logger.info(f"Successfully added item: {response}")
+        return response
 
     @function_tool(
         name="complete_order",
@@ -170,6 +209,7 @@ def create_order_tools(
         },
     )
     async def complete_order() -> str:
+        logger.debug("complete_order called")
         """
         Complete the order and generate the final order summary.
 
@@ -181,6 +221,7 @@ def create_order_tools(
         """
         # Check if order is empty
         if order_state.is_empty():
+            logger.debug("Order is empty, cannot complete")
             return "Your order is empty. Would you like to add something?"
 
         # Complete order (writes final JSON)
@@ -190,7 +231,9 @@ def create_order_tools(
         summary = final_order["order_summary"]
         total_items = final_order["total_items"]
 
-        return f"Order complete! You ordered: {summary}. Total items: {total_items}. Thank you!"
+        response = f"Order complete! You ordered: {summary}. Total items: {total_items}. Thank you!"
+        logger.info(f"Order completed: {response}")
+        return response
 
     @function_tool(
         name="remove_item_from_order",
@@ -219,6 +262,7 @@ def create_order_tools(
         },
     )
     async def remove_item_from_order(item_name: str) -> str:
+        logger.debug(f"remove_item_from_order called: item_name={item_name}")
         """
         Remove an item from the order.
 
@@ -242,15 +286,20 @@ def create_order_tools(
                 break
 
         if item_to_remove is None:
+            logger.debug(f"Item '{item_name}' not found in order")
             return f"I don't see '{item_name}' in your order."
 
         # Remove item
         success = order_state.remove_item(item_to_remove.item_id)
 
         if success:
+            logger.info(f"Removed {item_name} from order")
             return f"Removed {item_name} from your order."
         else:
+            logger.warning(f"Failed to remove {item_name}")
             return f"Couldn't remove {item_name}. Please try again."
 
     # Return decorated functions (they are now FunctionTool instances)
-    return [add_item_to_order, complete_order, remove_item_from_order]
+    tools = [add_item_to_order, complete_order, remove_item_from_order]
+    logger.debug(f"Created {len(tools)} order tools")
+    return tools

@@ -61,7 +61,7 @@ async def test_add_item_tool_integration(agent_with_real_components):
 
     # Call the tool to add a Big Mac (tools are callable)
     result = await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", modifiers=[], quantity=1
+        item_name="Big Mac", modifiers=[], quantity=1
     )
 
     # Verify success message
@@ -88,7 +88,6 @@ async def test_add_item_with_fuzzy_matching(agent_with_real_components):
 
     # Try to add "big mak" (misspelled)
     result = await add_item_tool(
-        category="Beef & Pork",
         item_name="big mak",  # Misspelled
         modifiers=[],
         quantity=1,
@@ -117,7 +116,6 @@ async def test_add_invalid_item(agent_with_real_components):
 
     # Try to add an invalid item
     result = await add_item_tool(
-        category="Beef & Pork",
         item_name="Whopper",  # Not on McDonald's menu
         modifiers=[],
         quantity=1,
@@ -144,12 +142,11 @@ async def test_add_multiple_items(agent_with_real_components):
 
     # Add Big Mac
     await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", modifiers=[], quantity=1
+        item_name="Big Mac", modifiers=[], quantity=1
     )
 
     # Add Fries
     await add_item_tool(
-        category="Snacks & Sides",
         item_name="Large French Fries",
         modifiers=[],
         quantity=1,
@@ -157,7 +154,6 @@ async def test_add_multiple_items(agent_with_real_components):
 
     # Add McNuggets with quantity
     await add_item_tool(
-        category="Chicken & Fish",
         item_name="Chicken McNuggets (10 piece)",
         modifiers=[],
         quantity=2,
@@ -189,7 +185,7 @@ async def test_complete_order_integration(agent_with_real_components, tmp_path):
 
     # Add items
     await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", modifiers=[], quantity=2
+        item_name="Big Mac", modifiers=[], quantity=2
     )
 
     # Complete order
@@ -235,10 +231,9 @@ async def test_remove_item_integration(agent_with_real_components):
 
     # Add items
     await add_item_tool(
-        category="Beef & Pork", item_name="Big Mac", modifiers=[], quantity=1
+        item_name="Big Mac", modifiers=[], quantity=1
     )
     await add_item_tool(
-        category="Snacks & Sides",
         item_name="Large French Fries",
         modifiers=[],
         quantity=1,

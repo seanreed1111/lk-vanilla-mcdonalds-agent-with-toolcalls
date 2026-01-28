@@ -1,27 +1,46 @@
-.env
-.env.*
-!.env.example
-.DS_Store
-__pycache__
-.idea
-KMS
-.venv
-.vscode
-*.egg-info
-.pytest_cache
-.ruff_cache
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-.DS_Store
-.idea
-.vscode
-.pytest_cache
-.ruff_cache
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment files
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env
 
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-temp/
+# OS files
+.DS_Store
+Thumbs.db
 
-.cursor/
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Orders directory (session data)
+orders/
+
+# Logs directory
+logs/
+*.log
+
+# Temporary files
+*.tmp
+.tmp/
