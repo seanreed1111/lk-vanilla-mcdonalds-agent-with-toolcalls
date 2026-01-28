@@ -1,5 +1,120 @@
 # Changelog
 
+## PR #12: Remove Generic Voice Assistant (January 27, 2026)
+
+**Commit:** ec18ea5
+**Branch:** `remove-regular-voice-agent`
+**Files changed:** 22 files (+64 lines, -1,068 lines)
+
+### 🔄 Major Refactoring
+
+#### Simplified Codebase Focus
+- **Removed generic voice assistant** - Streamlined project to focus exclusively on McDonald's Drive-Thru ordering
+  - **What was removed**: Generic voice assistant (`app.py`) that could handle any topic
+  - **Why**: Project now has a clear, single-purpose focus on drive-thru ordering
+  - **Impact**: Simpler codebase, easier to understand and maintain
+  - Reduced code complexity by ~1,000 lines
+  - Removed dual-application architecture
+
+### 🗑️ Files Removed
+
+#### Source Code Cleanup
+- **`src/app.py`** - Generic voice assistant entry point (removed)
+- **`src/keyword_intercept_llm.py`** - LLM wrapper only used in generic assistant tests (removed)
+- **`src/mock_llm.py`** - Mock LLM only used in generic assistant tests (removed)
+
+#### Test Cleanup
+- **`tests/test_agent.py`** - Tests for generic Assistant class (removed)
+- **`tests/test_keyword_intercept.py`** - Tests for KeywordInterceptLLM (removed)
+
+#### Build & Documentation
+- **`Dockerfile.voice`** - Docker container for generic voice assistant (removed)
+- **`plan/future-plans/remove-mcdonalds-voice-agent.md`** - Obsolete plan going opposite direction (removed)
+- **`plan/future-plans/remove-mcdonalds-voice-agent.REVIEW.md`** - Review of obsolete plan (removed)
+
+### 📚 Documentation Updates
+
+#### README.md Simplification
+- **Updated project description** - Changed from "two main applications" to focused drive-thru agent
+  - Removed all references to generic voice assistant
+  - Removed `app.py` from architecture documentation
+  - Updated Overview section to emphasize single-purpose focus
+  - Simplified project structure diagram
+  - Removed "Generic Voice Assistant" section entirely
+
+#### AGENTS.md
+- **No changes needed** - Already correctly referenced only `agent.py`
+- Verified no references to `app.py` exist
+
+### ⚙️ Configuration Improvements
+
+#### Pytest Configuration
+- **Added `pythonpath` setting** - Fixed test imports to work properly
+  - Added `pythonpath = ["src"]` to `pyproject.toml`
+  - Ensures pytest can find modules in src/ directory
+  - Resolves import issues for menu models and other src modules
+
+### ✅ Testing
+
+#### Test Suite Health
+- **All 188 tests passing** - Complete test coverage maintained
+  - Drive-thru agent tests: ✅
+  - Menu model tests: ✅
+  - Menu provider tests: ✅
+  - Menu validation tests: ✅
+  - Order state tests: ✅
+  - Order tools tests: ✅
+  - DriveThruLLM tests: ✅
+  - Integration tests: ✅
+
+#### Code Quality
+- **Linting clean** - All code quality checks pass
+  - `src/` directory: ✅ All checks passed
+  - `tests/` directory: ✅ All checks passed
+
+### 🎯 Impact Summary
+
+#### Code Metrics
+- **Lines removed**: 1,068 lines
+- **Lines added**: 64 lines (mostly documentation updates)
+- **Net reduction**: ~1,000 lines of code
+- **Files removed**: 8 files
+- **Files modified**: 4 files (README.md, pyproject.toml, tests/conftest.py, plan file)
+
+#### Benefits
+- **Clearer purpose**: Single-focus project is easier to understand
+- **Reduced complexity**: Fewer files and code paths to maintain
+- **Better documentation**: Documentation now accurately reflects the codebase
+- **Improved testing**: Fixed pytest configuration for reliable test execution
+- **Simplified deployment**: Only one Docker container to maintain
+
+### Migration Notes
+
+This release simplifies the project architecture by removing the generic voice assistant:
+
+#### What Changed
+- Project now focuses exclusively on McDonald's Drive-Thru ordering
+- All generic assistant code and tests removed
+- Documentation updated to reflect single-purpose focus
+- Pytest configuration improved for better test reliability
+
+#### What Stayed the Same
+- All drive-thru agent functionality preserved
+- Full test coverage maintained (188 passing tests)
+- Same deployment model (single Dockerfile)
+- Same development workflow (Makefile targets)
+- All shared infrastructure (config, factories, session handler) unchanged
+
+#### Developer Impact
+- **No breaking changes** to drive-thru agent API or behavior
+- Same commands work: `make console`, `make dev`, `make test`
+- Improved test reliability with fixed pytest configuration
+- Cleaner codebase makes onboarding easier
+
+The removal of the generic assistant creates a more focused, maintainable codebase while preserving all drive-thru ordering capabilities.
+
+---
+
 ## PR #11: Plan Review System and Planning Command Updates (January 23, 2026)
 
 **Commit:** 8c86909
