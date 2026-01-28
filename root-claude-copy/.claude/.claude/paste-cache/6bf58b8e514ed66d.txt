@@ -1,10 +1,0 @@
-ok I want to create a new refactoring command. 
-I want the skill to review code with the software architectural insight of     
-  Dave Farley and Kent Beck and suggest refactoring suitable for a production software system. Research what this type of refactoring to the codebase might entail according to available material about these two software engineers and architects.   
-The first output should be a detailed step by step plan for the refactoring placed in a markdown file in plan/future-plans/ directory. It should be a plan detailed that a sub agent could follow without any further context. After completion of the first output, save to plan/future-plans/plan_name.md  Next, dispatch a sub agent to whose job is to check the plan for correctness, completeness, and inconsistencies. Please save the subagent feedback as plan/future-plans/plan_name-SUBAGENT-FEEDBACK.md  Next, Make a new markdown file that incorporates the first output plus the appropriate subagent feedback. Ensure that the plan i enough that a sub agent can follow without any further context.This will be the second output. Save to plan/future-plans/plan_name-AFTER_FEEDBACK.md 
-After the  second output markdown file is completed, can use the /review-tests command  as needed to review the test suite and ENSURE THAT THERE ARE SUFFICIENT TESTS COVERING THE PROPOSED REFACTORING so that the refactoring does not break the application as a whole
-
-If you decide there are insufficient tests covering the refactoring, 
-advise the user what further tests will be needed and STOP to ask for agreement to continue.
-on their agreement, dispatch a sub agent using the writing-tests skill to write TTD tests covering the functionality of the proposed refactoring.   
-If there are sufficient tests, then get explicit user approval before continuing with the refactoring from second output at plan/future-plans/plan_name-AFTER_FEEDBACK.md. 
