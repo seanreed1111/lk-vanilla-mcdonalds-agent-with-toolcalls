@@ -1,5 +1,202 @@
 # Changelog
 
+## Text-Only Mode and Conversation Logging (January 28, 2026)
+
+**Branch:** `feat/text-only-mode-and-conversation-logging`
+**Files changed:** 14 files (+2,306 lines, -18 lines)
+
+### ✨ New Features
+
+#### Text-Only Mode
+- **No microphone required** - Test and use the agent by typing text messages instead of speaking
+  - Enable with `SESSION__TEXT_ONLY_MODE=true` in `.env.local`
+  - User types text → LLM processes → Text response (no audio)
+  - Perfect for:
+    - Testing without audio equipment
+    - Debugging LLM responses
+    - Running in CI/CD environments
+    - Reducing API costs (no STT/TTS usage)
+  - Works in both console and dev modes
+  - New Makefile targets: `make run-text`, `make run-text MODE=dev`
+
+#### Conversation Logging
+- **Automatic conversation recording** - All conversations saved to JSONL format
+  - Location: `logs/conversation_{session_id}.jsonl`
+  - Captures every user message and agent response
+  - Includes timestamps, session IDs, roles, and content
+  - Works in both audio and text modes
+  - Use cases:
+    - Manual testing and verification
+    - Debugging agent responses
+    - Analyzing conversation patterns
+    - Collecting training data
+
+### 🔧 Improvements
+
+#### Logging System Enhancements
+- **Two-channel logging** - Console (INFO) and file (DEBUG) outputs
+  - Console: User-facing messages and conversation flow
+  - Files: Detailed internal state, tool calls, menu searches
+  - Log rotation: Every 4 hours with 2-day retention
+  - Automatic compression of rotated logs
+  - Thread-safe with async support
+
+#### Enhanced Documentation
+- **AGENTS.md updates** - Complete guide to text-only mode
+  - Configuration instructions
+  - Use case examples
+  - Troubleshooting section
+  - Logging configuration guide
+- **README.md updates** - User-facing documentation
+  - Conversation log format examples
+  - Viewing and parsing log examples
+  - Use case descriptions
+- **Makefile improvements** - New text-only mode targets
+  - `make run-text` - Console mode with text input
+  - `make run-text MODE=dev` - Dev mode with text input
+  - Clear help documentation
+
+### 📚 Documentation
+
+#### New Documentation Sections
+- **Text-Only Mode** (AGENTS.md, 72 lines)
+  - How to enable and configure
+  - Comparison with audio mode
+  - Use cases and benefits
+- **Logging Configuration** (AGENTS.md, 68 lines)
+  - Log channels and levels
+  - File management and rotation
+  - Controlling log output
+- **Troubleshooting** (AGENTS.md, 65 lines)
+  - Mode not switching solutions
+  - Conversation logs not created
+  - Empty log file debugging
+- **Conversation Logs** (README.md, 33 lines)
+  - Log format examples
+  - Viewing and parsing commands
+  - Use case descriptions
+
+### 🧪 Tests
+
+#### New Test Suites
+- **Text-only mode tests** - `tests/test_text_only_mode.py` (111 lines)
+  - Config loading tests
+  - Room options configuration tests
+  - Audio input/output disabled verification
+  - Text input/output enabled verification
+- **Conversation logger tests** - `tests/test_conversation_logger.py` (121 lines)
+  - Event handler registration tests
+  - JSONL file creation tests
+  - Message content logging tests
+  - Timestamp and session ID validation
+  - Role filtering tests
+
+### ⚙️ Configuration
+
+#### Environment Variables
+- **Added SESSION__TEXT_ONLY_MODE** - Control agent mode
+  - `true` - Text-only mode (no audio)
+  - `false` - Audio mode (default)
+  - Documented in `.env.example`
+
+#### Session Configuration
+- **Updated SessionConfig** (src/config.py)
+  - New `text_only_mode` field with validation
+  - Clear field description and defaults
+  - Pydantic v2 validation ensures correct types
+
+### Files Modified
+
+#### Core Application (4 files, +152 lines)
+- `src/agent.py` - Integrated conversation logger and text-only mode
+  - Creates ConversationLogger for each session
+  - Registers event handler for conversation items
+  - Configures room options based on mode
+  - Logs mode selection for debugging
+- `src/config.py` - Added text_only_mode field
+  - Pydantic v2 field with validation
+  - Clear description and default value
+
+#### Documentation (5 files, +293 lines)
+- `AGENTS.md` - Added text-only mode, logging, and troubleshooting sections
+- `README.md` - Added conversation logging documentation
+- `Makefile` - Added run-text targets with help documentation
+- `.env.example` - Added text-only mode configuration
+
+#### Planning & Commands (3 files, +5 lines)
+- `.claude/commands/implement_plan.md` - Updated plan paths
+- `.claude/commands/iterate_plan.md` - Changed model to opus
+- `.claude/settings.local.json` - Added permissions for new features
+
+### Files Added
+
+#### Core Modules (1 file, 121 lines)
+- `src/conversation_logger.py` - Complete conversation logging implementation
+  - ConversationLogger class
+  - Event handler for conversation items
+  - JSONL file writing
+  - Directory creation
+  - Error handling
+
+#### Tests (2 files, 232 lines)
+- `tests/test_text_only_mode.py` - Text-only mode test suite
+- `tests/test_conversation_logger.py` - Conversation logger test suite
+
+#### Planning Documentation (2 files, 1,628 lines)
+- `plan/future-plans/2026-01-28-text-only-mode-config.md` - Implementation plan
+- `plan/future-plans/2026-01-28-text-only-mode-config.REVIEW.md` - Plan review
+
+### Migration Notes
+
+This release adds flexible testing and debugging capabilities:
+
+#### Key Benefits
+- **No audio equipment needed** - Test the agent by typing text messages
+- **Complete conversation history** - Every interaction automatically logged
+- **Reduced API costs** - Text-only mode bypasses STT/TTS
+- **Better debugging** - Structured logs enable detailed analysis
+- **CI/CD friendly** - Run tests without audio devices
+- **Training data** - Collect conversation examples automatically
+
+#### Usage Examples
+
+**Enable text-only mode:**
+```bash
+# Add to .env.local
+SESSION__TEXT_ONLY_MODE=true
+
+# Run in console
+make run-text
+
+# Run in dev mode
+make run-text MODE=dev
+```
+
+**View conversation logs:**
+```bash
+# List all logs
+ls logs/
+
+# View specific conversation
+cat logs/conversation_abc123.jsonl
+
+# Parse with jq
+cat logs/conversation_abc123.jsonl | jq .
+
+# Filter by role
+cat logs/conversation_abc123.jsonl | jq 'select(.role == "user")'
+```
+
+#### Backward Compatibility
+- **No breaking changes** - All existing functionality preserved
+- **Audio mode still default** - Set `text_only_mode=false` or omit the setting
+- **Same commands work** - `make console`, `make dev`, `make test`
+- **Existing tests pass** - 217+ tests continue to pass
+
+The text-only mode and conversation logging features make the drive-thru agent easier to test, debug, and improve.
+
+---
+
 ## Fix: Extra Cheese Validation and FunctionCall AttributeError (January 27, 2026)
 
 **Branch:** `remove-regular-voice-agent`

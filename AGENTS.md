@@ -39,6 +39,78 @@ All app-level code is in the `src/` directory. In general, simple agents can be 
 
 Be sure to maintain code formatting. You can use the ruff formatter/linter as needed: `uv run ruff format` and `uv run ruff check`.
 
+## Running in Text-Only Mode
+
+The agent can run in two modes:
+
+### Audio Mode (Default)
+User speaks → STT → LLM → TTS → Audio output
+
+### Text-Only Mode
+User types text → LLM → Text response
+
+**To enable text-only mode:**
+
+1. Add to `.env.local`:
+   ```bash
+   SESSION__TEXT_ONLY_MODE=true
+   ```
+
+2. Run the agent normally:
+   ```bash
+   uv run python src/agent.py dev
+   ```
+
+3. Connect with a frontend and type text messages
+
+**Use cases for text-only mode:**
+- Manual testing without audio equipment
+- Debugging LLM responses
+- Testing in CI/CD environments
+- Reducing API costs (no STT/TTS usage)
+
+**Note:** In text-only mode, STT and TTS are still created but bypassed by LiveKit.
+
+## Logging Configuration
+
+The agent uses **loguru** for structured logging with two output channels:
+
+### Log Channels
+
+**Console output (stderr)**: INFO level (always visible)
+- User messages
+- Agent responses
+- Session events
+- Conversation items
+
+**File output (logs/)**: DEBUG level (verbose details)
+- Internal state changes
+- Tool calls
+- Menu searches
+- Configuration loading
+- Full tracebacks
+
+### Log File Management
+
+**Files:**
+- Pattern: `logs/agent_{timestamp}.log`
+- Rotation: Every 4 hours
+- Retention: 2 days
+- Compression: ZIP for rotated logs
+
+### Controlling Log Output
+
+The logging configuration is set in `src/logging_config.py`. To adjust verbosity:
+
+**Modify console level:**
+Edit `src/logging_config.py:29-38` to change console log level from INFO to DEBUG or WARNING.
+
+**Default Behavior:**
+- Console shows INFO and above (stderr)
+- Files capture DEBUG and above
+- Conversation items logged at INFO level for visibility
+- Thread-safe with async support
+
 ## Data Models
 
 **IMPORTANT: Prefer Pydantic v2 models over dataclasses in greenfield implementations**
@@ -543,6 +615,71 @@ class DriveThruLLM(LLM):
 
         # Delegate to wrapped LLM (no async, no await)
         return self._wrapped_llm.chat(chat_ctx=modified_ctx, tools=tools, **kwargs)
+```
+
+## Troubleshooting Text-Only Mode
+
+### Mode Not Switching
+
+**Symptom**: Agent still uses audio despite SESSION__TEXT_ONLY_MODE=true
+
+**Solutions**:
+1. Verify environment variable is set:
+   ```bash
+   echo $SESSION__TEXT_ONLY_MODE
+   ```
+
+2. Check .env.local file format:
+   ```bash
+   SESSION__TEXT_ONLY_MODE=true
+   ```
+   (No quotes, no spaces around =)
+
+3. Restart the agent server (config is loaded at startup)
+
+4. Check logs for mode confirmation:
+   ```
+   INFO: Starting session in text-only mode
+   ```
+
+### Conversation Logs Not Created
+
+**Symptom**: No log files in logs/ directory
+
+**Solutions**:
+1. Verify logs directory exists:
+   ```bash
+   mkdir -p logs
+   ```
+
+2. Check file permissions:
+   ```bash
+   ls -la logs/
+   ```
+
+3. Check file logging for details:
+   ```bash
+   tail -f logs/agent_*.log
+   ```
+
+4. Check for logging errors in console output
+
+### Empty Conversation Logs
+
+**Symptom**: Log file exists but contains no entries
+
+**Possible causes**:
+- Session has no conversation activity
+- Messages are being filtered (empty content)
+- Event handler not registered (check logs for "Conversation logger initialized")
+
+**Debug**:
+```bash
+# Check if file was created
+ls -lh logs/conversation_*.jsonl
+
+# Check if event handler is registered
+grep "Conversation logger initialized" logs/agent_*.log
 ```
 
 ## LiveKit CLI Tool

@@ -1,6 +1,6 @@
 ---
 description: Iterate on existing implementation plans with thorough research and updates
-model: sonnet
+model: opus
 ---
 
 # Iterate Implementation Plan

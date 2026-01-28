@@ -10,6 +10,7 @@ from livekit.plugins import silero
 from loguru import logger
 
 from config import AppConfig
+from conversation_logger import ConversationLogger
 from logging_config import setup_logging
 from session_handler import DriveThruSessionHandler
 
@@ -73,15 +74,46 @@ async def _handle_rtc_session(ctx: JobContext):
     )
     logger.debug("AgentSession created successfully")
 
-    # Configure room options
-    room_options = room_io.RoomOptions()
-    if config.session.enable_noise_cancellation:
-        logger.debug("Enabling noise cancellation")
+    # Create conversation logger
+    conversation_logger = ConversationLogger(
+        session_id=session_id,
+        output_dir="logs",
+    )
+
+    # Register event handler for logging
+    session.on("conversation_item_added", conversation_logger.on_conversation_item_added)
+
+    # Room options - configure based on text_only_mode
+    if config.session.text_only_mode:
+        # Text-only mode: Disable audio input/output
         room_options = room_io.RoomOptions(
-            audio_input=room_io.AudioInputOptions(
-                noise_cancellation=noise_cancellation.BVC(),
-            ),
+            audio_input=False,
+            audio_output=False,
+            text_input=True,   # Explicit for clarity
+            text_output=True,  # Explicit for clarity
         )
+    else:
+        # Audio mode: Enable audio with optional noise cancellation
+        if config.session.enable_noise_cancellation:
+            logger.debug("Enabling noise cancellation")
+            room_options = room_io.RoomOptions(
+                audio_input=room_io.AudioInputOptions(
+                    noise_cancellation=noise_cancellation.BVC(),
+                ),
+            )
+        else:
+            room_options = room_io.RoomOptions()
+
+    # Log the selected mode for debugging
+    mode = "text-only" if config.session.text_only_mode else "audio"
+    logger.info(
+        f"Starting session in {mode} mode",
+        extra={
+            "session_id": session_id,
+            "text_only": config.session.text_only_mode,
+            "noise_cancellation": config.session.enable_noise_cancellation,
+        },
+    )
 
     # Start the session
     logger.debug("Starting session with agent...")

@@ -70,7 +70,16 @@
       "Bash(make format:*)",
       "Bash(make run:*)",
       "Bash(find:*)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "WebFetch(domain:docs.livekit.io)",
+      "Bash(claude mcp add:*)",
+      "mcp__livekit-docs__get_docs_overview",
+      "mcp__livekit-docs__docs_search",
+      "mcp__livekit-docs__get_python_agent_example",
+      "mcp__livekit-docs__get_pages",
+      "mcp__livekit-docs__code_search",
+      "Bash(uv run:*)",
+      "Bash(make:*)"
     ]
   }
 }

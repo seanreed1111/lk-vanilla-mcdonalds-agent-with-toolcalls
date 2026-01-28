@@ -8,7 +8,7 @@
 #   make setup               - Install dependencies and download models
 # =============================================================================
 
-.PHONY: help run setup test format lint download-files clean
+.PHONY: help run run-text setup test format lint download-files clean
 .DEFAULT_GOAL := help
 
 # -----------------------------------------------------------------------------
@@ -37,6 +37,7 @@ help:
 	@echo "$(BOLD)Most Common Commands:$(NC)"
 	@echo "  $(GREEN)make run MODE=console$(NC)     Test agent in terminal (no voice)"
 	@echo "  $(GREEN)make run MODE=dev$(NC)         Run agent with LiveKit (voice enabled)"
+	@echo "  $(GREEN)make run-text [MODE=console]$(NC) Run agent in text-only mode (no audio)"
 	@echo "  $(GREEN)make run MODE=start$(NC)       Run agent in production mode"
 	@echo "  $(GREEN)make test$(NC)                 Run all tests"
 	@echo ""
@@ -81,6 +82,25 @@ run:  ## Run drive-thru agent (use MODE=console|dev|start)
 		*) \
 			echo "$(YELLOW)Error: Invalid MODE: $(MODE)$(NC)"; \
 			echo "Valid modes: console, dev, start"; \
+			exit 1 ;; \
+	esac
+
+run-text:  ## Run agent in text-only mode (use MODE=console|dev|start, default: console)
+	@MODE_VALUE=$${MODE:-console}; \
+	case "$$MODE_VALUE" in \
+		console) \
+			echo "$(BLUE)Starting drive-thru agent in text-only console mode...$(NC)"; \
+			SESSION__TEXT_ONLY_MODE=true uv run python src/agent.py console; \
+			echo "$(GREEN)Agent session complete$(NC)" ;; \
+		dev) \
+			echo "$(BLUE)Starting drive-thru agent in text-only dev mode...$(NC)"; \
+			SESSION__TEXT_ONLY_MODE=true uv run python src/agent.py dev ;; \
+		start) \
+			echo "$(BLUE)Starting drive-thru agent in text-only production mode...$(NC)"; \
+			SESSION__TEXT_ONLY_MODE=true uv run python src/agent.py start ;; \
+		*) \
+			echo "$(YELLOW)Error: Invalid MODE: $$MODE_VALUE$(NC)"; \
+			echo "Valid modes: console (default), dev, start"; \
 			exit 1 ;; \
 	esac
 
