@@ -1,5 +1,6 @@
 ---
-description: Implement technical plans from thoughts/shared/plans with verification
+description: Implement technical plans from plan/future-plans/ with verification
+model: sonnet
 ---
 
 # Implement Plan

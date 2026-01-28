@@ -251,6 +251,39 @@ Completed orders are saved to the `orders/` directory as JSON files:
 }
 ```
 
+### Conversation Logs
+
+All conversations (both audio and text modes) are logged to `logs/conversation_{session_id}.jsonl` in JSON Lines format.
+
+**Log Format:**
+```json
+{"timestamp": "2026-01-28T10:30:00.000Z", "session_id": "abc123", "role": "user", "content": "I want a Big Mac"}
+{"timestamp": "2026-01-28T10:30:01.500Z", "session_id": "abc123", "role": "assistant", "content": "Great choice! Would you like any modifications to your Big Mac?"}
+{"timestamp": "2026-01-28T10:30:03.200Z", "session_id": "abc123", "role": "user", "content": "No thank you"}
+{"timestamp": "2026-01-28T10:30:04.100Z", "session_id": "abc123", "role": "assistant", "content": "Added one Big Mac to your order. Anything else?"}
+```
+
+**Viewing Logs:**
+```bash
+# List all conversation logs
+ls logs/
+
+# View specific conversation
+cat logs/conversation_abc123.jsonl
+
+# Parse with jq
+cat logs/conversation_abc123.jsonl | jq .
+
+# Filter by role
+cat logs/conversation_abc123.jsonl | jq 'select(.role == "user")'
+```
+
+**Use Cases:**
+- Manual testing and verification
+- Debugging agent responses
+- Analyzing conversation patterns
+- Training data collection
+
 ## Development
 
 ### Project Structure
@@ -325,13 +358,15 @@ uv run ruff check --fix
 This project includes a Makefile for common tasks:
 
 ```bash
-make help           # Show all available commands
-make console        # Run drive-thru agent in console mode
-make dev            # Run drive-thru agent in dev mode
-make test           # Run all tests
-make format         # Format code
-make lint           # Lint code
-make download-files # Download model files
+make help                     # Show all available commands
+make run MODE=console         # Run drive-thru agent in console mode
+make run MODE=dev             # Run drive-thru agent in dev mode
+make run-text                 # Run in text-only mode (console, default)
+make run-text MODE=dev        # Run in text-only mode (dev)
+make test                     # Run all tests
+make format                   # Format code
+make lint                     # Lint code
+make download-files           # Download model files
 ```
 
 ### Plan Review Command

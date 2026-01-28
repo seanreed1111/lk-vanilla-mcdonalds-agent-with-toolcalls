@@ -66,6 +66,12 @@ class SessionConfig(BaseModel):
         default=True,
         description="Enable background voice cancellation",
     )
+    text_only_mode: bool = Field(
+        default=False,
+        description="Run in text-only mode (no audio input/output). "
+        "When True: User types text → LLM → Text response. "
+        "When False: User speaks → STT → LLM → TTS → Audio output.",
+    )
 
 
 class DriveThruConfig(BaseModel):
