@@ -374,3 +374,78 @@ def test_get_latest_user_message_no_user_messages(drive_thru_llm):
 
     latest = drive_thru_llm._get_latest_user_message(chat_ctx)
     assert latest is None or latest == ""
+
+
+# ============================================================================
+# FunctionCall Handling Tests
+# ============================================================================
+
+
+@pytest.mark.asyncio
+async def test_chat_handles_function_call_in_context(
+    drive_thru_llm_real_menu, mock_wrapped_llm
+):
+    """Test that chat handles FunctionCall objects without AttributeError.
+
+    This is a regression test for the bug where accessing item.role on a
+    FunctionCall object (which has no 'role' attribute) caused AttributeError.
+    """
+    from livekit.agents.llm import FunctionCallOutput
+
+    # Create chat context with system and user message
+    chat_ctx = ChatContext()
+    chat_ctx.add_message(role="system", content="You are a drive-thru agent")
+    chat_ctx.add_message(role="user", content="I want a Big Mac")
+
+    # Manually add a FunctionCallOutput to simulate what happens during conversation
+    # FunctionCallOutput has no 'role' attribute
+    function_output = FunctionCallOutput(
+        call_id="test_call_123",
+        output="Added Big Mac to order",
+        is_error=False,
+    )
+    chat_ctx.items.append(function_output)
+
+    # Call chat - should NOT raise AttributeError
+    result = await drive_thru_llm_real_menu.chat(chat_ctx=chat_ctx)
+
+    # Verify it completed without error
+    assert mock_wrapped_llm.chat.called
+    assert result is not None
+
+
+@pytest.mark.asyncio
+async def test_inject_menu_context_skips_non_message_items(
+    drive_thru_llm_real_menu, mock_wrapped_llm
+):
+    """Test that _inject_menu_context properly skips items without 'role' attribute."""
+    from livekit.agents.llm import FunctionCallOutput
+
+    # Create chat context
+    chat_ctx = ChatContext()
+    chat_ctx.add_message(role="system", content="System prompt")
+    chat_ctx.add_message(role="user", content="Big Mac please")
+
+    # Add a FunctionCallOutput (no 'role' attribute)
+    function_output = FunctionCallOutput(
+        call_id="test_call_456",
+        output="Function result",
+        is_error=False,
+    )
+    chat_ctx.items.append(function_output)
+
+    # Call chat to trigger context injection
+    await drive_thru_llm_real_menu.chat(chat_ctx=chat_ctx)
+
+    # Get the augmented context
+    call_args = mock_wrapped_llm.chat.call_args
+    augmented_ctx = call_args.kwargs["chat_ctx"]
+
+    # Verify context was created without error
+    # Should have system message + menu context + user message
+    # (FunctionCallOutput should be skipped)
+    assert len(augmented_ctx.items) >= 2  # At minimum system + menu messages
+
+    # All items in augmented context should have 'role' attribute
+    for item in augmented_ctx.items:
+        assert hasattr(item, "role"), f"Item {item} missing 'role' attribute"

@@ -237,6 +237,11 @@ class DriveThruLLM(LLM):
 
         # Add items in order: first item, then menu context, then rest
         for i, item in enumerate(chat_ctx.items):
+            # Only process items with a 'role' attribute (chat messages)
+            # Skip FunctionCall/FunctionCallOutput objects - they don't need menu context
+            if not hasattr(item, "role"):
+                continue
+
             if i == 0:
                 # Add the first message (usually system prompt)
                 new_ctx.add_message(

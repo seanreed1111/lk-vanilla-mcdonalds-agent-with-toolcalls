@@ -60,9 +60,7 @@ async def test_add_item_tool_integration(agent_with_real_components):
     assert add_item_tool is not None, "add_item_to_order tool not found"
 
     # Call the tool to add a Big Mac (tools are callable)
-    result = await add_item_tool(
-        item_name="Big Mac", modifiers=[], quantity=1
-    )
+    result = await add_item_tool(item_name="Big Mac", modifiers=[], quantity=1)
 
     # Verify success message
     assert "Added one Big Mac" in result
@@ -141,9 +139,7 @@ async def test_add_multiple_items(agent_with_real_components):
             break
 
     # Add Big Mac
-    await add_item_tool(
-        item_name="Big Mac", modifiers=[], quantity=1
-    )
+    await add_item_tool(item_name="Big Mac", modifiers=[], quantity=1)
 
     # Add Fries
     await add_item_tool(
@@ -184,9 +180,7 @@ async def test_complete_order_integration(agent_with_real_components, tmp_path):
                 complete_order_tool = tool
 
     # Add items
-    await add_item_tool(
-        item_name="Big Mac", modifiers=[], quantity=2
-    )
+    await add_item_tool(item_name="Big Mac", modifiers=[], quantity=2)
 
     # Complete order
     result = await complete_order_tool()
@@ -230,9 +224,7 @@ async def test_remove_item_integration(agent_with_real_components):
                 remove_item_tool = tool
 
     # Add items
-    await add_item_tool(
-        item_name="Big Mac", modifiers=[], quantity=1
-    )
+    await add_item_tool(item_name="Big Mac", modifiers=[], quantity=1)
     await add_item_tool(
         item_name="Large French Fries",
         modifiers=[],
@@ -291,3 +283,95 @@ async def test_agent_instructions_exist(agent_with_real_components):
 
     # Verify tools are accessible
     assert len(agent.tools) == 3  # add_item, complete_order, remove_item
+
+
+@pytest.mark.asyncio
+async def test_modifier_decline_no_duplicate_tool_calls(agent_with_real_components):
+    """
+    Test that when customer declines modifiers, the tool is only called once.
+
+    This tests the fix for GitHub issue where:
+    - User says "I want a Big Mac"
+    - Agent asks about modifications
+    - User says "No thank you"
+    - Agent incorrectly tried to call add_item_to_order() without item_name
+
+    Correct flow:
+    - User says "I want a Big Mac"
+    - Agent asks "Would you like any modifications?"
+    - User says "No thank you"
+    - Agent calls add_item_to_order(item_name="Big Mac", modifiers=[], quantity=1) ONCE
+    - Agent confirms addition to user
+
+    Note: The fix makes item_name validation happen at runtime (in the function body)
+    rather than in the schema, allowing graceful error handling.
+    """
+    agent = agent_with_real_components
+
+    # Verify the add_item_to_order tool exists
+    add_item_tool = None
+    for tool in agent.tools:
+        if hasattr(tool, "info") and tool.info.name == "add_item_to_order":
+            add_item_tool = tool
+            break
+
+    assert add_item_tool is not None, "add_item_to_order tool not found"
+
+    # Verify tool description emphasizes item_name is required
+    description = add_item_tool.info.description
+    assert "REQUIRES item_name" in description or "MUST" in description.upper(), (
+        "Tool description should emphasize item_name is required"
+    )
+
+    # Test 1: Verify tool can be called correctly with all parameters
+    result = await add_item_tool(
+        item_name="Big Mac",
+        modifiers=[],  # Customer declined modifications
+        quantity=1,
+    )
+
+    # Should succeed and return confirmation
+    assert "Big Mac" in result
+    assert "added" in result.lower()
+
+    # Verify order state has exactly one item
+    items = agent.order_state.get_items()
+    assert len(items) == 1, "Should have exactly one item in order"
+    assert items[0].item_name == "Big Mac"
+    assert items[0].modifiers == []
+    assert items[0].quantity == 1
+
+    # Test 2: Verify calling without item_name returns helpful message (graceful handling)
+    result_no_item = await add_item_tool(item_name=None)
+    assert isinstance(result_no_item, str)
+    assert "need" in result_no_item.lower() or "which item" in result_no_item.lower()
+
+
+@pytest.mark.asyncio
+async def test_tool_description_emphasizes_single_call(agent_with_real_components):
+    """
+    Verify that the tool description makes it clear about the workflow.
+    """
+    agent = agent_with_real_components
+
+    # Find the add_item_to_order tool
+    add_item_tool = None
+    for tool in agent.tools:
+        if hasattr(tool, "info") and tool.info.name == "add_item_to_order":
+            add_item_tool = tool
+            break
+
+    assert add_item_tool is not None
+
+    # Check that description emphasizes the workflow
+    description = add_item_tool.info.description
+
+    # Should mention workflow
+    assert "WORKFLOW" in description.upper(), (
+        "Tool description should include workflow steps"
+    )
+
+    # Should mention that item_name is required
+    assert "REQUIRES item_name" in description or "MUST" in description.upper(), (
+        "Tool description should emphasize item_name is required"
+    )

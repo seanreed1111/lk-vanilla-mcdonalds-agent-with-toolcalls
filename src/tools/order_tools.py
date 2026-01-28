@@ -48,48 +48,24 @@ def create_order_tools(
     @function_tool(
         name="add_item_to_order",
         description=(
-            "Add a menu item to the customer's order. Always validate the item "
-            "exists on the menu before adding. Use this when the customer requests "
-            "a menu item. You don't need to specify the category - it will be "
-            "automatically determined from the item name."
-        ),
-        raw_schema={
-            "name": "add_item_to_order",
-            "description": (
-                "Add a menu item to the customer's order. Always validate the item "
-                "exists on the menu before adding. Use this when the customer requests "
-                "a menu item. You don't need to specify the category - it will be "
-                "automatically determined from the item name."
-            ),
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "item_name": {
-                        "type": "string",
-                        "description": "The exact name of the menu item (e.g., 'Big Mac', 'Egg McMuffin')",
-                    },
-                    "modifiers": {
-                        "type": "array",
-                        "items": {"type": "string"},
-                        "description": "List of modifiers or customizations (e.g., ['No Pickles', 'Extra Sauce'])",
-                    },
-                    "quantity": {
-                        "type": "integer",
-                        "description": "Number of this item to add",
-                        "default": 1,
-                        "minimum": 1,
-                    },
-                },
-                "required": ["item_name"],
-            },
-        },
+            "Add a menu item to the customer's order. "
+            "REQUIRES item_name parameter - cannot be called without it. "
+            "If user declines modifiers, call with item_name and empty modifiers list. "
+            "WORKFLOW: "
+            "1. Customer says item name -> remember it "
+            "2. Ask about modifiers "
+            "3. Customer responds -> call this tool with item_name, modifiers (can be []), quantity. "
+            "CRITICAL: If customer says 'No thanks' to modifiers, you MUST call with the remembered item_name and modifiers=[]. "
+            "Example: User says 'Big Mac' -> you ask about mods -> they say 'No' -> "
+            "you call add_item_to_order(item_name='Big Mac', modifiers=[], quantity=1). "
+            "NEVER call without item_name - it will fail."
+        )
     )
     async def add_item_to_order(
-        item_name: str,
+        item_name: str | None = None,
         modifiers: list[str] | None = None,
         quantity: int = 1,
     ) -> str:
-        logger.debug(f"add_item_to_order called: item_name={item_name}, modifiers={modifiers}, quantity={quantity}")
         """
         Add a menu item to the customer's order.
 
@@ -105,6 +81,20 @@ def create_order_tools(
         Returns:
             Confirmation message if successful, error message if validation fails
         """
+        # Log all parameters for diagnostics
+        logger.debug(
+            f"add_item_to_order called: item_name={item_name!r}, "
+            f"modifiers={modifiers!r}, quantity={quantity!r}"
+        )
+
+        # Defensive validation: ensure item_name is provided
+        if not item_name:
+            logger.warning(
+                "LLM called add_item_to_order without item_name - "
+                "prompting user for item"
+            )
+            return "I need to know which item you'd like to add. What would you like to order?"
+
         # Normalize inputs
         modifiers = modifiers or []
         logger.debug(f"Looking up item: {item_name}")
@@ -124,7 +114,9 @@ def create_order_tools(
         if exact_match:
             matched_item = exact_match
             category = matched_item.category_name
-            logger.debug(f"Found exact match: {matched_item.item_name} in category {category}")
+            logger.debug(
+                f"Found exact match: {matched_item.item_name} in category {category}"
+            )
         else:
             # Use fuzzy matching with rapidfuzz (case-insensitive)
             item_names = [item.item_name for item in all_items]
@@ -136,7 +128,7 @@ def create_order_tools(
                 item_name.lower(),  # Convert query to lowercase
                 lowercase_names,
                 scorer=fuzz.ratio,
-                score_cutoff=80  # Slightly lower threshold for better matches (was 85)
+                score_cutoff=80,  # Slightly lower threshold for better matches (was 85)
             )
 
             if fuzzy_result:
@@ -144,21 +136,26 @@ def create_order_tools(
                 # Map back to original case
                 original_name = lowercase_mapping[matched_lowercase]
                 # Find the item with this name
-                matched_item = next(item for item in all_items if item.item_name == original_name)
+                matched_item = next(
+                    item for item in all_items if item.item_name == original_name
+                )
                 category = matched_item.category_name
-                logger.debug(f"Found fuzzy match: {matched_item.item_name} (score: {score}) in category {category}")
+                logger.debug(
+                    f"Found fuzzy match: {matched_item.item_name} (score: {score}) in category {category}"
+                )
             else:
                 # No match found
                 logger.warning(f"Item '{item_name}' not found in menu")
                 return f"Sorry, I couldn't find '{item_name}' on our menu. Could you try a different item?"
 
         # Now validate with the found category
+        # Use threshold of 70 for better fuzzy matching on common modifiers (typos like "pickels")
         validation_result = validate_order_item(
             item_name=matched_item.item_name,
             category=category,
             modifiers=modifiers,
             menu=menu_provider.get_menu(),
-            fuzzy_threshold=85,
+            fuzzy_threshold=70,
         )
 
         # If invalid, return error message without mutating state
@@ -185,7 +182,9 @@ def create_order_tools(
         if quantity > 1:
             response = f"Added {quantity} {validated_item.item_name}{modifier_text} to your order."
         else:
-            response = f"Added one {validated_item.item_name}{modifier_text} to your order."
+            response = (
+                f"Added one {validated_item.item_name}{modifier_text} to your order."
+            )
 
         logger.info(f"Successfully added item: {response}")
         return response
@@ -194,22 +193,13 @@ def create_order_tools(
         name="complete_order",
         description=(
             "Complete the order and generate the final order summary. "
-            "Call this when the customer says they're done ordering."
-        ),
-        raw_schema={
-            "name": "complete_order",
-            "description": (
-                "Complete the order and generate the final order summary. "
-                "Call this when the customer says they're done ordering."
-            ),
-            "parameters": {
-                "type": "object",
-                "properties": {},
-            },
-        },
+            "Call this when the customer explicitly indicates they're done ordering "
+            "(e.g., 'That's all', 'I'm done', 'That's everything'). "
+            "This finalizes the order and saves it. "
+            "If the order is empty, prompts the customer to add items instead."
+        )
     )
     async def complete_order() -> str:
-        logger.debug("complete_order called")
         """
         Complete the order and generate the final order summary.
 
@@ -219,6 +209,7 @@ def create_order_tools(
         Returns:
             Order summary if successful, prompt to add items if order is empty
         """
+        logger.debug("complete_order called")
         # Check if order is empty
         if order_state.is_empty():
             logger.debug("Order is empty, cannot complete")
@@ -238,28 +229,11 @@ def create_order_tools(
     @function_tool(
         name="remove_item_from_order",
         description=(
-            "Remove an item from the order. Useful when customer wants to "
-            "cancel an item. If multiple items with the same name exist, "
-            "removes the most recently added one."
-        ),
-        raw_schema={
-            "name": "remove_item_from_order",
-            "description": (
-                "Remove an item from the order. Useful when customer wants to "
-                "cancel an item. If multiple items with the same name exist, "
-                "removes the most recently added one."
-            ),
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "item_name": {
-                        "type": "string",
-                        "description": "Name of the item to remove (e.g., 'Big Mac')",
-                    },
-                },
-                "required": ["item_name"],
-            },
-        },
+            "Remove an item from the customer's order. "
+            "Use when customer wants to cancel or remove an item. "
+            "If multiple items with the same name exist, removes the most recently added one. "
+            "Requires item_name parameter - the name of the item to remove."
+        )
     )
     async def remove_item_from_order(item_name: str) -> str:
         logger.debug(f"remove_item_from_order called: item_name={item_name}")

@@ -181,12 +181,25 @@ class TestValidateModifiers:
 
         assert result.is_valid is True
 
-    def test_validate_modifiers_no_modifiers_available(self, item_without_modifiers):
-        """Test item with no available modifiers."""
-        result = validate_modifiers(item_without_modifiers, ["Extra Ice"])
+    def test_validate_modifiers_no_predefined_common_modifier_valid(
+        self, item_without_modifiers
+    ):
+        """Test item with no predefined modifiers accepts common modifiers."""
+        # Item without modifiers in "Beef & Pork" category should accept common modifiers
+        result = validate_modifiers(item_without_modifiers, ["Extra Cheese"])
+
+        assert result.is_valid is True
+        assert result.matched_item is not None
+
+    def test_validate_modifiers_no_predefined_invalid_modifier(
+        self, item_without_modifiers
+    ):
+        """Test item with no predefined modifiers rejects invalid modifiers."""
+        result = validate_modifiers(item_without_modifiers, ["Anchovies"])
 
         assert result.is_valid is False
-        assert "no modifiers available" in result.error_message
+        assert "Invalid modifiers" in result.error_message
+        assert "Anchovies" in result.error_message
 
     def test_validate_modifiers_multiple_invalid(self, big_mac_with_modifiers):
         """Test multiple invalid modifiers."""

@@ -18,9 +18,7 @@ async def test_add_item_valid_item(order_tools, order_state_manager):
     """Adding a valid item succeeds and updates state."""
     add_item_tool = order_tools[0]  # add_item_to_order
 
-    result = await add_item_tool(
-        item_name="Big Mac", quantity=1
-    )
+    result = await add_item_tool(item_name="Big Mac", quantity=1)
 
     # Check response
     assert "Added one Big Mac" in result
@@ -63,9 +61,7 @@ async def test_add_item_with_quantity_greater_than_one(
     """Adding multiple quantities of an item succeeds."""
     add_item_tool = order_tools[0]
 
-    result = await add_item_tool(
-        item_name="Medium French Fries", quantity=3
-    )
+    result = await add_item_tool(item_name="Medium French Fries", quantity=3)
 
     # Check response
     assert "Added 3 Medium French Fries" in result
@@ -82,9 +78,7 @@ async def test_add_item_fuzzy_match_success(order_tools, order_state_manager):
     add_item_tool = order_tools[0]
 
     # Intentional typo: "Big Mack" instead of "Big Mac"
-    result = await add_item_tool(
-        item_name="Big Mack", quantity=1
-    )
+    result = await add_item_tool(item_name="Big Mack", quantity=1)
 
     # Should succeed via fuzzy match
     assert "Added one Big Mac" in result  # Corrected to "Big Mac"
@@ -100,12 +94,14 @@ async def test_add_item_invalid_item(order_tools, order_state_manager):
     """Adding an item not on the menu fails with error message."""
     add_item_tool = order_tools[0]
 
-    result = await add_item_tool(
-        item_name="Whopper", quantity=1
-    )
+    result = await add_item_tool(item_name="Whopper", quantity=1)
 
     # Check error message
-    assert "couldn't find" in result.lower() or "couldn't add" in result.lower() or "not" in result.lower()
+    assert (
+        "couldn't find" in result.lower()
+        or "couldn't add" in result.lower()
+        or "not" in result.lower()
+    )
 
     # Verify state is unchanged
     assert order_state_manager.is_empty()
@@ -152,9 +148,7 @@ async def test_add_item_case_insensitive(order_tools, order_state_manager):
     """Item names are case insensitive (handled by fuzzy match)."""
     add_item_tool = order_tools[0]
 
-    result = await add_item_tool(
-        item_name="big mac", quantity=1
-    )
+    result = await add_item_tool(item_name="big mac", quantity=1)
 
     # Should succeed
     assert "Added one Big Mac" in result
@@ -170,9 +164,7 @@ async def test_add_item_with_empty_modifiers_list(order_tools, order_state_manag
     """Adding an item with empty modifiers list works."""
     add_item_tool = order_tools[0]
 
-    result = await add_item_tool(
-        item_name="Big Mac", modifiers=[], quantity=1
-    )
+    result = await add_item_tool(item_name="Big Mac", modifiers=[], quantity=1)
 
     # Should succeed
     assert "Added one Big Mac" in result
@@ -192,14 +184,10 @@ async def test_add_multiple_different_items(order_tools, order_state_manager):
     await add_item_tool(item_name="Big Mac", quantity=1)
 
     # Add second item
-    await add_item_tool(
-        item_name="Medium French Fries", quantity=1
-    )
+    await add_item_tool(item_name="Medium French Fries", quantity=1)
 
     # Add third item
-    await add_item_tool(
-        item_name="Coca-Cola Classic (Medium)", quantity=1
-    )
+    await add_item_tool(item_name="Coca-Cola Classic (Medium)", quantity=1)
 
     # Check state
     items = order_state_manager.get_items()
@@ -267,9 +255,7 @@ async def test_complete_order_with_multiple_quantities(
 
     # Add items with quantities
     await add_item_tool(item_name="Big Mac", quantity=2)
-    await add_item_tool(
-        item_name="Medium French Fries", quantity=3
-    )
+    await add_item_tool(item_name="Medium French Fries", quantity=3)
 
     # Complete order
     result = await complete_tool()
@@ -456,9 +442,7 @@ async def test_add_item_with_special_characters_in_name(
 
     # Try a real item with special characters (if exists)
     # This should test fuzzy matching with special chars
-    result = await add_item_tool(
-        item_name="Caffe Latte", quantity=1
-    )
+    result = await add_item_tool(item_name="Caffe Latte", quantity=1)
 
     # Should either succeed or fail gracefully
     # Just verify no crashes
@@ -485,3 +469,141 @@ async def test_factory_creates_three_tools(order_state_manager, menu_provider):
     assert tools[0].info.name == "add_item_to_order"
     assert tools[1].info.name == "complete_order"
     assert tools[2].info.name == "remove_item_from_order"
+
+
+@pytest.mark.asyncio
+async def test_add_item_requires_item_name_in_schema(order_tools):
+    """
+    Verify that add_item_to_order tool handles missing item_name gracefully.
+
+    Note: item_name is validated in the function body rather than the schema
+    to allow graceful error handling when LLM sends invalid calls.
+    """
+    add_item_tool = order_tools[0]
+
+    # Verify that the tool description emphasizes item_name is required
+    assert "REQUIRES item_name" in add_item_tool.info.description or "item_name" in add_item_tool.info.description
+
+    # Test that calling without item_name returns a helpful message
+    result = await add_item_tool(item_name=None)
+
+    # Should return a helpful message, not crash
+    assert isinstance(result, str)
+    assert "need" in result.lower() or "which item" in result.lower()
+
+
+# ============================================================================
+# Common Modifier Validation Tests
+# ============================================================================
+
+
+@pytest.mark.asyncio
+async def test_add_item_with_common_modifier_succeeds(order_tools, order_state_manager):
+    """Adding an item with common modifier (e.g., Extra Cheese) succeeds.
+
+    This tests the common modifier fallback for items without predefined modifiers.
+    """
+    add_item_tool = order_tools[0]
+
+    # Big Mac has empty variations in menu JSON, so it uses common modifiers
+    result = await add_item_tool(
+        item_name="Big Mac",
+        modifiers=["Extra Cheese"],
+        quantity=1,
+    )
+
+    # Should succeed
+    assert "Added one Big Mac" in result
+    assert "Extra Cheese" in result
+
+    # Check state
+    items = order_state_manager.get_items()
+    assert len(items) == 1
+    assert items[0].item_name == "Big Mac"
+    assert "Extra Cheese" in items[0].modifiers
+
+
+@pytest.mark.asyncio
+async def test_add_item_with_multiple_common_modifiers(order_tools, order_state_manager):
+    """Adding an item with multiple common modifiers succeeds."""
+    add_item_tool = order_tools[0]
+
+    result = await add_item_tool(
+        item_name="Big Mac",
+        modifiers=["Extra Cheese", "No Pickles", "Extra Onions"],
+        quantity=1,
+    )
+
+    # Should succeed
+    assert "Added one Big Mac" in result
+
+    # Check all modifiers in state
+    items = order_state_manager.get_items()
+    assert len(items) == 1
+    assert set(items[0].modifiers) == {"Extra Cheese", "No Pickles", "Extra Onions"}
+
+
+@pytest.mark.asyncio
+async def test_add_item_with_invalid_common_modifier_fails(
+    order_tools, order_state_manager
+):
+    """Adding an item with invalid modifier (e.g., Anchovies) fails."""
+    add_item_tool = order_tools[0]
+
+    result = await add_item_tool(
+        item_name="Big Mac",
+        modifiers=["Anchovies"],  # Not a common modifier for Beef & Pork
+        quantity=1,
+    )
+
+    # Should fail validation
+    assert "couldn't add" in result.lower() or "invalid" in result.lower()
+    assert "Anchovies" in result
+
+    # State should be empty
+    assert order_state_manager.is_empty()
+
+
+@pytest.mark.asyncio
+async def test_add_item_common_modifier_fuzzy_match(order_tools, order_state_manager):
+    """Common modifiers support fuzzy matching (e.g., 'no pickels' matches 'No Pickles')."""
+    add_item_tool = order_tools[0]
+
+    # Intentional typo: "pickels" instead of "pickles"
+    result = await add_item_tool(
+        item_name="Big Mac",
+        modifiers=["no pickels"],  # Typo
+        quantity=1,
+    )
+
+    # Should succeed via fuzzy matching
+    assert "Added one Big Mac" in result
+
+    # Check state
+    items = order_state_manager.get_items()
+    assert len(items) == 1
+    assert len(items[0].modifiers) == 1
+
+
+@pytest.mark.asyncio
+async def test_add_item_with_predefined_modifiers_uses_strict_validation(
+    order_tools, order_state_manager
+):
+    """Items with predefined modifiers use strict validation, not common modifiers.
+
+    This ensures we don't accidentally accept invalid modifiers for items
+    that have explicit modifier lists in the menu.
+    """
+    add_item_tool = order_tools[0]
+
+    # Find an item with predefined modifiers (e.g., Big Breakfast)
+    # If it has predefined modifiers, only those should be accepted
+    result = await add_item_tool(
+        item_name="Big Breakfast (Large Biscuit)",
+        modifiers=["Egg Whites"],  # This is a predefined modifier
+        quantity=1,
+    )
+
+    # Should succeed with predefined modifier
+    assert "Added one Big Breakfast" in result
+    assert "Egg Whites" in result

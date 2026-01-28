@@ -6,6 +6,8 @@ Uses Pydantic v2 for type-safe configuration with environment variable support.
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+from inference_models import LiveKitInferenceLLMModel
+
 
 class AgentConfig(BaseModel):
     """Configuration for the agent's behavior and personality."""
@@ -33,8 +35,8 @@ class PipelineConfig(BaseModel):
     )
 
     # LLM configuration
-    llm_model: str = Field(
-        default="openai/gpt-4.1-nano",
+    llm_model: LiveKitInferenceLLMModel = Field(
+        default=LiveKitInferenceLLMModel.GPT_5_2,
         description="Large language model identifier",
     )
 

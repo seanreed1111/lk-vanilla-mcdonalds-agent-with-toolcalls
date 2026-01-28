@@ -113,10 +113,13 @@ def big_mac_with_modifiers():
 
 @pytest.fixture
 def item_without_modifiers():
-    """Create an item with no available modifiers."""
+    """Create an item with no available modifiers.
+
+    Uses Beef & Pork category to test common modifier fallback.
+    """
     return Item(
-        category_name="Beverages",
-        item_name="Coca-Cola",
+        category_name="Beef & Pork",
+        item_name="Plain Burger",
         available_as_base=True,
         modifiers=[],
     )
