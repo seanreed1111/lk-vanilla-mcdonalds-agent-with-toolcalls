@@ -2,13 +2,13 @@
 # McDonald's Drive-Thru Agent - Makefile
 # =============================================================================
 # Quick Reference:
-#   make console       - Run drive-thru agent in console mode (testing)
-#   make dev           - Run drive-thru agent with LiveKit (voice testing)
-#   make test          - Run all tests
-#   make setup         - Install dependencies and download models
+#   make run MODE=console    - Run drive-thru agent in console mode (testing)
+#   make run MODE=dev        - Run drive-thru agent with LiveKit (voice testing)
+#   make test                - Run all tests
+#   make setup               - Install dependencies and download models
 # =============================================================================
 
-.PHONY: help console dev start setup test format lint clean
+.PHONY: help run setup test format lint download-files clean
 .DEFAULT_GOAL := help
 
 # -----------------------------------------------------------------------------
@@ -24,6 +24,7 @@ NC     := \033[0m
 # -----------------------------------------------------------------------------
 # Default Variables
 # -----------------------------------------------------------------------------
+MODE   ?=
 ARGS   ?=
 SCOPE  ?= all
 
@@ -34,12 +35,14 @@ help:
 	@echo "$(CYAN)$(BOLD)McDonald's Drive-Thru Agent$(NC)"
 	@echo ""
 	@echo "$(BOLD)Most Common Commands:$(NC)"
-	@echo "  $(GREEN)make console$(NC)              Test agent in terminal (no voice)"
-	@echo "  $(GREEN)make dev$(NC)                  Run agent with LiveKit (voice enabled)"
+	@echo "  $(GREEN)make run MODE=console$(NC)     Test agent in terminal (no voice)"
+	@echo "  $(GREEN)make run MODE=dev$(NC)         Run agent with LiveKit (voice enabled)"
+	@echo "  $(GREEN)make run MODE=start$(NC)       Run agent in production mode"
 	@echo "  $(GREEN)make test$(NC)                 Run all tests"
 	@echo ""
 	@echo "$(BOLD)Setup:$(NC)"
 	@echo "  $(GREEN)make setup$(NC)                Install dependencies and download models"
+	@echo "  $(GREEN)make download-files$(NC)       Download required model files only"
 	@echo ""
 	@echo "$(BOLD)Development:$(NC)"
 	@echo "  $(GREEN)make format$(NC)               Format code with ruff"
@@ -48,9 +51,6 @@ help:
 	@echo "  $(GREEN)make test SCOPE=integration$(NC) Run integration tests only"
 	@echo "  $(GREEN)make test ARGS=\"-k order\"$(NC) Run tests matching 'order'"
 	@echo ""
-	@echo "$(BOLD)Production:$(NC)"
-	@echo "  $(GREEN)make start$(NC)                Run agent in production mode"
-	@echo ""
 	@echo "$(BOLD)Utilities:$(NC)"
 	@echo "  $(GREEN)make clean$(NC)                Remove caches and generated files"
 
@@ -58,18 +58,31 @@ help:
 # RUN - Drive-Thru Agent Execution
 # =============================================================================
 
-console:  ## Run drive-thru agent in console mode (text-only, for testing)
-	@echo "$(BLUE)Starting drive-thru agent in console mode...$(NC)"
-	uv run python src/agent.py console
-	@echo "$(GREEN)Agent session complete$(NC)"
-
-dev:  ## Run drive-thru agent in dev mode (LiveKit connection, voice enabled)
-	@echo "$(BLUE)Starting drive-thru agent in dev mode...$(NC)"
-	uv run python src/agent.py dev
-
-start:  ## Run drive-thru agent in production mode
-	@echo "$(BLUE)Starting drive-thru agent in production mode...$(NC)"
-	uv run python src/agent.py start
+run:  ## Run drive-thru agent (use MODE=console|dev|start)
+	@if [ -z "$(MODE)" ]; then \
+		echo "$(YELLOW)Error: MODE is required$(NC)"; \
+		echo "Usage: make run MODE=[console|dev|start]"; \
+		echo "  console - Test agent in terminal (no voice)"; \
+		echo "  dev     - Run agent with LiveKit (voice enabled)"; \
+		echo "  start   - Run agent in production mode"; \
+		exit 1; \
+	fi
+	@case "$(MODE)" in \
+		console) \
+			echo "$(BLUE)Starting drive-thru agent in console mode...$(NC)"; \
+			uv run python src/agent.py console; \
+			echo "$(GREEN)Agent session complete$(NC)" ;; \
+		dev) \
+			echo "$(BLUE)Starting drive-thru agent in dev mode...$(NC)"; \
+			uv run python src/agent.py dev ;; \
+		start) \
+			echo "$(BLUE)Starting drive-thru agent in production mode...$(NC)"; \
+			uv run python src/agent.py start ;; \
+		*) \
+			echo "$(YELLOW)Error: Invalid MODE: $(MODE)$(NC)"; \
+			echo "Valid modes: console, dev, start"; \
+			exit 1 ;; \
+	esac
 
 # =============================================================================
 # SETUP - Dependencies and Models
@@ -82,6 +95,11 @@ setup:  ## Install dependencies and download required models
 	@echo "$(BLUE)Downloading model files (VAD, turn detector)...$(NC)"
 	uv run python src/agent.py download-files
 	@echo "$(GREEN)Setup complete!$(NC)"
+
+download-files:  ## Download required model files (VAD, turn detector, etc.)
+	@echo "$(BLUE)Downloading model files...$(NC)"
+	uv run python src/agent.py download-files
+	@echo "$(GREEN)Model files downloaded$(NC)"
 
 # =============================================================================
 # TEST - Run Tests

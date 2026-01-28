@@ -254,7 +254,7 @@ def drive_thru_llm(real_menu_provider):
     return DriveThruLLM(
         wrapped_llm=mock_base_llm,
         menu_provider=real_menu_provider,
-        max_context_items=50
+        max_context_items=50,
     )
 
 
@@ -272,7 +272,7 @@ def drive_thru_agent(mock_drive_thru_llm, real_menu_provider, tmp_path):
         session_id="test-agent-session",
         llm=mock_drive_thru_llm,
         menu_provider=real_menu_provider,
-        output_dir=str(tmp_path / "orders")
+        output_dir=str(tmp_path / "orders"),
     )
 
 
@@ -285,5 +285,5 @@ def real_drive_thru_agent(drive_thru_llm, real_menu_provider, tmp_path):
         session_id="test-e2e-session",
         llm=drive_thru_llm,
         menu_provider=real_menu_provider,
-        output_dir=str(tmp_path / "orders")
+        output_dir=str(tmp_path / "orders"),
     )

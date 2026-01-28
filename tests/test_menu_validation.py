@@ -8,7 +8,6 @@ Tests cover:
 - Combined validation
 """
 
-
 from menu_validation import (
     ValidationResult,
     fuzzy_match_item,

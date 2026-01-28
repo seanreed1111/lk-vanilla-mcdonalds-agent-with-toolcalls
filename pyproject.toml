@@ -42,6 +42,12 @@ pythonpath = ["src"]
 [tool.ruff]
 line-length = 88
 target-version = "py311"
+exclude = [
+    "root-claude-copy",
+    ".venv",
+    ".git",
+    "__pycache__",
+]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "B", "A", "C4", "UP", "SIM", "RUF"]

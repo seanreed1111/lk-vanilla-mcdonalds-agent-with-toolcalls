@@ -4,7 +4,6 @@ These tests verify that the OrderTools coordination layer correctly integrates
 with OrderStateManager, MenuProvider, and menu_validation.
 """
 
-
 import pytest
 
 from tools.order_tools import create_order_tools

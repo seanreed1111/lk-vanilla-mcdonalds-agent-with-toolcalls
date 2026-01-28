@@ -1,6 +1,5 @@
 """Tests for MenuProvider - Read-only menu data access layer."""
 
-
 import pytest
 
 from menu_provider import MenuProvider
