@@ -9,8 +9,8 @@ from pathlib import Path
 
 import pytest
 
-from menus.mcdonalds.models import Item, Menu, Modifier
 from menu_provider import MenuProvider
+from menus.mcdonalds.models import Item, Menu, Modifier
 
 # ============================================================================
 # Menu Data Fixtures
@@ -232,6 +232,7 @@ def order_tools(order_state_manager, menu_provider):
 def mock_drive_thru_llm():
     """Create a mock DriveThruLLM for testing."""
     from unittest.mock import Mock
+
     from drive_thru_llm import DriveThruLLM
 
     return Mock(spec=DriveThruLLM)
@@ -241,7 +242,9 @@ def mock_drive_thru_llm():
 def drive_thru_llm(real_menu_provider):
     """Create real DriveThruLLM with menu context injection."""
     from unittest.mock import Mock
+
     from livekit.agents.llm import LLM
+
     from drive_thru_llm import DriveThruLLM
 
     # Create a mock base LLM

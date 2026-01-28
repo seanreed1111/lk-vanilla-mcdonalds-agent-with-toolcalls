@@ -1,0 +1,30 @@
+'use client'
+
+import { useMobileMenu } from '@/hooks/useMobileMenu'
+import Navigation from '@/components/layout/Navigation'
+import MobileMenu from '@/components/layout/MobileMenu'
+import Footer from '@/components/layout/Footer'
+import HeroSection from '@/components/sections/HeroSection'
+import AboutSection from '@/components/sections/AboutSection'
+import ProjectsSection from '@/components/sections/ProjectsSection'
+import ContactSection from '@/components/sections/ContactSection'
+
+export default function Home() {
+  const { isOpen, toggle, close } = useMobileMenu()
+
+  return (
+    <>
+      <Navigation onMenuClick={toggle} />
+      <MobileMenu isOpen={isOpen} onClose={close} />
+
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+
+      <Footer />
+    </>
+  )
+}

@@ -1,0 +1,119 @@
+2026-01-22T01:29:12.707Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-22T01:29:12.708Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T01:29:12.709Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T01:29:12.709Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:29:12.709Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:29:12.709Z [DEBUG] Cleared all session hooks for session 1f9e2e23-0871-4ebb-9cbe-017bc0906eed
+2026-01-22T01:29:12.709Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T01:29:12.709Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:29:12.709Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:29:12.713Z [DEBUG] FileHistory: Added snapshot for 2c8025b8-745e-40a2-81ac-28b24fc7515e, tracking 0 files
+2026-01-22T01:29:12.735Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T01:29:12.738Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T01:29:12.738Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T01:29:12.738Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T01:29:12.738Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T01:29:12.776Z [DEBUG] Full reset (shrink->below): prevHeight=286, nextHeight=12, viewport=20
+2026-01-22T01:29:13.059Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-22T01:30:06.981Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:30:06.981Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:30:06.981Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:30:06.981Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:30:06.981Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:30:06.981Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:30:06.988Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-22T01:30:06.988Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:06.988Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T01:30:06.992Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T01:30:06.992Z [DEBUG] FileHistory: Making snapshot for message bbab03c0-efa0-47da-9b1d-435e5c8c51d2
+2026-01-22T01:30:06.995Z [DEBUG] FileHistory: Added snapshot for bbab03c0-efa0-47da-9b1d-435e5c8c51d2, tracking 0 files
+2026-01-22T01:30:06.999Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-22T01:30:06.999Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T01:30:06.999Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at e3 (/$bunfs/root/claude:11:34695)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at n6R (/$bunfs/root/claude:1465:380)
+    at n6R (/$bunfs/root/claude:1465:1350)
+    at <anonymous> (/$bunfs/root/claude:1465:4440)
+    at <anonymous> (/$bunfs/root/claude:1465:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at zC8 (/$bunfs/root/claude:4096:4342)
+2026-01-22T01:30:07.003Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T01:30:07.003Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T01:30:07.003Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T01:30:07.003Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T01:30:07.005Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:30:07.005Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:30:07.005Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:30:07.013Z [DEBUG] Loaded 48 unique skills (managed: 0, user: 17, project: 4, legacy commands: 27)
+2026-01-22T01:30:07.013Z [DEBUG] getSkills returning: 48 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T01:30:07.014Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:30:07.018Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:30:07.018Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:30:07.018Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:30:07.980Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:30:08.162Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:30:10.049Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T01:30:10.052Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T01:30:10.052Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:10.052Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:30:10.066Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T01:30:10.066Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:10.066Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:30:10.068Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:30:10.068Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:30:10.068Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:30:10.068Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:30:10.068Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:30:10.068Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:30:10.073Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:30:10.075Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:30:10.075Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:30:10.075Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:30:11.053Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:30:21.933Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T01:30:21.936Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T01:30:21.936Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:21.936Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:30:21.946Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:30:21.946Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:30:21.947Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/AGENTS.md.tmp.4012.1769045421947
+2026-01-22T01:30:21.947Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:30:21.947Z [DEBUG] Temp file written successfully, size: 12163 bytes
+2026-01-22T01:30:21.947Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:30:21.947Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/AGENTS.md.tmp.4012.1769045421947 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/AGENTS.md
+2026-01-22T01:30:21.947Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/AGENTS.md written atomically
+2026-01-22T01:30:21.948Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/AGENTS.md
+2026-01-22T01:30:21.953Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T01:30:21.953Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:21.953Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:30:21.969Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:30:21.969Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:30:21.969Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:30:21.969Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:30:21.969Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:30:21.969Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:30:21.979Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:30:21.983Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:30:21.983Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:30:21.983Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:30:21.989Z [DEBUG] High write ratio: blit=1040, write=5017 (82.8% writes), screen=123x65
+2026-01-22T01:30:22.030Z [DEBUG] High write ratio: blit=1548, write=4998 (76.4% writes), screen=123x65
+2026-01-22T01:30:22.845Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:30:26.406Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-22T01:30:26.406Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:26.406Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T01:30:26.406Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:30:26.416Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:30:26.416Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:30:26.416Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:30:26.417Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T01:30:26.457Z [DEBUG] High write ratio: blit=2718, write=4952 (64.6% writes), screen=139x65
+2026-01-22T01:30:27.216Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:30:34.220Z [DEBUG] High write ratio: blit=2718, write=4952 (64.6% writes), screen=139x65
+2026-01-22T01:30:34.230Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-22T01:30:34.230Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:30:34.230Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T01:30:34.268Z [DEBUG] High write ratio: blit=2718, write=4952 (64.6% writes), screen=139x65

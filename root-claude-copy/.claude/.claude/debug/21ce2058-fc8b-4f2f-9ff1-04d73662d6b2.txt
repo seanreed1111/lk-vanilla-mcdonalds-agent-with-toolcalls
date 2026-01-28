@@ -1,0 +1,103 @@
+2026-01-23T19:44:28.706Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T19:44:28.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T19:44:28.715Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.17/claude
+2026-01-23T19:44:28.716Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-23T19:44:28.717Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-23T19:44:28.717Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:44:28.717Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T19:44:28.717Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-23T19:44:28.717Z [DEBUG] Cleared all session hooks for session a687aecf-0817-436c-8e4d-ff42e1e337b1
+2026-01-23T19:44:28.717Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-23T19:44:28.717Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:44:28.717Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T19:44:28.720Z [DEBUG] FileHistory: Added snapshot for 5e546328-d5da-4217-a52d-2181ac98ba4f, tracking 0 files
+2026-01-23T19:44:28.754Z [DEBUG] Full reset (shrink->below): prevHeight=50, nextHeight=12, viewport=28
+2026-01-23T19:44:28.755Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T19:44:28.755Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T19:44:28.755Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T19:44:28.756Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-23T19:44:28.866Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.59727.1769197468866
+2026-01-23T19:44:28.866Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T19:44:28.866Z [DEBUG] Temp file written successfully, size: 14189 bytes
+2026-01-23T19:44:28.866Z [DEBUG] Applied original permissions to temp file
+2026-01-23T19:44:28.866Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.59727.1769197468866 to /Users/seanreed/.claude.json
+2026-01-23T19:44:28.866Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-23T19:45:27.010Z [DEBUG] Full reset (scrollback changes): scrollbackRows=13, changes=18/18, firstChangeY=11
+  prev: "  ? for shortcuts                                                                         ⧉ In README.md  "
+  next: "  ? for shortcuts                                                                    ⧉ 11 lines selected  "
+2026-01-23T19:45:28.115Z [DEBUG] Full reset (scrollback changes): scrollbackRows=13, changes=18/18, firstChangeY=11
+  prev: "  ? for shortcuts                                                                    ⧉ 11 lines selected  "
+  next: "  ? for shortcuts                                                                         ⧉ In README.md  "
+2026-01-23T19:45:42.927Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-23T19:45:42.927Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:45:42.927Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-23T22:03:55.537Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-23T22:46:31.463Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-23T23:19:27.868Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-23T23:59:04.508Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T00:31:29.506Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T01:03:37.487Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T01:34:57.412Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T02:07:10.215Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T02:39:54.900Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T03:21:57.292Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T04:09:17.813Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T04:46:40.400Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T05:28:09.328Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T06:09:33.829Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T06:45:31.798Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T07:28:15.392Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T08:10:57.784Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T08:46:01.371Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T09:16:37.804Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T09:49:17.781Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T10:30:40.328Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T11:17:04.721Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T11:49:43.332Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T12:35:01.459Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T13:17:13.752Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T13:49:41.728Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T14:19:40.753Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T14:51:44.651Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T15:21:43.652Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T15:51:43.681Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T16:28:01.851Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T17:00:14.163Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T17:41:18.206Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T18:12:26.295Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T18:42:25.778Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T19:17:17.232Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T19:56:31.065Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T20:28:03.988Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.17 -> 2.1.19
+2026-01-24T20:30:05.405Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-24T20:30:05.405Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T20:30:05.406Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-24T20:31:29.943Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-24T20:31:29.944Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-24T20:31:29.950Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 6ms
+2026-01-24T20:31:29.950Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-24T20:31:29.951Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 7ms (attempt 1)
+2026-01-24T20:33:37.570Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-24T20:33:37.570Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T20:33:37.570Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-24T20:34:26.018Z [DEBUG] Detected change to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/settings.local.json
+2026-01-24T20:34:26.020Z [DEBUG] Settings changed from localSettings, updating AppState
+2026-01-24T20:34:26.021Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 42 rule(s): ["WebFetch(domain:automationpanda.com)","WebFetch(domain:github.com)","WebFetch(domain:peps.python.org)","WebFetch(domain:martinheinz.dev)","WebFetch(domain:winstonbrown.me)","WebFetch(domain:docs.github.com)","Bash(uv sync:*)","Bash(uv run pytest:*)","Bash(uv pip:*)","Bash(uv run python:*)","Bash(uv run ruff format:*)","Bash(uv run ruff check:*)","WebSearch","Bash(ls:*)","Bash(PIPELINE__ADAPTER_TYPE=mock uv run python:*)","Bash(timeout 3 make:*)","Bash(make help:*)","Bash(make test:*)","Bash(timeout 10 make:*)","Bash(uv add:*)","WebFetch(domain:returns.readthedocs.io)","WebFetch(domain:common-changelog.org)","WebFetch(domain:broadinstitute.github.io)","Skill(commit-push-pr)","Bash(git add:*)","Bash(git commit:*)","Skill(makefile)","Bash(git checkout:*)","Bash(git rm:*)","Bash(grep:*)","Bash(for file in test_*.py)","Bash(do sed -i '' 's/from src\\\\./from /g' \"$file\")","Bash(done)","Bash(make console:*)","Bash(uv python install:*)","Bash(uv python pin:*)","Bash(make dev:*)","Skill(review_plan)","Bash(uv lock:*)","Bash(uv tree:*)","Bash(docker build:*)","Bash(gh pr merge:*)"]
+2026-01-24T20:34:26.021Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:34:26.021Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:34:39.501Z [DEBUG] Detected change to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/settings.local.json
+2026-01-24T20:34:39.502Z [DEBUG] Settings changed from localSettings, updating AppState
+2026-01-24T20:34:39.503Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 43 rule(s): ["WebFetch(domain:automationpanda.com)","WebFetch(domain:github.com)","WebFetch(domain:peps.python.org)","WebFetch(domain:martinheinz.dev)","WebFetch(domain:winstonbrown.me)","WebFetch(domain:docs.github.com)","Bash(uv sync:*)","Bash(uv run pytest:*)","Bash(uv pip:*)","Bash(uv run python:*)","Bash(uv run ruff format:*)","Bash(uv run ruff check:*)","WebSearch","Bash(ls:*)","Bash(PIPELINE__ADAPTER_TYPE=mock uv run python:*)","Bash(timeout 3 make:*)","Bash(make help:*)","Bash(make test:*)","Bash(timeout 10 make:*)","Bash(uv add:*)","WebFetch(domain:returns.readthedocs.io)","WebFetch(domain:common-changelog.org)","WebFetch(domain:broadinstitute.github.io)","Skill(commit-push-pr)","Bash(git add:*)","Bash(git commit:*)","Skill(makefile)","Bash(git checkout:*)","Bash(git rm:*)","Bash(grep:*)","Bash(for file in test_*.py)","Bash(do sed -i '' 's/from src\\\\./from /g' \"$file\")","Bash(done)","Bash(make console:*)","Bash(uv python install:*)","Bash(uv python pin:*)","Bash(make dev:*)","Skill(review_plan)","Bash(uv lock:*)","Bash(uv tree:*)","Bash(docker build:*)","Bash(gh pr merge:*)","Bash(git pull:*)"]
+2026-01-24T20:34:39.503Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:34:39.503Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:34:57.162Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-24T20:34:57.162Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T20:34:57.162Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-24T20:34:59.082Z [DEBUG] Detected change to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/settings.local.json
+2026-01-24T20:34:59.084Z [DEBUG] Settings changed from localSettings, updating AppState
+2026-01-24T20:34:59.084Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 44 rule(s): ["WebFetch(domain:automationpanda.com)","WebFetch(domain:github.com)","WebFetch(domain:peps.python.org)","WebFetch(domain:martinheinz.dev)","WebFetch(domain:winstonbrown.me)","WebFetch(domain:docs.github.com)","Bash(uv sync:*)","Bash(uv run pytest:*)","Bash(uv pip:*)","Bash(uv run python:*)","Bash(uv run ruff format:*)","Bash(uv run ruff check:*)","WebSearch","Bash(ls:*)","Bash(PIPELINE__ADAPTER_TYPE=mock uv run python:*)","Bash(timeout 3 make:*)","Bash(make help:*)","Bash(make test:*)","Bash(timeout 10 make:*)","Bash(uv add:*)","WebFetch(domain:returns.readthedocs.io)","WebFetch(domain:common-changelog.org)","WebFetch(domain:broadinstitute.github.io)","Skill(commit-push-pr)","Bash(git add:*)","Bash(git commit:*)","Skill(makefile)","Bash(git checkout:*)","Bash(git rm:*)","Bash(grep:*)","Bash(for file in test_*.py)","Bash(do sed -i '' 's/from src\\\\./from /g' \"$file\")","Bash(done)","Bash(make console:*)","Bash(uv python install:*)","Bash(uv python pin:*)","Bash(make dev:*)","Skill(review_plan)","Bash(uv lock:*)","Bash(uv tree:*)","Bash(docker build:*)","Bash(gh pr merge:*)","Bash(git pull:*)","Bash(git push:*)"]
+2026-01-24T20:34:59.084Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:34:59.085Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T20:35:49.667Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-24T20:35:49.667Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T20:35:49.667Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

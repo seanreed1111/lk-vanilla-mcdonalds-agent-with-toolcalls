@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "5a8879a1-6ac7-45c0-9a2c-c8e158331dc7",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/5a8879a1-6ac7-45c0-9a2c-c8e158331dc7.jsonl",
+      "fileMtime": 1768870662764,
+      "firstPrompt": "No prompt",
+      "messageCount": 2,
+      "created": "2026-01-20T00:57:42.746Z",
+      "modified": "2026-01-20T00:57:42.746Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "31965240-1004-4e82-a55b-c95217024d95",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/31965240-1004-4e82-a55b-c95217024d95.jsonl",
+      "fileMtime": 1768870001166,
+      "firstPrompt": "how do I activate and use the '/Users/seanreed/PythonProjects/lk-agent-1/.claude/agents/codebase-analyzer.md' on this codebase with claude code",
+      "messageCount": 13,
+      "created": "2026-01-20T00:24:43.525Z",
+      "modified": "2026-01-20T00:46:41.155Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "71eff269-d6bc-4df7-a537-b9e02d1b3ee6",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/71eff269-d6bc-4df7-a537-b9e02d1b3ee6.jsonl",
+      "fileMtime": 1768870651090,
+      "firstPrompt": "this code base does not have any BDD scenarios. Please examine it to create a potential list of scenarios that we might cover. then.",
+      "messageCount": 11,
+      "created": "2026-01-20T00:51:26.354Z",
+      "modified": "2026-01-20T00:57:31.062Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "2c610775-f9a7-48fa-b135-093f181b352a",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/2c610775-f9a7-48fa-b135-093f181b352a.jsonl",
+      "fileMtime": 1768872842597,
+      "firstPrompt": "'/Users/seanreed/PythonProjects/lk-agent-1/src/agent.py' has several globals. please offer alternatives structures so that I can remove the globals from this file our put them into a new file and impo…",
+      "messageCount": 11,
+      "created": "2026-01-20T01:23:50.397Z",
+      "modified": "2026-01-20T01:34:02.568Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "1a3b75d8-6db0-475a-bc1b-2d3a3230bb17",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/1a3b75d8-6db0-475a-bc1b-2d3a3230bb17.jsonl",
+      "fileMtime": 1768870117947,
+      "firstPrompt": "Implement the following plan:  # Plan: Create BDD Scenario Writing Agent  ## Overview Create a specialized agent that writes high-quality Behavior-Driven Development (BDD) scenarios in Gherkin format.…",
+      "messageCount": 5,
+      "created": "2026-01-20T00:47:08.595Z",
+      "modified": "2026-01-20T00:48:37.933Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "c7709610-6937-4063-b581-0d0ff63246bd",
+      "fullPath": "/Users/seanreed/.claude/projects/-Users-seanreed-PythonProjects-lk-agent-1/c7709610-6937-4063-b581-0d0ff63246bd.jsonl",
+      "fileMtime": 1768876138376,
+      "firstPrompt": "ok Python has match syntax available for all python versions I will ever use. So I want claude code to prepare a detailed document for use when writing python code that has examples of correct and inc…",
+      "messageCount": 7,
+      "created": "2026-01-20T02:24:25.187Z",
+      "modified": "2026-01-20T02:28:58.360Z",
+      "gitBranch": "main",
+      "projectPath": "/Users/seanreed/PythonProjects/lk-agent-1",
+      "isSidechain": false
+    }
+  ]
+}

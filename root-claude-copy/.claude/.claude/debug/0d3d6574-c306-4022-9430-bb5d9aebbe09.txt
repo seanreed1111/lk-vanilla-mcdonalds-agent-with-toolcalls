@@ -1,0 +1,26 @@
+2026-01-18T20:59:50.949Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (23.8ms): security find-generic-password -a $USER -w -s "Claude Code"
+2026-01-18T20:59:50.970Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (13.0ms): security find-generic-password -a "seanreed" -w -s "Claude Code-credentials"
+2026-01-18T20:59:51.020Z [DEBUG] Git remote URL: null
+2026-01-18T20:59:51.020Z [DEBUG] No git remote URL found
+2026-01-18T20:59:51.020Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-01-18T20:59:51.134Z [DEBUG] Remote settings: No settings found (404)
+2026-01-18T20:59:51.134Z [DEBUG] Programmatic settings change notification for policySettings
+2026-01-18T20:59:51.134Z [DEBUG] Settings changed from policySettings, updating AppState
+2026-01-18T20:59:51.161Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.59741.1768769991161
+2026-01-18T20:59:51.161Z [DEBUG] Preserving file permissions: 100600
+2026-01-18T20:59:51.162Z [DEBUG] Temp file written successfully, size: 54303 bytes
+2026-01-18T20:59:51.162Z [DEBUG] Applied original permissions to temp file
+2026-01-18T20:59:51.162Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.59741.1768769991161 to /Users/seanreed/.claude.json
+2026-01-18T20:59:51.162Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-18T20:59:51.163Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.59741.1768769991163
+2026-01-18T20:59:51.163Z [DEBUG] Preserving file permissions: 100600
+2026-01-18T20:59:51.163Z [DEBUG] Temp file written successfully, size: 54303 bytes
+2026-01-18T20:59:51.163Z [DEBUG] Applied original permissions to temp file
+2026-01-18T20:59:51.163Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.59741.1768769991163 to /Users/seanreed/.claude.json
+2026-01-18T20:59:51.163Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-18T20:59:51.194Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.59741.1768769991194
+2026-01-18T20:59:51.194Z [DEBUG] Preserving file permissions: 100600
+2026-01-18T20:59:51.195Z [DEBUG] Temp file written successfully, size: 54303 bytes
+2026-01-18T20:59:51.195Z [DEBUG] Applied original permissions to temp file
+2026-01-18T20:59:51.195Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.59741.1768769991194 to /Users/seanreed/.claude.json
+2026-01-18T20:59:51.195Z [DEBUG] File /Users/seanreed/.claude.json written atomically

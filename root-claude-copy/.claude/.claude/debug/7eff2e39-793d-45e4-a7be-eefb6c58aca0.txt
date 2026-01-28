@@ -1,0 +1,974 @@
+2026-01-22T16:42:41.293Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:42:41.294Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:42:41.311Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.15/claude
+2026-01-22T16:42:41.312Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T16:42:41.313Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T16:42:41.313Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:42:41.313Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T16:42:41.313Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T16:42:41.313Z [DEBUG] Cleared all session hooks for session fc24596b-f318-409e-b42a-1d25b5943412
+2026-01-22T16:42:41.313Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T16:42:41.313Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:42:41.313Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T16:42:41.318Z [DEBUG] FileHistory: Added snapshot for 9c50e0dd-bfbd-436a-8fd5-1d03ae748b1a, tracking 0 files
+2026-01-22T16:42:41.347Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T16:42:41.347Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T16:42:41.347Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T16:42:41.347Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T16:42:41.381Z [DEBUG] Full reset (shrink->below): prevHeight=159, nextHeight=12, viewport=28
+2026-01-22T16:46:40.746Z [DEBUG] High write ratio: blit=581, write=599 (50.8% writes), screen=17x83
+2026-01-22T16:47:20.926Z [DEBUG] High write ratio: blit=581, write=676 (53.8% writes), screen=18x83
+2026-01-22T16:47:35.952Z [DEBUG] High write ratio: blit=664, write=665 (50.0% writes), screen=18x83
+2026-01-22T16:47:36.123Z [DEBUG] High write ratio: blit=664, write=666 (50.1% writes), screen=18x83
+2026-01-22T16:47:36.247Z [DEBUG] High write ratio: blit=664, write=667 (50.1% writes), screen=18x83
+2026-01-22T16:47:36.398Z [DEBUG] High write ratio: blit=664, write=668 (50.2% writes), screen=18x83
+2026-01-22T16:47:36.505Z [DEBUG] High write ratio: blit=664, write=669 (50.2% writes), screen=18x83
+2026-01-22T16:47:36.698Z [DEBUG] High write ratio: blit=664, write=670 (50.2% writes), screen=18x83
+2026-01-22T16:47:36.840Z [DEBUG] High write ratio: blit=664, write=671 (50.3% writes), screen=18x83
+2026-01-22T16:47:37.067Z [DEBUG] High write ratio: blit=664, write=672 (50.3% writes), screen=18x83
+2026-01-22T16:47:37.157Z [DEBUG] High write ratio: blit=664, write=673 (50.3% writes), screen=18x83
+2026-01-22T16:47:37.314Z [DEBUG] High write ratio: blit=664, write=674 (50.4% writes), screen=18x83
+2026-01-22T16:47:37.478Z [DEBUG] High write ratio: blit=664, write=675 (50.4% writes), screen=18x83
+2026-01-22T16:47:37.574Z [DEBUG] High write ratio: blit=664, write=676 (50.4% writes), screen=18x83
+2026-01-22T16:47:38.145Z [DEBUG] High write ratio: blit=664, write=677 (50.5% writes), screen=18x83
+2026-01-22T16:47:38.340Z [DEBUG] High write ratio: blit=664, write=678 (50.5% writes), screen=18x83
+2026-01-22T16:47:38.532Z [DEBUG] High write ratio: blit=664, write=679 (50.6% writes), screen=18x83
+2026-01-22T16:47:38.619Z [DEBUG] High write ratio: blit=664, write=680 (50.6% writes), screen=18x83
+2026-01-22T16:47:38.837Z [DEBUG] High write ratio: blit=664, write=681 (50.6% writes), screen=18x83
+2026-01-22T16:47:38.929Z [DEBUG] High write ratio: blit=664, write=682 (50.7% writes), screen=18x83
+2026-01-22T16:47:39.449Z [DEBUG] High write ratio: blit=664, write=683 (50.7% writes), screen=18x83
+2026-01-22T16:47:39.645Z [DEBUG] High write ratio: blit=664, write=684 (50.7% writes), screen=18x83
+2026-01-22T16:47:39.860Z [DEBUG] High write ratio: blit=664, write=685 (50.8% writes), screen=18x83
+2026-01-22T16:47:40.684Z [DEBUG] High write ratio: blit=664, write=686 (50.8% writes), screen=18x83
+2026-01-22T16:47:40.819Z [DEBUG] High write ratio: blit=664, write=687 (50.9% writes), screen=18x83
+2026-01-22T16:47:40.932Z [DEBUG] High write ratio: blit=664, write=688 (50.9% writes), screen=18x83
+2026-01-22T16:47:41.068Z [DEBUG] High write ratio: blit=664, write=689 (50.9% writes), screen=18x83
+2026-01-22T16:47:41.185Z [DEBUG] High write ratio: blit=664, write=690 (51.0% writes), screen=18x83
+2026-01-22T16:47:42.177Z [DEBUG] High write ratio: blit=664, write=691 (51.0% writes), screen=18x83
+2026-01-22T16:47:42.718Z [DEBUG] High write ratio: blit=664, write=692 (51.0% writes), screen=18x83
+2026-01-22T16:47:42.898Z [DEBUG] High write ratio: blit=664, write=693 (51.1% writes), screen=18x83
+2026-01-22T16:47:43.899Z [DEBUG] High write ratio: blit=664, write=693 (51.1% writes), screen=18x83
+2026-01-22T16:47:44.968Z [DEBUG] High write ratio: blit=664, write=694 (51.1% writes), screen=18x83
+2026-01-22T16:47:45.593Z [DEBUG] High write ratio: blit=664, write=695 (51.1% writes), screen=18x83
+2026-01-22T16:47:45.723Z [DEBUG] High write ratio: blit=664, write=696 (51.2% writes), screen=18x83
+2026-01-22T16:47:46.045Z [DEBUG] High write ratio: blit=664, write=697 (51.2% writes), screen=18x83
+2026-01-22T16:47:46.235Z [DEBUG] High write ratio: blit=664, write=698 (51.2% writes), screen=18x83
+2026-01-22T16:47:47.235Z [DEBUG] High write ratio: blit=664, write=698 (51.2% writes), screen=18x83
+2026-01-22T16:47:48.106Z [DEBUG] High write ratio: blit=664, write=699 (51.3% writes), screen=18x83
+2026-01-22T16:47:48.395Z [DEBUG] High write ratio: blit=664, write=700 (51.3% writes), screen=18x83
+2026-01-22T16:47:48.559Z [DEBUG] High write ratio: blit=664, write=701 (51.4% writes), screen=18x83
+2026-01-22T16:47:48.706Z [DEBUG] High write ratio: blit=664, write=702 (51.4% writes), screen=18x83
+2026-01-22T16:47:48.781Z [DEBUG] High write ratio: blit=664, write=703 (51.4% writes), screen=18x83
+2026-01-22T16:47:49.786Z [DEBUG] High write ratio: blit=664, write=703 (51.4% writes), screen=18x83
+2026-01-22T16:47:50.448Z [DEBUG] High write ratio: blit=664, write=704 (51.5% writes), screen=18x83
+2026-01-22T16:47:50.637Z [DEBUG] High write ratio: blit=664, write=705 (51.5% writes), screen=18x83
+2026-01-22T16:47:50.870Z [DEBUG] High write ratio: blit=664, write=706 (51.5% writes), screen=18x83
+2026-01-22T16:47:51.206Z [DEBUG] High write ratio: blit=664, write=707 (51.6% writes), screen=18x83
+2026-01-22T16:47:51.332Z [DEBUG] High write ratio: blit=664, write=708 (51.6% writes), screen=18x83
+2026-01-22T16:47:51.829Z [DEBUG] High write ratio: blit=664, write=709 (51.6% writes), screen=18x83
+2026-01-22T16:47:52.555Z [DEBUG] High write ratio: blit=664, write=708 (51.6% writes), screen=18x83
+2026-01-22T16:47:52.706Z [DEBUG] High write ratio: blit=664, write=709 (51.6% writes), screen=18x83
+2026-01-22T16:47:53.705Z [DEBUG] High write ratio: blit=664, write=709 (51.6% writes), screen=18x83
+2026-01-22T16:47:53.981Z [DEBUG] High write ratio: blit=664, write=710 (51.7% writes), screen=18x83
+2026-01-22T16:47:54.671Z [DEBUG] High write ratio: blit=664, write=711 (51.7% writes), screen=18x83
+2026-01-22T16:47:54.962Z [DEBUG] High write ratio: blit=664, write=712 (51.7% writes), screen=18x83
+2026-01-22T16:47:55.090Z [DEBUG] High write ratio: blit=581, write=751 (56.4% writes), screen=19x83
+2026-01-22T16:47:55.168Z [DEBUG] High write ratio: blit=664, write=713 (51.8% writes), screen=19x83
+2026-01-22T16:47:55.324Z [DEBUG] High write ratio: blit=664, write=714 (51.8% writes), screen=19x83
+2026-01-22T16:47:55.479Z [DEBUG] High write ratio: blit=664, write=715 (51.8% writes), screen=19x83
+2026-01-22T16:47:56.355Z [DEBUG] High write ratio: blit=664, write=716 (51.9% writes), screen=19x83
+2026-01-22T16:47:56.464Z [DEBUG] High write ratio: blit=664, write=717 (51.9% writes), screen=19x83
+2026-01-22T16:47:56.860Z [DEBUG] High write ratio: blit=664, write=718 (52.0% writes), screen=19x83
+2026-01-22T16:47:56.930Z [DEBUG] High write ratio: blit=664, write=719 (52.0% writes), screen=19x83
+2026-01-22T16:47:57.483Z [DEBUG] High write ratio: blit=664, write=720 (52.0% writes), screen=19x83
+2026-01-22T16:47:57.663Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:57.890Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:47:58.695Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:58.893Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.195Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.280Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.363Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.445Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.530Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.615Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.698Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.781Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.865Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:47:59.949Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.033Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.117Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.202Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.286Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.366Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.453Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.537Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.621Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.704Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.788Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.871Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:00.956Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.038Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.123Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.207Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.291Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.375Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.459Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.542Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.627Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.710Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.794Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.878Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:01.957Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:02.040Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:02.124Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:02.209Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:02.294Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:05.357Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:07.223Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:07.727Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:07.808Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:07.890Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:07.973Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.058Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.142Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.226Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.311Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.397Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.481Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.565Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.649Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.733Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.812Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.900Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:08.984Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.068Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.153Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.237Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.321Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.405Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.489Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.571Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.656Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:09.740Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:10.133Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:13.363Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:13.826Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.327Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.408Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.490Z [DEBUG] High write ratio: blit=664, write=723 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.574Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.658Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.743Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.826Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.910Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:14.997Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.081Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.163Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.245Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.332Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.416Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.675Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:15.849Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:16.278Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:16.923Z [DEBUG] High write ratio: blit=664, write=720 (52.0% writes), screen=19x83
+2026-01-22T16:48:17.269Z [DEBUG] High write ratio: blit=664, write=719 (52.0% writes), screen=19x83
+2026-01-22T16:48:17.474Z [DEBUG] High write ratio: blit=664, write=718 (52.0% writes), screen=19x83
+2026-01-22T16:48:17.647Z [DEBUG] High write ratio: blit=664, write=719 (52.0% writes), screen=19x83
+2026-01-22T16:48:18.295Z [DEBUG] High write ratio: blit=664, write=720 (52.0% writes), screen=19x83
+2026-01-22T16:48:18.577Z [DEBUG] High write ratio: blit=664, write=721 (52.1% writes), screen=19x83
+2026-01-22T16:48:18.690Z [DEBUG] High write ratio: blit=664, write=722 (52.1% writes), screen=19x83
+2026-01-22T16:48:18.790Z [DEBUG] High write ratio: blit=664, write=723 (52.1% writes), screen=19x83
+2026-01-22T16:48:18.905Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:19.435Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:19.906Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:19.935Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.019Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.107Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.188Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.275Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.357Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.442Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.527Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.609Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.694Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.777Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.862Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:20.945Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.029Z [DEBUG] High write ratio: blit=664, write=725 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.114Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.198Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.282Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.364Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:21.703Z [DEBUG] High write ratio: blit=664, write=724 (52.2% writes), screen=19x83
+2026-01-22T16:48:22.608Z [DEBUG] High write ratio: blit=664, write=725 (52.2% writes), screen=19x83
+2026-01-22T16:48:23.713Z [DEBUG] High write ratio: blit=664, write=725 (52.2% writes), screen=19x83
+2026-01-22T16:48:24.818Z [DEBUG] High write ratio: blit=664, write=726 (52.2% writes), screen=19x83
+2026-01-22T16:48:25.312Z [DEBUG] High write ratio: blit=664, write=727 (52.3% writes), screen=19x83
+2026-01-22T16:48:25.436Z [DEBUG] High write ratio: blit=664, write=728 (52.3% writes), screen=19x83
+2026-01-22T16:48:25.549Z [DEBUG] High write ratio: blit=664, write=729 (52.3% writes), screen=19x83
+2026-01-22T16:48:25.675Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:26.677Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.007Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.508Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.590Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.669Z [DEBUG] High write ratio: blit=664, write=731 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.753Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.838Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:32.923Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.006Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.089Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.174Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.255Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.340Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.426Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.511Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.596Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.678Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.762Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.848Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:33.933Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.017Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.100Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.185Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.270Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.349Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.436Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.521Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:34.879Z [DEBUG] High write ratio: blit=664, write=731 (52.4% writes), screen=19x83
+2026-01-22T16:48:36.984Z [DEBUG] High write ratio: blit=664, write=730 (52.4% writes), screen=19x83
+2026-01-22T16:48:37.616Z [DEBUG] High write ratio: blit=664, write=731 (52.4% writes), screen=19x83
+2026-01-22T16:48:41.637Z [DEBUG] High write ratio: blit=664, write=732 (52.4% writes), screen=19x83
+2026-01-22T16:48:42.126Z [DEBUG] High write ratio: blit=664, write=733 (52.5% writes), screen=19x83
+2026-01-22T16:48:42.282Z [DEBUG] High write ratio: blit=664, write=734 (52.5% writes), screen=19x83
+2026-01-22T16:48:42.673Z [DEBUG] High write ratio: blit=664, write=735 (52.5% writes), screen=19x83
+2026-01-22T16:48:42.825Z [DEBUG] High write ratio: blit=664, write=736 (52.6% writes), screen=19x83
+2026-01-22T16:48:42.937Z [DEBUG] High write ratio: blit=664, write=737 (52.6% writes), screen=19x83
+2026-01-22T16:48:43.796Z [DEBUG] High write ratio: blit=664, write=738 (52.6% writes), screen=19x83
+2026-01-22T16:48:44.038Z [DEBUG] High write ratio: blit=664, write=739 (52.7% writes), screen=19x83
+2026-01-22T16:48:44.108Z [DEBUG] High write ratio: blit=664, write=740 (52.7% writes), screen=19x83
+2026-01-22T16:48:44.344Z [DEBUG] High write ratio: blit=664, write=741 (52.7% writes), screen=19x83
+2026-01-22T16:48:44.580Z [DEBUG] High write ratio: blit=664, write=742 (52.8% writes), screen=19x83
+2026-01-22T16:48:44.768Z [DEBUG] High write ratio: blit=664, write=743 (52.8% writes), screen=19x83
+2026-01-22T16:48:45.773Z [DEBUG] High write ratio: blit=664, write=743 (52.8% writes), screen=19x83
+2026-01-22T16:48:46.490Z [DEBUG] High write ratio: blit=664, write=744 (52.8% writes), screen=19x83
+2026-01-22T16:48:46.735Z [DEBUG] High write ratio: blit=664, write=745 (52.9% writes), screen=19x83
+2026-01-22T16:48:46.955Z [DEBUG] High write ratio: blit=664, write=746 (52.9% writes), screen=19x83
+2026-01-22T16:48:47.122Z [DEBUG] High write ratio: blit=664, write=747 (52.9% writes), screen=19x83
+2026-01-22T16:48:47.208Z [DEBUG] High write ratio: blit=664, write=748 (53.0% writes), screen=19x83
+2026-01-22T16:48:48.212Z [DEBUG] High write ratio: blit=664, write=748 (53.0% writes), screen=19x83
+2026-01-22T16:48:49.869Z [DEBUG] High write ratio: blit=664, write=747 (52.9% writes), screen=19x83
+2026-01-22T16:48:50.039Z [DEBUG] High write ratio: blit=664, write=746 (52.9% writes), screen=19x83
+2026-01-22T16:48:50.211Z [DEBUG] High write ratio: blit=664, write=745 (52.9% writes), screen=19x83
+2026-01-22T16:48:51.199Z [DEBUG] High write ratio: blit=664, write=744 (52.8% writes), screen=19x83
+2026-01-22T16:48:51.390Z [DEBUG] High write ratio: blit=664, write=743 (52.8% writes), screen=19x83
+2026-01-22T16:48:52.390Z [DEBUG] High write ratio: blit=664, write=743 (52.8% writes), screen=19x83
+2026-01-22T16:48:52.679Z [DEBUG] High write ratio: blit=664, write=742 (52.8% writes), screen=19x83
+2026-01-22T16:48:52.844Z [DEBUG] High write ratio: blit=664, write=741 (52.7% writes), screen=19x83
+2026-01-22T16:48:52.990Z [DEBUG] High write ratio: blit=664, write=740 (52.7% writes), screen=19x83
+2026-01-22T16:48:53.120Z [DEBUG] High write ratio: blit=664, write=739 (52.7% writes), screen=19x83
+2026-01-22T16:48:53.255Z [DEBUG] High write ratio: blit=664, write=738 (52.6% writes), screen=19x83
+2026-01-22T16:48:53.390Z [DEBUG] High write ratio: blit=664, write=737 (52.6% writes), screen=19x83
+2026-01-22T16:48:54.106Z [DEBUG] High write ratio: blit=664, write=738 (52.6% writes), screen=19x83
+2026-01-22T16:48:54.234Z [DEBUG] High write ratio: blit=664, write=739 (52.7% writes), screen=19x83
+2026-01-22T16:48:54.739Z [DEBUG] High write ratio: blit=664, write=740 (52.7% writes), screen=19x83
+2026-01-22T16:48:54.877Z [DEBUG] High write ratio: blit=664, write=741 (52.7% writes), screen=19x83
+2026-01-22T16:48:54.969Z [DEBUG] High write ratio: blit=664, write=742 (52.8% writes), screen=19x83
+2026-01-22T16:48:55.058Z [DEBUG] High write ratio: blit=664, write=743 (52.8% writes), screen=19x83
+2026-01-22T16:48:55.456Z [DEBUG] High write ratio: blit=664, write=744 (52.8% writes), screen=19x83
+2026-01-22T16:48:55.718Z [DEBUG] High write ratio: blit=664, write=745 (52.9% writes), screen=19x83
+2026-01-22T16:48:55.824Z [DEBUG] High write ratio: blit=664, write=746 (52.9% writes), screen=19x83
+2026-01-22T16:48:55.865Z [DEBUG] High write ratio: blit=664, write=747 (52.9% writes), screen=19x83
+2026-01-22T16:48:55.945Z [DEBUG] High write ratio: blit=664, write=748 (53.0% writes), screen=19x83
+2026-01-22T16:48:56.158Z [DEBUG] High write ratio: blit=664, write=749 (53.0% writes), screen=19x83
+2026-01-22T16:48:56.604Z [DEBUG] High write ratio: blit=664, write=748 (53.0% writes), screen=19x83
+2026-01-22T16:48:56.730Z [DEBUG] High write ratio: blit=664, write=749 (53.0% writes), screen=19x83
+2026-01-22T16:48:56.819Z [DEBUG] High write ratio: blit=664, write=750 (53.0% writes), screen=19x83
+2026-01-22T16:48:56.947Z [DEBUG] High write ratio: blit=664, write=751 (53.1% writes), screen=19x83
+2026-01-22T16:48:57.160Z [DEBUG] High write ratio: blit=664, write=752 (53.1% writes), screen=19x83
+2026-01-22T16:48:57.371Z [DEBUG] High write ratio: blit=664, write=753 (53.1% writes), screen=19x83
+2026-01-22T16:48:57.506Z [DEBUG] High write ratio: blit=664, write=754 (53.2% writes), screen=19x83
+2026-01-22T16:48:57.637Z [DEBUG] High write ratio: blit=664, write=755 (53.2% writes), screen=19x83
+2026-01-22T16:48:57.826Z [DEBUG] High write ratio: blit=664, write=756 (53.2% writes), screen=19x83
+2026-01-22T16:48:57.930Z [DEBUG] High write ratio: blit=664, write=757 (53.3% writes), screen=19x83
+2026-01-22T16:48:58.326Z [DEBUG] High write ratio: blit=664, write=758 (53.3% writes), screen=19x83
+2026-01-22T16:48:58.527Z [DEBUG] High write ratio: blit=664, write=759 (53.3% writes), screen=19x83
+2026-01-22T16:48:58.746Z [DEBUG] High write ratio: blit=664, write=760 (53.4% writes), screen=19x83
+2026-01-22T16:48:58.876Z [DEBUG] High write ratio: blit=664, write=761 (53.4% writes), screen=19x83
+2026-01-22T16:48:58.967Z [DEBUG] High write ratio: blit=664, write=762 (53.4% writes), screen=19x83
+2026-01-22T16:48:59.297Z [DEBUG] High write ratio: blit=664, write=763 (53.5% writes), screen=19x83
+2026-01-22T16:48:59.394Z [DEBUG] High write ratio: blit=664, write=764 (53.5% writes), screen=19x83
+2026-01-22T16:48:59.478Z [DEBUG] High write ratio: blit=664, write=765 (53.5% writes), screen=19x83
+2026-01-22T16:48:59.571Z [DEBUG] High write ratio: blit=664, write=766 (53.6% writes), screen=19x83
+2026-01-22T16:48:59.702Z [DEBUG] High write ratio: blit=664, write=767 (53.6% writes), screen=19x83
+2026-01-22T16:48:59.765Z [DEBUG] High write ratio: blit=664, write=768 (53.6% writes), screen=19x83
+2026-01-22T16:48:59.800Z [DEBUG] High write ratio: blit=664, write=769 (53.7% writes), screen=19x83
+2026-01-22T16:49:00.015Z [DEBUG] High write ratio: blit=664, write=770 (53.7% writes), screen=19x83
+2026-01-22T16:49:00.148Z [DEBUG] High write ratio: blit=664, write=771 (53.7% writes), screen=19x83
+2026-01-22T16:49:00.280Z [DEBUG] High write ratio: blit=664, write=772 (53.8% writes), screen=19x83
+2026-01-22T16:49:00.350Z [DEBUG] High write ratio: blit=664, write=773 (53.8% writes), screen=19x83
+2026-01-22T16:49:00.457Z [DEBUG] High write ratio: blit=664, write=774 (53.8% writes), screen=19x83
+2026-01-22T16:49:00.814Z [DEBUG] High write ratio: blit=664, write=775 (53.9% writes), screen=19x83
+2026-01-22T16:49:00.943Z [DEBUG] High write ratio: blit=664, write=776 (53.9% writes), screen=19x83
+2026-01-22T16:49:01.071Z [DEBUG] High write ratio: blit=664, write=777 (53.9% writes), screen=19x83
+2026-01-22T16:49:01.225Z [DEBUG] High write ratio: blit=664, write=778 (54.0% writes), screen=19x83
+2026-01-22T16:49:01.403Z [DEBUG] High write ratio: blit=664, write=779 (54.0% writes), screen=19x83
+2026-01-22T16:49:02.405Z [DEBUG] High write ratio: blit=664, write=779 (54.0% writes), screen=19x83
+2026-01-22T16:49:02.601Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.602Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.610Z [DEBUG] High write ratio: blit=249, write=1051 (80.8% writes), screen=24x83
+2026-01-22T16:49:02.614Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:02.614Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:02.614Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:02.614Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:02.618Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.618Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.622Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.622Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.624Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-22T16:49:02.624Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:02.624Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T16:49:02.625Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T16:49:02.625Z [DEBUG] FileHistory: Making snapshot for message f43f7abc-25bb-49c5-b3cf-dd396ffdb560
+2026-01-22T16:49:02.626Z [DEBUG] FileHistory: Added snapshot for f43f7abc-25bb-49c5-b3cf-dd396ffdb560, tracking 0 files
+2026-01-22T16:49:02.628Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-22T16:49:02.629Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T16:49:02.629Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at AW (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at hGR (/$bunfs/root/claude:1482:380)
+    at hGR (/$bunfs/root/claude:1482:1350)
+    at <anonymous> (/$bunfs/root/claude:1482:4440)
+    at <anonymous> (/$bunfs/root/claude:1482:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at iq8 (/$bunfs/root/claude:4125:4342)
+    at async KO8 (/$bunfs/root/claude:5221:27397)
+    at async _FR (/$bunfs/root/claude:5221:26087)
+    at async <anonymous> (/$bunfs/root/claude:5228:6382)
+    at async <anonymous> (/$bunfs/root/claude:5219:4656)
+2026-01-22T16:49:02.634Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T16:49:02.634Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T16:49:02.634Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T16:49:02.634Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T16:49:02.636Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.636Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.636Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.87b; cc_entrypoint=cli
+2026-01-22T16:49:02.636Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:02.636Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:02.637Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:02.645Z [DEBUG] Loaded 51 unique skills (managed: 0, user: 17, project: 6, legacy commands: 28)
+2026-01-22T16:49:02.645Z [DEBUG] getSkills returning: 51 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T16:49:02.646Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:02.647Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.647Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.649Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:02.649Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:02.649Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:02.649Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:02.650Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.650Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:02.686Z [DEBUG] High write ratio: blit=249, write=1051 (80.8% writes), screen=24x83
+2026-01-22T16:49:04.367Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:04.367Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:06.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.355Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-01-22T16:49:06.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.364Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-01-22T16:49:06.364Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:06.364Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-22T16:49:06.364Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.364Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.367Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.367Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.370Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.370Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.373Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.373Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.901Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.901Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.903Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-01-22T16:49:06.903Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:06.903Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-22T16:49:06.903Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.903Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.903Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.905Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:06.905Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:06.905Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:06.905Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:06.906Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.906Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.907Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.907Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.908Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:06.909Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.909Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.910Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:06.910Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:06.910Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:06.910Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:06.911Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:06.911Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:07.833Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:08.734Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.734Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.736Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-01-22T16:49:08.737Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.737Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.738Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-01-22T16:49:08.738Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:08.738Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-22T16:49:08.741Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.741Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.744Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.744Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.747Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.747Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.749Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:08.749Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.123Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.123Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.125Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-01-22T16:49:09.125Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:09.125Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-22T16:49:09.125Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.125Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.125Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.127Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:09.127Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:09.127Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:09.127Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:09.128Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.128Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.130Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.130Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.132Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:09.133Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.133Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.134Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:09.134Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:09.134Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:09.134Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:09.135Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:09.137Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:10.438Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:11.231Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.231Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.241Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T16:49:11.241Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.241Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.244Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T16:49:11.244Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:11.244Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T16:49:11.244Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.244Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.246Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.246Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.249Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.249Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.251Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.251Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.253Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.253Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.255Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T16:49:11.255Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:11.255Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T16:49:11.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.261Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:11.261Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:11.261Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:11.261Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:11.262Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.262Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.264Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.264Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.265Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:11.266Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.266Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.268Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:11.268Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:11.268Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:11.268Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:11.269Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:11.269Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:12.114Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:19.912Z [DEBUG] High write ratio: blit=498, write=1293 (72.2% writes), screen=39x83
+2026-01-22T16:49:23.668Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.668Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.672Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.672Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.674Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T16:49:23.674Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.674Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.676Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T16:49:23.676Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:23.676Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:23.676Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.676Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.678Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.678Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.680Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.682Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.685Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100563685
+2026-01-22T16:49:23.685Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T16:49:23.686Z [DEBUG] Temp file written successfully, size: 3640 bytes
+2026-01-22T16:49:23.686Z [DEBUG] Applied original permissions to temp file
+2026-01-22T16:49:23.686Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100563685 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:23.686Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md written atomically
+2026-01-22T16:49:23.687Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:23.688Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.688Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.690Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .md
+2026-01-22T16:49:23.690Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.690Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.693Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T16:49:23.693Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:23.693Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:23.694Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.694Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.694Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.712Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:23.712Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:23.713Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:23.713Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:23.717Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.717Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.721Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.721Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.723Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:23.725Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.725Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.730Z [DEBUG] High write ratio: blit=1826, write=3357 (64.8% writes), screen=102x83
+2026-01-22T16:49:23.732Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.732Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.733Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:23.733Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:23.733Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:23.733Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:23.737Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.737Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:23.769Z [DEBUG] High write ratio: blit=2415, write=3329 (58.0% writes), screen=102x83
+2026-01-22T16:49:24.678Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:24.688Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:24.688Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T16:49:24.688Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at AW (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at hGR (/$bunfs/root/claude:1482:380)
+    at hGR (/$bunfs/root/claude:1482:1350)
+    at <anonymous> (/$bunfs/root/claude:1482:4440)
+    at <anonymous> (/$bunfs/root/claude:1482:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at iq8 (/$bunfs/root/claude:4125:4342)
+2026-01-22T16:49:24.693Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T16:49:24.693Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T16:49:24.693Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T16:49:24.693Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T16:49:24.697Z [DEBUG] Loaded 51 unique skills (managed: 0, user: 17, project: 6, legacy commands: 28)
+2026-01-22T16:49:24.697Z [DEBUG] getSkills returning: 51 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T16:49:33.625Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.625Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.628Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.628Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.631Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T16:49:33.631Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.631Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.634Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T16:49:33.634Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:33.634Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:33.634Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.634Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.636Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.636Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.639Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.639Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.645Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100573645
+2026-01-22T16:49:33.645Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T16:49:33.645Z [DEBUG] Temp file written successfully, size: 5586 bytes
+2026-01-22T16:49:33.645Z [DEBUG] Applied original permissions to temp file
+2026-01-22T16:49:33.645Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100573645 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:33.645Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md written atomically
+2026-01-22T16:49:33.646Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.646Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.651Z [DEBUG] High write ratio: blit=2415, write=3379 (58.3% writes), screen=104x83
+2026-01-22T16:49:33.651Z [DEBUG] Full reset (scrollback changes): scrollbackRows=98, changes=1/4, firstChangeY=96
+  prev: "⏺ Update(.claude/skills/writing-plans/SKILL.md)                                    "
+  next: "  Update(.claude/skills/writing-plans/SKILL.md)                                    "
+2026-01-22T16:49:33.655Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.655Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.657Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T16:49:33.657Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:33.657Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:33.657Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.660Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.660Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.672Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:33.672Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:33.672Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:33.672Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:33.673Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.673Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.679Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.679Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.683Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:33.684Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, iterate_plan_nt, ci_commit, ralph_plan, research_codebase_generic, local_review, create_worktree, implement_plan, ci_describe_pr, founder_mode, create_plan, validate_plan, describe_pr_nt, commit-push-pr, research_codebase_nt, ralph_research, iterate_plan, describe_pr, commit, create_plan_nt, oneshot_plan, linear, ralph_impl, oneshot, resume_handoff, research_codebase, create_plan_generic, create_handoff
+2026-01-22T16:49:33.684Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.684Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.693Z [DEBUG] High write ratio: blit=2415, write=11102 (82.1% writes), screen=219x83
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.702Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:33.702Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:33.702Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:33.702Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:33.705Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.705Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:33.741Z [DEBUG] High write ratio: blit=3061, write=11066 (78.3% writes), screen=219x83
+2026-01-22T16:49:34.599Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:35.160Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:35.160Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T16:49:35.160Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at AW (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at hGR (/$bunfs/root/claude:1482:380)
+    at hGR (/$bunfs/root/claude:1482:1350)
+    at <anonymous> (/$bunfs/root/claude:1482:4440)
+    at <anonymous> (/$bunfs/root/claude:1482:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at iq8 (/$bunfs/root/claude:4125:4342)
+2026-01-22T16:49:35.164Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T16:49:35.164Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T16:49:35.164Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T16:49:35.164Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T16:49:35.167Z [DEBUG] Loaded 51 unique skills (managed: 0, user: 17, project: 6, legacy commands: 28)
+2026-01-22T16:49:35.167Z [DEBUG] getSkills returning: 51 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T16:49:39.576Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.576Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.581Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.581Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.591Z [DEBUG] High write ratio: blit=3061, write=11112 (78.4% writes), screen=221x83
+2026-01-22T16:49:39.592Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T16:49:39.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.599Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T16:49:39.599Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:39.599Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:39.600Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.600Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.604Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.604Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.608Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.608Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.612Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100579612
+2026-01-22T16:49:39.612Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T16:49:39.612Z [DEBUG] Temp file written successfully, size: 6175 bytes
+2026-01-22T16:49:39.612Z [DEBUG] Applied original permissions to temp file
+2026-01-22T16:49:39.612Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md.tmp.47309.1769100579612 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:39.613Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md written atomically
+2026-01-22T16:49:39.615Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.615Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.620Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.620Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.623Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T16:49:39.623Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:39.623Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T16:49:39.623Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.624Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.624Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.639Z [DEBUG] High write ratio: blit=3061, write=12981 (80.9% writes), screen=253x83
+2026-01-22T16:49:39.650Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:39.650Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:39.650Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:39.650Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:39.653Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.653Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.659Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.659Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.664Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:39.665Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, iterate_plan_nt, ci_commit, ralph_plan, research_codebase_generic, local_review, create_worktree, implement_plan, ci_describe_pr, founder_mode, create_plan, validate_plan, describe_pr_nt, commit-push-pr, research_codebase_nt, ralph_research, iterate_plan, describe_pr, commit, create_plan_nt, oneshot_plan, linear, ralph_impl, oneshot, resume_handoff, research_codebase, create_plan_generic, create_handoff
+2026-01-22T16:49:39.665Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.665Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.669Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.670Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.670Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.670Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:39.670Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:39.670Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:39.670Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:39.673Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.673Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:39.698Z [DEBUG] High write ratio: blit=3292, write=12945 (79.7% writes), screen=253x83
+2026-01-22T16:49:40.649Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:41.118Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills/writing-plans/SKILL.md
+2026-01-22T16:49:41.118Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T16:49:41.118Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at AW (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at hGR (/$bunfs/root/claude:1482:380)
+    at hGR (/$bunfs/root/claude:1482:1350)
+    at <anonymous> (/$bunfs/root/claude:1482:4440)
+    at <anonymous> (/$bunfs/root/claude:1482:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at iq8 (/$bunfs/root/claude:4125:4342)
+2026-01-22T16:49:41.119Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T16:49:41.119Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T16:49:41.119Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T16:49:41.119Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T16:49:41.122Z [DEBUG] Loaded 51 unique skills (managed: 0, user: 17, project: 6, legacy commands: 28)
+2026-01-22T16:49:41.123Z [DEBUG] getSkills returning: 51 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T16:49:41.375Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.375Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.382Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.382Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.391Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T16:49:41.391Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.391Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.396Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T16:49:41.396Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:41.396Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T16:49:41.396Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.396Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.401Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.401Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.415Z [DEBUG] High write ratio: blit=3292, write=13000 (79.8% writes), screen=255x83
+2026-01-22T16:49:41.415Z [DEBUG] Full reset (scrollback changes): scrollbackRows=249, changes=1/9, firstChangeY=247
+  prev: "⏺ Read(.claude/skills/writing-plans/SKILL.md)                                      "
+  next: "  Read(.claude/skills/writing-plans/SKILL.md)                                      "
+2026-01-22T16:49:41.425Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.425Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.431Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.431Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.443Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.443Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.449Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T16:49:41.449Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:41.449Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T16:49:41.449Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.449Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.449Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.455Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T16:49:41.455Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T16:49:41.455Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T16:49:41.455Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T16:49:41.456Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.456Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.467Z [DEBUG] High write ratio: blit=3292, write=13019 (79.8% writes), screen=256x83
+2026-01-22T16:49:41.478Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.478Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.483Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:41.484Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, iterate_plan_nt, ci_commit, ralph_plan, research_codebase_generic, local_review, create_worktree, implement_plan, ci_describe_pr, founder_mode, create_plan, validate_plan, describe_pr_nt, commit-push-pr, research_codebase_nt, ralph_research, iterate_plan, describe_pr, commit, create_plan_nt, oneshot_plan, linear, ralph_impl, oneshot, resume_handoff, research_codebase, create_plan_generic, create_handoff
+2026-01-22T16:49:41.484Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.484Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.488Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.489Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:41.489Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:41.489Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:41.489Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:41.490Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.490Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:41.519Z [DEBUG] High write ratio: blit=3375, write=13000 (79.4% writes), screen=256x83
+2026-01-22T16:49:43.207Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:49:43.780Z [DEBUG] High write ratio: blit=3375, write=13000 (79.4% writes), screen=256x83
+2026-01-22T16:49:51.794Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.795Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.802Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.802Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.808Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-22T16:49:51.808Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:49:51.808Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T16:49:51.808Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-22T16:49:51.811Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.811Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.825Z [DEBUG] High write ratio: blit=7691, write=12956 (62.8% writes), screen=308x83
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.826Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.54d; cc_entrypoint=cli
+2026-01-22T16:49:51.826Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T16:49:51.826Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T16:49:51.826Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T16:49:51.830Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T16:49:51.831Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.831Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:49:51.877Z [DEBUG] High write ratio: blit=7857, write=12940 (62.2% writes), screen=308x83
+2026-01-22T16:49:53.902Z [DEBUG] Stream started - received first chunk
+2026-01-22T16:50:02.530Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:50:02.530Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:50:02.557Z [DEBUG] High write ratio: blit=7857, write=12940 (62.2% writes), screen=308x83
+2026-01-22T16:50:02.561Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:50:02.561Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T16:50:02.567Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-22T16:50:02.567Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T16:50:02.567Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T16:50:02.567Z [DEBUG] [Speculation] enabled=false
+2026-01-22T16:50:02.619Z [DEBUG] High write ratio: blit=7857, write=13019 (62.4% writes), screen=308x83
+2026-01-22T16:51:33.404Z [DEBUG] High write ratio: blit=0, write=14183 (100.0% writes), screen=342x66
+2026-01-22T16:51:37.680Z [DEBUG] High write ratio: blit=0, write=18737 (100.0% writes), screen=292x107

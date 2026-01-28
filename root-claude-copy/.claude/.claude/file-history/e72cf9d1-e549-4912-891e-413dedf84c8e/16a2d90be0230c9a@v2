@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-starter-python"
+version = "1.0.0"
+description = "Simple voice AI assistant built with LiveKit Agents for Python"
+requires-python = ">=3.11, <3.14"
+
+dependencies = [
+    "livekit-agents[silero,turn-detector]~=1.3",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "python-dotenv",
+    "loguru",
+    "pydantic>=2.0,<3.0",
+    "pydantic-settings>=2.0,<3.0",
+    "rapidfuzz>=3.14.3",
+    "click>=8.3.1",
+]
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.26.0",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-bdd>=8.1.0",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "A", "C4", "UP", "SIM", "RUF"]
+ignore = ["E501"]  # Line too long (handled by formatter)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.basedpyright]
+# Virtual environment configuration for uv projects
+# basedpyright will look for .venv in the current directory
+venvPath = "."
+venv = ".venv"
+
+# Type checking mode - can be "basic", "standard", or "strict"
+typeCheckingMode = "standard"
+
+# Report missing imports as warnings instead of errors
+# This helps reduce false positives when packages are installed but not detected
+reportMissingImports = "warning"
+

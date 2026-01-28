@@ -1,0 +1,32 @@
+uv run python src/agent.py console
+2026-01-20 14:43:09.856 | INFO     | factories:create_stt:28 - Creating LiveKit STT adapter with model: assemblyai/universal-streaming                                                                                                              
+2026-01-20 14:43:09.856 | INFO     | factories:create_llm:45 - Creating LiveKit LLM adapter with model: openai/gpt-4.1-nano
+2026-01-20 14:43:09.874 | INFO     | factories:create_tts:62 - Creating LiveKit TTS adapter with model: inworld/inworld-tts-1, voice: Ashley
+2026-01-20 14:43:09.875 | INFO     | session_handler:__init__:45 - SessionHandler initialized
+2026-01-20 14:43:09.875 | INFO     | __main__:__init__:102 - VoiceAgentApp initialized with adapter type: livekit
+2026-01-20 14:43:09.875 | INFO     | __main__:run:119 - Starting voice agent application
+    Agents   Starting console mode 🚀
+              
+    14:43:09.915 DEBUG  asyncio            Using selector: KqueueSelector  
+    14:43:09.916 INFO   livekit.agents     arting worker {"version": "1.3.11", "rtc-version": "1.0.23"}
+    14:43:09.917 INFO   livekit.agents     starting inference executor  
+    14:43:09.923 INFO   livekit.agents     initializing process {"pid": 35629, "inference": true}
+    14:43:11.034 INFO   livekit.agents     process initialized {"pid": 35629, "inference": true, "elapsed_time": 1.11}
+    14:43:11.036 INFO   livekit.agents     HTTP server listening on :53223  
+    14:43:11.045 INFO   livekit.agents     initializing job runner {"tid": 2343894}
+    14:43:11.073 DEBUG  asyncio            Using selector: KqueueSelector  
+                 INFO   livekit.agents     job runner initialized {"tid": 2343894, "elapsed_time": 0.03}
+2026-01-20 14:43:11.085 | INFO     | session_handler:handle_session:58 - Starting session for room: console
+    14:43:11.105 DEBUG  livekit.agents     http_session(): creating a new httpclient ctx {"room": "console"}
+    14:43:11.106 DEBUG  livekit.agents     using audio io: `Console` -> `AgentSession` -> `TranscriptSynchronizer` ->     
+                                           `Console`                                                                      
+                                         {"room": "console"}
+    14:43:11.107 DEBUG  livekit.agents     using transcript io: `AgentSession` -> `TranscriptSynchronizer`  
+                                         {"room": "console"}
+2026-01-20 14:43:11.107 | INFO     | session_handler:handle_session:90 - Session started, connecting to room
+2026-01-20 14:43:11.107 | INFO     | session_handler:handle_session:95 - Connected to room successfully
+    14:43:15.162 DEBUG  livekit.agents     received user transcript  
+                                         {"user_transcript": "Hello.", "language": "", "transcript_delay": 
+0.4369509220123291, "room": "console"}
+    14:43:15.327 INFO   livekit.agents     Turn detector does not support language  {"room": "console"}
+    14:43:26.325 DEBUG  livekit.agents     resumed false interrupted speech {"timeout": 2.0, "room": "console"}

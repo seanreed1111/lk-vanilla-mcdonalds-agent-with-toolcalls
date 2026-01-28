@@ -1,0 +1,588 @@
+=== COMMIT MESSAGE ===
+Hotfix username (#538)
+
+* user-> username
+
+* and another one
+
+* more fixes
+
+* update
+=== FILES CHANGED ===
+bot/database_manager/drop_databases_dangerously.py|4|4
+bot/database_manager/hydrate_common_db.py|27|44
+bot/dbase.py|1|1
+bot/migrations/schemas/env.py|13|9
+=== COMMIT MESSAGE ===
+File cleanup (#566)
+
+* initial commit
+
+* more deletions
+
+* more
+=== FILES CHANGED ===
+.neon|0|3
+bedrock/make_inference_profile.py|0|64
+bedrock/output.txt|0|101
+bot.svg|0|13
+bot/audivi_system/order_processing.py|0|58
+{bot/audivi_system/markdown => diagrams/documents}/agent_documentation.md|0|0
+{bot/audivi_system/markdown => diagrams/documents}/ensemble_documentation.md|0|0
+{bot/audivi_system/markdown => diagrams/documents}/state_machine_documentation.md|0|0
+out|0|13
+packages/.gitkeep|0|0
+pydantic.svg|0|67
+pyproject.toml|0|58
+python_project_structure.md|0|504
+realtime-experiment.svg|0|13
+realtime-experiment_bot.svg|0|13
+ruff-0.12.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl|0|0
+six.png|0|0
+six.svg|0|13
+uv.lock|0|1770
+=== COMMIT MESSAGE ===
+Delete old files (#576)
+
+* prunes code
+
+* delete more files
+
+* another file
+
+* and another one
+=== FILES CHANGED ===
+bot/audivi_system/diskcache_full_text_search.py|0|215
+bot/database.py|0|448
+bot/generate_order_json.py|0|209
+bot/globals_in_dir.output|0|517
+bot/graveyard/alembic-old/alembic.ini|0|76
+bot/graveyard/alembic-old/alembic_client.ini|0|88
+bot/graveyard/alembic-old/client/env.py|0|94
+bot/graveyard/alembic-old/client/script.py.mako|0|23
+bot/graveyard/alembic-old/client/versions/20250701_1742_adc27acf50fa_initial_client_revision.py|0|173
+bot/graveyard/alembic-old/common/env.py|0|66
+bot/graveyard/alembic-old/common/script.py.mako|0|23
+bot/graveyard/alembic-old/common/versions/20250701_1702_7636ea8d0023_initial_commit.py|0|211
+bot/graveyard/alembic-old/old/old-versions-client/20250115_0200_18d8e333f594_create_users_table.py|0|37
+bot/graveyard/alembic-old/old/old-versions-client/20250307_1842_224e5cbd67fd_create_tenant_tables.py|0|105
+bot/graveyard/alembic-old/old/old-versions-client/20250320_1340_10cb6b1cbf48_upgrades_to_locaiotn_pos_and_headset_.py|0|135
+bot/graveyard/alembic-old/old/old-versions-client/20250321_2250_43c0b0f9c686_added_hourly_performance_aggregation_.py|0|65
+bot/graveyard/alembic-old/old/old-versions-client/20250322_2234_f91fd1b3ec12_adding_monthly_rolling_table.py|0|44
+bot/graveyard/alembic-old/old/old-versions-client/20250323_0026_fb51d511dbb7_added_new_cols_to_orderevent_table.py|0|66
+bot/graveyard/alembic-old/old/old-versions-client/20250324_0347_1ad576ff8e0f_adding_operator_id_to_locaiton_table.py|0|33
+bot/graveyard/alembic-old/old/old-versions-client/20250325_1427_d2d911bc946a_added_brand_info_and_lane_num.py|0|64
+bot/graveyard/alembic-old/old/old-versions-client/20250326_2235_8f82d2b95693_hours_stats_rolling_table.py|0|137
+bot/graveyard/alembic-old/old/old-versions-client/20250327_1421_16f01ed4d58f_hypertables_and_locaiton_id.py|0|55
+bot/graveyard/alembic-old/old/old-versions-client/20250331_2325_d43ab94245d7_adding_brand_filename_to_locations.py|0|37
+bot/graveyard/alembic-old/old/old-versions-client/20250402_1835_162a335d4220_added_timezone_to_event_and_hourly_.py|0|31
+bot/graveyard/alembic-old/old/old-versions-client/20250421_1735_8f6926285dae_.py|0|250
+bot/graveyard/alembic-old/old/old-versions-common/20250115_0137_fb53307df34d_create_clients_table.py|0|38
+bot/graveyard/alembic-old/old/old-versions-common/20250227_1907_1ad370243987_add_ds_data_cols.py|0|81
+bot/graveyard/alembic-old/old/old-versions-common/20250307_1829_e9300ac08e95_update_clients_table.py|0|37
+bot/graveyard/alembic-old/old/old-versions-common/20250317_2229_a48a9eb2e582_updates_to_new_client_schema.py|0|54
+bot/graveyard/alembic-old/old/old-versions-common/20250320_1957_9a7bb8b61b4f_upgrades_pos_and_headset_tables.py|0|353
+bot/graveyard/alembic-old/old/old-versions-common/20250322_2108_043cbaf65345_update_operatorstautus_enum_handling.py|0|27
+bot/graveyard/alembic-old/old/old-versions-common/20250331_2207_7d552d3ffb6b_.py|0|27
+bot/graveyard/alembic-old/old/old-versions-common/20250421_1954_3511eb075395_.py|0|78
+bot/graveyard/alembic-old/old/old-versions-common/20250626_2148_eb9b869b4ba2_update_schema_changes.py|0|67
+bot/graveyard/alembic-old/old/old-versions-common/20250630_1733_0a7a40e33cb1_change_ds_data.py|0|25
+bot/graveyard/alembic-old/old/old-versions-common/20c4cb544ca1_add_ds_data.py|0|77
+bot/graveyard/alembic-old/old/old-versions-common/cef466eaa639_added_agent_memory_brand_name.py|0|35
+bot/graveyard/alembic-old/old/old-versions-common/da85106857e3_create_agent_memory_table.py|0|58
+bot/graveyard/alembic-old/old/old-versions-common/f57d4d930072_create_ds_data_autocorrect.py|0|42
+bot/graveyard/alembic-old/old/old-versions/20250115_0137_fb53307df34d_create_clients_table.py|0|38
+bot/graveyard/alembic-old/old/old-versions/20250227_1907_1ad370243987_add_ds_data_cols.py|0|81
+bot/graveyard/alembic-old/old/old-versions/20250307_1829_e9300ac08e95_update_clients_table.py|0|37
+bot/graveyard/alembic-old/old/old-versions/20250317_2229_a48a9eb2e582_updates_to_new_client_schema.py|0|54
+bot/graveyard/alembic-old/old/old-versions/20250320_1957_9a7bb8b61b4f_upgrades_pos_and_headset_tables.py|0|353
+bot/graveyard/alembic-old/old/old-versions/20250322_2108_043cbaf65345_update_operatorstautus_enum_handling.py|0|27
+bot/graveyard/alembic-old/old/old-versions/20250331_2207_7d552d3ffb6b_.py|0|27
+bot/graveyard/alembic-old/old/old-versions/20250421_1954_3511eb075395_.py|0|78
+bot/graveyard/alembic-old/old/old-versions/20250626_2148_eb9b869b4ba2_update_schema_changes.py|0|67
+bot/graveyard/alembic-old/old/old-versions/20250630_1733_0a7a40e33cb1_change_ds_data.py|0|25
+bot/graveyard/alembic-old/old/old-versions/20c4cb544ca1_add_ds_data.py|0|77
+bot/graveyard/alembic-old/old/old-versions/cef466eaa639_added_agent_memory_brand_name.py|0|35
+bot/graveyard/alembic-old/old/old-versions/da85106857e3_create_agent_memory_table.py|0|58
+bot/graveyard/alembic-old/old/old-versions/f57d4d930072_create_ds_data_autocorrect.py|0|42
+=== COMMIT MESSAGE ===
+Ruff (#611)
+
+* update ruff.toml
+
+* after ruff format
+
+* with ruff check --fix .
+
+* deletes files
+=== FILES CHANGED ===
+agent-task-review-tool/read_heterogenous-parquet-files.py|50|39
+bot/__init__.py|11|8
+bot/agent_task_review_tool.py|357|127
+bot/api/__init__.py|3|2
+bot/api/analytics.py|8|10
+bot/api/auth.py|29|11
+bot/api/entities.py|52|34
+bot/api/operations.py|50|52
+bot/audio/mdf.py|203|131
+bot/audivi_demo.py|150|106
+bot/audivi_system/__init__.py|6|3
+bot/audivi_system/agent.py|1470|673
+bot/audivi_system/agent_prompts_jib.py|183|99
+bot/audivi_system/agent_prompts_qu.py|182|119
+bot/audivi_system/agent_prompts_wat.py|242|133
+bot/audivi_system/agent_prompts_zax.py|116|81
+bot/audivi_system/async_redis.py|29|16
+bot/audivi_system/client_relay.py|223|136
+bot/audivi_system/convo_relay.py|403|242
+bot/audivi_system/ensemble.py|4591|2728
+bot/audivi_system/examples/backup_xlsx_files.py|65|29
+bot/audivi_system/intent_eval.py|38|17
+bot/audivi_system/models_old.py|9|8
+bot/audivi_system/order_eval.py|193|54
+bot/audivi_system/protobuf/ontology/order_pb2.py|21|15
+bot/audivi_system/protobuf/ontology/order_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/ontology/ordertaker_pb2.py|34|27
+bot/audivi_system/protobuf/ontology/ordertaker_pb2_grpc.py|236|41
+bot/audivi_system/protobuf/ontology/posagnostic_pb2.py|20|11
+bot/audivi_system/protobuf/ontology/posagnostic_pb2_grpc.py|152|27
+bot/audivi_system/protobuf/order_pb2.py|20|23
+bot/audivi_system/protobuf/order_pb2_grpc.py|11|7
+bot/audivi_system/protobuf/ordertaker_pb2.py|32|33
+bot/audivi_system/protobuf/ordertaker_pb2_grpc.py|157|135
+bot/audivi_system/protobuf/posagnostic_pb2.py|16|17
+bot/audivi_system/protobuf/posagnostic_pb2_grpc.py|101|85
+bot/audivi_system/protobuf/product_services/operational_site/operational_site_pb2.py|33|15
+bot/audivi_system/protobuf/product_services/operational_site/operational_site_pb2_grpc.py|203|37
+bot/audivi_system/protobuf/product_services/operational_site/site_identity_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/operational_site/site_identity_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/category_operations_pb2.py|28|15
+bot/audivi_system/protobuf/product_services/product_authority/category_operations_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/ingested_products_pb2.py|25|7
+bot/audivi_system/protobuf/product_services/product_authority/ingested_products_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/menu_operations_pb2.py|36|20
+bot/audivi_system/protobuf/product_services/product_authority/menu_operations_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/offering_operations_pb2.py|30|17
+bot/audivi_system/protobuf/product_services/product_authority/offering_operations_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_authority_pb2.py|34|10
+bot/audivi_system/protobuf/product_services/product_authority/product_authority_pb2_grpc.py|461|81
+bot/audivi_system/protobuf/product_services/product_authority/product_bundle_pb2.py|22|6
+bot/audivi_system/protobuf/product_services/product_authority/product_bundle_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_bundle_slot_pb2.py|22|6
+bot/audivi_system/protobuf/product_services/product_authority/product_bundle_slot_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_ingredient_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/product_authority/product_ingredient_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_ingredient_slot_pb2.py|24|6
+bot/audivi_system/protobuf/product_services/product_authority/product_ingredient_slot_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_operations_pb2.py|24|11
+bot/audivi_system/protobuf/product_services/product_authority/product_operations_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_authority/product_pb2.py|22|6
+bot/audivi_system/protobuf/product_services/product_authority/product_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/ended_order_pb2.py|27|9
+bot/audivi_system/protobuf/product_services/product_ordering/ended_order_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/fetched_order_pb2.py|33|15
+bot/audivi_system/protobuf/product_services/product_ordering/fetched_order_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/order_issue_pb2.py|20|7
+bot/audivi_system/protobuf/product_services/product_ordering/order_issue_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/order_streaming_pb2.py|36|16
+bot/audivi_system/protobuf/product_services/product_ordering/order_streaming_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/order_totals_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/product_ordering/order_totals_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/ordering_product_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/product_ordering/ordering_product_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/product_category_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/product_ordering/product_category_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/product_factory_menu_pb2.py|22|6
+bot/audivi_system/protobuf/product_services/product_ordering/product_factory_menu_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/product_factory_offering_pb2.py|34|12
+bot/audivi_system/protobuf/product_services/product_ordering/product_factory_offering_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/product_order_item_pb2.py|22|9
+bot/audivi_system/protobuf/product_services/product_ordering/product_order_item_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/product_ordering/product_ordering_pb2.py|31|9
+bot/audivi_system/protobuf/product_services/product_ordering/product_ordering_pb2_grpc.py|245|39
+bot/audivi_system/protobuf/product_services/product_ordering/updated_order_pb2.py|22|6
+bot/audivi_system/protobuf/product_services/product_ordering/updated_order_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/well_known/menu_availability_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/well_known/menu_availability_pb2_grpc.py|14|3
+bot/audivi_system/protobuf/product_services/well_known/service_description_pb2.py|18|5
+bot/audivi_system/protobuf/product_services/well_known/service_description_pb2_grpc.py|14|3
+bot/audivi_system/src/agent_utils.py|146|116
+bot/audivi_system/src/context.py|593|349
+bot/audivi_system/src/state_helpers.py|473|312
+bot/audivi_system/src/state_utils.py|133|70
+bot/audivi_system/src/utils.py|543|262
+bot/audivi_system/src/uuid7.py|165|128
+bot/audivi_system/stanley.py|451|227
+bot/audivi_system/stanleyLangSpecific.py|747|229
+bot/audivi_system/state_machine.py|6401|2410
+bot/audivi_system/tests/S2T/elevenlabs_gen_audio.py|7|11
+bot/audivi_system/tests/S2T/evaluate_transcript.py|7|7
+bot/audivi_system/tests/S2T/generate_audio_files.py|13|11
+bot/audivi_system/tests/S2T/groq_transcript_eval.py|10|9
+bot/audivi_system/tests/S2T/transcribe_audio_files.py|8|8
+bot/audivi_system/tests/S2T/transcribe_dg.py|3|6
+bot/audivi_system/tests/smoke/conftest.py|4|2
+bot/audivi_system/tests/smoke/test_smoke.py|23|11
+bot/audivi_system/tests/smoke/test_smoke_cases.py|67|37
+bot/audivi_system/tests/smoke/valid_output.py|32|18
+bot/audivi_system/tests/test_conversation/cases_conversation_eval.py|3396|23
+bot/audivi_system/tests/test_conversation/src/cases_conversation_eval.py|3398|25
+bot/audivi_system/tests/test_conversation/src/generate_cases.py|10|5
+bot/audivi_system/tests/test_conversation/src/json2yaml.py|17|29
+bot/audivi_system/tests/test_conversation/src/parse_json.py|4|4
+bot/audivi_system/tests/test_conversation/src/pyaml.py|1|1
+bot/audivi_system/tests/test_conversation/test_conversation_eval_menu_v004.py|91|51
+bot/audivi_system/tests/test_conversation/yaml/cases_conversation_eval.py|3384|23
+bot/audivi_system/tests/test_conversation/yaml/json2yaml.py|4|2
+bot/audivi_system/tracing.py|97|87
+bot/audivi_system/unit_tests/state_helpers/test_node_indexes.py|507|482
+bot/audivi_system/unit_tests/state_helpers/test_state_helpers.py|28|50
+bot/audivi_system/unit_tests/state_machine/test_state_machine.py|52|29
+bot/audivi_system/unit_tests/utils/test_utils.py|64|40
+bot/check_operators.py|4|3
+bot/config.py|20|14
+bot/convert_csv_to_xlsx.py|14|11
+bot/convo_cli.py|383|222
+bot/convo_cli_tools.py|234|197
+bot/database_manager/__init__.py|15|14
+bot/database_manager/address_manager.py|114|89
+bot/database_manager/brand_manager.py|79|61
+bot/database_manager/delete_operator.py|36|23
+bot/database_manager/drop_databases_dangerously.py|147|100
+bot/database_manager/headset_system_manager.py|124|91
+bot/database_manager/hydrate_common_db.py|209|75
+bot/database_manager/hydrate_location.py|41|28
+bot/database_manager/lane_manager.py|148|114
+bot/database_manager/location_context.py|68|42
+bot/database_manager/location_headset_manager.py|89|77
+bot/database_manager/location_manager.py|221|172
+bot/database_manager/location_pos_manager.py|83|76
+bot/database_manager/pos_system_manager.py|118|92
+bot/database_manager/slug_utils.py|1|3
+bot/database_manager/stats_updater.py|190|148
+bot/database_manager/system_status.py|102|84
+bot/database_manager/table_manager.py|180|135
+bot/database_manager/test_slug_utils.py|25|16
+bot/database_manager/test_system_status.py|94|68
+bot/dbase.py|25|20
+bot/dbase_sync.py|11|7
+bot/debug_and_testing_utils.py|2|1
+bot/debug_spanglish_detector_v4.py|70|25
+bot/digits_to_words.py|35|5
+bot/headsets/hme_test.py|74|41
+bot/headsets/proto/gen/streaming_pb2.py|84|78
+bot/headsets/proto/gen/streaming_pb2.pyi|203|43
+bot/headsets/proto/gen/streaming_pb2_grpc.py|52|46
+bot/headsets/providers/hme/healthcheck.py|5|2
+bot/headsets/providers/hme/server_v2.py|81|64
+bot/helpers/bot_rtvi_actions.py|50|32
+bot/helpers/bot_rtvi_services.py|39|43
+bot/ingest_agent_memory.py|170|70
+bot/ingest_agent_memory_v2.py|242|95
+bot/insert_parquet_files_from_s3.py|23|14
+bot/inspect_specific_event.py|25|18
+bot/livekit_hamming.py|10|7
+bot/manage_clients.py|70|49
+bot/mex_tran.py|113|91
+bot/migrations/schemas/client/20250701_1742_adc27acf50fa_initial_client_revision.py|231|146
+bot/migrations/schemas/common/2025-07-14_16-26_1e6c89c47d29_update_lc_data_and_agent_memory_tables_.py|34|16
+bot/migrations/schemas/common/20250701_1702_7636ea8d0023_initial_commit.py|232|191
+bot/migrations/schemas/env.py|15|9
+bot/models/client.py|55|44
+bot/models/common.py|41|20
+bot/models/utils.py|53|15
+bot/notebooks/is_taking_order_dev.ipynb|114|67
+bot/notebooks/jupyter_example_notebook.ipynb|5|4
+bot/notebooks/location_headset_manager.py|94|76
+bot/notebooks/s2t_latencies_from_sigviz.ipynb|48|35
+bot/notebooks/stub_event_data_generator.ipynb|685|494
+bot/notebooks/test_runner_cell.py|50|28
+bot/notebooks/test_runner_db_calls.ipynb|51|22
+bot/otel/samples/otel3.py|9|10
+bot/otel/samples/otel4.py|8|7
+bot/otel/samples/otel_get_coros_to_trace.py|21|8
+bot/otel/samples/otel_pass_context.py|14|11
+bot/otel/samples/otel_pass_context_v2.py|13|13
+bot/pipeline.py|1252|682
+bot/pyproject.toml|0|16
+bot/quick_fix_csv_chars.py|16|19
+bot/runner.py|17|9
+bot/scripts/run_tests.py|45|31
+bot/scripts/update_hourly_stats.py|98|44
+bot/simulator/simulator_utils.py|168|137
+bot/spanglish_detector.py|74|37
+bot/spanglish_detector_v4.py|450|134
+bot/submit_order_anthropic.py|38|12
+bot/submit_order_groq.py|7|16
+bot/telemetrix.py|12|24
+bot/test_audio.py|0|1
+bot/test_dbase.py|14|10
+bot/test_event_timezone.py|38|30
+bot/test_pipeline.py|50|47
+bot/test_timezone.py|25|12
+bot/tests/__init__.py|1|1
+bot/tests/api/__init__.py|1|1
+bot/tests/api/conftest.py|16|14
+bot/tests/api/run_tests.py|17|14
+bot/tests/api/test_analytics.py|106|92
+bot/tests/api/test_analytics_performance.py|217|147
+bot/tests/api/test_auth.py|70|54
+bot/tests/api/test_entities.py|144|120
+bot/tests/api/test_locations.py|124|116
+bot/tests/api/test_operations_detailed.py|263|188
+bot/tests/api/test_operations_smoke.py|150|100
+bot/tests/conftest.py|74|52
+bot/tests/conversation/__init__.py|1|1
+bot/tests/conversation/archive_tests.py|0|1
+bot/tests/conversation/enhanced_test_framework.py|331|227
+bot/tests/conversation/event_logging_test.py|91|72
+bot/tests/conversation/forced_test_event.py|102|78
+bot/tests/conversation/latency_analysis/__init__.py|21|21
+bot/tests/conversation/latency_analysis/enhanced_latency_test.py|798|575
+bot/tests/conversation/latency_analysis/examples/example_comprehensive_analysis.py|186|143
+bot/tests/conversation/latency_analysis/response_time_distribution_analysis.py|319|212
+bot/tests/conversation/latency_analysis/tests/test_enhanced_latency.py|128|118
+bot/tests/conversation/latency_analysis/tests/test_transcript_analyzer.py|140|124
+bot/tests/conversation/latency_analysis/transcript_response_analyzer.py|576|364
+bot/tests/conversation/multi_conversation_test.py|117|75
+bot/tests/conversation/multi_restaurant_test.py|209|149
+bot/tests/conversation/print_valid_keys.py|26|18
+bot/tests/conversation/simple_docker_test.py|49|38
+bot/tests/conversation/simple_framework.py|258|206
+bot/tests/conversation/whataburger_latency_test.py|560|398
+bot/tests/database/test_database_utils.py|193|132
+bot/tests/deepeval/data/datasets/utils.py|4|11
+bot/tests/deepeval/metrics/json_structure_match.py|1|0
+bot/tests/deepeval/test_conversations.py|3|5
+bot/tests/integration/test_dbconfig_integration.py|7|3
+bot/tests/integration/test_hydrate_location.py|122|81
+bot/tests/integration/test_is_taking_orders.py|51|19
+bot/tests/integration/test_pipeline_vehicle_processing.py|134|135
+bot/tests/integration/update_test_db.py|32|19
+bot/tests/integration/update_test_locations.py|55|50
+bot/tests/unit/test_hydrate_location_unit.py|50|41
+bot/tests/unit/test_location_context.py|1|1
+bot/tools/benchmark_mextran_caching.py|21|15
+bot/tools/llm_timing_log_analyzer.py|250|190
+bot/tools/performance/debug_session_issue.py|103|75
+bot/tools/performance/measure_telemetrix_latency.py|110|88
+bot/tools/preinstall_ml_models.py|41|35
+bot/tools/run_tests.py|112|68
+bot/tools_config.py|74|39
+bot/watch.py|19|16
+check_db_values.py|25|14
+check_operator_status.py|11|9
+deepeval/graveyard/json_to_str.py|3|3
+demo_llm_timing_analysis.py|128|89
+jupyter/config.py|3|3
+jupyter/jupyter_notebook_config.py|8|8
+latency_cost_stats.py|171|116
+posrelay/__init__.py|8|4
+posrelay/cli.py|731|354
+posrelay/protobuf/ontology/order_pb2.py|21|15
+posrelay/protobuf/ontology/order_pb2_grpc.py|14|3
+posrelay/protobuf/ontology/ordertaker_pb2.py|34|27
+posrelay/protobuf/ontology/ordertaker_pb2_grpc.py|236|41
+posrelay/protobuf/ontology/posagnostic_pb2.py|20|11
+posrelay/protobuf/ontology/posagnostic_pb2_grpc.py|152|27
+posrelay/protobuf/order_pb2.py|20|23
+posrelay/protobuf/order_pb2_grpc.py|11|7
+posrelay/protobuf/ordertaker_pb2.py|32|33
+posrelay/protobuf/ordertaker_pb2_grpc.py|157|135
+posrelay/protobuf/posagnostic_pb2.py|16|17
+posrelay/protobuf/posagnostic_pb2_grpc.py|101|85
+posrelay/protobuf/product_services/operational_site/operational_site_pb2.py|33|15
+posrelay/protobuf/product_services/operational_site/operational_site_pb2_grpc.py|203|37
+posrelay/protobuf/product_services/operational_site/site_identity_pb2.py|18|5
+posrelay/protobuf/product_services/operational_site/site_identity_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/category_operations_pb2.py|28|15
+posrelay/protobuf/product_services/product_authority/category_operations_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/ingested_products_pb2.py|25|7
+posrelay/protobuf/product_services/product_authority/ingested_products_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/menu_operations_pb2.py|36|20
+posrelay/protobuf/product_services/product_authority/menu_operations_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/offering_operations_pb2.py|30|17
+posrelay/protobuf/product_services/product_authority/offering_operations_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_authority_pb2.py|34|10
+posrelay/protobuf/product_services/product_authority/product_authority_pb2_grpc.py|461|81
+posrelay/protobuf/product_services/product_authority/product_bundle_pb2.py|22|6
+posrelay/protobuf/product_services/product_authority/product_bundle_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_bundle_slot_pb2.py|22|6
+posrelay/protobuf/product_services/product_authority/product_bundle_slot_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_ingredient_pb2.py|18|5
+posrelay/protobuf/product_services/product_authority/product_ingredient_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_ingredient_slot_pb2.py|24|6
+posrelay/protobuf/product_services/product_authority/product_ingredient_slot_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_operations_pb2.py|24|11
+posrelay/protobuf/product_services/product_authority/product_operations_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_authority/product_pb2.py|22|6
+posrelay/protobuf/product_services/product_authority/product_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/ended_order_pb2.py|27|9
+posrelay/protobuf/product_services/product_ordering/ended_order_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/fetched_order_pb2.py|33|15
+posrelay/protobuf/product_services/product_ordering/fetched_order_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/order_issue_pb2.py|20|7
+posrelay/protobuf/product_services/product_ordering/order_issue_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/order_streaming_pb2.py|36|16
+posrelay/protobuf/product_services/product_ordering/order_streaming_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/order_totals_pb2.py|18|5
+posrelay/protobuf/product_services/product_ordering/order_totals_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/ordering_product_pb2.py|18|5
+posrelay/protobuf/product_services/product_ordering/ordering_product_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/product_category_pb2.py|18|5
+posrelay/protobuf/product_services/product_ordering/product_category_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/product_factory_menu_pb2.py|22|6
+posrelay/protobuf/product_services/product_ordering/product_factory_menu_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/product_factory_offering_pb2.py|34|12
+posrelay/protobuf/product_services/product_ordering/product_factory_offering_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/product_order_item_pb2.py|22|9
+posrelay/protobuf/product_services/product_ordering/product_order_item_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/product_ordering/product_ordering_pb2.py|31|9
+posrelay/protobuf/product_services/product_ordering/product_ordering_pb2_grpc.py|245|39
+posrelay/protobuf/product_services/product_ordering/updated_order_pb2.py|22|6
+posrelay/protobuf/product_services/product_ordering/updated_order_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/well_known/menu_availability_pb2.py|18|5
+posrelay/protobuf/product_services/well_known/menu_availability_pb2_grpc.py|14|3
+posrelay/protobuf/product_services/well_known/service_description_pb2.py|18|5
+posrelay/protobuf/product_services/well_known/service_description_pb2_grpc.py|14|3
+posrelay/pyproject.toml|0|2
+posrelay/server.py|469|203
+posrelay/src/aws_ssm_provider.py|16|21
+posrelay/src/brand_menus/menu_jib copy.py|128|93
+posrelay/src/brand_menus/menu_jib.py|62|55
+posrelay/src/brand_menus/menu_qu copy.py|405|178
+posrelay/src/brand_menus/menu_qu.py|73|57
+posrelay/src/brand_menus/menu_wat.py|189|137
+posrelay/src/brand_menus/menu_zax.py|54|44
+posrelay/src/menu.py|2403|1158
+posrelay/src/models.py|172|110
+posrelay/src/ontology.py|1431|745
+posrelay/src/orders.py|510|318
+posrelay/src/pos/pos_agnostic.py|694|352
+posrelay/src/pos/pos_grpc.py|282|134
+posrelay/src/pos/pos_qu.py|520|324
+posrelay/src/pos/pos_utils.py|438|170
+posrelay/src/pos/qu/qu_async-client-tests-IGNORE/__init__.py|1|1
+posrelay/src/pos/qu/qu_async-client-tests-IGNORE/brokentest_qu_async_client_on_httpbin.py|16|11
+posrelay/src/pos/qu/tests/qu_tests/qu_sync_client_tests/conftest.py|24|14
+posrelay/src/pos/qu/tests/qu_tests/qu_sync_client_tests/test_api.py|5|9
+posrelay/src/pos/qu/v1/src/http_async_client.py|11|11
+posrelay/src/pos/qu/v1/src/http_sync_client.py|41|23
+posrelay/src/pos/qu/v1/src/item_request.py|3|3
+posrelay/src/pos/qu/v1/src/modifier.py|1|0
+posrelay/src/pos/qu/v1/src/order_type.py|1|0
+posrelay/src/pos/qu/v1/src/restaurant_context.py|1|0
+posrelay/src/pos/qu/v1/src/utils.py|7|1
+posrelay/src/pos_relay.py|341|161
+posrelay/src/semantic_matching.py|31|26
+posrelay/src/utils.py|339|188
+posrelay/tests/disabled_menu_qu.py|38|20
+posrelay/tests/test_menu.py|114|47
+posrelay/tests/test_menu_ingestion.py|62|32
+posrelay/tests/test_menu_jib.py|1|2
+posrelay/tests/test_ontology.py|120|108
+posrelay/tests/test_orders_jib.py|58|46
+posrelay/tests/test_orders_qu.py|133|94
+posrelay/tests/test_orders_redis.py|1040|916
+posrelay/tests/test_pos_agnostic.py|256|235
+posrelay/tests/test_utils.py|32|14
+qu-pos-code/qu-clients/tests/qu_tests/qu_sync_client_tests/conftest.py|24|14
+qu-pos-code/qu-clients/tests/qu_tests/qu_sync_client_tests/test_api.py|5|9
+qu-pos-code/qu-clients/v1/src/http_sync_client.py|5|3
+qu-pos-code/qu-clients/v1/src/item_request.py|2|2
+qu-pos-code/qu-clients/v1/src/modifier.py|1|0
+qu-pos-code/qu-clients/v1/src/utils.py|7|1
+qu-pos-code/qu-clients/v2/aiohttp-main.py|10|2
+qu-pos-code/qu-clients/v2/src/dummy_models.py|1|1
+qu-pos-code/qu-clients/v2/src/fulfillment_method.py|1|1
+qu-pos-code/qu-clients/v2/src/item.py|5|5
+qu-pos-code/qu-clients/v2/src/modifier.py|2|2
+qu-pos-code/qu-clients/v2/src/sample_http_sync_client.py|5|3
+qu-pos-code/qu-clients/v2/src/type_alias.py|1|1
+qu-pos-code/qu-clients/v2/src/utils.py|8|1
+qu-pos-code/qu-clients/v2/tests_v2/async_httpbin_tests/test_async_client_on_httpbin.py|16|11
+qu-pos-code/qu-clients/v2/tests_v2/async_tests/test_client.py|5|2
+qu-pos-code/qu-clients/v2/tests_v2/conftest.py|2|4
+ruff.toml|53|9
+scheduler/src/scheduler/__init__.py|1|1
+scheduler/src/scheduler/__main__.py|2|2
+scheduler/src/scheduler/main.py|9|4
+scheduler/src/scheduler/scheduler.py|151|101
+scripts/run_tests.py|50|35
+=== COMMIT MESSAGE ===
+adds flaky to requirements.txt and docker compose tests (#626)
+
+* adds flaky to requirements.txt and docker compose tests
+
+* adds --no-success-flaky-report
+=== FILES CHANGED ===
+.github/workflows/check-docker-compose.yml|1|1
+bot/requirements.txt|1|0
+=== COMMIT MESSAGE ===
+Hotfix deepeval timeout (#629)
+
+* changes timeout to 8 mins
+
+* changes timeout to 10 mins
+
+* supresses all flaky reporting
+=== FILES CHANGED ===
+.github/workflows/check-docker-compose.yml|2|2
+=== COMMIT MESSAGE ===
+creates metrics server to stop errors (#645)
+
+
+=== FILES CHANGED ===
+bot/pipeline.py|38|32
+otel/collector-config.yaml|5|0
+=== COMMIT MESSAGE ===
+Hotfix remove duplicate tracing (#703)
+
+* removes tracing from pipeline.py since already in runner.py
+
+* read service name from env
+=== FILES CHANGED ===
+bot/pipeline.py|8|7
+bot/runner.py|2|2
+=== COMMIT MESSAGE ===
+Hotfix metrics (#701)
+
+* turn off asyncio default instrumentor
+
+* reduce waiting interval for postgres container
+
+* remove aiohttp instrumentor
+=== FILES CHANGED ===
+agent_ensemble/app/utils/tracing_utils.py|6|6
+bot/audivi_system/src/tracing_utils.py|6|6
+docker-compose.yml|49|49
+=== COMMIT MESSAGE ===
+Add Tonal Acknowledgement To Speed Responsiveness (#753)
+
+* Add audio sounds upon response.
+
+* Remove unnecessary MDs
+
+* Remove Cursor supplied logging in state_machine.py.
+
+* - Git Add audio files
+- Remove unnecessary logging and markdown files.
+
+---------
+
+Co-authored-by: Taylor White <whitetc2@gmail.com>
+=== FILES CHANGED ===
+bot/audio_player.py|207|0
+bot/conversation_manager/state_machine.py|7|5
+bot/pipeline.py|98|32
+docker-compose.yml|1|0
+sounds/acknowledgement/alert-button.mp3|0|0
+sounds/acknowledgement/bamboo-button-click.mp3|0|0
+sounds/acknowledgement/button-click-alert-3.mp3|0|0
+sounds/acknowledgement/button-click-alert-4.mp3|0|0
+sounds/acknowledgement/button-click-alert-5.mp3|0|0
+sounds/acknowledgement/completed-alert.mp3|0|0
+sounds/acknowledgement/confirm-button.mp3|0|0
+sounds/acknowledgement/electrionic-device-blip.mp3|0|0
+sounds/acknowledgement/menu-game-button.mp3|0|0
+sounds/acknowledgement/success.mp3|0|0

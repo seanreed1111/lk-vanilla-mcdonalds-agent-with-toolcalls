@@ -8,7 +8,6 @@ Tests cover:
 - Combined validation
 """
 
-import pytest
 
 from menu_validation import (
     ValidationResult,

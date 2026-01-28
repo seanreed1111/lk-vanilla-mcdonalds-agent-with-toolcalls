@@ -1,0 +1,34 @@
+ => ERROR [10/10] RUN uv run src/agent.py download-files                     3.9s 
+------                                                                            
+ > [10/10] RUN uv run src/agent.py download-files:                                
+0.275    Building agent-starter-python @ file:///app                              
+0.892       Built agent-starter-python @ file:///app                              
+0.903 Uninstalled 1 package in 7ms
+0.905 Installed 1 package in 1ms
+3.550 Downloading Silero VAD model...
+3.597 ✓ Silero VAD model downloaded
+3.597 Downloading multilingual turn detector...
+3.597 Traceback (most recent call last):
+3.597   File "/app/src/agent.py", line 214, in <module>
+3.597     agent_cli()
+3.597   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1485, in __call__
+3.597     return self.main(*args, **kwargs)
+3.597            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.597   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1406, in main
+3.598     rv = self.voke(ctx)
+3.598          ^^^^^^^^^^^^^^^^
+3.598   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1873, in invoke
+3.598     return _process_result(sub_ctx.command.invoke(sub_ctx))
+3.598                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.598   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1269, in invoke
+3.599     return ctx.invoke(self.callback, **ctx.params)
+3.599            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3.599   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 824, in invoke
+3.599     return callback(*args, **kwargs)
+3.599            ^^^^^^^^^^^^^^^^^^^^^^^^^
+3.599   File "/app/src/agent.py", line 207, in download_files
+3.599     MultilingualModel.load()
+3.599     ^^^^^^^^^^^^^^^^^^^^^^
+3.599 AttributeError: type object 'MultilingualModel' has no attribute 'load'
+------
+unable to create agent: build failed for iad.ocir.io/axyci3pr8vxm/production-cloud-agents:p-3a490f7eyi4-ca-tuzfwewxjwbs-v20260122201136: failed to solve: process "/bin/sh -c uv run src/agent.py download-files" did not complete successfully: exit code: 1

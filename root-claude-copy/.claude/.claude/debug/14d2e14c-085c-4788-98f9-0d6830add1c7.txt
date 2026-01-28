@@ -1,0 +1,26 @@
+2026-01-23T19:36:48.578Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T19:36:48.579Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T19:36:48.591Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.17/claude
+2026-01-23T19:36:48.592Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-23T19:36:48.593Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-23T19:36:48.593Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:36:48.593Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T19:36:48.593Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-23T19:36:48.593Z [DEBUG] Cleared all session hooks for session 31081251-db1e-4368-aff7-135cfe35251a
+2026-01-23T19:36:48.593Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-23T19:36:48.593Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:36:48.593Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T19:36:48.595Z [DEBUG] FileHistory: Added snapshot for 91c87cd6-5572-4e63-bf7f-06f38ac40645, tracking 0 files
+2026-01-23T19:36:48.626Z [DEBUG] Full reset (shrink->below): prevHeight=132, nextHeight=12, viewport=35
+2026-01-23T19:36:48.627Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T19:36:48.627Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T19:36:48.627Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T19:36:48.629Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-23T19:40:21.168Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T19:40:21.169Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T19:40:21.175Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 7ms
+2026-01-23T19:40:21.175Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T19:40:21.176Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 8ms (attempt 1)
+2026-01-23T19:41:25.598Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-23T19:41:25.598Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T19:41:25.598Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

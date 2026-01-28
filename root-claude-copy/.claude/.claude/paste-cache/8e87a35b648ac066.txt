@@ -1,0 +1,42 @@
+make console
+Starting drive-thru agent in console mode...
+uv run python src/agent.py console
+2026-01-22 12:06:58.244 | INFO     | session_handler:__init__:123 - DriveThruSessionHandler initialized
+2026-01-22 12:06:58.244 | INFO     | __main__:run_console:53 - Starting console session: 1cb5e8ad-4bad-4ae4-8863-d4b1f1f55ea0
+Traceback (most recent call last):
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/agent.py", line 289, in <module>
+    agent_cli()
+    ~~~~~~~~~^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.13/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.13/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.13/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.13/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.13/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/agent.py", line 85, in console
+    asyncio.run(run_console())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/seanreed/.local/share/uv/python/cpython-3.13.3-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/Users/seanreed/.local/share/uv/python/cpython-3.13.3-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/seanreed/.local/share/uv/python/cpython-3.13.3-macos-aarch64-none/lib/python3.13/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/agent.py", line 55, in run_console
+    drive_thru_agent = await handler.create_agent(session_id)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/session_handler.py", line 134, in create_agent
+    from drive_thru_agent import DriveThruAgent
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/drive_thru_agent.py", line 16, in <module>
+    from src.drive_thru_llm import DriveThruLLM
+ModuleNotFoundError: No module named 'src'

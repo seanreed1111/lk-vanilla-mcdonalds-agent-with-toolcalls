@@ -1,0 +1,21 @@
+2026-01-25T15:55:53.286Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-25T15:55:53.286Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-25T15:55:53.298Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.19/claude
+2026-01-25T15:55:53.299Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-25T15:55:53.300Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-25T15:55:53.300Z [DEBUG] Found 0 hook matchers in settings
+2026-01-25T15:55:53.300Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-25T15:55:53.300Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-25T15:55:53.300Z [DEBUG] Cleared all session hooks for session 238e8168-928f-4c82-84e9-49fefc9e0d43
+2026-01-25T15:55:53.301Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-25T15:55:53.301Z [DEBUG] Found 0 hook matchers in settings
+2026-01-25T15:55:53.301Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-25T15:55:53.302Z [DEBUG] FileHistory: Added snapshot for ba6810db-a8a3-4a15-8ef4-379cc0f2732f, tracking 0 files
+2026-01-25T15:55:53.317Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-25T15:55:53.317Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-25T15:55:53.317Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-25T15:55:53.321Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-25T15:55:53.358Z [DEBUG] Full reset (shrink->below): prevHeight=165, nextHeight=20, viewport=31
+2026-01-25T15:55:56.098Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2026-01-25T15:55:56.098Z [DEBUG] Found 0 hook matchers in settings
+2026-01-25T15:55:56.098Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)

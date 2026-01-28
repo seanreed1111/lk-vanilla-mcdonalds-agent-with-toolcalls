@@ -1,0 +1,923 @@
+2026-01-24T21:10:05.177Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:10:05.177Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:10:05.193Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.19/claude
+2026-01-24T21:10:05.194Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-24T21:10:05.194Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-24T21:10:05.194Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:10:05.194Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-24T21:10:05.195Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-24T21:10:05.195Z [DEBUG] Cleared all session hooks for session 98b4c424-8f00-4d9e-89d1-87f825ec3c22
+2026-01-24T21:10:05.195Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-24T21:10:05.195Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:10:05.196Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-24T21:10:05.200Z [DEBUG] FileHistory: Added snapshot for ddc61ca7-f6bc-421a-85cd-4bc023c2bb41, tracking 0 files
+2026-01-24T21:10:05.233Z [DEBUG] Full reset (shrink->below): prevHeight=105, nextHeight=12, viewport=31
+2026-01-24T21:10:05.234Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-24T21:10:05.234Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-24T21:10:05.234Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-24T21:10:05.235Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-24T21:10:05.344Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.29052.1769289005344
+2026-01-24T21:10:05.344Z [DEBUG] Preserving file permissions: 100600
+2026-01-24T21:10:05.345Z [DEBUG] Temp file written successfully, size: 13711 bytes
+2026-01-24T21:10:05.345Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:10:05.345Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.29052.1769289005344 to /Users/seanreed/.claude.json
+2026-01-24T21:10:05.345Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-24T21:10:05.345Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.29052.1769289005345
+2026-01-24T21:10:05.345Z [DEBUG] Preserving file permissions: 100600
+2026-01-24T21:10:05.345Z [DEBUG] Temp file written successfully, size: 13711 bytes
+2026-01-24T21:10:05.345Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:10:05.345Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.29052.1769289005345 to /Users/seanreed/.claude.json
+2026-01-24T21:10:05.346Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-24T21:32:02.312Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.312Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.326Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:32:02.326Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:32:02.326Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:32:02.326Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:32:02.326Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.326Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.334Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.334Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.337Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-24T21:32:02.337Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:32:02.337Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-24T21:32:02.338Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-24T21:32:02.338Z [DEBUG] FileHistory: Making snapshot for message a961c43d-b6f7-4af3-8dfa-e345da7ec9af
+2026-01-24T21:32:02.338Z [DEBUG] FileHistory: Added snapshot for a961c43d-b6f7-4af3-8dfa-e345da7ec9af, tracking 0 files
+2026-01-24T21:32:02.341Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-24T21:32:02.342Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:32:02.342Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:32:02.346Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:32:02.346Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:32:02.346Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:32:02.346Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:32:02.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.348Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.0d9; cc_entrypoint=cli
+2026-01-24T21:32:02.348Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:02.348Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:02.348Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:02.355Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:32:02.355Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:32:02.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.358Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:32:02.359Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:32:02.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.362Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:32:02.362Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:02.362Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:02.362Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:02.363Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:02.363Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:03.192Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:04.266Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:08.103Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.103Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.111Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.111Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.115Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-24T21:32:08.115Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.118Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.122Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-24T21:32:08.122Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:32:08.122Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-24T21:32:08.122Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.122Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.126Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.126Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.128Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.128Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.131Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.131Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.136Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.136Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.139Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-24T21:32:08.139Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:32:08.139Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2026-01-24T21:32:08.139Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.140Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.140Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.142Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:32:08.142Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:32:08.142Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:32:08.142Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:32:08.143Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.143Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.148Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:32:08.149Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.149Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.151Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:32:08.151Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:08.151Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:08.151Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:08.154Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:08.154Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:09.768Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:30.919Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.919Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.924Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.924Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.926Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:32:30.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.929Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:32:30.929Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:32:30.929Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:30.929Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.929Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.933Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.933Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.936Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.936Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.939Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290350939
+2026-01-24T21:32:30.939Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:32:30.939Z [DEBUG] Temp file written successfully, size: 17227 bytes
+2026-01-24T21:32:30.939Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:32:30.939Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290350939 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:30.940Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:32:30.941Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:30.941Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.941Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.944Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.944Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.946Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:32:30.946Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:32:30.946Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:30.946Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.947Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.947Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.965Z [DEBUG] High write ratio: blit=1330, write=5005 (79.0% writes), screen=101x95
+2026-01-24T21:32:30.968Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:32:30.968Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:32:30.968Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:32:30.968Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:32:30.973Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.973Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.977Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.977Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.980Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:32:30.983Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.983Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.985Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:32:30.985Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:30.985Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:30.985Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:30.989Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:30.989Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:31.007Z [DEBUG] High write ratio: blit=1934, write=4963 (72.0% writes), screen=101x95
+2026-01-24T21:32:31.944Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:31.944Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:32:31.944Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:32:31.950Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:32:31.950Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:32:31.950Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:32:31.950Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:32:31.959Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:32:31.959Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:32:32.472Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:36.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.930Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.930Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.933Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:32:36.934Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.934Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.936Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:32:36.936Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:32:36.936Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:36.937Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.937Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.939Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.939Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.942Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.942Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.945Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290356945
+2026-01-24T21:32:36.945Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:32:36.945Z [DEBUG] Temp file written successfully, size: 17282 bytes
+2026-01-24T21:32:36.945Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:32:36.945Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290356945 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:36.945Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:32:36.948Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.948Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.951Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.951Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.953Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:32:36.953Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:32:36.953Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:36.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.954Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.954Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.964Z [DEBUG] High write ratio: blit=1934, write=5265 (73.1% writes), screen=111x95
+2026-01-24T21:32:36.965Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:32:36.965Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:32:36.965Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:32:36.965Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:32:36.968Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.968Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.971Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.971Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.974Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:32:36.975Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:32:36.975Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.975Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.979Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.980Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:32:36.980Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:36.980Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:36.980Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:36.981Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:36.981Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:37.008Z [DEBUG] High write ratio: blit=2057, write=5248 (71.8% writes), screen=111x95
+2026-01-24T21:32:38.300Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:38.452Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:38.452Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:32:38.452Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:32:38.457Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:32:38.457Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:32:38.457Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:32:38.457Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:32:38.461Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:32:38.462Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:32:42.977Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:42.977Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:42.990Z [DEBUG] High write ratio: blit=2057, write=5289 (72.0% writes), screen=113x95
+2026-01-24T21:32:42.992Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:42.992Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:42.996Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:32:42.997Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:42.997Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.001Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:32:43.001Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:32:43.001Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:43.001Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.001Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.005Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.005Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.008Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.008Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.012Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290363012
+2026-01-24T21:32:43.012Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:32:43.012Z [DEBUG] Temp file written successfully, size: 17383 bytes
+2026-01-24T21:32:43.012Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:32:43.012Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290363012 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:43.012Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:32:43.015Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.016Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.020Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.020Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.022Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:32:43.022Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:32:43.022Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:32:43.022Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.023Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.023Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.034Z [DEBUG] High write ratio: blit=2057, write=5696 (73.5% writes), screen=122x95
+2026-01-24T21:32:43.035Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:32:43.035Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:32:43.035Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:32:43.035Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:32:43.037Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.037Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.041Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.041Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.044Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:32:43.045Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:32:43.046Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.046Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.049Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:32:43.049Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:32:43.049Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:32:43.049Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:32:43.050Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.050Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:32:43.071Z [DEBUG] High write ratio: blit=2185, write=5679 (72.2% writes), screen=122x95
+2026-01-24T21:32:44.304Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:32:44.523Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:32:44.523Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:32:44.523Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:32:44.526Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:32:44.526Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:32:44.526Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:32:44.526Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:32:44.528Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:32:44.529Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:33:06.169Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.169Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.179Z [DEBUG] High write ratio: blit=2185, write=5722 (72.4% writes), screen=124x95
+2026-01-24T21:33:06.182Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.182Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.187Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:33:06.187Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.187Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.190Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:33:06.190Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:33:06.190Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:06.190Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.191Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.194Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.194Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.197Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.197Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.201Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290386201
+2026-01-24T21:33:06.201Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:33:06.201Z [DEBUG] Temp file written successfully, size: 19760 bytes
+2026-01-24T21:33:06.201Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:33:06.201Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290386201 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:06.201Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:33:06.204Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.204Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.208Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.208Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.215Z [DEBUG] High write ratio: blit=2185, write=5722 (72.4% writes), screen=124x95
+2026-01-24T21:33:06.215Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:33:06.215Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:33:06.215Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:06.215Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.216Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.216Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.235Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:33:06.235Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:33:06.235Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:33:06.235Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:33:06.238Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.238Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.245Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.245Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.256Z [DEBUG] High write ratio: blit=2185, write=14624 (87.0% writes), screen=250x95
+2026-01-24T21:33:06.262Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:06.263Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:33:06.264Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.264Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.271Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:06.271Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:06.271Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:06.271Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:06.273Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.273Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:06.304Z [DEBUG] High write ratio: blit=3064, write=14582 (82.6% writes), screen=250x95
+2026-01-24T21:33:07.205Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:07.205Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:33:07.206Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:33:07.209Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:33:07.209Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:33:07.209Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:33:07.209Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:33:07.213Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:33:07.213Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:33:07.550Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:33:13.215Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.215Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.232Z [DEBUG] High write ratio: blit=3064, write=14624 (82.7% writes), screen=252x95
+2026-01-24T21:33:13.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.241Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:33:13.243Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.243Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.247Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:33:13.247Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:33:13.247Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:13.247Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.248Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.251Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.251Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.256Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.256Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.261Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290393261
+2026-01-24T21:33:13.261Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:33:13.262Z [DEBUG] Temp file written successfully, size: 20088 bytes
+2026-01-24T21:33:13.262Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:33:13.262Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290393261 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:13.262Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:33:13.262Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.262Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.274Z [DEBUG] High write ratio: blit=3064, write=14624 (82.7% writes), screen=252x95
+2026-01-24T21:33:13.276Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.276Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.280Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:33:13.280Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:33:13.280Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:13.280Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.281Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.281Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.289Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:33:13.289Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:33:13.289Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:33:13.289Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:33:13.290Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.290Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.294Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.294Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.298Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:13.299Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:33:13.301Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.301Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.305Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:13.305Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:13.305Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:13.305Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:13.306Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.306Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:13.317Z [DEBUG] High write ratio: blit=3064, write=15740 (83.7% writes), screen=270x95
+2026-01-24T21:33:14.765Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:14.765Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:33:14.765Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:33:14.767Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:33:14.767Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:33:14.767Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:33:14.767Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:33:14.768Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:33:14.768Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:33:14.822Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:33:21.552Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.552Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.566Z [DEBUG] High write ratio: blit=3237, write=15746 (82.9% writes), screen=272x95
+2026-01-24T21:33:21.568Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.568Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.573Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:33:21.573Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.573Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.577Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:33:21.577Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:33:21.577Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:21.577Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.577Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.580Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.580Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.584Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.584Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.588Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290401588
+2026-01-24T21:33:21.588Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:33:21.588Z [DEBUG] Temp file written successfully, size: 20088 bytes
+2026-01-24T21:33:21.588Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:33:21.588Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290401588 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:21.588Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:33:21.590Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.590Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.606Z [DEBUG] High write ratio: blit=3237, write=15746 (82.9% writes), screen=272x95
+2026-01-24T21:33:21.606Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:33:21.606Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:33:21.606Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:21.606Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.606Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.606Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.614Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:33:21.614Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:33:21.614Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:33:21.614Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:33:21.617Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.617Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.621Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.621Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.625Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:21.626Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:33:21.626Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.626Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.629Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:21.629Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:21.629Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:21.629Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:21.630Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.630Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:21.654Z [DEBUG] High write ratio: blit=3237, write=17243 (84.2% writes), screen=302x95
+2026-01-24T21:33:22.913Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:33:23.095Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:23.095Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:33:23.096Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:33:23.099Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:33:23.099Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:33:23.099Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:33:23.099Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:33:23.102Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:33:23.102Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:33:32.592Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.592Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.599Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.599Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.614Z [DEBUG] High write ratio: blit=3470, write=17249 (83.3% writes), screen=304x95
+2026-01-24T21:33:32.614Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-24T21:33:32.615Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.617Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.622Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-24T21:33:32.622Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:33:32.622Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:32.623Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.623Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.627Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.627Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.631Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.631Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.636Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290412636
+2026-01-24T21:33:32.636Z [DEBUG] Preserving file permissions: 100644
+2026-01-24T21:33:32.636Z [DEBUG] Temp file written successfully, size: 20481 bytes
+2026-01-24T21:33:32.636Z [DEBUG] Applied original permissions to temp file
+2026-01-24T21:33:32.636Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md.tmp.29052.1769290412636 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:32.636Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md written atomically
+2026-01-24T21:33:32.639Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.639Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.643Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.643Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.656Z [DEBUG] High write ratio: blit=3470, write=17249 (83.3% writes), screen=304x95
+2026-01-24T21:33:32.656Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-24T21:33:32.656Z [DEBUG] Found 3 hook matchers in settings
+2026-01-24T21:33:32.656Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-24T21:33:32.656Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.659Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.659Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.669Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T21:33:32.669Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T21:33:32.669Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T21:33:32.669Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T21:33:32.670Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.670Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.676Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.676Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.680Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:32.681Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:33:32.684Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.684Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.698Z [DEBUG] High write ratio: blit=3470, write=19325 (84.8% writes), screen=339x95
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.701Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:32.701Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:32.701Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:32.701Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:32.705Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.705Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:32.742Z [DEBUG] High write ratio: blit=3728, write=19289 (83.8% writes), screen=339x95
+2026-01-24T21:33:34.073Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:33:34.147Z [DEBUG] Detected skill change: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands/review-tests.md
+2026-01-24T21:33:34.147Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-24T21:33:34.147Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at mW (/$bunfs/root/claude:11:35435)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at ILR (/$bunfs/root/claude:2215:380)
+    at ILR (/$bunfs/root/claude:2215:1350)
+    at <anonymous> (/$bunfs/root/claude:2215:4440)
+    at <anonymous> (/$bunfs/root/claude:2215:5171)
+    at A (/$bunfs/root/claude:11:7259)
+    at FZ8 (/$bunfs/root/claude:4862:4342)
+2026-01-24T21:33:34.151Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-24T21:33:34.151Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-24T21:33:34.151Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T21:33:34.151Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T21:33:34.154Z [DEBUG] Loaded 38 unique skills (managed: 0, user: 17, project: 7, legacy commands: 14)
+2026-01-24T21:33:34.154Z [DEBUG] getSkills returning: 38 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T21:33:44.325Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.325Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.346Z [DEBUG] High write ratio: blit=3728, write=21223 (85.1% writes), screen=403x95
+2026-01-24T21:33:44.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.359Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-24T21:33:44.359Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:33:44.359Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-24T21:33:44.359Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:44.360Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, review-tests, create_handoff
+2026-01-24T21:33:44.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.362Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.368Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:44.368Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:44.368Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:44.368Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:44.370Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-24T21:33:44.373Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.373Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:44.423Z [DEBUG] High write ratio: blit=9808, write=19171 (66.2% writes), screen=402x95
+2026-01-24T21:33:44.483Z [DEBUG] High write ratio: blit=9998, write=19153 (65.7% writes), screen=402x95
+2026-01-24T21:33:46.375Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:33:59.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.380Z [DEBUG] High write ratio: blit=9998, write=19153 (65.7% writes), screen=402x95
+2026-01-24T21:33:59.381Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-24T21:33:59.386Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.386Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.394Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.19.a98; cc_entrypoint=cli
+2026-01-24T21:33:59.394Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T21:33:59.394Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T21:33:59.394Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T21:33:59.395Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.395Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:33:59.447Z [DEBUG] High write ratio: blit=9998, write=19153 (65.7% writes), screen=402x95
+2026-01-24T21:34:01.209Z [DEBUG] Stream started - received first chunk
+2026-01-24T21:34:12.719Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:34:12.719Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:34:12.747Z [DEBUG] High write ratio: blit=9998, write=19153 (65.7% writes), screen=402x95
+2026-01-24T21:34:12.750Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:34:12.750Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-24T21:34:12.758Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-24T21:34:12.758Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T21:34:12.758Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-24T21:34:12.804Z [DEBUG] High write ratio: blit=9998, write=19153 (65.7% writes), screen=402x95

@@ -1,0 +1,20 @@
+2026-01-22T01:37:30.939Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-22T01:37:30.940Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T01:37:30.941Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T01:37:30.941Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:37:30.941Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:37:30.941Z [DEBUG] Cleared all session hooks for session 40626016-25e4-49c6-8da7-ee7249299f48
+2026-01-22T01:37:30.941Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T01:37:30.941Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:37:30.941Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:37:30.945Z [DEBUG] FileHistory: Added snapshot for c3f82f26-e6ea-41ec-b428-0fb3368b54e4, tracking 0 files
+2026-01-22T01:37:30.968Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T01:37:30.971Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T01:37:30.971Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T01:37:30.971Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T01:37:30.971Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T01:37:30.973Z [DEBUG] Full reset (shrink->below): prevHeight=1639, nextHeight=12, viewport=20
+2026-01-22T01:37:31.282Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-22T01:37:37.268Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-22T01:37:37.268Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:37:37.268Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

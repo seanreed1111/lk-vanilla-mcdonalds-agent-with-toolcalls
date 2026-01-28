@@ -1,0 +1,260 @@
+2026-01-21T14:44:28.828Z [DEBUG] Watching for changes in setting files /Users/seanreed/.claude, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude...
+2026-01-21T14:44:28.829Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-21T14:44:28.829Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-21T14:44:28.829Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-21T14:44:28.829Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-21T14:44:28.831Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-21T14:44:28.831Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-21T14:44:28.831Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-21T14:44:28.832Z [DEBUG] Applying permission update: Adding 19 allow rule(s) to destination 'localSettings': ["WebFetch(domain:automationpanda.com)","WebFetch(domain:github.com)","WebFetch(domain:peps.python.org)","WebFetch(domain:martinheinz.dev)","WebFetch(domain:winstonbrown.me)","WebFetch(domain:docs.github.com)","Bash(uv sync:*)","Bash(uv run pytest:*)","Bash(uv pip:*)","Bash(uv run python:*)","Bash(uv run ruff format:*)","Bash(uv run ruff check:*)","WebSearch","Bash(ls:*)","Bash(PIPELINE__ADAPTER_TYPE=mock uv run python:*)","Bash(timeout 3 make:*)","Bash(make help:*)","Bash(make test:*)","Bash(timeout 10 make:*)"]
+2026-01-21T14:44:28.833Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-21T14:44:28.835Z [DEBUG] Loading plugin pyright-lsp from source: "./plugins/pyright-lsp"
+2026-01-21T14:44:28.835Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-21T14:44:28.835Z [DEBUG] Plugin pyright-lsp@claude-plugins-official version 1.0.0 already cached at /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-21T14:44:28.835Z [DEBUG] Copied local plugin pyright-lsp to versioned cache: /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-21T14:44:28.835Z [DEBUG] Plugin pyright-lsp has no entry.skills defined
+2026-01-21T14:44:28.835Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-01-21T14:44:28.836Z [DEBUG] [STARTUP] MCP configs loaded in 3ms
+2026-01-21T14:44:28.836Z [DEBUG] [STARTUP] Running setup()...
+2026-01-21T14:44:28.838Z [DEBUG] Stats cache stale (2026-01-19), processing 2026-01-20 to 2026-01-20 in background
+2026-01-21T14:44:28.844Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-21T14:44:28.855Z [DEBUG] Loaded 1 installed plugins from /Users/seanreed/.claude/plugins/installed_plugins.json
+2026-01-21T14:44:28.863Z [DEBUG] Error log sink initialized
+2026-01-21T14:44:28.865Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/dc1102ea-18f6-420d-b533-6f36242fc617-agent-dc1102ea-18f6-420d-b533-6f36242fc617.json.tmp.82057.1769006668865
+2026-01-21T14:44:28.866Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-21T14:44:28.866Z [DEBUG] Renaming /Users/seanreed/.claude/todos/dc1102ea-18f6-420d-b533-6f36242fc617-agent-dc1102ea-18f6-420d-b533-6f36242fc617.json.tmp.82057.1769006668865 to /Users/seanreed/.claude/todos/dc1102ea-18f6-420d-b533-6f36242fc617-agent-dc1102ea-18f6-420d-b533-6f36242fc617.json
+2026-01-21T14:44:28.866Z [DEBUG] File /Users/seanreed/.claude/todos/dc1102ea-18f6-420d-b533-6f36242fc617-agent-dc1102ea-18f6-420d-b533-6f36242fc617.json written atomically
+2026-01-21T14:44:28.869Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-21T14:44:28.869Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-21T14:44:28.869Z [DEBUG] Total plugin skills loaded: 0
+2026-01-21T14:44:28.869Z [DEBUG] Total plugin commands loaded: 0
+2026-01-21T14:44:28.869Z [DEBUG] Registered 0 hooks from 1 plugins
+2026-01-21T14:44:28.870Z [DEBUG] [STARTUP] setup() completed in 34ms
+2026-01-21T14:44:28.870Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-21T14:44:28.871Z [DEBUG] Loaded 1 LSP server(s) from plugin: pyright-lsp
+2026-01-21T14:44:28.871Z [DEBUG] Total LSP servers loaded: 1
+2026-01-21T14:44:28.871Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 1 server(s)
+2026-01-21T14:44:28.871Z [DEBUG] Queued request handler for plugin:pyright-lsp:pyright.workspace/configuration (connection not ready)
+2026-01-21T14:44:28.871Z [DEBUG] Starting LSP server instance: plugin:pyright-lsp:pyright
+2026-01-21T14:44:28.873Z [DEBUG] LSP manager initialized with 1 servers
+2026-01-21T14:44:28.873Z [DEBUG] LSP server manager initialized successfully
+2026-01-21T14:44:28.873Z [DEBUG] Queued notification handler for plugin:pyright-lsp:pyright.textDocument/publishDiagnostics (connection not ready)
+2026-01-21T14:44:28.873Z [DEBUG] Registered diagnostics handler for plugin:pyright-lsp:pyright
+2026-01-21T14:44:28.873Z [DEBUG] LSP notification handlers registered successfully for all 1 server(s)
+2026-01-21T14:44:28.874Z [DEBUG] Applied queued notification handler for plugin:pyright-lsp:pyright.textDocument/publishDiagnostics
+2026-01-21T14:44:28.874Z [DEBUG] Applied queued request handler for plugin:pyright-lsp:pyright.workspace/configuration
+2026-01-21T14:44:28.874Z [DEBUG] LSP client started for plugin:pyright-lsp:pyright
+2026-01-21T14:44:28.874Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Sending request 'initialize - (0)'.
+2026-01-21T14:44:28.894Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default, Profile 4, Profile 3, Profile 2, Profile 5
+2026-01-21T14:44:28.927Z [DEBUG] Watching for changes in skill/command directories: /Users/seanreed/.claude/skills, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands...
+2026-01-21T14:44:28.938Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-01-20)
+2026-01-21T14:44:28.938Z [DEBUG] Stats cache updated with 22 new sessions
+2026-01-21T14:44:28.940Z [DEBUG] Loaded 47 unique skills (managed: 0, user: 17, project: 3, legacy commands: 27)
+2026-01-21T14:44:28.940Z [DEBUG] getSkills returning: 47 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-21T14:44:28.941Z [DEBUG] Total plugin agents loaded: 0
+2026-01-21T14:44:28.941Z [DEBUG] [STARTUP] Commands and agents loaded in 71ms
+2026-01-21T14:44:28.941Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-21T14:44:28.941Z [DEBUG] [render] initYoga starting
+2026-01-21T14:44:28.944Z [DEBUG] Session index: added 3, updated 0, removed 0 (total: 8)
+2026-01-21T14:44:28.945Z [DEBUG] [render] initYoga complete
+2026-01-21T14:44:28.955Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-21T14:44:28.974Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-21T14:44:28.988Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-21T14:44:28.989Z [DEBUG] [STARTUP] showSetupScreens() completed in 48ms
+2026-01-21T14:44:28.989Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:28.989Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:28.992Z [DEBUG] All plugins already exist, skipping migration
+2026-01-21T14:44:28.992Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:28.992Z [DEBUG] Initialized versioned plugins system with 1 plugins
+2026-01-21T14:44:28.994Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.82057.1769006668994
+2026-01-21T14:44:28.994Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T14:44:28.994Z [DEBUG] Temp file written successfully, size: 12047 bytes
+2026-01-21T14:44:28.994Z [DEBUG] Applied original permissions to temp file
+2026-01-21T14:44:28.994Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.82057.1769006668994 to /Users/seanreed/.claude.json
+2026-01-21T14:44:28.994Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T14:44:29.225Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-21T14:44:29.225Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T14:44:29.225Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-21T14:44:29.225Z [DEBUG] [render] initYoga starting
+2026-01-21T14:44:29.225Z [DEBUG] [render] initYoga complete
+2026-01-21T14:44:29.242Z [DEBUG] Summarizing all 11 messages (~1582 tokens)
+2026-01-21T14:44:29.243Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:29.244Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:29.244Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:29.244Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:29.246Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 403
+2026-01-21T14:44:29.246Z [ERROR] AxiosError: Error
+    at nb (/$bunfs/root/claude:42:1143)
+    at <anonymous> (/$bunfs/root/claude:47:10085)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:49:2147)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T14:44:29.246Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.82057.1769006669246
+2026-01-21T14:44:29.246Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T14:44:29.246Z [DEBUG] Temp file written successfully, size: 12047 bytes
+2026-01-21T14:44:29.246Z [DEBUG] Applied original permissions to temp file
+2026-01-21T14:44:29.246Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.82057.1769006669246 to /Users/seanreed/.claude.json
+2026-01-21T14:44:29.247Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T14:44:29.248Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-21T14:44:29.250Z [DEBUG] Git remote URL: git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T14:44:29.250Z [DEBUG] Parsed repository: seanreed1111/lk-agent-1 from git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T14:44:29.250Z [DEBUG] Parsed repository: seanreed1111/lk-agent-1 from URL: git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T14:44:29.250Z [DEBUG] Path /Users/seanreed/PythonProjects/voice-ai/lk-agent-1 already tracked for repo seanreed1111/lk-agent-1
+2026-01-21T14:44:29.255Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-21T14:44:29.269Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-21T14:44:29.269Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-21T14:44:29.270Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-21T14:44:29.270Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-21T14:44:29.270Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-21T14:44:29.270Z [DEBUG] performStartupChecks called
+2026-01-21T14:44:29.270Z [DEBUG] Starting background plugin installations
+2026-01-21T14:44:29.270Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-21T14:44:29.296Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-21T14:44:29.303Z [DEBUG] Found 1 enabled plugins
+2026-01-21T14:44:29.303Z [DEBUG] All plugins already exist, skipping migration
+2026-01-21T14:44:29.303Z [DEBUG] Found 1 installed plugins (V2 format)
+2026-01-21T14:44:29.304Z [DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-21T14:44:29.304Z [DEBUG] Found 0 missing plugins (not installed):
+2026-01-21T14:44:29.304Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-21T14:44:29.310Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-21T14:44:29.315Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T14:44:29.320Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.82057.1769006669320
+2026-01-21T14:44:29.320Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T14:44:29.320Z [DEBUG] Temp file written successfully, size: 12047 bytes
+2026-01-21T14:44:29.320Z [DEBUG] Applied original permissions to temp file
+2026-01-21T14:44:29.320Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.82057.1769006669320 to /Users/seanreed/.claude.json
+2026-01-21T14:44:29.321Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T14:44:29.323Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Received response 'initialize - (0)' in 449ms.
+2026-01-21T14:44:29.323Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Sending notification 'initialized'.
+2026-01-21T14:44:29.324Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 11ms
+2026-01-21T14:44:29.324Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.11"}}
+2026-01-21T14:44:29.328Z [DEBUG] LSP server plugin:pyright-lsp:pyright initialized
+2026-01-21T14:44:29.328Z [DEBUG] LSP server instance started: plugin:pyright-lsp:pyright
+2026-01-21T14:44:29.368Z [DEBUG] Full reset (scrollback changes): scrollbackRows=9, changes=18/18, firstChangeY=8
+  prev: "  ? for shortcuts                                                          "
+  next: "  ? for shortcuts                                      ◯ IDE disconnected  "
+2026-01-21T14:44:29.372Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/Caskroom/claude-code/2.1.12/claude)
+2026-01-21T14:44:29.524Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, architecting-systems, writing-tests, debug, iterate_plan_nt, ci_commit, ralph_plan, research_codebase_generic, local_review, create_worktree, implement_plan, ci_describe_pr, founder_mode, create_plan, validate_plan, describe_pr_nt, research_codebase_nt, ralph_research, iterate_plan, describe_pr, commit, create_plan_nt, oneshot_plan, linear, ralph_impl, oneshot, resume_handoff, research_codebase, create_plan_generic, create_handoff
+2026-01-21T14:44:29.524Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:29.524Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:29.524Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:29.588Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:29.651Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-21T14:44:29.651Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-21T14:44:29.652Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-21T14:44:29.759Z [DEBUG] Summarizing all 20 messages (~5622 tokens)
+2026-01-21T14:44:29.759Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:29.759Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:29.759Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:29.759Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:29.939Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.12 -> 2.1.14
+2026-01-21T14:44:31.428Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:31.944Z [DEBUG] Summarizing all 46 messages (~12874 tokens)
+2026-01-21T14:44:31.944Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:31.945Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:31.945Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:31.945Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:32.368Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:32.510Z [DEBUG] Summarizing all 35 messages (~3833 tokens)
+2026-01-21T14:44:32.510Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:32.511Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:32.511Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:32.511Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:33.436Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:33.685Z [DEBUG] Summarizing all 41 messages (~4826 tokens)
+2026-01-21T14:44:33.685Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:33.686Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:33.686Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:33.687Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:34.178Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:34.305Z [DEBUG] Summarizing all 11 messages (~1582 tokens)
+2026-01-21T14:44:34.306Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:34.306Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:34.306Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:34.306Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:35.252Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:35.435Z [DEBUG] Summarizing all 20 messages (~5622 tokens)
+2026-01-21T14:44:35.435Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:35.436Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:35.436Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:35.437Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:36.788Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:37.101Z [DEBUG] Summarizing all 44 messages (~12874 tokens)
+2026-01-21T14:44:37.101Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:37.102Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:37.102Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:37.103Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:37.548Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:37.729Z [DEBUG] Summarizing all 8 messages (~0 tokens)
+2026-01-21T14:44:37.729Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:37.730Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:37.730Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:37.730Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:38.148Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:38.300Z [DEBUG] Summarizing all 13 messages (~5317 tokens)
+2026-01-21T14:44:38.301Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:38.302Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:38.302Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:38.302Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:39.415Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:39.781Z [DEBUG] Summarizing all 45 messages (~14049 tokens)
+2026-01-21T14:44:39.781Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:39.782Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:39.782Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:39.782Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:40.371Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:44:40.603Z [DEBUG] Summarizing all 55 messages (~17112 tokens)
+2026-01-21T14:44:40.603Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:44:40.604Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:44:40.604Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:44:40.604Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:44:41.084Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:45:33.123Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T14:45:33.123Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T14:45:33.123Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T14:45:33.123Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T14:45:33.138Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-21T14:45:33.138Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T14:45:33.138Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T14:45:33.141Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-21T14:45:33.141Z [DEBUG] FileHistory: Added snapshot for ff37960e-dbaa-420b-9046-f612c5be5fa5, tracking 0 files
+2026-01-21T14:45:33.145Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-01-21T14:45:33.146Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T14:45:33.149Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:45:33.149Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:45:33.149Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:45:33.150Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-21T14:45:33.152Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 7ms
+2026-01-21T14:45:33.161Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T14:45:33.165Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:45:33.165Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:45:33.165Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:45:34.031Z [DEBUG] Stream started - received first chunk
+2026-01-21T14:45:36.797Z [ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_011CXLhm9AhduoKkwPCBstwG"}
+2026-01-21T14:45:36.798Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T14:45:36.798Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T14:45:36.798Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T14:46:13.720Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-21T14:46:13.838Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.82057.1769006773838
+2026-01-21T14:46:13.838Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T14:46:13.838Z [DEBUG] Temp file written successfully, size: 12047 bytes
+2026-01-21T14:46:13.838Z [DEBUG] Applied original permissions to temp file
+2026-01-21T14:46:13.838Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.82057.1769006773838 to /Users/seanreed/.claude.json
+2026-01-21T14:46:13.838Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T14:46:14.725Z [ERROR] Error in non-streaming fallback: Request was aborted.
+2026-01-21T14:46:14.725Z [ERROR] Error: Error: Request was aborted.
+    at D (/$bunfs/root/claude:1028:26168)
+    at <anonymous> (/$bunfs/root/claude:1028:26192)
+    at new Promise (native:1:11)
+    at sGT (/$bunfs/root/claude:1028:26102)
+    at sGT (/$bunfs/root/claude:1028:26299)
+    at bOR (/$bunfs/root/claude:2304:46134)
+    at pvB (/$bunfs/root/claude:4454:6530)
+    at <anonymous> (/$bunfs/root/claude:4452:3767)
+    at HGA (/$bunfs/root/claude:1045:2017)
+    at TJT (/$bunfs/root/claude:4452:3737)
+2026-01-21T14:46:16.591Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-21T14:46:16.591Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T14:46:16.591Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

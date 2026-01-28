@@ -1,0 +1,98 @@
+2026-01-20T00:57:42.746Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-20T00:57:42.746Z [DEBUG] Found 0 hook matchers in settings
+2026-01-20T00:57:42.746Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-20T00:57:42.746Z [DEBUG] Cleared all session hooks for session 71eff269-d6bc-4df7-a537-b9e02d1b3ee6
+2026-01-20T00:57:42.746Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-20T00:57:42.746Z [DEBUG] Found 0 hook matchers in settings
+2026-01-20T00:57:42.746Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-20T00:57:42.747Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-20T00:57:42.747Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-20T00:57:42.747Z [DEBUG] FileHistory: Added snapshot for 3624ea17-d124-4b02-8ebc-3b9b3235dca1, tracking 0 files
+2026-01-20T00:57:42.753Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:57:42.755Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-20T00:57:42.764Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-20T00:57:42.765Z [DEBUG] Full reset (shrink->below): prevHeight=374, nextHeight=12, viewport=32
+2026-01-20T00:57:50.330Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:57:50.349Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.305Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.318Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.331Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.342Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.353Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.364Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.376Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.388Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.401Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.413Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.424Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.434Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.456Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T00:58:16.488Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:08:01.043Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:08:10.990Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:10:25.673Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:10:27.633Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.797Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.812Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.833Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.844Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.867Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.878Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:00.905Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:06.787Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:11:10.854Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=13/13, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                      ⧉ In README.md  "
+2026-01-20T01:11:59.484Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=13/13, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                      ⧉ In README.md  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+2026-01-20T01:18:05.475Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=16/16, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                   ⧉ 1 line selected  "
+2026-01-20T01:18:06.539Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=16/16, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                   ⧉ 1 line selected  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+2026-01-20T01:19:02.133Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=16/16, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                   ⧉ 1 line selected  "
+2026-01-20T01:19:04.417Z [DEBUG] Full reset (scrollback changes): scrollbackRows=12, changes=16/16, firstChangeY=11
+  prev: "  ⏵⏵ accept edits on (shift+tab to cycle)                                   ⧉ 1 line selected  "
+  next: "  ⏵⏵ accept edits on (shift+tab to cycle)                                       ⧉ In agent.py  "
+2026-01-20T01:20:37.252Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.268Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.280Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.293Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.302Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.314Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.331Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.337Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.348Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.374Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:20:37.454Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:24.976Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:24.990Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.005Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.017Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.030Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.041Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.053Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.067Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.081Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.098Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.109Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.129Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:25.177Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:21:30.836Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.004Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.013Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.023Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.032Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.039Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.057Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.066Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.082Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.092Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.102Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:38.122Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:45.803Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)
+2026-01-20T01:23:45.808Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none", isSkillFormat: false)

@@ -1,0 +1,1404 @@
+2026-01-21T22:51:25.275Z [DEBUG] Watching for changes in setting files /Users/seanreed/.claude, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude...
+2026-01-21T22:51:25.277Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-21T22:51:25.277Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-21T22:51:25.277Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-21T22:51:25.277Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-21T22:51:25.277Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-21T22:51:25.277Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-21T22:51:25.277Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-21T22:51:25.278Z [DEBUG] Applying permission update: Adding 20 allow rule(s) to destination 'localSettings': ["WebFetch(domain:automationpanda.com)","WebFetch(domain:github.com)","WebFetch(domain:peps.python.org)","WebFetch(domain:martinheinz.dev)","WebFetch(domain:winstonbrown.me)","WebFetch(domain:docs.github.com)","Bash(uv sync:*)","Bash(uv run pytest:*)","Bash(uv pip:*)","Bash(uv run python:*)","Bash(uv run ruff format:*)","Bash(uv run ruff check:*)","WebSearch","Bash(ls:*)","Bash(PIPELINE__ADAPTER_TYPE=mock uv run python:*)","Bash(timeout 3 make:*)","Bash(make help:*)","Bash(make test:*)","Bash(timeout 10 make:*)","Bash(uv add:*)"]
+2026-01-21T22:51:25.278Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-21T22:51:25.281Z [DEBUG] Loading plugin pyright-lsp from source: "./plugins/pyright-lsp"
+2026-01-21T22:51:25.281Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-21T22:51:25.281Z [DEBUG] Plugin pyright-lsp@claude-plugins-official version 1.0.0 already cached at /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-21T22:51:25.281Z [DEBUG] Copied local plugin pyright-lsp to versioned cache: /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-21T22:51:25.281Z [DEBUG] Plugin pyright-lsp has no entry.skills defined
+2026-01-21T22:51:25.281Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-01-21T22:51:25.281Z [DEBUG] [STARTUP] MCP configs loaded in 3ms
+2026-01-21T22:51:25.282Z [DEBUG] [STARTUP] Running setup()...
+2026-01-21T22:51:25.283Z [DEBUG] Stats cache is up to date
+2026-01-21T22:51:25.284Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-21T22:51:25.290Z [DEBUG] Loaded 1 installed plugins from /Users/seanreed/.claude/plugins/installed_plugins.json
+2026-01-21T22:51:25.299Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at e3 (/$bunfs/root/claude:11:34695)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at n6R (/$bunfs/root/claude:1465:380)
+    at n6R (/$bunfs/root/claude:1465:1350)
+    at <anonymous> (/$bunfs/root/claude:1465:4440)
+    at <anonymous> (/$bunfs/root/claude:1465:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at zC8 (/$bunfs/root/claude:4096:4342)
+2026-01-21T22:51:25.299Z [DEBUG] Error log sink initialized
+2026-01-21T22:51:25.301Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769035885301
+2026-01-21T22:51:25.302Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-21T22:51:25.302Z [DEBUG] Renaming /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769035885301 to /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-21T22:51:25.302Z [DEBUG] File /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-21T22:51:25.304Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-21T22:51:25.304Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-21T22:51:25.304Z [DEBUG] Total plugin skills loaded: 0
+2026-01-21T22:51:25.304Z [DEBUG] Total plugin commands loaded: 0
+2026-01-21T22:51:25.304Z [DEBUG] Registered 0 hooks from 1 plugins
+2026-01-21T22:51:25.304Z [DEBUG] [STARTUP] setup() completed in 22ms
+2026-01-21T22:51:25.304Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-21T22:51:25.306Z [DEBUG] Loaded 1 LSP server(s) from plugin: pyright-lsp
+2026-01-21T22:51:25.306Z [DEBUG] Total LSP servers loaded: 1
+2026-01-21T22:51:25.306Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 1 server(s)
+2026-01-21T22:51:25.306Z [DEBUG] Queued request handler for plugin:pyright-lsp:pyright.workspace/configuration (connection not ready)
+2026-01-21T22:51:25.306Z [DEBUG] Starting LSP server instance: plugin:pyright-lsp:pyright
+2026-01-21T22:51:25.307Z [DEBUG] LSP manager initialized with 1 servers
+2026-01-21T22:51:25.307Z [DEBUG] LSP server manager initialized successfully
+2026-01-21T22:51:25.307Z [DEBUG] Queued notification handler for plugin:pyright-lsp:pyright.textDocument/publishDiagnostics (connection not ready)
+2026-01-21T22:51:25.307Z [DEBUG] Registered diagnostics handler for plugin:pyright-lsp:pyright
+2026-01-21T22:51:25.307Z [DEBUG] LSP notification handlers registered successfully for all 1 server(s)
+2026-01-21T22:51:25.307Z [ERROR] Error: Error: LSP server plugin:pyright-lsp:pyright failed to start: Executable not found in $PATH: "pyright-langserver"
+    at start (/$bunfs/root/claude:1535:22299)
+    at async $ (/$bunfs/root/claude:1535:24751)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T22:51:25.307Z [ERROR] Error: Error: Executable not found in $PATH: "pyright-langserver"
+    at spawn (unknown)
+    at spawn (node:child_process:667:35)
+    at spawn (node:child_process:14:39)
+    at start (/$bunfs/root/claude:1535:20844)
+    at start (/$bunfs/root/claude:1535:22353)
+    at $ (/$bunfs/root/claude:1535:24751)
+    at $ (/$bunfs/root/claude:1535:25726)
+    at _ (/$bunfs/root/claude:1535:32513)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T22:51:25.307Z [ERROR] Error: Error: Failed to start LSP server plugin:pyright-lsp:pyright: Executable not found in $PATH: "pyright-langserver"
+    at <anonymous> (/$bunfs/root/claude:1535:32535)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T22:51:25.308Z [DEBUG] Summarizing all 48 messages (~33381 tokens)
+2026-01-21T22:51:25.308Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T22:51:25.309Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:51:25.309Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:51:25.309Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:51:25.310Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default, Profile 4, Profile 3, Profile 2, Profile 5
+2026-01-21T22:51:25.311Z [DEBUG] Watching for changes in skill/command directories: /Users/seanreed/.claude/skills, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills, /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/commands...
+2026-01-21T22:51:25.314Z [DEBUG] Total plugin agents loaded: 0
+2026-01-21T22:51:25.315Z [DEBUG] Loaded 47 unique skills (managed: 0, user: 17, project: 3, legacy commands: 27)
+2026-01-21T22:51:25.315Z [DEBUG] getSkills returning: 47 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-21T22:51:25.315Z [DEBUG] [STARTUP] Commands and agents loaded in 11ms
+2026-01-21T22:51:25.315Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-21T22:51:25.315Z [DEBUG] [render] initYoga starting
+2026-01-21T22:51:25.318Z [DEBUG] [render] initYoga complete
+2026-01-21T22:51:25.337Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-21T22:51:25.356Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-21T22:51:25.364Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-21T22:51:25.365Z [DEBUG] [STARTUP] showSetupScreens() completed in 50ms
+2026-01-21T22:51:25.365Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:51:25.365Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:51:25.367Z [DEBUG] All plugins already exist, skipping migration
+2026-01-21T22:51:25.367Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:51:25.367Z [DEBUG] Initialized versioned plugins system with 1 plugins
+2026-01-21T22:51:25.369Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.4012.1769035885369
+2026-01-21T22:51:25.369Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T22:51:25.369Z [DEBUG] Temp file written successfully, size: 13467 bytes
+2026-01-21T22:51:25.369Z [DEBUG] Applied original permissions to temp file
+2026-01-21T22:51:25.369Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.4012.1769035885369 to /Users/seanreed/.claude.json
+2026-01-21T22:51:25.370Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T22:51:25.582Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-21T22:51:25.582Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:51:25.582Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-21T22:51:25.582Z [DEBUG] [render] initYoga starting
+2026-01-21T22:51:25.582Z [DEBUG] [render] initYoga complete
+2026-01-21T22:51:25.590Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.4012.1769035885590
+2026-01-21T22:51:25.590Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T22:51:25.591Z [DEBUG] Temp file written successfully, size: 13467 bytes
+2026-01-21T22:51:25.591Z [DEBUG] Applied original permissions to temp file
+2026-01-21T22:51:25.591Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.4012.1769035885590 to /Users/seanreed/.claude.json
+2026-01-21T22:51:25.591Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T22:51:25.591Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 403
+2026-01-21T22:51:25.591Z [ERROR] AxiosError: Error
+    at tb (/$bunfs/root/claude:42:1143)
+    at <anonymous> (/$bunfs/root/claude:47:10084)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:49:2147)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T22:51:25.594Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-21T22:51:25.596Z [DEBUG] Git remote URL: git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T22:51:25.596Z [DEBUG] Parsed repository: seanreed1111/lk-agent-1 from git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T22:51:25.596Z [DEBUG] Parsed repository: seanreed1111/lk-agent-1 from URL: git@github.com:seanreed1111/lk-agent-1.git
+2026-01-21T22:51:25.596Z [DEBUG] Path /Users/seanreed/PythonProjects/voice-ai/lk-agent-1 already tracked for repo seanreed1111/lk-agent-1
+2026-01-21T22:51:25.602Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-21T22:51:25.613Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-21T22:51:25.614Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-21T22:51:25.614Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-21T22:51:25.614Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-21T22:51:25.614Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-21T22:51:25.614Z [DEBUG] performStartupChecks called
+2026-01-21T22:51:25.614Z [DEBUG] Starting background plugin installations
+2026-01-21T22:51:25.614Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-21T22:51:25.639Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-21T22:51:25.640Z [DEBUG] Found 1 enabled plugins
+2026-01-21T22:51:25.640Z [DEBUG] All plugins already exist, skipping migration
+2026-01-21T22:51:25.640Z [DEBUG] Found 1 installed plugins (V2 format)
+2026-01-21T22:51:25.653Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-21T22:51:25.653Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-21T22:51:25.653Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-21T22:51:25.653Z [DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-21T22:51:25.653Z [DEBUG] Found 0 missing plugins (not installed):
+2026-01-21T22:51:25.653Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-21T22:51:25.659Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-21T22:51:25.663Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T22:51:25.663Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-21T22:51:25.663Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-21T22:51:25.663Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-21T22:51:25.669Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 7ms
+2026-01-21T22:51:25.669Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.11"}}
+2026-01-21T22:51:25.670Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.4012.1769035885670
+2026-01-21T22:51:25.670Z [DEBUG] Preserving file permissions: 100600
+2026-01-21T22:51:25.670Z [DEBUG] Temp file written successfully, size: 13467 bytes
+2026-01-21T22:51:25.670Z [DEBUG] Applied original permissions to temp file
+2026-01-21T22:51:25.670Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.4012.1769035885670 to /Users/seanreed/.claude.json
+2026-01-21T22:51:25.670Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-21T22:51:25.727Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/Caskroom/claude-code/2.1.14/claude)
+2026-01-21T22:51:25.825Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-21T22:51:25.825Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-21T22:51:25.826Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-21T22:51:25.878Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, architecting-systems, writing-tests, debug, iterate_plan_nt, ci_commit, ralph_plan, research_codebase_generic, local_review, create_worktree, implement_plan, ci_describe_pr, founder_mode, create_plan, validate_plan, describe_pr_nt, research_codebase_nt, ralph_research, iterate_plan, describe_pr, commit, create_plan_nt, oneshot_plan, linear, ralph_impl, oneshot, resume_handoff, research_codebase, create_plan_generic, create_handoff
+2026-01-21T22:51:25.878Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:51:25.878Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:51:25.878Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:51:25.930Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-21T22:51:25.974Z [DEBUG] Stream started - received first chunk
+2026-01-21T22:51:26.133Z [DEBUG] Generated summary for session 3de6a9c5-3514-4bb9-b40b-d0f5727e6325: "McDonald's Drive-Thru LLM Agent Planning"
+2026-01-21T22:51:26.134Z [DEBUG] Session index: added 1, updated 0, removed 0, summaries generated 1 (total: 15)
+2026-01-21T22:54:16.031Z [DEBUG] Full reset (scrollback changes): scrollbackRows=10, changes=2/5, firstChangeY=9
+  prev: "  include a quantity field a.  "
+  next: "  include a quantity field     "
+2026-01-21T22:59:27.278Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T22:59:27.278Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T22:59:27.278Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T22:59:27.278Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T22:59:27.293Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-21T22:59:27.293Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:59:27.293Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T22:59:27.295Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-21T22:59:27.295Z [DEBUG] FileHistory: Added snapshot for d6da4e92-e723-4b3e-9807-73571b5e0d36, tracking 0 files
+2026-01-21T22:59:27.298Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-01-21T22:59:27.299Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T22:59:27.302Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:59:27.302Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:59:27.302Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:59:27.303Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-21T22:59:27.304Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 6ms
+2026-01-21T22:59:27.308Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T22:59:27.316Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:59:27.316Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:59:27.316Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:59:27.727Z [DEBUG] Stream started - received first chunk
+2026-01-21T22:59:28.599Z [DEBUG] Stream started - received first chunk
+2026-01-21T22:59:31.730Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T22:59:31.736Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T22:59:31.736Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:59:31.736Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T22:59:31.751Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T22:59:31.751Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:59:31.751Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T22:59:31.753Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T22:59:31.753Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T22:59:31.753Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T22:59:31.753Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T22:59:31.753Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T22:59:31.756Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T22:59:31.762Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T22:59:31.765Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T22:59:31.765Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T22:59:31.765Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T22:59:32.795Z [DEBUG] Stream started - received first chunk
+2026-01-21T22:59:48.898Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T22:59:48.900Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T22:59:48.900Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:59:48.900Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T22:59:48.905Z [DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2026-01-21T22:59:48.910Z [DEBUG] executePermissionRequestHooks called for tool: Edit
+2026-01-21T22:59:48.913Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-21T22:59:48.915Z [DEBUG] MCP server "ide": Calling MCP tool: openDiff
+2026-01-21T22:59:48.918Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Edit
+2026-01-21T22:59:48.918Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T22:59:48.918Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T22:59:49.016Z [DEBUG] High write ratio: blit=384, write=996 (72.2% writes), screen=38x64
+2026-01-21T22:59:49.127Z [DEBUG] High write ratio: blit=384, write=996 (72.2% writes), screen=38x64
+2026-01-21T23:00:00.142Z [DEBUG] MCP server "ide": Calling MCP tool: close_tab
+2026-01-21T23:00:00.143Z [DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+2026-01-21T23:00:00.143Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:00:00.151Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-21T23:00:00.152Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-21T23:00:00.152Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-21T23:00:00.152Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+2026-01-21T23:00:00.153Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:00:00.155Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769036400155
+2026-01-21T23:00:00.155Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:00:00.155Z [DEBUG] Temp file written successfully, size: 25871 bytes
+2026-01-21T23:00:00.155Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:00:00.155Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769036400155 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:00:00.155Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:00:00.160Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .md
+2026-01-21T23:00:00.163Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:00:00.163Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:00:00.163Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:00:00.183Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:00:00.183Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:00:00.183Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:00:00.183Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:00:00.183Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:00:00.184Z [DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 42ms
+2026-01-21T23:00:00.200Z [DEBUG] High write ratio: blit=1024, write=4797 (82.4% writes), screen=121x64
+2026-01-21T23:00:00.204Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 21ms
+2026-01-21T23:00:00.210Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:00:00.219Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:00:00.219Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:00:00.219Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:00:00.224Z [DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 11s
+2026-01-21T23:00:00.224Z [DEBUG] MCP server "ide": Calling MCP tool: close_tab
+2026-01-21T23:00:00.226Z [DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 2ms
+2026-01-21T23:00:00.249Z [DEBUG] High write ratio: blit=384, write=5296 (93.2% writes), screen=121x64
+2026-01-21T23:00:00.481Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-21T23:00:01.171Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:00:05.862Z [DEBUG] High write ratio: blit=1521, write=4873 (76.2% writes), screen=125x64
+2026-01-21T23:00:05.866Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:00:05.869Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:00:05.869Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:00:05.869Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:00:05.882Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:00:05.882Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 0ms
+2026-01-21T23:00:05.883Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769036405883
+2026-01-21T23:00:05.883Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:00:05.884Z [DEBUG] Temp file written successfully, size: 26122 bytes
+2026-01-21T23:00:05.884Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:00:05.884Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769036405883 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:00:05.884Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:00:05.892Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:00:05.892Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:00:05.892Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:00:05.904Z [DEBUG] High write ratio: blit=1521, write=5525 (78.4% writes), screen=140x64
+2026-01-21T23:00:05.905Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:00:05.905Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:00:05.905Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:00:05.905Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:00:05.905Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:00:05.911Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2026-01-21T23:00:05.915Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:00:05.919Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:00:05.919Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:00:05.919Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:00:05.941Z [DEBUG] High write ratio: blit=1648, write=5507 (77.0% writes), screen=140x64
+2026-01-21T23:00:06.828Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:00:14.720Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-21T23:00:14.720Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:00:14.720Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T23:00:14.720Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:00:14.732Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:00:14.732Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:00:14.732Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:00:14.733Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-21T23:00:14.742Z [DEBUG] High write ratio: blit=4016, write=5491 (57.8% writes), screen=177x64
+2026-01-21T23:00:14.844Z [DEBUG] High write ratio: blit=4144, write=5477 (56.9% writes), screen=177x64
+2026-01-21T23:00:15.823Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:00:20.267Z [DEBUG] High write ratio: blit=4144, write=5477 (56.9% writes), screen=177x64
+2026-01-21T23:00:21.205Z [DEBUG] High write ratio: blit=4144, write=5477 (56.9% writes), screen=177x64
+2026-01-21T23:00:21.215Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-21T23:00:21.215Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:00:21.215Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T23:00:21.215Z [DEBUG] [Speculation] enabled=false
+2026-01-21T23:00:21.262Z [DEBUG] High write ratio: blit=4144, write=5537 (57.2% writes), screen=177x64
+2026-01-21T23:01:14.737Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-21T23:01:14.737Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:01:14.737Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-21T23:22:50.507Z [DEBUG] High write ratio: blit=0, write=9775 (100.0% writes), screen=144x107
+2026-01-21T23:22:58.448Z [DEBUG] High write ratio: blit=0, write=7941 (100.0% writes), screen=167x74
+2026-01-21T23:27:36.103Z [DEBUG] Full reset (scrollback changes): scrollbackRows=167, changes=1/1, firstChangeY=161
+  prev: "❯ implement the Item class changes                                 ↵ send "
+  next: "❯ implement the Item class changes                                 ↵ send "
+2026-01-21T23:27:47.694Z [DEBUG] Full reset (scrollback changes): scrollbackRows=167, changes=1/1, firstChangeY=161
+  prev: "❯ implement the Item class changes                                 ↵ send "
+  next: "❯ implement the Item class changes                                 ↵ send "
+2026-01-21T23:28:25.775Z [DEBUG] High write ratio: blit=4388, write=6645 (60.2% writes), screen=183x74
+2026-01-21T23:28:30.746Z [DEBUG] High write ratio: blit=4388, write=6621 (60.1% writes), screen=182x74
+2026-01-21T23:28:40.721Z [DEBUG] Full reset (scrollback changes): scrollbackRows=163, changes=1/2, firstChangeY=162
+  prev: "  and 3 DriveThruLLM (src/drive_thru_llm.py)                              "
+  next: "  and 3 DriveThruLLM (src/drive_thru_llm.py)                              "
+2026-01-21T23:28:40.801Z [DEBUG] Full reset (scrollback changes): scrollbackRows=163, changes=2/2, firstChangeY=161
+  prev: "❯ please create a stronger boundary and separation of concerns between 1  "
+  next: "❯ please create a stronger boundary and separation of concerns between 1  "
+2026-01-21T23:28:40.886Z [DEBUG] Full reset (scrollback changes): scrollbackRows=163, changes=121/1365, firstChangeY=161
+  prev: "❯ please create a stronger boundary and separation of concerns between 1  "
+  next: "❯ please add to the plan to update the Item class in the following ways:  "
+2026-01-21T23:28:45.366Z [DEBUG] High write ratio: blit=4388, write=6645 (60.2% writes), screen=183x74
+2026-01-21T23:28:50.333Z [DEBUG] High write ratio: blit=4388, write=6620 (60.1% writes), screen=182x74
+2026-01-21T23:29:07.585Z [DEBUG] Full reset (scrollback changes): scrollbackRows=163, changes=145/1497, firstChangeY=161
+  prev: "❯ please create a stronger boundary and separation of concerns between 1  "
+  next: "❯ implement the Item class changes                                 ↵ send "
+2026-01-21T23:30:00.560Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-21T23:30:37.298Z [DEBUG] High write ratio: blit=4388, write=6317 (59.0% writes), screen=172x74
+2026-01-21T23:30:37.309Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:30:37.309Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:30:37.309Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:30:37.309Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:30:37.309Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:30:37.319Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+2026-01-21T23:30:37.325Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-21T23:30:37.325Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:37.325Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T23:30:37.327Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-21T23:30:37.328Z [DEBUG] FileHistory: Making snapshot for message 8ff89095-182a-4b75-a067-4eab61999c23
+2026-01-21T23:30:37.328Z [DEBUG] FileHistory: Added snapshot for 8ff89095-182a-4b75-a067-4eab61999c23, tracking 1 files
+2026-01-21T23:30:37.338Z [DEBUG] High write ratio: blit=4388, write=6299 (58.9% writes), screen=172x74
+2026-01-21T23:30:37.338Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-01-21T23:30:37.339Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-21T23:30:37.340Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:30:37.340Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:30:37.340Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:30:37.341Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 3ms
+2026-01-21T23:30:37.348Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:30:37.356Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:30:37.356Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:30:37.356Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:30:37.404Z [DEBUG] High write ratio: blit=4758, write=6019 (55.9% writes), screen=172x74
+2026-01-21T23:30:38.141Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:30:39.268Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:30:45.230Z [DEBUG] High write ratio: blit=5054, write=6082 (54.6% writes), screen=178x74
+2026-01-21T23:30:45.237Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:30:45.241Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:30:45.241Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:45.241Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:30:45.266Z [DEBUG] High write ratio: blit=5054, write=6082 (54.6% writes), screen=178x74
+2026-01-21T23:30:45.266Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:30:45.266Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:45.266Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:30:45.270Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:30:45.270Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:30:45.270Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:30:45.270Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:30:45.270Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:30:45.277Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+2026-01-21T23:30:45.284Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:30:45.289Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:30:45.289Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:30:45.289Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:30:45.305Z [DEBUG] High write ratio: blit=5054, write=6100 (54.7% writes), screen=179x74
+2026-01-21T23:30:46.436Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:30:48.188Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-01-21T23:30:48.203Z [DEBUG] High write ratio: blit=5128, write=6115 (54.4% writes), screen=181x74
+2026-01-21T23:30:48.203Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-01-21T23:30:48.203Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:48.203Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-21T23:30:48.242Z [DEBUG] High write ratio: blit=5128, write=6115 (54.4% writes), screen=181x74
+2026-01-21T23:30:48.743Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-01-21T23:30:48.743Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:48.743Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-21T23:30:48.747Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:30:48.747Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:30:48.747Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:30:48.747Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:30:48.747Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:30:48.751Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+2026-01-21T23:30:48.755Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:30:48.761Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:30:48.761Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:30:48.761Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:30:48.777Z [DEBUG] High write ratio: blit=5128, write=6151 (54.5% writes), screen=182x74
+2026-01-21T23:30:49.713Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:30:50.569Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:30:50.574Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:30:50.574Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:50.574Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:30:50.592Z [DEBUG] High write ratio: blit=5202, write=6150 (54.2% writes), screen=184x74
+2026-01-21T23:30:50.600Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:30:50.600Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:30:50.600Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:30:50.607Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:30:50.607Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:30:50.607Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:30:50.607Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:30:50.607Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:30:50.614Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+2026-01-21T23:30:50.620Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:30:50.632Z [DEBUG] High write ratio: blit=5202, write=6169 (54.3% writes), screen=185x74
+2026-01-21T23:30:50.633Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:30:50.633Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:30:50.633Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:30:50.673Z [DEBUG] High write ratio: blit=5276, write=6150 (53.8% writes), screen=185x74
+2026-01-21T23:30:51.725Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:30:59.982Z [DEBUG] High write ratio: blit=5276, write=6198 (54.0% writes), screen=188x74
+2026-01-21T23:30:59.983Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:30:59.983Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:30:59.983Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:30:59.983Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:30:59.983Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:30:59.992Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+2026-01-21T23:30:59.998Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:00.004Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:00.004Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:00.004Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:00.028Z [DEBUG] High write ratio: blit=5350, write=6175 (53.6% writes), screen=188x74
+2026-01-21T23:31:00.978Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:01.511Z [DEBUG] High write ratio: blit=5350, write=6197 (53.7% writes), screen=190x74
+2026-01-21T23:31:01.512Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-01-21T23:31:01.521Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-01-21T23:31:01.521Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:01.521Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-21T23:31:01.552Z [DEBUG] High write ratio: blit=5350, write=6197 (53.7% writes), screen=190x74
+2026-01-21T23:31:01.909Z [DEBUG] High write ratio: blit=5350, write=6197 (53.7% writes), screen=190x74
+2026-01-21T23:31:01.909Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-01-21T23:31:01.909Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:01.909Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-21T23:31:01.916Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:01.916Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:01.916Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:01.916Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:01.916Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:01.921Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+2026-01-21T23:31:01.925Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:01.930Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:01.930Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:01.930Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:01.952Z [DEBUG] High write ratio: blit=5350, write=6234 (53.8% writes), screen=191x74
+2026-01-21T23:31:02.820Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:03.404Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:31:03.413Z [DEBUG] High write ratio: blit=5424, write=6226 (53.4% writes), screen=193x74
+2026-01-21T23:31:03.414Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:31:03.414Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:03.414Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:31:03.436Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:31:03.436Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:03.436Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:31:03.440Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:03.440Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:03.440Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:03.440Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:03.440Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:03.451Z [DEBUG] High write ratio: blit=5424, write=6245 (53.5% writes), screen=194x74
+2026-01-21T23:31:03.452Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 12ms
+2026-01-21T23:31:03.456Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:03.460Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:03.460Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:03.460Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:03.494Z [DEBUG] High write ratio: blit=5498, write=6226 (53.1% writes), screen=194x74
+2026-01-21T23:31:04.460Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:05.810Z [DEBUG] High write ratio: blit=5498, write=6258 (53.2% writes), screen=196x74
+2026-01-21T23:31:05.810Z [DEBUG] executePreToolHooks called for tool: Grep
+2026-01-21T23:31:05.819Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2026-01-21T23:31:05.819Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:05.819Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-01-21T23:31:05.852Z [DEBUG] High write ratio: blit=5498, write=6258 (53.2% writes), screen=196x74
+2026-01-21T23:31:06.179Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2026-01-21T23:31:06.179Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:06.179Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2026-01-21T23:31:06.184Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:06.184Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:06.184Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:06.184Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:06.184Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:06.190Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2026-01-21T23:31:06.198Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:06.202Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:06.202Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:06.202Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:06.211Z [DEBUG] High write ratio: blit=5498, write=6295 (53.4% writes), screen=197x74
+2026-01-21T23:31:07.223Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:08.471Z [DEBUG] High write ratio: blit=5572, write=6296 (53.1% writes), screen=199x74
+2026-01-21T23:31:08.481Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:31:08.488Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:31:08.488Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:08.488Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:31:08.511Z [DEBUG] High write ratio: blit=5572, write=6296 (53.1% writes), screen=199x74
+2026-01-21T23:31:08.516Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:31:08.516Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:08.516Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:31:08.520Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:08.520Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:08.520Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:08.520Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:08.520Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:08.528Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2026-01-21T23:31:08.533Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:08.538Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:08.538Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:08.538Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:08.549Z [DEBUG] High write ratio: blit=5572, write=6315 (53.1% writes), screen=200x74
+2026-01-21T23:31:09.785Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:19.737Z [DEBUG] High write ratio: blit=5942, write=6287 (51.4% writes), screen=204x74
+2026-01-21T23:31:19.737Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-21T23:31:19.748Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-21T23:31:19.748Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:19.748Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:31:19.765Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038279765
+2026-01-21T23:31:19.765Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:31:19.765Z [DEBUG] Temp file written successfully, size: 998 bytes
+2026-01-21T23:31:19.766Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:31:19.766Z [DEBUG] Renaming /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038279765 to /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-21T23:31:19.766Z [DEBUG] File /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-21T23:31:19.774Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-21T23:31:19.774Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:19.774Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:31:19.778Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:19.778Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:19.779Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:19.779Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:19.779Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:19.789Z [DEBUG] High write ratio: blit=5942, write=6350 (51.7% writes), screen=205x74
+2026-01-21T23:31:19.790Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 12ms
+2026-01-21T23:31:19.795Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:19.805Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:19.805Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:19.805Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:19.833Z [DEBUG] High write ratio: blit=5942, write=6350 (51.7% writes), screen=205x74
+2026-01-21T23:31:20.644Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:39.804Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:31:39.812Z [DEBUG] High write ratio: blit=5942, write=6400 (51.9% writes), screen=207x74
+2026-01-21T23:31:39.813Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:31:39.813Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:39.813Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:31:39.826Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:39.827Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1ms
+2026-01-21T23:31:39.829Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038299829
+2026-01-21T23:31:39.829Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:31:39.829Z [DEBUG] Temp file written successfully, size: 29044 bytes
+2026-01-21T23:31:39.829Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:31:39.829Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038299829 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:31:39.829Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:31:39.835Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:31:39.835Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:39.835Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:31:39.858Z [DEBUG] High write ratio: blit=5942, write=15808 (72.7% writes), screen=369x74
+2026-01-21T23:31:39.864Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:39.864Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:39.864Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:39.864Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:39.864Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:39.875Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 11ms
+2026-01-21T23:31:39.882Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:39.892Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:39.892Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:39.892Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:39.906Z [DEBUG] High write ratio: blit=6814, write=15771 (69.8% writes), screen=369x74
+2026-01-21T23:31:40.811Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:43.797Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-21T23:31:43.809Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-21T23:31:43.809Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:43.809Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:31:43.841Z [DEBUG] High write ratio: blit=6814, write=15771 (69.8% writes), screen=369x74
+2026-01-21T23:31:43.843Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038303843
+2026-01-21T23:31:43.843Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:31:43.843Z [DEBUG] Temp file written successfully, size: 1008 bytes
+2026-01-21T23:31:43.844Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:31:43.844Z [DEBUG] Renaming /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038303843 to /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-21T23:31:43.844Z [DEBUG] File /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-21T23:31:43.855Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-21T23:31:43.855Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:43.855Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:31:43.861Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:43.861Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:43.861Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:43.861Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:43.861Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:43.867Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2026-01-21T23:31:43.883Z [DEBUG] High write ratio: blit=6814, write=15706 (69.7% writes), screen=368x74
+2026-01-21T23:31:43.884Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:43.890Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:43.890Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:43.890Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:43.925Z [DEBUG] High write ratio: blit=6814, write=15706 (69.7% writes), screen=368x74
+2026-01-21T23:31:44.724Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:31:48.724Z [DEBUG] High write ratio: blit=6814, write=15707 (69.7% writes), screen=368x74
+2026-01-21T23:31:55.518Z [DEBUG] High write ratio: blit=6814, write=15757 (69.8% writes), screen=370x74
+2026-01-21T23:31:55.529Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:31:55.535Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:31:55.535Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:55.535Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:31:55.563Z [DEBUG] High write ratio: blit=6814, write=15757 (69.8% writes), screen=370x74
+2026-01-21T23:31:55.564Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:55.568Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+2026-01-21T23:31:55.569Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038315569
+2026-01-21T23:31:55.569Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:31:55.569Z [DEBUG] Temp file written successfully, size: 30728 bytes
+2026-01-21T23:31:55.569Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:31:55.569Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038315569 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:31:55.569Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:31:55.577Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:31:55.577Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:31:55.577Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:31:55.590Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:31:55.590Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:31:55.590Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:31:55.590Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:31:55.590Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:31:55.611Z [DEBUG] High write ratio: blit=6814, write=20434 (75.0% writes), screen=457x74
+2026-01-21T23:31:55.614Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 24ms
+2026-01-21T23:31:55.624Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:31:55.632Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:31:55.632Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:31:55.632Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:31:55.664Z [DEBUG] High write ratio: blit=7311, write=20398 (73.6% writes), screen=457x74
+2026-01-21T23:31:56.653Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:32:08.626Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:32:08.632Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:32:08.632Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:08.632Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:08.652Z [DEBUG] High write ratio: blit=7311, write=20446 (73.7% writes), screen=459x74
+2026-01-21T23:32:08.665Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:08.666Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1ms
+2026-01-21T23:32:08.667Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038328667
+2026-01-21T23:32:08.667Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:32:08.667Z [DEBUG] Temp file written successfully, size: 32007 bytes
+2026-01-21T23:32:08.667Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:32:08.667Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038328667 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:32:08.667Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:32:08.673Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:32:08.673Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:08.673Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:08.704Z [DEBUG] High write ratio: blit=7311, write=25452 (77.7% writes), screen=552x74
+2026-01-21T23:32:08.708Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:08.708Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:32:08.708Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:32:08.708Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:32:08.708Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:32:08.726Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 18ms
+2026-01-21T23:32:08.735Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:32:08.759Z [DEBUG] High write ratio: blit=7838, write=25415 (76.4% writes), screen=552x74
+2026-01-21T23:32:08.760Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:32:08.760Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:32:08.760Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:32:08.808Z [DEBUG] High write ratio: blit=7838, write=25415 (76.4% writes), screen=552x74
+2026-01-21T23:32:09.701Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:32:28.361Z [DEBUG] High write ratio: blit=7838, write=25463 (76.5% writes), screen=554x74
+2026-01-21T23:32:28.361Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:32:28.370Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:32:28.370Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:28.370Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:28.390Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:28.391Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1ms
+2026-01-21T23:32:28.394Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038348394
+2026-01-21T23:32:28.394Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:32:28.394Z [DEBUG] Temp file written successfully, size: 37959 bytes
+2026-01-21T23:32:28.394Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:32:28.394Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038348394 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:32:28.394Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:32:28.414Z [DEBUG] High write ratio: blit=7838, write=25463 (76.5% writes), screen=554x74
+2026-01-21T23:32:28.415Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:32:28.415Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:28.415Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:28.468Z [DEBUG] High write ratio: blit=7838, write=39865 (83.6% writes), screen=791x74
+2026-01-21T23:32:28.477Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:28.477Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:32:28.477Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:32:28.477Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:32:28.477Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:32:28.491Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 14ms
+2026-01-21T23:32:28.500Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:32:28.529Z [DEBUG] High write ratio: blit=9085, write=39845 (81.4% writes), screen=791x74
+2026-01-21T23:32:28.530Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:32:28.530Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:32:28.530Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:32:28.587Z [DEBUG] High write ratio: blit=9085, write=39845 (81.4% writes), screen=791x74
+2026-01-21T23:32:28.845Z [DEBUG] High write ratio: blit=9085, write=39845 (81.4% writes), screen=791x74
+2026-01-21T23:32:29.553Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:32:41.374Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:32:41.406Z [DEBUG] High write ratio: blit=9085, write=39892 (81.5% writes), screen=793x74
+2026-01-21T23:32:41.407Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:32:41.407Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:41.407Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:41.434Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:41.437Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:32:41.438Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038361438
+2026-01-21T23:32:41.438Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:32:41.438Z [DEBUG] Temp file written successfully, size: 39627 bytes
+2026-01-21T23:32:41.438Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:32:41.438Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038361438 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:32:41.438Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:32:41.468Z [DEBUG] High write ratio: blit=9085, write=39892 (81.5% writes), screen=793x74
+2026-01-21T23:32:41.469Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:32:41.469Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:41.469Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:41.489Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:41.489Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:32:41.489Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:32:41.489Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:32:41.489Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:32:41.499Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+2026-01-21T23:32:41.531Z [DEBUG] High write ratio: blit=9085, write=45294 (83.3% writes), screen=884x74
+2026-01-21T23:32:41.535Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:32:41.549Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:32:41.549Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:32:41.549Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:32:41.597Z [DEBUG] High write ratio: blit=9602, write=45257 (82.5% writes), screen=884x74
+2026-01-21T23:32:42.655Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:32:48.863Z [DEBUG] High write ratio: blit=9602, write=45258 (82.5% writes), screen=884x74
+2026-01-21T23:32:53.022Z [DEBUG] High write ratio: blit=9602, write=45306 (82.5% writes), screen=886x74
+2026-01-21T23:32:53.023Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:32:53.034Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:32:53.034Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:53.034Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:53.084Z [DEBUG] High write ratio: blit=9602, write=45306 (82.5% writes), screen=886x74
+2026-01-21T23:32:53.085Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:53.088Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:32:53.089Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038373089
+2026-01-21T23:32:53.089Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:32:53.089Z [DEBUG] Temp file written successfully, size: 41417 bytes
+2026-01-21T23:32:53.089Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:32:53.089Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038373089 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:32:53.090Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:32:53.100Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:32:53.100Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:32:53.100Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:32:53.142Z [DEBUG] High write ratio: blit=9602, write=49877 (83.9% writes), screen=964x74
+2026-01-21T23:32:53.146Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:32:53.146Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:32:53.146Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:32:53.146Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:32:53.146Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:32:53.161Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 15ms
+2026-01-21T23:32:53.171Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:32:53.210Z [DEBUG] High write ratio: blit=10054, write=49841 (83.2% writes), screen=964x74
+2026-01-21T23:32:53.212Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:32:53.212Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:32:53.212Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:32:53.273Z [DEBUG] High write ratio: blit=10054, write=49841 (83.2% writes), screen=964x74
+2026-01-21T23:32:54.130Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:04.242Z [DEBUG] High write ratio: blit=10054, write=49889 (83.2% writes), screen=966x74
+2026-01-21T23:33:04.258Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:33:04.268Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:33:04.268Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:04.268Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:04.306Z [DEBUG] High write ratio: blit=10054, write=49889 (83.2% writes), screen=966x74
+2026-01-21T23:33:04.331Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:04.334Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:33:04.335Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038384335
+2026-01-21T23:33:04.335Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:33:04.336Z [DEBUG] Temp file written successfully, size: 43155 bytes
+2026-01-21T23:33:04.336Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:33:04.336Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038384335 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:33:04.336Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:33:04.373Z [DEBUG] High write ratio: blit=10054, write=49889 (83.2% writes), screen=966x74
+2026-01-21T23:33:04.375Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:33:04.375Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:04.375Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:04.396Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:04.396Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:04.396Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:04.396Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:04.396Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:04.439Z [DEBUG] High write ratio: blit=10054, write=54233 (84.4% writes), screen=1039x74
+2026-01-21T23:33:04.442Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 46ms
+2026-01-21T23:33:04.458Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:04.470Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:04.470Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:04.470Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:04.512Z [DEBUG] High write ratio: blit=10481, write=54197 (83.8% writes), screen=1039x74
+2026-01-21T23:33:05.600Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:08.904Z [DEBUG] High write ratio: blit=10481, write=54195 (83.8% writes), screen=1039x74
+2026-01-21T23:33:26.781Z [DEBUG] High write ratio: blit=10481, write=54245 (83.8% writes), screen=1041x74
+2026-01-21T23:33:26.797Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:33:26.807Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:33:26.807Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:26.807Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:26.848Z [DEBUG] High write ratio: blit=10481, write=54245 (83.8% writes), screen=1041x74
+2026-01-21T23:33:26.873Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:26.876Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:33:26.878Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038406878
+2026-01-21T23:33:26.878Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:33:26.878Z [DEBUG] Temp file written successfully, size: 47400 bytes
+2026-01-21T23:33:26.878Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:33:26.878Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038406878 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:33:26.878Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:33:26.918Z [DEBUG] High write ratio: blit=10481, write=54245 (83.8% writes), screen=1041x74
+2026-01-21T23:33:26.919Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:33:26.919Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:26.919Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:26.949Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:26.949Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:26.949Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:26.949Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:26.949Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:26.999Z [DEBUG] High write ratio: blit=10481, write=65210 (86.2% writes), screen=1230x74
+2026-01-21T23:33:27.006Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 57ms
+2026-01-21T23:33:27.024Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:27.037Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:27.037Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:27.037Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:27.085Z [DEBUG] High write ratio: blit=11488, write=65173 (85.0% writes), screen=1230x74
+2026-01-21T23:33:28.541Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:28.948Z [DEBUG] High write ratio: blit=11488, write=65184 (85.0% writes), screen=1230x74
+2026-01-21T23:33:32.036Z [DEBUG] High write ratio: blit=11488, write=65171 (85.0% writes), screen=1230x74
+2026-01-21T23:33:32.038Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-21T23:33:32.053Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-21T23:33:32.053Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:32.053Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:33:32.110Z [DEBUG] High write ratio: blit=11488, write=65171 (85.0% writes), screen=1230x74
+2026-01-21T23:33:32.127Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038412127
+2026-01-21T23:33:32.127Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:33:32.127Z [DEBUG] Temp file written successfully, size: 1163 bytes
+2026-01-21T23:33:32.127Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:33:32.127Z [DEBUG] Renaming /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038412127 to /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-21T23:33:32.128Z [DEBUG] File /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-21T23:33:32.185Z [DEBUG] High write ratio: blit=11488, write=65183 (85.0% writes), screen=1230x74
+2026-01-21T23:33:32.187Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-21T23:33:32.187Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:32.187Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:33:32.204Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:32.204Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:32.204Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:32.204Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:32.204Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:32.217Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 13ms
+2026-01-21T23:33:32.265Z [DEBUG] High write ratio: blit=11488, write=65183 (85.0% writes), screen=1230x74
+2026-01-21T23:33:32.267Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:32.285Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:32.285Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:32.285Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:32.333Z [DEBUG] High write ratio: blit=11488, write=65183 (85.0% writes), screen=1230x74
+2026-01-21T23:33:33.508Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:43.066Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1226, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.307Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1226, changes=1/1, firstChangeY=1223
+  prev: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.460Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1225, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.580Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.701Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.789Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "· Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+2026-01-21T23:33:43.849Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "· Adding clean architecture summary section… (esc to interrupt · 3m 6s)   "
+  next: "· Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.030Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "· Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.150Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.270Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.391Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.512Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.754Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.875Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+2026-01-21T23:33:44.924Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 7s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:44.997Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.116Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.237Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "· Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.481Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "· Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.600Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.720Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.841Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+2026-01-21T23:33:45.891Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 8s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:45.961Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=1/1, firstChangeY=1223
+  prev: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.180Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=44/44, firstChangeY=1223
+  prev: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.264Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1224, changes=7/7, firstChangeY=1223
+  prev: "✽ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✻ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.418Z [DEBUG] High write ratio: blit=11488, write=65232 (85.0% writes), screen=1232x74
+2026-01-21T23:33:46.438Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:33:46.488Z [DEBUG] High write ratio: blit=11488, write=65232 (85.0% writes), screen=1232x74
+2026-01-21T23:33:46.489Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1226, changes=42/42, firstChangeY=1225
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.530Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:33:46.530Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:46.530Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:46.605Z [DEBUG] High write ratio: blit=11488, write=65232 (85.0% writes), screen=1232x74
+2026-01-21T23:33:46.605Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1226, changes=1/1, firstChangeY=1225
+  prev: "✶ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.645Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:46.648Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:33:46.651Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038426651
+2026-01-21T23:33:46.651Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:33:46.655Z [DEBUG] Temp file written successfully, size: 50448 bytes
+2026-01-21T23:33:46.655Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:33:46.655Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038426651 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:33:46.655Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:33:46.722Z [DEBUG] High write ratio: blit=11488, write=65232 (85.0% writes), screen=1232x74
+2026-01-21T23:33:46.723Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1226, changes=43/43, firstChangeY=1225
+  prev: "✳ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+2026-01-21T23:33:46.766Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:33:46.766Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:46.766Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:46.837Z [DEBUG] High write ratio: blit=11488, write=71798 (86.2% writes), screen=1343x74
+2026-01-21T23:33:46.891Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:46.891Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:46.891Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:46.891Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:46.891Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:46.913Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 21ms
+2026-01-21T23:33:46.967Z [DEBUG] High write ratio: blit=12105, write=71777 (85.6% writes), screen=1343x74
+2026-01-21T23:33:46.968Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=66/66, firstChangeY=1336
+  prev: "✢ Adding clean architecture summary section… (esc to interrupt · 3m 9s)   "
+  next: "· Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+2026-01-21T23:33:47.021Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:47.041Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:47.041Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:47.041Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:47.096Z [DEBUG] High write ratio: blit=12105, write=71777 (85.6% writes), screen=1343x74
+2026-01-21T23:33:47.136Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=6/6, firstChangeY=1336
+  prev: "· Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+  next: "· Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+2026-01-21T23:33:47.227Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "· Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+  next: "✢ Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+2026-01-21T23:33:47.317Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=3/3, firstChangeY=1336
+  prev: "✢ Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+  next: "✳ Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+2026-01-21T23:33:47.408Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✳ Adding clean architecture summary section… (3m 10s · ↑ 14.2k tokens)    "
+  next: "✳ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.499Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✳ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+  next: "✶ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.588Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✶ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+  next: "✻ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.677Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=4/4, firstChangeY=1336
+  prev: "✻ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+  next: "✻ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.771Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=3/3, firstChangeY=1336
+  prev: "✻ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+  next: "✽ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.862Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✽ Adding clean architecture summary section… (3m 10s · ↑ 14.3k tokens)    "
+  next: "✽ Adding clean architecture summary section… (3m 11s · ↑ 14.3k tokens)    "
+2026-01-21T23:33:47.951Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✽ Adding clean architecture summary section… (3m 11s · ↑ 14.3k tokens)    "
+  next: "✽ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+2026-01-21T23:33:48.039Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✽ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+  next: "✻ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+2026-01-21T23:33:48.130Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✻ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+  next: "✶ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+2026-01-21T23:33:48.185Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:48.220Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=17/17, firstChangeY=1336
+  prev: "✶ Adding clean architecture summary section… (3m 11s · ↑ 14.4k tokens)    "
+  next: "✶ Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.312Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=1/1, firstChangeY=1336
+  prev: "✶ Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.403Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=5/5, firstChangeY=1336
+  prev: "✳ Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.531Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=1/1, firstChangeY=1336
+  prev: "✢ Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.620Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=2/2, firstChangeY=1336
+  prev: "· Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.802Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=3/3, firstChangeY=1336
+  prev: "· Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 11s · thinking)          "
+2026-01-21T23:33:48.901Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=1/1, firstChangeY=1336
+  prev: "✢ Adding clean architecture summary section… (3m 11s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.028Z [DEBUG] High write ratio: blit=12105, write=71772 (85.6% writes), screen=1343x74
+2026-01-21T23:33:49.029Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=3/3, firstChangeY=1336
+  prev: "✢ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.120Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=1/1, firstChangeY=1336
+  prev: "✳ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.210Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=3/3, firstChangeY=1336
+  prev: "✶ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.345Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=1/1, firstChangeY=1336
+  prev: "✻ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.442Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1337, changes=2/2, firstChangeY=1336
+  prev: "✽ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.565Z [DEBUG] High write ratio: blit=12105, write=71818 (85.6% writes), screen=1345x74
+2026-01-21T23:33:49.566Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:33:49.585Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:33:49.585Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:49.585Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:33:49.637Z [DEBUG] High write ratio: blit=12105, write=71818 (85.6% writes), screen=1345x74
+2026-01-21T23:33:49.711Z [DEBUG] High write ratio: blit=12105, write=71818 (85.6% writes), screen=1345x74
+2026-01-21T23:33:49.712Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1339, changes=43/43, firstChangeY=1338
+  prev: "✽ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.834Z [DEBUG] High write ratio: blit=12105, write=71818 (85.6% writes), screen=1345x74
+2026-01-21T23:33:49.834Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1339, changes=43/43, firstChangeY=1338
+  prev: "✻ Adding clean architecture summary section… (3m 12s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 12s · thinking)          "
+2026-01-21T23:33:49.886Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:33:49.886Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:49.886Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:33:49.906Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:49.906Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:49.906Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:49.906Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:49.906Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:49.961Z [DEBUG] High write ratio: blit=12105, write=71836 (85.6% writes), screen=1346x74
+2026-01-21T23:33:50.014Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 108ms
+2026-01-21T23:33:50.035Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:50.097Z [DEBUG] High write ratio: blit=12179, write=71818 (85.5% writes), screen=1346x74
+2026-01-21T23:33:50.097Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=43/43, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.148Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:50.148Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:50.148Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:50.217Z [DEBUG] High write ratio: blit=12179, write=71818 (85.5% writes), screen=1346x74
+2026-01-21T23:33:50.218Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=7/7, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.308Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.394Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.484Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=5/5, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.572Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=5/5, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.663Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.754Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=5/5, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 13s · thinking)          "
+2026-01-21T23:33:50.841Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=6/6, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 13s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:50.930Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.019Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=3/3, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.109Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.199Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.272Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:33:51.289Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=5/5, firstChangeY=1339
+  prev: "✽ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.377Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.512Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=7/7, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.646Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.737Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=4/4, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.825Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 14s · thinking)          "
+2026-01-21T23:33:51.914Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=3/3, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 14s · thinking)          "
+  next: "· Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.047Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.140Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.229Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.317Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=3/3, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.450Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.541Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.629Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.715Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✽ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✽ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.847Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✽ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+2026-01-21T23:33:52.939Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=3/3, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 15s · thinking)          "
+  next: "✻ Adding clean architecture summary section… (3m 16s · thinking)          "
+2026-01-21T23:33:53.030Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 16s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 16s · thinking)          "
+2026-01-21T23:33:53.118Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 16s · thinking)          "
+  next: "✶ Adding clean architecture summary section… (3m 16s · thinking)          "
+2026-01-21T23:33:53.206Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 16s · thinking)          "
+  next: "✳ Adding clean architecture summary section… (3m 16s · thinking)          "
+2026-01-21T23:33:53.293Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=14/14, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 16s · thinking)          "
+  next: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.381Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.470Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "· Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.556Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "· Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.689Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "· Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.780Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+2026-01-21T23:33:53.870Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✢ Adding clean architecture summary section… (3m 16s · thought for 1s)    "
+  next: "✳ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+2026-01-21T23:33:53.960Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✳ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+  next: "✶ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+2026-01-21T23:33:54.091Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=1/1, firstChangeY=1339
+  prev: "✶ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+  next: "✻ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+2026-01-21T23:33:54.199Z [DEBUG] Full reset (scrollback changes): scrollbackRows=1340, changes=2/2, firstChangeY=1339
+  prev: "✻ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+  next: "✽ Adding clean architecture summary section… (3m 17s · thought for 1s)    "
+2026-01-21T23:33:59.585Z [DEBUG] High write ratio: blit=12179, write=71871 (85.5% writes), screen=1348x74
+2026-01-21T23:33:59.587Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:33:59.604Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:33:59.604Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:59.604Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:59.655Z [DEBUG] High write ratio: blit=12179, write=71871 (85.5% writes), screen=1348x74
+2026-01-21T23:33:59.727Z [DEBUG] High write ratio: blit=12179, write=71871 (85.5% writes), screen=1348x74
+2026-01-21T23:33:59.729Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:59.732Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 3ms
+2026-01-21T23:33:59.733Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038439733
+2026-01-21T23:33:59.733Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:33:59.733Z [DEBUG] Temp file written successfully, size: 51388 bytes
+2026-01-21T23:33:59.733Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:33:59.733Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038439733 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:33:59.733Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:33:59.750Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:33:59.750Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:33:59.750Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:33:59.814Z [DEBUG] High write ratio: blit=12179, write=75497 (86.1% writes), screen=1417x74
+2026-01-21T23:33:59.818Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:33:59.818Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:33:59.818Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:33:59.818Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:33:59.818Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:33:59.838Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 20ms
+2026-01-21T23:33:59.896Z [DEBUG] High write ratio: blit=12586, write=75461 (85.7% writes), screen=1417x74
+2026-01-21T23:33:59.898Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:33:59.917Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:33:59.917Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:33:59.917Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:33:59.972Z [DEBUG] High write ratio: blit=12586, write=75461 (85.7% writes), screen=1417x74
+2026-01-21T23:34:00.998Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:02.333Z [DEBUG] High write ratio: blit=12586, write=75502 (85.7% writes), screen=1419x74
+2026-01-21T23:34:02.334Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-21T23:34:02.353Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-21T23:34:02.353Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:02.353Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:34:02.410Z [DEBUG] High write ratio: blit=12586, write=75502 (85.7% writes), screen=1419x74
+2026-01-21T23:34:02.484Z [DEBUG] High write ratio: blit=12586, write=75502 (85.7% writes), screen=1419x74
+2026-01-21T23:34:02.558Z [DEBUG] High write ratio: blit=12586, write=75502 (85.7% writes), screen=1419x74
+2026-01-21T23:34:02.560Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-21T23:34:02.560Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:02.560Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-21T23:34:02.579Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:34:02.579Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:34:02.579Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:34:02.579Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:34:02.579Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:34:02.641Z [DEBUG] High write ratio: blit=12586, write=75520 (85.7% writes), screen=1420x74
+2026-01-21T23:34:02.644Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 65ms
+2026-01-21T23:34:02.664Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:34:02.721Z [DEBUG] High write ratio: blit=12660, write=75502 (85.6% writes), screen=1420x74
+2026-01-21T23:34:02.724Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:34:02.724Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:34:02.724Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:34:02.793Z [DEBUG] High write ratio: blit=12660, write=75502 (85.6% writes), screen=1420x74
+2026-01-21T23:34:03.766Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:07.769Z [DEBUG] High write ratio: blit=12660, write=75556 (85.6% writes), screen=1422x74
+2026-01-21T23:34:07.771Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-21T23:34:07.790Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-21T23:34:07.790Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:07.790Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:34:07.844Z [DEBUG] High write ratio: blit=12660, write=75556 (85.6% writes), screen=1422x74
+2026-01-21T23:34:07.919Z [DEBUG] High write ratio: blit=12660, write=75556 (85.6% writes), screen=1422x74
+2026-01-21T23:34:07.921Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:34:07.925Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+2026-01-21T23:34:07.926Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038447926
+2026-01-21T23:34:07.926Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:34:07.926Z [DEBUG] Temp file written successfully, size: 51618 bytes
+2026-01-21T23:34:07.926Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:34:07.926Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md.tmp.4012.1769038447926 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md
+2026-01-21T23:34:07.926Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/mcdonalds-drive-thru-agent-plan.md written atomically
+2026-01-21T23:34:07.943Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-21T23:34:07.943Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:07.943Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-21T23:34:08.012Z [DEBUG] High write ratio: blit=12660, write=77514 (86.0% writes), screen=1461x74
+2026-01-21T23:34:08.015Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:34:08.015Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:34:08.015Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:34:08.015Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:34:08.015Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:34:08.036Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 21ms
+2026-01-21T23:34:08.094Z [DEBUG] High write ratio: blit=12917, write=77478 (85.7% writes), screen=1461x74
+2026-01-21T23:34:08.096Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:34:08.115Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:34:08.115Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:34:08.115Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:34:08.174Z [DEBUG] High write ratio: blit=12917, write=77478 (85.7% writes), screen=1461x74
+2026-01-21T23:34:09.044Z [DEBUG] High write ratio: blit=12917, write=77478 (85.7% writes), screen=1461x74
+2026-01-21T23:34:09.112Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:12.721Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-21T23:34:12.776Z [DEBUG] High write ratio: blit=12917, write=77478 (85.7% writes), screen=1461x74
+2026-01-21T23:34:12.777Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-21T23:34:12.777Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:12.777Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:34:12.866Z [DEBUG] High write ratio: blit=12917, write=77478 (85.7% writes), screen=1461x74
+2026-01-21T23:34:12.870Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038452870
+2026-01-21T23:34:12.870Z [DEBUG] Preserving file permissions: 100644
+2026-01-21T23:34:12.870Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-21T23:34:12.870Z [DEBUG] Applied original permissions to temp file
+2026-01-21T23:34:12.870Z [DEBUG] Renaming /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769038452870 to /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-21T23:34:12.870Z [DEBUG] File /Users/seanreed/.claude/todos/4cf43f87-139d-4340-ba8c-8f9b2dee1c9b-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-21T23:34:12.939Z [DEBUG] High write ratio: blit=12917, write=77468 (85.7% writes), screen=1461x74
+2026-01-21T23:34:12.941Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-21T23:34:12.941Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:12.941Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-21T23:34:12.960Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-21T23:34:12.960Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-21T23:34:12.960Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-21T23:34:12.960Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-21T23:34:12.960Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-21T23:34:13.013Z [DEBUG] High write ratio: blit=12917, write=77468 (85.7% writes), screen=1461x74
+2026-01-21T23:34:13.015Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 55ms
+2026-01-21T23:34:13.033Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:34:13.088Z [DEBUG] High write ratio: blit=12917, write=77468 (85.7% writes), screen=1461x74
+2026-01-21T23:34:13.091Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:34:13.091Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:34:13.091Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:34:13.171Z [DEBUG] High write ratio: blit=12917, write=77468 (85.7% writes), screen=1461x74
+2026-01-21T23:34:14.194Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:30.704Z [DEBUG] High write ratio: blit=24165, write=77467 (76.2% writes), screen=1613x74
+2026-01-21T23:34:30.726Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-21T23:34:30.726Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:30.726Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T23:34:30.726Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:34:30.795Z [DEBUG] High write ratio: blit=24165, write=77428 (76.2% writes), screen=1613x74
+2026-01-21T23:34:30.799Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:34:30.799Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:34:30.799Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:34:30.803Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-21T23:34:30.897Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:34:32.668Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:41.741Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:34:41.744Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context)
+2026-01-21T23:34:41.800Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:34:41.803Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-21T23:34:41.803Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-21T23:34:41.803Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-21T23:34:41.863Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:34:42.782Z [DEBUG] Stream started - received first chunk
+2026-01-21T23:34:53.118Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:34:53.179Z [DEBUG] High write ratio: blit=24313, write=77478 (76.1% writes), screen=1615x74
+2026-01-21T23:34:53.181Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-21T23:34:53.181Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:34:53.181Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-21T23:35:01.202Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:35:30.805Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-21T23:35:30.805Z [DEBUG] Found 0 hook matchers in settings
+2026-01-21T23:35:30.805Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-21T23:36:29.291Z [DEBUG] High write ratio: blit=24313, write=77409 (76.1% writes), screen=1613x74
+2026-01-21T23:39:37.168Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-21T23:39:37.169Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T23:39:37.232Z [DEBUG] High write ratio: blit=24313, write=77647 (76.2% writes), screen=1616x74
+2026-01-21T23:39:37.303Z [DEBUG] High write ratio: blit=24313, write=77665 (76.2% writes), screen=1617x74
+2026-01-21T23:39:37.305Z [DEBUG] MCP server "ide": Connection failed after 136ms: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:37.305Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:37.305Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-21T23:39:37.305Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-21T23:39:38.307Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T23:39:38.369Z [DEBUG] High write ratio: blit=24313, write=77665 (76.2% writes), screen=1617x74
+2026-01-21T23:39:38.381Z [DEBUG] MCP server "ide": Connection failed after 74ms: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:38.381Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:38.381Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 2 completed with status: failed
+2026-01-21T23:39:38.381Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 3 in 2000ms
+2026-01-21T23:39:40.382Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T23:39:40.462Z [DEBUG] High write ratio: blit=24313, write=77665 (76.2% writes), screen=1617x74
+2026-01-21T23:39:40.473Z [DEBUG] MCP server "ide": Connection failed after 92ms: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:40.473Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:40.473Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 3 completed with status: failed
+2026-01-21T23:39:40.473Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 4 in 4000ms
+2026-01-21T23:39:44.477Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T23:39:44.551Z [DEBUG] High write ratio: blit=24313, write=77665 (76.2% writes), screen=1617x74
+2026-01-21T23:39:44.562Z [DEBUG] MCP server "ide": Connection failed after 86ms: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:44.562Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:44.562Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 4 completed with status: failed
+2026-01-21T23:39:44.562Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 5 in 8000ms
+2026-01-21T23:39:45.311Z [DEBUG] High write ratio: blit=24313, write=77647 (76.2% writes), screen=1616x74
+2026-01-21T23:39:52.567Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-21T23:39:52.651Z [DEBUG] High write ratio: blit=24313, write=77647 (76.2% writes), screen=1616x74
+2026-01-21T23:39:52.662Z [DEBUG] MCP server "ide": Connection failed after 96ms: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:52.662Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-21T23:39:52.662Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 5 completed with status: failed
+2026-01-21T23:39:52.662Z [DEBUG] MCP server "ide": Max reconnection attempts (5) reached, giving up
+2026-01-21T23:39:52.762Z [DEBUG] High write ratio: blit=24313, write=77647 (76.2% writes), screen=1616x74
+2026-01-21T23:41:09.765Z [DEBUG] High write ratio: blit=24313, write=77647 (76.2% writes), screen=1616x74
+2026-01-21T23:41:45.803Z [DEBUG] High write ratio: blit=24313, write=77434 (76.1% writes), screen=1614x74
+2026-01-21T23:41:45.863Z [DEBUG] High write ratio: blit=24313, write=77413 (76.1% writes), screen=1613x74

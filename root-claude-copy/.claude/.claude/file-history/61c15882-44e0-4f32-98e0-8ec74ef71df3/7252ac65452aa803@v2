@@ -1,0 +1,25 @@
+import { Project } from '@/types'
+
+export const projects: Project[] = [
+  {
+    id: 'ecommerce-platform',
+    title: 'E-commerce Platform',
+    description: 'A full-featured e-commerce platform with product management, shopping cart, and secure payment integration.',
+    technologies: ['React', 'Node.js', 'PostgreSQL'],
+    status: 'completed',
+  },
+  {
+    id: 'task-management-app',
+    title: 'Task Management App',
+    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+    technologies: ['TypeScript', 'React', 'MongoDB'],
+    status: 'completed',
+  },
+  {
+    id: 'data-visualization-dashboard',
+    title: 'Data Visualization Dashboard',
+    description: 'An interactive analytics dashboard for visualizing complex datasets with customizable charts, filters, and export capabilities.',
+    technologies: ['Python', 'D3.js', 'Flask'],
+    status: 'completed',
+  },
+]

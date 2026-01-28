@@ -1,0 +1,56 @@
+    12:26:27.897 INFO   livekit.agents     HTTP server listening on :50417  
+    12:26:27.994 INFO   livekit.agents     registered worker  
+                                         {"agent_name": "", "id": 
+"AW_Zfn6BdCpW9EJ", "url": "wss://demo-1-bvzclghb.livekit.cloud", "region": "US 
+East B", "protocol": 16}
+    12:33:40.101 INFO   livekit.agents     received job request  
+                                         {"job_id": "AJ_2D2xqVMixYvJ", 
+"dispatch_id": "AD_RjiwpJVLt5VZ", "room": "room-20260122173226", "room_id": 
+"RM_MEUzs3jZyZBj", "agent_name": "", "resuming": false, "enable_recording": true}
+    12:33:40.124 DEBUG  livekit.agents     received assignment  
+                                         {"agent_name": "", "room_id": 
+"RM_MEUzs3jZyZBj", "room": "room-20260122173226", "job_id": "AJ_2D2xqVMixYvJ", 
+"dispatch_id": "AD_RjiwpJVLt5VZ", "enable_recording": true}
+    12:33:40.129 INFO   livekit.agents     initializing process {"pid": 79275}
+    12:33:40.613 INFO   livekit.agents     process initialized  
+                                         {"pid": 79275, "elapsed_time": 0.48}
+                 DEBUG  asyncio            Using selector: KqueueSelector  
+                                  {"pid": 79275}
+    12:33:40.616 ERROR  livekit.agents     unhandled exception while running the  
+                                           job task                               
+                                           Traceback (most recent call last):     
+                                             File                                 
+                                           "/Users/seanreed/PythonProjects/voic…  
+                                           line 71, in async_wrapper              
+                                               return await func(*args,           
+                                           **kwargs)  # type: ignore              
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^…  
+                                             File                             
+                                           "/Users/seanreed/PythonProjects/voic…  
+                                           line 287, in _traceable_entrypoint     
+                                               await                              
+                                           self._job_entrypoint_fnc(job_ctx)      
+                                             File                                 
+                                           "/Users/seanreed/PythonProjects/voic…  
+                                           line 41, in _handle_rtc_session        
+                                               assert _config is not None,        
+                                           "Config not initialized"               
+                                                      ^^^^^^^^^^^^^^^^^^^         
+                                           AssertionError: Config not             
+                                           initialized                                                                  {"pid": 79275, "job_id": 
+"AJ_2D2xqVMixYvJ", "room_id": "RM_MEUzs3jZyZBj"}
+Traceback (most recent call last):
+  File 
+"/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.11/site-pack
+ages/opentelemetry/util/_decorator.py", line 71, in async_wrapper
+    return await func(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File 
+"/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.venv/lib/python3.11/site-pack
+ages/livekit/agents/ipc/job_proc_lazy_main.py", line 287, in _traceable_entrypoint
+    await self._job_entrypoint_fnc(job_ctx)
+  File "/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/agent.py", line 41,
+in _handle_rtc_session
+    assert _config is not None, "Config not initialized"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: Config not initialized

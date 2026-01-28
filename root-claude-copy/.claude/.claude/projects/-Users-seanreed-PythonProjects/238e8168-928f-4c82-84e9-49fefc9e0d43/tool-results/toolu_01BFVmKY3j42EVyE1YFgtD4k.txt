@@ -1,0 +1,1379 @@
+68cfc61dd9f92b3ff07ea0e6fc36df9e48a63c6c|Sean Reed|seanreed1111@gmail.com|2025-12-03 22:36:15 -0500|initial commit
+14688d4f7ca70ec9e54b397829bc5b680a617255|Sean Reed|seanreed1111@gmail.com|2025-12-03 10:21:09 -0500|OTEL bug fix - drop logs with no trace id or trace id == ZEROS (#851)
+d990190ab66b7ff2a622f2b8c4b270f40724fa35|Sean Reed|seanreed1111@gmail.com|2025-12-02 15:58:31 -0500|remove nil trace ids
+c702c249e44e60bf94f3bd2df471b20e8c1ddfde|Sean Reed|seanreed1111@gmail.com|2025-12-02 15:36:23 -0500|initial commit
+cbf96a0e35623ee46fc521a697d047abd96eb721|Sean Reed|seanreed1111@gmail.com|2025-11-25 11:40:05 -0500|moves more out of server_v2
+1e1965ce4bd835b58922e07c57bc71406abfb444|Sean Reed|seanreed1111@gmail.com|2025-11-25 10:50:50 -0500|moves item to new file
+9ab39727110955056b69d71af17937d9503ce4e9|Sean Reed|seanreed1111@gmail.com|2025-11-23 17:29:46 -0500|remove all loggers
+83fe4a1307ca5d3b705086c0310d1f193fc12d86|Sean Reed|seanreed1111@gmail.com|2025-11-20 16:55:23 -0500|same problems
+101a2c68c98ce6da8b825f820d138a7a988c9eda|Sean Reed|seanreed1111@gmail.com|2025-11-20 16:48:09 -0500|lost sound. also lost trace id
+243867e01c74e33703a7e67c1f77b8b05546d008|Sean Reed|seanreed1111@gmail.com|2025-11-20 16:25:29 -0500|web demo does not have voice. BUG
+066cc935129be0c74c98addd64f4d669da79d797|Sean Reed|seanreed1111@gmail.com|2025-11-20 16:07:27 -0500|extracts a few methods. works
+40fd815739a2ebeb9c7d6168e1086a686b3a5552|Sean Reed|seanreed1111@gmail.com|2025-11-20 13:28:01 -0500|empty file
+7b9ae27937d34bcf34486f09443824e5359a5099|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:48:20 -0500|ruff
+b3743e855498e54cee1874b52233fa8439d375da|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:47:14 -0500|merge dev
+0da69e1eba4995138fcb3ccc341bbb775c5d2bfa|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:45:48 -0500|adds metrics logger
+be9f8820fcc9dd645717fde46903073b87cae778|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:41:37 -0500|adds back metrics processor
+017bfc0184709c4c0bf0f8e7bdeef6d2a8cc1134|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:37:35 -0500|fixes brand name typo
+2dc6a594edc734929c4caf68bdb0dd051c0ca758|Sean Reed|seanreed1111@gmail.com|2025-11-20 12:30:15 -0500|fix call to multiprocessor
+4a694946d1a6a45586460bad5d3a4ccc174f6cea|Sean Reed|seanreed1111@gmail.com|2025-11-20 10:59:16 -0500|copies livekit env var
+70609b4398cb160983d97051e566a69f8651fb7f|Sean Reed|seanreed1111@gmail.com|2025-11-19 18:45:31 -0500|import changes
+47d4ee87c68463351ece629d7d8a6cc94b8bc1de|Sean Reed|seanreed1111@gmail.com|2025-11-19 18:33:55 -0500|back on my bs
+15db05fb096cf4c223954d101a0b1d91f6f0e84d|Sean Reed|seanreed1111@gmail.com|2025-11-19 17:57:02 -0500|deletes old files
+00f694f4aa3d9afd073de1e2211daed7abf3886f|Sean Reed|seanreed1111@gmail.com|2025-11-19 17:56:06 -0500|Merge remote-tracking branch 'origin/dev' into pipeline-2025-11-14
+e5016ecf6944bf5df412077e4c01bfa0fe5db3dd|Sean Reed|seanreed1111@gmail.com|2025-11-19 17:29:31 -0500|Metrics frame processor (#848)
+291fb07ce11d1a62496651e6528d2ab70787ebb9|Sean Reed|seanreed1111@gmail.com|2025-11-19 09:34:32 -0500|adds ttfb to otel
+e7fac6a510b0aebeb3cfd823f6f53b29fc2db2c5|Sean Reed|seanreed1111@gmail.com|2025-11-18 23:13:52 -0500|magic number comment
+ac0151a094b028a7868ef57261fc75253e712798|Sean Reed|seanreed1111@gmail.com|2025-11-18 23:11:42 -0500|refactor
+94885c8ad2ad8053e2f14b9d80b987002f06d063|Sean Reed|seanreed1111@gmail.com|2025-11-18 23:03:44 -0500|refactor
+669ed85bec5c03b037cc540b58bd641ab68c538d|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:50:15 -0500|change formatting
+a54273a9cb0a5781424344b8876b913d02d62cd1|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:36:43 -0500|change output
+f634a941bcf458179bfb11219dd684478e5b8083|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:22:22 -0500|fix cursor slop
+d82ec1fc88eb0fce3d7586a6afaf29340c945a87|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:17:08 -0500|more output formatting
+79229357eeaf342cc87d849f382e4ceefb322935|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:14:00 -0500|change logger output
+244a26bb7e216f453b511b7690bc3591b73b8aa5|Sean Reed|seanreed1111@gmail.com|2025-11-18 22:12:56 -0500|initial commit
+89e5e648743bc087a53faae42f78cf08dc5183b0|Sean Reed|seanreed1111@gmail.com|2025-11-18 20:44:13 -0500|moves file path (#847)
+6983bf62b22dd8a1bc9b81d7f06c3d5233de1072|Sean Reed|seanreed1111@gmail.com|2025-11-18 19:44:38 -0500|moves file path
+f5a53d387f2c4369810449f4c3aa9200e6643fe8|Sean Reed|seanreed1111@gmail.com|2025-11-18 19:23:03 -0500|Add service name to recordings (#845)
+6705e7d72ef250581223d4627c05f85c2352f6c3|Sean Reed|seanreed1111@gmail.com|2025-11-18 16:50:49 -0500|adds env var to turn off all recording (#844)
+5c725b775c90341e4203560df8d929b5ca0ffb3c|Sean Reed|seanreed1111@gmail.com|2025-11-18 16:50:11 -0500|attempt #2
+66c47a71cfa66ff843d7d6a225342c23e5cf8fa6|Sean Reed|seanreed1111@gmail.com|2025-11-18 16:25:51 -0500|adds env var to turn off all recording
+e28f0f9eb1936ca9ad6eec5a907fdbd33bf9607d|Sean Reed|seanreed1111@gmail.com|2025-11-18 10:46:45 -0500|update
+1b684a240d08f23234b508f58bb24c165cbcccda|Sean Reed|seanreed1111@gmail.com|2025-11-17 16:44:20 -0500|initial commit
+2b6b5312ef97f4d80ba25b86267ab50c22c9498d|Sean Reed|seanreed1111@gmail.com|2025-11-14 13:29:19 -0500|Merge remote-tracking branch 'origin/dev' into pipeline-2025-11-14
+390ab28204fcbbd8f0a1d901ba61fedfffab0114|Sean Reed|seanreed1111@gmail.com|2025-11-14 13:28:26 -0500|next: fix bot/operations to use the new params in the multiprocessing call
+afe0bfdda98575fd193ee029d86bef287af6d455|Sean Reed|seanreed1111@gmail.com|2025-11-14 13:12:54 -0500|reverts deletion of livekit pipeline
+b93d92a7077472c0a5664ca845c6c4230751b0e6|Sean Reed|seanreed1111@gmail.com|2025-11-14 12:59:52 -0500|remove stale livekit pipeline code
+e6a1ff00f89ef93c5112bbd49ab639762e27ec85|Sean Reed|seanreed1111@gmail.com|2025-11-14 12:56:08 -0500|more errors
+d2f9626bf7c624354935746fdd33d9bfb44ef4c4|Sean Reed|seanreed1111@gmail.com|2025-11-14 12:48:20 -0500|attempt #1
+b606d7931d814a0aec885c0618d1721adae1629b|Sean Reed|seanreed1111@gmail.com|2025-11-14 12:22:33 -0500|adds in run pipeline task params tracer to run_pipeline method
+5998bab834c6b669a446d03a8727228a6995cb73|Sean Reed|seanreed1111@gmail.com|2025-11-14 12:00:53 -0500|propagate trace object
+07d6f370a9cef3b3376ec2993bdb150f90d328b9|Sean Reed|seanreed1111@gmail.com|2025-11-14 11:25:09 -0500|more pydantic fixes
+6b95fa4e55d10f77d2b8cb7265b4ac1f97692aee|Sean Reed|seanreed1111@gmail.com|2025-11-14 11:13:10 -0500|remove pydantic type errors
+dd8d718f915cadfd08a417b3bcce9a7340eab549|Sean Reed|seanreed1111@gmail.com|2025-11-14 10:55:15 -0500|adds location context object for tracing
+31a24e5daee169f03bc9e12ab9a5096dfdd69694|Sean Reed|seanreed1111@gmail.com|2025-11-14 10:37:47 -0500|adds location context var
+ada96022bc4cc1d5c9e74b15ab540e65cfa94196|Sean Reed|seanreed1111@gmail.com|2025-11-14 10:18:33 -0500|ruff
+75ce8ddca2384794c76e55742f7c64e899a9fbee|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:10:24 -0500|Update check syntax workflow (#828)
+5be481478ff933174c64c4bfa15442cf99a1a6a4|Sean Reed|seanreed1111@gmail.com|2025-11-12 13:28:24 -0500|removes otel for ds_save_ds_data (#827)
+4a8707f2927c7021c19ce9b48ffbe6f4836c7c53|Sean Reed|seanreed1111@gmail.com|2025-11-11 09:59:52 -0500|Otel hotfix - remove noisy otel (#819)
+7d82e8eb57aaf2d4890a92bfa7872bb9e92975b4|Sean Reed|seanreed1111@gmail.com|2025-11-13 10:39:08 -0500|Merge branch 'dev' into dummy-branch
+8ef84fe5fd806689cef2903dbf72a12f74a08fc1|Sean Reed|seanreed1111@gmail.com|2025-11-13 10:38:34 -0500|dummy removal
+4dde3b8621ba9084d3b46d19a4f097ccf09af992|Sean Reed|seanreed1111@gmail.com|2025-11-13 10:21:00 -0500|new action
+6db220d44e340c1b0f9e0ecc7aab3deafbbca15e|Sean Reed|seanreed1111@gmail.com|2025-11-12 17:23:01 -0500|more
+8dd708cbc03f6e1b274f19ff71ce368550c1ab35|Sean Reed|seanreed1111@gmail.com|2025-11-12 17:21:14 -0500|default listen mode = True in pipeline.py
+d08e405451691c1c10721b11660f6972abd0770b|Sean Reed|seanreed1111@gmail.com|2025-11-12 17:17:29 -0500|defaults to listen mode on this branch. remove upon merge
+b1d5d8961c4dcbda2b07958cf25a2394f9202863|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:14:15 -0500|bad merge
+743adc22d0b982b64cc6b818597958faf80c0797|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:13:26 -0500|dummy update
+4fedc811ed3689c9a402ee84e193db6921e81094|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:10:24 -0500|Update check syntax workflow (#828)
+a06a212d2ce54bbf6b296679d4a947bc015aa1a0|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:08:08 -0500|update name of steps
+d7a47430d48a768b965af2d6fecf21ec91025208|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:06:38 -0500|update python version to 3.12
+01c64c1abeed8973930e9b689bbcf6c0eac22aa3|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:04:36 -0500|excludes certain filetypes
+4309283ff310d80f3167b983da804622c4722b60|Sean Reed|seanreed1111@gmail.com|2025-11-12 14:00:11 -0500|exact match for equal signs
+b9d66bfc51cddc8f51fb69489d490a3e98bb87d1|Sean Reed|seanreed1111@gmail.com|2025-11-12 13:52:43 -0500|adds check for bad git merge
+95ed4c0a8d89a7dff86059114bac3f49db756269|Sean Reed|seanreed1111@gmail.com|2025-11-12 13:28:24 -0500|removes otel for ds_save_ds_data (#827)
+f79388e0c2859a2922d116033381986f2198ec59|Sean Reed|seanreed1111@gmail.com|2025-11-12 13:25:38 -0500|removes otel for ds_save_ds_data
+4f432a3f059598429c0915fe7b95af6e80f5d226|Sean Reed|seanreed1111@gmail.com|2025-11-12 07:58:42 -0500|reverts location_key and location_context settings
+5e1a223215b6b04bf9f3b2126e6eb7e202b7f7be|Sean Reed|seanreed1111@gmail.com|2025-11-12 06:28:09 -0500|restores core-original
+ef13430e816670fea4331ddae5b03e8a74eac50e|Sean Reed|seanreed1111@gmail.com|2025-11-12 06:26:50 -0500|try to fix location context and location key
+5d3f312f88e570a2e4fe7d4b3b8c000fbffde3d5|Sean Reed|seanreed1111@gmail.com|2025-11-11 17:29:40 -0500|getting closer to the input context problem
+bff934b35b672456818410648b181c977665b4a4|Sean Reed|seanreed1111@gmail.com|2025-11-11 17:06:56 -0500|move audiviprocessor
+a5267646c0f55964be0bd487ef4b1fe611cf4416|Sean Reed|seanreed1111@gmail.com|2025-11-11 16:09:43 -0500|move files to pipeline_utils.py
+8f823d42e95610afb84d0f0b27b1915480f7e0b8|Sean Reed|seanreed1111@gmail.com|2025-11-11 16:03:52 -0500|more pasting
+917abf80b08075a9c1147aa78575708a5f8bd4aa|Sean Reed|seanreed1111@gmail.com|2025-11-11 15:52:13 -0500|create pipeline_utils.py
+2f09e7f9da53bda14365b2d120d6e600517f9a9f|Sean Reed|seanreed1111@gmail.com|2025-11-11 15:31:03 -0500|explicitly label context of all vars inherited from scope.
+0d1dc025a00f972dc73c6fa3333f0267a57e7389|Sean Reed|seanreed1111@gmail.com|2025-11-11 15:21:33 -0500|createpipelinetaskparams
+a2d9ab659b7893a9a5427e510bfc2ca742127a88|Sean Reed|seanreed1111@gmail.com|2025-11-11 09:59:52 -0500|Otel hotfix - remove noisy otel (#819)
+c6d7b09ea527878209f893c50d24e25f789aa246|Sean Reed|seanreed1111@gmail.com|2025-11-11 09:49:58 -0500|removes write_event_from_location_context
+ffc573edd598b35afb4ad0adfd23a40b900a43d5|Sean Reed|seanreed1111@gmail.com|2025-11-11 08:19:50 -0500|removes num_alias_get_aliases
+e74edfbab8e937483abfb01515901928eb488328|Sean Reed|seanreed1111@gmail.com|2025-11-11 08:14:45 -0500|remove format order otel
+01f76844d1ff08d257dcf945d62c30648b6179aa|Sean Reed|seanreed1111@gmail.com|2025-11-10 18:11:17 -0500|update to f string
+07a9af868045916908c83ed1e43405373a1df02f|Sean Reed|seanreed1111@gmail.com|2025-11-10 16:55:45 -0500|tries new implementation for create_pipeline_task
+e068d8dc2ac9bbed93b199fe908a6aa60d2239e7|Sean Reed|seanreed1111@gmail.com|2025-11-10 12:57:21 -0500|adds grpc instrumentation
+a7ee3ec9dd40ee174c0e6ad12d9322bf82b441a3|Sean Reed|seanreed1111@gmail.com|2025-11-08 18:00:28 -0500|report #4
+7c444b69b4b488ace222d5526cf3d3c46ee1f3ba|Sean Reed|seanreed1111@gmail.com|2025-11-08 17:11:15 -0500|Otel order confirmation merge branch (#800)
+82ebeafef8b7cdb081c7198d9b5a99f9b25606cc|Sean Reed|seanreed1111@gmail.com|2025-11-08 16:27:32 -0500|deletes posrelay from ecs build
+4bc12f51790d68b2bca499e5f72ff16a48dceea2|Sean Reed|seanreed1111@gmail.com|2025-11-08 16:25:23 -0500|adds back tracer for otel
+e9efd43b183ae1bec20b3771fdc0f7241016c276|Sean Reed|seanreed1111@gmail.com|2025-11-08 16:16:00 -0500|more
+5671bd972690edf24dbe41d9ac6ac25c4e9f5aa5|Sean Reed|seanreed1111@gmail.com|2025-11-08 16:11:37 -0500|merge
+d5971b3cb584a84f5c8690f139d8e1ed51a9d885|Sean Reed|seanreed1111@gmail.com|2025-11-08 15:44:36 -0500|comments out trace id override
+4cbd664aff99664b6c198a9b9836d92415f04a21|Sean Reed|seanreed1111@gmail.com|2025-11-08 15:40:21 -0500|revert some non otel changes
+4695259711a16665fea19d02fe8f95f647b1b79c|Sean Reed|seanreed1111@gmail.com|2025-11-08 15:26:49 -0500|merge otel and dev
+69bf06f4e4ed1ebb56c9c5dba5363fbc0a0a1f06|Sean Reed|seanreed1111@gmail.com|2025-11-08 15:20:21 -0500|adds more context headers
+f56c3662e0ee066c1ff8ebc95567856a1e741a86|Sean Reed|seanreed1111@gmail.com|2025-11-08 15:06:36 -0500|fixes more agent-api calls
+bdda30a90159aa0d75887f223fbfc4880389d315|Sean Reed|seanreed1111@gmail.com|2025-11-08 14:36:51 -0500|includes trace id report
+9f08f2c0e81694d52e8fb88d6eb3f70346674688|Sean Reed|seanreed1111@gmail.com|2025-11-08 13:11:11 -0500|update state machine to inject otel headers
+1b7c67e8e0b267c31ad4ea53e396cf1cb2f9b266|Sean Reed|seanreed1111@gmail.com|2025-11-08 12:03:21 -0500|changes bind mount
+48b95a6b3f24086d86b188a79ea400b5c7ac467e|Sean Reed|seanreed1111@gmail.com|2025-11-08 11:47:13 -0500|fixes error with otel sampler
+d8ca4e6fc9fae60d6045a79a2b63d76359bc154d|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:58:02 -0500|moved entrypoint to uv
+746b7cfe2f146c9ad6861268b46fffc5080ca1d9|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:58:02 -0500|moved entrypoint to uv
+6b291a8cf0893010252c979a613a10d2a6d62a04|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:44:26 -0500|runs heredoc in the virtual env using uv
+32758f47333d08dfd7fb669ec6d300728a6af2ff|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:27:05 -0500|updates all builds to use virtual envs
+33a91a9a4e596cc16c063e3c2c64e5bdb87957e8|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:08:56 -0500|change more files depending on bot/requirements.txt
+6a7c6dbb9437c70650c2f2f705a9e175b9d453aa|Sean Reed|seanreed1111@gmail.com|2025-11-08 10:02:19 -0500|updates dockerfile
+d10942652e9e2527b32cab9b776c6ccfb7b876c2|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:35:21 -0500|copies all requirements files to dockerfile.hme_headset
+5d760c3d40f00a96c87fd21131fa6cdd5dc9d403|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:33:03 -0500|eliminates requirements.txt from all builds
+1f9eb2e0cc3acbd293f2a67e4a67a0b26790e491|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:25:42 -0500|dummy traceid implementation
+4201e3e734ff149f866d4466a1155e6a7892a831|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:03:47 -0500|Revert "attempt #3"
+c0d4c42e2b7e916251b8820924c98d61b43c91f1|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:02:51 -0500|Revert "codex-attempt-1"
+71668df0539807f1d6bc5fcbda9574a8571b7d24|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:02:47 -0500|WIP on otel-2025-11-01: ea5d0c66 codex-attempt-1
+aa87eb1f3e4eb5197d94525659bc4d645e94bfee|Sean Reed|seanreed1111@gmail.com|2025-11-08 09:02:47 -0500|index on otel-2025-11-01: ea5d0c66 codex-attempt-1
+ea5d0c66f6731d532592cfe41c4d41e6439e0962|Sean Reed|seanreed1111@gmail.com|2025-11-08 08:36:24 -0500|codex-attempt-1
+ed9fe75d1b802fd23935517d0847baf0563a13cd|Sean Reed|seanreed1111@gmail.com|2025-11-07 21:49:54 -0500|attempt #3
+f05153d5d1ede14aae584ae523b01e0dfc524f63|Sean Reed|seanreed1111@gmail.com|2025-11-07 21:21:38 -0500|fixed missing trace id on web demo
+8f174c38d488d46498474ff0f537876e3a4befdc|Sean Reed|seanreed1111@gmail.com|2025-11-07 21:02:58 -0500|attempt 1
+67c41569bda353a6ab7d4d8fa529951e0df6fe66|Sean Reed|seanreed1111@gmail.com|2025-11-07 17:55:30 -0500|fix typos
+5b2a8f070307abd1292049f262b26e9c0027d631|Sean Reed|seanreed1111@gmail.com|2025-11-07 17:55:00 -0500|fix typos
+0744b84503dbf499b9871ab6f115471f7f62e4a2|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:53:45 -0500|updates bot/pipeline/core.py
+a2cb046845d42f0c9c684ae3dd7ff5ce172202a8|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:46:23 -0500|updates bot/pipeline_old.py
+19ad42cf93fb1c7fa23311e8a4b88ff56cff91f5|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:19:32 -0500|remove dead code
+baaec8ca58590a85b58c938eb308e93dab176d7a|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:10:32 -0500|update state machine
+f5d0048ff51c7d10a35e8ee0a2182fa2b7e1353d|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:07:15 -0500|adds sounds dir
+d6946b55a06b3d8e774049c290f3f11fba1536e1|Sean Reed|seanreed1111@gmail.com|2025-11-07 15:05:20 -0500|initial commit
+7f51dd6161d4878a4fc29210c4aa57e680f98969|Sean Reed|seanreed1111@gmail.com|2025-11-07 12:43:37 -0500|adds more otel to docker compose
+7b86abe724af25fd6d23a3e2164d12d1ba721ce8|Sean Reed|seanreed1111@gmail.com|2025-11-07 11:38:49 -0500|merge dev into branch
+9ffa6267c01d79bf82784bdb54c7fdae7fc60fd1|Sean Reed|seanreed1111@gmail.com|2025-11-06 22:55:37 -0500|Revert "ruff format"
+87e21ab469bca4e82b6c13e864e305c807fdd6f8|Sean Reed|seanreed1111@gmail.com|2025-11-06 22:18:30 -0500|update docker compose
+3d40d84fdc05baaed48f8043748994b4cf73799d|Sean Reed|seanreed1111@gmail.com|2025-11-06 22:11:49 -0500|update deepeval test
+85041f01c944d9c83c260434438e26ca9cbcabf8|Sean Reed|seanreed1111@gmail.com|2025-11-06 22:03:04 -0500|Merge remote-tracking branch 'origin/dev' into hme-bootup-v005
+1e6dee513b4951d9fd225c0026bddeaa04aa4ba1|Sean Reed|seanreed1111@gmail.com|2025-11-06 11:12:15 -0500|ruff format
+feb30efd9f423f2935c7bde7d511645db9ef5786|Sean Reed|seanreed1111@gmail.com|2025-11-06 10:45:22 -0500|made Dockerfile.v2 the default
+369742045a46387f964014a0eb7a6d4969bc667a|Sean Reed|seanreed1111@gmail.com|2025-11-06 10:26:29 -0500|adds extra-url-flag to Dockerfile.v2
+2f7d6533d9011b44aee85f5da8bfd8f733d07326|Sean Reed|seanreed1111@gmail.com|2025-11-06 09:42:29 -0500|Remove cuda from docker build (#778)
+155eec86e23e62913594e350c72a457b718d7c24|Sean Reed|seanreed1111@gmail.com|2025-11-06 09:34:51 -0500|removes dockerfile.bak
+73a50bcb1d0e4f10b5d6525d18b7bd00bed6a94d|Sean Reed|seanreed1111@gmail.com|2025-11-06 09:07:12 -0500|fix workflow
+62aa08ccf98f12bba3cadcb9b9ee99c8a65c5401|Sean Reed|seanreed1111@gmail.com|2025-11-06 08:05:19 -0500|fixes headset and ecs direct file
+e3b40db524cfce2617c4e351a0e63dad680ebc4f|Sean Reed|seanreed1111@gmail.com|2025-11-06 08:00:25 -0500|syntax fix
+72a8a764556693bd5102fd6050de01f50535b205|Sean Reed|seanreed1111@gmail.com|2025-11-06 07:56:14 -0500|attempt 1
+fa6c1ea8f7e881e4488deeca7fbfd30eb758d32f|Sean Reed|seanreed1111@gmail.com|2025-11-06 07:36:24 -0500|bug fix from pipeline_refactor_4
+f38c056eb89fc6c8ae72a8d980b662f48522c68b|Sean Reed|seanreed1111@gmail.com|2025-11-06 07:26:36 -0500|Pipeline refactor 4 (#776)
+b8f3cc8828d52a1d31680f2860bd873ac154a5e5|Sean Reed|seanreed1111@gmail.com|2025-11-06 07:25:28 -0500|spaces caused merge conflict
+1efdc256b7febfc2afd078691c1af649accba4d3|Sean Reed|seanreed1111@gmail.com|2025-11-06 07:16:34 -0500|adds fix from PR777
+1a7ec695db2c9d78ca030dd5ffa9c54920321daa|Sean Reed|seanreed1111@gmail.com|2025-11-06 03:13:52 -0500|moves files to folder with all intermediate steps
+2f4029009f1d508b7c4d9b3bbd99ae499994600e|Sean Reed|seanreed1111@gmail.com|2025-11-06 03:06:38 -0500|moves pipeline_2.py to pipeline.
+bf3ce29169428eef5cd3e325faf87567cd1e9fe0|Sean Reed|seanreed1111@gmail.com|2025-11-06 03:04:54 -0500|formatted imports
+65cccf3bdd6c1aab955335ba29e57e4666232737|Sean Reed|seanreed1111@gmail.com|2025-11-06 03:03:09 -0500|move all globals to the top
+91eaa895d4e84035846086a8523a8148e534691a|Sean Reed|seanreed1111@gmail.com|2025-11-06 02:49:59 -0500|comments out pipeline_start_time error
+c285d3f67d0332ba3c24d0d3895776cb7ff0cedb|Sean Reed|seanreed1111@gmail.com|2025-11-06 02:48:48 -0500|restore pipeline.py
+1a59b7e564f715b8a9f3b4221b2466357c8b9ae7|Sean Reed|seanreed1111@gmail.com|2025-11-06 02:45:26 -0500|initial commit
+6ab029bb7c81f8f0e223657169d84bd6e40762b1|Sean Reed|seanreed1111@gmail.com|2025-11-06 02:19:50 -0500|inti
+bccfa5a23d89d2ed148a6fc278810eaa351d8397|Sean Reed|seanreed1111@gmail.com|2025-11-05 20:05:26 -0500|update
+07026d94ab444c744d83076d784564cbc6d0fa32|Sean Reed|seanreed1111@gmail.com|2025-11-05 20:02:18 -0500|remove enable pipeline
+186e3a17836617d442b4136ec8e824b69644830a|Sean Reed|seanreed1111@gmail.com|2025-11-05 20:01:35 -0500|Merge remote-tracking branch 'origin/dev' into add-hme-bindmount
+5dec81ac2b08a8a4e45491632f158c8af47c9937|Sean Reed|seanreed1111@gmail.com|2025-11-05 20:00:08 -0500|update
+b0d63c86234e4f8a937a3489c3dd0dbab76d2e2e|Sean Reed|seanreed1111@gmail.com|2025-11-05 19:56:25 -0500|debug logger
+a2dc1f83184c426635294ae2eb1fb4d477971af1|Sean Reed|seanreed1111@gmail.com|2025-11-05 19:21:49 -0500|update docker-compose
+e4c436ee3677b4fc3350ade97d07612d810f2e4b|Sean Reed|seanreed1111@gmail.com|2025-11-05 10:25:40 -0500|Revert "Add Tonal Acknowledgement To Speed Responsiveness (#753)" (#761)
+38411c3a7a4ad08de8a3b0cef9d387e001daeb85|Sean Reed|seanreed1111@gmail.com|2025-11-05 10:24:55 -0500|Add Tonal Acknowledgement To Speed Responsiveness (#753)
+5b724084175308b45c757c1d9ef1f6efbdf33de7|Sean Reed|seanreed1111@gmail.com|2025-11-04 19:04:56 -0500|fix agent-api
+85b57747a5e3dde886cb59ab21ae5acf73646555|Sean Reed|seanreed1111@gmail.com|2025-11-04 17:32:35 -0500|rewrite top of file
+4d4808b051e0bbeb8745f843de89f90ed5ae6ca5|Sean Reed|seanreed1111@gmail.com|2025-11-04 17:30:51 -0500|rewrite top of file
+e3bb2f40fa851f56308c6e20e730964791a610aa|Sean Reed|seanreed1111@gmail.com|2025-11-04 17:27:02 -0500|move files
+96e4f6a2b0b56a9aa88154bb23f2983871eef5d6|Sean Reed|seanreed1111@gmail.com|2025-11-04 17:21:23 -0500|moves to torch cpu-only
+2dfd5af0a554ea6725dcb30124cf866cff36fcd7|Sean Reed|seanreed1111@gmail.com|2025-11-04 16:38:10 -0500|really heavy-handed way to turn of transformers library otel tracing
+f8b4a9eda284607a560a511f69c5cef4d70864ca|Sean Reed|seanreed1111@gmail.com|2025-11-04 16:18:39 -0500|fixes mistral instrumentor
+d36648a9c2b8909a06718ad2f5d470a8665e2526|Sean Reed|seanreed1111@gmail.com|2025-11-04 16:15:03 -0500|update otel vars
+830a6718f4a22e6d11748f96de7da257e3894b56|Sean Reed|seanreed1111@gmail.com|2025-11-04 16:05:37 -0500|update otel collector
+6216b9a64cebad682876702ac7423b21b8aeb2de|Sean Reed|seanreed1111@gmail.com|2025-11-04 15:18:38 -0500|puts flag in server to make tracing idempotent
+b629be92d8fcebd85c2c6c1fcadda2570f601a51|Sean Reed|seanreed1111@gmail.com|2025-11-04 14:38:30 -0500|update
+b30644fe94e3657b4fae2965e4ef592dbc3d4b07|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:50:57 -0500|Merge branch 'dev' into twhite/tonal-intermediate-responses
+065c73f764b709ddf426d50c8364dbed20e4b2fc|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:49:07 -0500|adds more env to docker compose
+4422dbf8f9b6586534cf207fd0b5757083305b39|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:38:47 -0500|set enable_metric=False in pipelineParams
+098ad605433edc9a852f4c7c317ed32608f0a59f|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:18:48 -0500|update
+81e1b3c2eafc08b817ba4a288015f483ed9aa898|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:09:31 -0500|Merge branch 'dev' into otel-2025-11-01
+fd3e7ca36bacd92c9513860cf2aa91a7c54f218a|Sean Reed|seanreed1111@gmail.com|2025-11-04 13:02:28 -0500|merge dev
+ea6d0286045100ec97dca7c1d304ac2027cf7ade|Sean Reed|seanreed1111@gmail.com|2025-11-04 12:42:41 -0500|update to include jq in requirements.txt
+b430def09cfb61571c1d98cc6ad9bb866ee811b4|Sean Reed|seanreed1111@gmail.com|2025-11-04 08:58:50 -0500|changes env vars to comma separated string
+66fdcdc305204d224f1ceb13e5c413f167def6b3|Sean Reed|seanreed1111@gmail.com|2025-11-04 08:18:03 -0500|gets rid of keyerror 'time'
+22fe15c39be5d80887722827322991506f3aae6b|Sean Reed|seanreed1111@gmail.com|2025-11-04 08:01:30 -0500|adjust makefile
+a447cdac87535aaa07933a0a196ebbffcad55f68|Sean Reed|seanreed1111@gmail.com|2025-11-04 07:55:56 -0500|more logger errors
+f7546c8d392975079af1a1e58d2b679808aa7564|Sean Reed|seanreed1111@gmail.com|2025-11-03 22:29:16 -0500|adds traceback
+cdb461e12d525ef2b1ffc8f618d772764abb4ff0|Sean Reed|seanreed1111@gmail.com|2025-11-03 21:52:49 -0500|remove serialize=true
+88b37fa45a6f22309d5df6bff569f751e497e1bb|Sean Reed|seanreed1111@gmail.com|2025-11-03 20:44:24 -0500|remove patching
+4bcf5a9e74783f4eac66c2aceae5c0ab31f480ee|Sean Reed|seanreed1111@gmail.com|2025-11-03 19:45:57 -0500|rewrites heapdumps to reverse error introduced earlier
+1b2d8cab6bf4fef66314af9dcb79866bdef376db|Sean Reed|seanreed1111@gmail.com|2025-11-03 19:29:15 -0500|update env var dump
+95e845faed318650ccf0eb9316bbb389ee8704ad|Sean Reed|seanreed1111@gmail.com|2025-11-03 19:10:40 -0500|initial commit
+7344dd03db881303b40375dcf968226c3695a7fa|Sean Reed|seanreed1111@gmail.com|2025-11-03 07:50:49 -0500|dump vars for debugging
+a1d0d5f8b7a01b8cf866db25ef543acd79beff9c|Sean Reed|seanreed1111@gmail.com|2025-11-03 07:43:41 -0500|update logging
+fea2ff53f16a2c1ebf7f4f9e811df3310e03fe45|Sean Reed|seanreed1111@gmail.com|2025-11-03 07:30:17 -0500|updated logging
+fd1b40509a7dcb0e352ccf9515e4eb56d30bda5d|Sean Reed|seanreed1111@gmail.com|2025-11-02 17:23:32 -0500|set is_nonlocal to true
+9a5517bdf40432b0f0c3e700ce4b9c76eaf02498|Sean Reed|seanreed1111@gmail.com|2025-11-02 15:02:28 -0500|ignore all warnings
+995622624df155f7aff80ebf8452bcdc6cb44d6b|Sean Reed|seanreed1111@gmail.com|2025-11-02 14:56:19 -0500|change deepgramSTT to trace
+8dee565eb6faf1ded73d8ae3765abcd1573e8426|Sean Reed|seanreed1111@gmail.com|2025-11-02 14:43:16 -0500|adds custom serializer
+40b54f05d0571a73e7618f64607459ea4ec9eb8d|Sean Reed|seanreed1111@gmail.com|2025-11-02 11:40:49 -0500|update to show more logging on ECS
+1fdae4e222a35e8218ce2c1cd0eba17f1a8951a6|Sean Reed|seanreed1111@gmail.com|2025-11-02 11:28:40 -0500|switch to debug
+09e10262ba797982205ce878f0d3f392f1b5bcc8|Sean Reed|seanreed1111@gmail.com|2025-11-02 08:43:10 -0500|remove heapdump from ecs
+c02c895b71834b6a079ce52cac75b7c8d65c7437|Sean Reed|seanreed1111@gmail.com|2025-11-02 08:36:56 -0500|adds catch error
+285759d84db41c240dcd3ca9a95d0647ccb7c205|Sean Reed|seanreed1111@gmail.com|2025-11-02 08:35:17 -0500|adds catch errors
+5f0eecfd5c6d0b9b27b4a1383498cda451e5e56e|Sean Reed|seanreed1111@gmail.com|2025-11-01 20:57:50 -0400|debugging headset on ecs (#750)
+cb5c995f89acb5e7936ff1e7244c78799f2761fd|Sean Reed|seanreed1111@gmail.com|2025-11-01 20:50:58 -0400|debugging
+b06de29cba8b05dea038faa79b7314e0ec18f991|Sean Reed|seanreed1111@gmail.com|2025-11-01 20:24:41 -0400|debugging
+1f17627c4515831d80e727ee61a392eb0ca5af65|Sean Reed|seanreed1111@gmail.com|2025-11-01 14:03:33 -0400|more
+491e854129653a098ad86b23e84055d3f1654bdb|Sean Reed|seanreed1111@gmail.com|2025-11-01 08:23:08 -0400|adds back docker-compose-2.yml for local building
+5b4af46982ca3960c58f55c997b97dd1e588af42|Sean Reed|seanreed1111@gmail.com|2025-11-01 07:59:27 -0400|update
+8e5922d5f89f0754ed51d6fa0c009efb1340c897|Sean Reed|seanreed1111@gmail.com|2025-11-01 07:52:10 -0400|disable transformers logging in env
+0b3fb829e395564d4191804b29b1c4a64a9cc7ef|Sean Reed|seanreed1111@gmail.com|2025-10-31 18:13:03 -0400|Move gh actions build to manual trigger (#747)
+8dd7dd8b3f516e2fdd93e843c9d8638db5f8ae94|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:41:56 -0400|remove cancel in progress
+a9a1b9ef2880b0f047350aa6c049ff8502d4dc54|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:39:15 -0400|Move gh actions build to manual trigger (#746)
+df72b0a266d50170bd7e6e726d13d827901a98a0|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:33:01 -0400|add cancel-in-progress to deployment
+218a8a204883bcee6d19092699f55243ab9ec2ce|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:22:23 -0400|move cancel-in-progress to false
+2b31c831787ecfe44d792f6190a47847e1acb837|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:21:50 -0400|bugfix. also changes cancel-in-progress to true
+2cd9417da120da9a37ae8d8568a3bccbfcefc408|Sean Reed|seanreed1111@gmail.com|2025-10-31 17:20:08 -0400|removes automatic deploy after build
+d6884c24069aa3d52a9ad317e4a7ca617246a505|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:49:56 -0400|Update hme headset (#744)
+ab084d5e024e9e054621fd11678b3241c9108b18|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:48:14 -0400|update use_ecs
+05208e58079e226aca4b0ae263945e161880fb86|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:14:06 -0400|initial commit. adds logging (#743)
+b6e8ce03d30043a99778742c56719ec3856c7171|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:11:56 -0400|more
+b1f22e3a6e7cce32e0382e047f947ac4a0d32bc0|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:10:41 -0400|spacing
+fceedfe6bb33ddaef9704dab4d107d35936fee87|Sean Reed|seanreed1111@gmail.com|2025-10-31 16:07:37 -0400|initial commit. adds logging
+0f70cdf53ac8cd7b6b0e942be64340284a937a6a|Sean Reed|seanreed1111@gmail.com|2025-10-31 13:53:03 -0400|remove auto build from workflow for better control of ecs services (#741)
+fcf21300a62a06d80c276d3c75da2def384f99b6|Sean Reed|seanreed1111@gmail.com|2025-10-31 13:51:51 -0400|remove auto build from workflow for better control of ecs services
+ec1f18f07c7dbc718e26f899814619572ed20823|Sean Reed|seanreed1111@gmail.com|2025-10-30 21:31:47 -0400|update jason-lab hme serial number
+710e64ae2cfb61579538ca40fdec542b46a691ee|Sean Reed|seanreed1111@gmail.com|2025-10-30 20:12:38 -0400|adds base station to DNS mapping for ECS deploy (#738)
+cc21841dfe3b632a3feeae705bead6b452d35584|Sean Reed|seanreed1111@gmail.com|2025-10-30 19:45:52 -0400|updates base stations for hme headset
+7d507c7d41870a977c6bd24f73291b81866fa16d|Sean Reed|seanreed1111@gmail.com|2025-10-30 18:57:45 -0400|Hotfix - remove deepfilternet import and cargo build (#737)
+739f427e33a1fb571765bad89f5d0b0f9c5e9f1e|Sean Reed|seanreed1111@gmail.com|2025-10-30 18:20:44 -0400|adds _create_grpc_stream_directly to NEXEOBaseStationClass
+483fd36d96a2f00cd53f0cab8a9bf1943b4b50c7|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:57:47 -0400|initial merge of easy files (#734)
+93d16360873664974831d923148086ce808706ac|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:44:45 -0400|change heredoc in docker file (#736)
+3a7af5cc8408b8ef36eef00202384127446ead8a|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:32:41 -0400|change heredoc in docker file
+45b73419624594e43b4cf23fab9bfa5c9657124c|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:09:24 -0400|pahts to ignore
+d7b0d0558737d5f3cf3fdb9b2bbd1e7c53bca02d|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:06:30 -0400|adds back post-merge check
+8c413557b7d39fb4850bff1b4c2de65753d42925|Sean Reed|seanreed1111@gmail.com|2025-10-30 17:06:27 -0400|adds back post-merge check
+24c221a4ca5666abb5b838f0ff7c11452e542fa2|Sean Reed|seanreed1111@gmail.com|2025-10-30 16:55:14 -0400|starting over on server_v2
+c6a8948da01471912ffa00bdfac47b9e509baac0|Sean Reed|seanreed1111@gmail.com|2025-10-30 16:51:18 -0400|update the docker compose PR workflow
+8d8c110894714c8c2bef4844c3d47683e70efb60|Sean Reed|seanreed1111@gmail.com|2025-10-30 16:35:17 -0400|Merge branch 'dev' into ecs-merge-branch-1
+2d51674a79417855e2474a55b18860c24e7644b7|Sean Reed|seanreed1111@gmail.com|2025-10-30 16:34:38 -0400|update
+d09b8f4bb76ee0a51a655ad4a6af4044d0b2e9fc|Sean Reed|seanreed1111@gmail.com|2025-10-30 16:06:14 -0400|adds updates to bot/headsets/server_v2.py
+74061b6550939272eb36b3d28f4e83e598fb1301|Sean Reed|seanreed1111@gmail.com|2025-10-30 15:43:40 -0400|fix server_v2
+70b400a9e768265059e23929d060f5003a444c40|Sean Reed|seanreed1111@gmail.com|2025-10-30 15:39:09 -0400|initial commit
+7cf1ed0892c6e28d6b7b3aa86c8a5c12306eeab1|Sean Reed|seanreed1111@gmail.com|2025-10-30 14:01:16 -0400|Suppress LogDeprecatedInitWarning from LogRecord (#733)
+fe99939d2275739b7ac005aa1c938bf30cbcc668|Sean Reed|seanreed1111@gmail.com|2025-10-30 13:32:45 -0400|Revert "suppress warnings everywhere"
+411c43b89da4c18b9bac7e4c768e667bd599c939|Sean Reed|seanreed1111@gmail.com|2025-10-30 13:31:01 -0400|working
+7b43ab72e0ad8ed840a823d9ac7ca5472f0e9b9e|Sean Reed|seanreed1111@gmail.com|2025-10-30 13:08:23 -0400|suppress warnings everywhere
+0ddf4099c6e93871488f58bdefb8f0296ea7d8ec|Sean Reed|seanreed1111@gmail.com|2025-10-30 02:22:59 -0400|adds python cmdopts -W ignore switch (#731)
+6f8e974774b569b26e66fb88ace6098baf52eab2|Sean Reed|seanreed1111@gmail.com|2025-10-30 02:14:59 -0400|set flaky so that automated tests must pass at least 1/3 times
+35f0392f3d7addfc85022b21f24e488a58365149|Sean Reed|seanreed1111@gmail.com|2025-10-30 02:12:16 -0400|removes ignore warnings from pytest
+80e2900b11d3d8c08bfc6e9ba74fb6cc3fee2769|Sean Reed|seanreed1111@gmail.com|2025-10-30 02:03:06 -0400|one more try for python cmdopt
+968f9e6c02c09900ea8ee0bc50ed6f16e53df48c|Sean Reed|seanreed1111@gmail.com|2025-10-30 02:01:13 -0400|pin opentelemetry package versions to prevent LogRecord error in 1.39.0
+b2e5163a258414a0eebf7b087ee3115560fdbaf3|Sean Reed|seanreed1111@gmail.com|2025-10-30 01:51:33 -0400|try different syntax
+0bafd381de1adb91c11dd09a09357e43bc576777|Sean Reed|seanreed1111@gmail.com|2025-10-30 01:45:52 -0400|adds otel docker compose profile to agent-api
+1ee3dd413636f96d9362d37ac7dc4fb87a20b052|Sean Reed|seanreed1111@gmail.com|2025-10-30 01:28:55 -0400|adds python cmdopts -W ignore switch
+71b84be82a227ad6a0a6e6b616f5357fdf3b2c2f|Sean Reed|seanreed1111@gmail.com|2025-10-30 01:17:18 -0400|adds flaky report output to tests (#730)
+6a3aaae08b7106ee39fe3eee62e2aa520bc0a30b|Sean Reed|seanreed1111@gmail.com|2025-10-30 01:15:07 -0400|adds flaky report output to tests
+a86b007f75a7434c216e6e84a90ab7a032aedf82|Sean Reed|seanreed1111@gmail.com|2025-10-29 12:12:32 -0400|tries explicit host
+d9ca3fb48d20352b42914c2bf9e5ae20554bcd05|Sean Reed|seanreed1111@gmail.com|2025-10-29 12:07:25 -0400|add host
+aeb21c8544834e472deeee569878f9b6c27fcc15|Sean Reed|seanreed1111@gmail.com|2025-10-29 11:29:47 -0400|add all allowed hosts
+890e9a03b79307706208c97213417146d0323cf2|Sean Reed|seanreed1111@gmail.com|2025-10-29 11:14:29 -0400|updated allowedhosts
+1d85c4ee95fc129dc80257b7535da5690b7aa5c1|Sean Reed|seanreed1111@gmail.com|2025-10-29 07:26:08 -0400|final
+d9e6dcaefb108211e58ab5461f12524f782bd004|Sean Reed|seanreed1111@gmail.com|2025-10-28 18:35:00 -0400|more
+ea17b971a29faa6b469e1030c16467267eb1d070|Sean Reed|seanreed1111@gmail.com|2025-10-28 15:59:57 -0400|location_key, location_context, and get_context remaining
+c20c137a0b7374216afde3d208ae6ef3699dd038|Sean Reed|seanreed1111@gmail.com|2025-10-28 14:42:11 -0400|and another one
+bf40d738d7d9ea8b976c8b218252e886493d66e3|Sean Reed|seanreed1111@gmail.com|2025-10-28 14:39:03 -0400|and another one
+5c9106371c9117f2546dcb82bf76aed15b87402f|Sean Reed|seanreed1111@gmail.com|2025-10-28 13:57:56 -0400|more
+f643874bd8b982dfb1132b6db6ce283edc17101b|Sean Reed|seanreed1111@gmail.com|2025-10-28 13:17:51 -0400|ruff
+7712afc431ea2b94fa1f26f41c4f840882a77198|Sean Reed|seanreed1111@gmail.com|2025-10-28 13:04:20 -0400|refactor part 8
+358cb1e828c470fb6b498e053599a4175f65a46f|Sean Reed|seanreed1111@gmail.com|2025-10-28 12:48:31 -0400|update 7
+20895ea1c84c6ac483b24bb1ed7e1b21693e058d|Sean Reed|seanreed1111@gmail.com|2025-10-28 07:45:49 -0400|suppress logrecordwarning
+9150c2e2535825befa7d48418a77a77785ade4b8|Sean Reed|seanreed1111@gmail.com|2025-10-28 07:20:49 -0400|update
+4b9ba9ff478ae89c06b1761a68c2043cb0abd8f4|Sean Reed|seanreed1111@gmail.com|2025-10-27 15:18:15 -0400|refactor part 6
+90e11264306a1a53817a9f9009771195de36af74|Sean Reed|seanreed1111@gmail.com|2025-10-27 14:59:05 -0400|refactor part 5
+6dac136e2857ee23634e3645f640ab9c9f0cb1b7|Sean Reed|seanreed1111@gmail.com|2025-10-27 12:39:57 -0400|more refactoring
+d7a50763c40891640320573805ea00a695825fe1|Sean Reed|seanreed1111@gmail.com|2025-10-27 12:17:57 -0400|refactor part 2
+7cb547bc62ccff10fa6a40e2e89e96b082b30696|Sean Reed|seanreed1111@gmail.com|2025-10-27 12:12:09 -0400|refactor part 2
+0773f75b55427d587ff44045578b3d19b99c7ed1|Sean Reed|seanreed1111@gmail.com|2025-10-27 11:31:21 -0400|begin refactor
+4f415828dab1619522db76eda6e0545ad38c3290|Sean Reed|seanreed1111@gmail.com|2025-10-27 10:51:21 -0400|adds params to PipelineTask
+c7f07163bd0dab912a354a52db0d49e4b38c8c28|Sean Reed|seanreed1111@gmail.com|2025-10-23 15:12:23 -0400|more
+078e7bfb990cb436dfb98a92a46e4c860a0eb103|Sean Reed|seanreed1111@gmail.com|2025-10-23 15:06:39 -0400|reverse some otel slop
+eeb1dcc7fc7b54ea204297992b105ca518f1e0ce|Sean Reed|seanreed1111@gmail.com|2025-10-23 14:09:56 -0400|ruff fix
+aa23787d36bede2bc6eb904cce692299695d75d8|Sean Reed|seanreed1111@gmail.com|2025-10-23 14:09:03 -0400|adds call to enable_tracing
+097a0159e4da12e9f00fa9d2b1dc4008769a7b2e|Sean Reed|seanreed1111@gmail.com|2025-10-23 13:48:24 -0400|disable transformers service otel
+ea3a995b44ced43a8f4ee73fa867b287fb46632f|Sean Reed|seanreed1111@gmail.com|2025-10-23 12:41:40 -0400|adds opentelemetry-instrumentation-psycopg as dependency
+d4e91a84aacf72f6e83a797b217bfc055866e256|Sean Reed|seanreed1111@gmail.com|2025-10-23 12:35:15 -0400|update tracer provider in tracing_utils.py
+606e67379bb3cc5efad51072c079021e5ab04952|Sean Reed|seanreed1111@gmail.com|2025-10-23 12:33:25 -0400|update to remove service name default of transformers
+ec7d9cc496f39caa858d982b400e7a21a49958b6|Sean Reed|seanreed1111@gmail.com|2025-10-23 11:08:29 -0400|update
+f1baf93f439917f1b9273f7b351295f8d9159733|Sean Reed|seanreed1111@gmail.com|2025-10-23 11:07:17 -0400|update posrelay entrypoint
+9c8771b89fc5dd1513ebd95e6913225d9cb24e74|Sean Reed|seanreed1111@gmail.com|2025-10-23 11:03:15 -0400|update
+873c1022ebe07fe00e9627e80a26ab71c42eb8b0|Sean Reed|seanreed1111@gmail.com|2025-10-23 10:59:56 -0400|update
+a4d4616116a17fdd6661dd1c44c33a6f9974e70d|Sean Reed|seanreed1111@gmail.com|2025-10-23 10:53:03 -0400|update docker compose
+c726afcc494dd43947cfab0885f70b6116f576ff|Sean Reed|seanreed1111@gmail.com|2025-10-23 10:45:47 -0400|changes allowed hosts to all
+5805d8050fe7ec342a9a0ddf6f1fc2981abda376|Sean Reed|seanreed1111@gmail.com|2025-10-23 10:38:58 -0400|changes allowed hosts to demo-v2.audivi.ai
+663a7a9e31dbab92a500b43fce1e51913d3bf592|Sean Reed|seanreed1111@gmail.com|2025-10-23 10:36:43 -0400|explicitly allow all hosts in vite.config.js
+8205f69c0a70774df369313266ac04bf16b095ea|Sean Reed|seanreed1111@gmail.com|2025-10-22 23:15:39 -0400|add psycopg instrumentation
+0bdd63b14e74f4ccda4122086f83c233944bcdd0|Sean Reed|seanreed1111@gmail.com|2025-10-22 23:04:09 -0400|update trace
+41e576d65c3a6d5963c8a7c32ed57e6d92829a93|Sean Reed|seanreed1111@gmail.com|2025-10-22 22:56:32 -0400|adds GrpcInstrumentorClient
+c6d6fa53fc2221518d7d6877bd01b6034d608acd|Sean Reed|seanreed1111@gmail.com|2025-10-22 22:52:54 -0400|add aio grpc instrumentor
+97664603469ce1bc6caf3be91fcecf1ec9b4e832|Sean Reed|seanreed1111@gmail.com|2025-10-22 22:31:16 -0400|sort requirements files for bot/ and posrelay/
+d7f763637ee45d569605e13128b8f25926c398b4|Sean Reed|seanreed1111@gmail.com|2025-10-22 22:24:48 -0400|merge
+1e65be7276745d78600275a69274c4e67892e022|Sean Reed|seanreed1111@gmail.com|2025-10-22 12:16:15 -0400|delete unneeded newbot/ files
+70865409f57913ffa91400fd569365ab1078d406|Sean Reed|seanreed1111@gmail.com|2025-10-22 11:56:17 -0400|Revert "update the logger"
+a6ca8290906e0bf4df4ec7981640b7997056afa4|Sean Reed|seanreed1111@gmail.com|2025-10-22 11:52:26 -0400|update the logger
+6d51d84dec53f1a60d40a0983ef7562d0c6aafc8|Sean Reed|seanreed1111@gmail.com|2025-10-22 09:41:21 -0400|changes filename to Dockerfile.ecs_direct
+c0d63b3ac2965854bba4caa48c9db1cb6acb4673|Sean Reed|seanreed1111@gmail.com|2025-10-21 17:56:26 -0400|exposes port 4001
+0bb50bcf7de5527b67a95785be0d4115fa17614e|Sean Reed|seanreed1111@gmail.com|2025-10-21 17:44:34 -0400|updates to start pipeline sync
+0d009eda2e4ea372a557feb0b8a6cf51036370be|Sean Reed|seanreed1111@gmail.com|2025-10-21 17:35:02 -0400|adds back mdf list
+9b56d8077955e8708d8169952f1818fab1299876|Sean Reed|seanreed1111@gmail.com|2025-10-21 14:13:52 -0400|updates
+919ddf4bce2405c5e3d95bf3bd61fd1e89203ce0|Sean Reed|seanreed1111@gmail.com|2025-10-21 11:39:01 -0400|updates types
+f87ceef572965a1ec0761fa032cdfcc74969ca98|Sean Reed|seanreed1111@gmail.com|2025-10-21 09:31:57 -0400|begin moving streamin_service_servicer
+b97b057523f9811cb979e2721b58915132c50a92|Sean Reed|seanreed1111@gmail.com|2025-10-21 09:14:11 -0400|initial commit
+cc8dbcd368b6d227a4cf20283cdeb3178a2b33df|Sean Reed|seanreed1111@gmail.com|2025-10-18 21:10:17 -0400|diagram and logging fixes (#711)
+fe2495336bdf9e5bc5cb91734c67a4264c406281|Sean Reed|seanreed1111@gmail.com|2025-10-18 21:08:00 -0400|stop leaking db credentials into logs
+6c8ccd315e83287867bc3b06381fee6725d2d868|Sean Reed|seanreed1111@gmail.com|2025-10-18 20:42:44 -0400|adds grpc server docs and initialization for headset path
+2c8f65613cb4b6c5233e443cb7b557add49ae060|Sean Reed|seanreed1111@gmail.com|2025-10-18 20:25:31 -0400|fix diagram 10-vehicle-arrival-flow
+b61f14c8e0949a2fe192e1b0a4b13a5b66fd2d4c|Sean Reed|seanreed1111@gmail.com|2025-10-18 20:17:55 -0400|fix diagrams 10
+3b1dfc1c031f6a2d2d14098f0278132c398820d1|Sean Reed|seanreed1111@gmail.com|2025-10-17 13:33:30 -0400|make tracing idempotent
+18d12c0e076ef285588214997ee9a11eef192502|Sean Reed|seanreed1111@gmail.com|2025-10-17 11:16:37 -0400|Revert "comment out gc.collect to judge impact"
+53e5567556399f9b0b39c5809fe940bf950e04c2|Sean Reed|seanreed1111@gmail.com|2025-10-17 07:57:05 -0400|comment out gc.collect to judge impact
+d465e8a575aa5cf1755bea6ffe9a394ea7be9c3a|Sean Reed|seanreed1111@gmail.com|2025-10-16 21:58:56 -0400|formatting
+16fe8ad9169bf86d554d710a415a8ec1474aa539|Sean Reed|seanreed1111@gmail.com|2025-10-16 21:52:16 -0400|gc.collect for everybody
+86932ab79e274418d2128969e068ead5bbe85375|Sean Reed|seanreed1111@gmail.com|2025-10-16 21:09:17 -0400|add gc
+e678253e32f848f03ae03509c95d5971a22d1750|Sean Reed|seanreed1111@gmail.com|2025-10-16 19:13:35 -0400|move logger to trace
+d6ea3fee991aa12a06d9106dc225fd7c894d0827|Sean Reed|seanreed1111@gmail.com|2025-10-16 19:06:47 -0400|null file processor
+0ed9249f00e36895cd6c8e816c943638cd543708|Sean Reed|seanreed1111@gmail.com|2025-10-16 18:49:44 -0400|stop duplication
+254d82594a4ebcfa39b1f0aaefad8b66b8a20a4c|Sean Reed|seanreed1111@gmail.com|2025-10-16 18:28:48 -0400|blah
+496ba2214cd9ef3cf851ce457846279c72d170a5|Sean Reed|seanreed1111@gmail.com|2025-10-16 15:06:54 -0400|removes extra tracing from pipeline (#704)
+a7f235ebcc6c3d03e0048595b94cf4b1dd7235a4|Sean Reed|seanreed1111@gmail.com|2025-10-16 14:42:44 -0400|removes extra tracing from pipeline
+646f30dfe40262249526f13bfb01a85e426321ba|Sean Reed|seanreed1111@gmail.com|2025-10-16 14:42:44 -0400|removes extra tracing from pipeline
+5a0711f95af9d07fa5ae0bbe64c35ece221fe76d|Sean Reed|seanreed1111@gmail.com|2025-10-16 11:57:29 -0400|Hotfix remove duplicate tracing (#703)
+8f6b00c37fb187af8faea4594e9559af355a1a8c|Sean Reed|seanreed1111@gmail.com|2025-10-15 17:40:27 -0400|Hotfix metrics (#701)
+3de3ead17524c9e07128da7b7e081e194d5f29c9|Sean Reed|seanreed1111@gmail.com|2025-10-16 11:57:29 -0400|Hotfix remove duplicate tracing (#703)
+cbe2c6457f7482fca41c8e3c7b6a7f919073374c|Sean Reed|seanreed1111@gmail.com|2025-10-16 11:54:38 -0400|read service name from env
+8d426358dca76473b799956d1fe2c3d49d0c5e81|Sean Reed|seanreed1111@gmail.com|2025-10-16 11:52:44 -0400|removes tracing from pipeline.py since already in runner.py
+47db33aaf136c8fede6928642ca0a7e08a45a6aa|Sean Reed|seanreed1111@gmail.com|2025-10-15 20:57:31 -0400|log changes
+2a43b9c9185011fa6f1909e237108fd73b346039|Sean Reed|seanreed1111@gmail.com|2025-10-15 20:48:58 -0400|adds daily dir and volume bind mount
+75516c1196ed3cec8a3213541559f72e02e583f4|Sean Reed|seanreed1111@gmail.com|2025-10-15 17:40:27 -0400|Hotfix metrics (#701)
+130f9f4a8da0a0a699539a4381c300fe2d240c17|Sean Reed|seanreed1111@gmail.com|2025-10-15 17:31:48 -0400|remove aiohttp instrumentor
+7594c49550f349f325c847718a911944f1a48f6f|Sean Reed|seanreed1111@gmail.com|2025-10-15 17:27:56 -0400|reduce waiting interval for postgres container
+673bc76690f61861d24fea566cb075e07ff0b1f5|Sean Reed|seanreed1111@gmail.com|2025-10-15 17:09:17 -0400|turn off asyncio default instrumentor
+9a626e2e5a0a407a5a9cf0392c0f730dbc7eeca5|Sean Reed|seanreed1111@gmail.com|2025-10-15 16:27:57 -0400|removes stderr write
+4bd945af662fe2ce48cc87f5fdbc25d9c4fdf35f|Sean Reed|seanreed1111@gmail.com|2025-10-15 16:15:36 -0400|comment out metrics
+c0ce601e87c25ea7822cfb6edf8b13af5f6f9047|Sean Reed|seanreed1111@gmail.com|2025-10-15 15:32:05 -0400|changes default level to INFO
+366986e6e7c7f3fe9e8e8149176057d1a82d5fd0|Sean Reed|seanreed1111@gmail.com|2025-10-15 15:30:10 -0400|changes default level to INFO
+e5b7beba5d95a676f71ee5e096866f5f1ce73e0a|Sean Reed|seanreed1111@gmail.com|2025-10-15 15:29:11 -0400|change log levels
+7b6f9027fc6b49d9fbea0e9ec536a851b0e4576d|Sean Reed|seanreed1111@gmail.com|2025-10-15 15:04:06 -0400|update
+51efded2a63aec0410ff4e832c61b87962636361|Sean Reed|seanreed1111@gmail.com|2025-10-15 13:51:40 -0400|moves logging outside of processing function
+e942ca255bab3ae1c003e10cbb32a72d14daefe3|Sean Reed|seanreed1111@gmail.com|2025-10-15 13:43:20 -0400|adds orphaned transcript
+f44fda863fe7c62ba2f8f09fddc54e37e93d7181|Sean Reed|seanreed1111@gmail.com|2025-10-15 13:40:07 -0400|adds new logging of user final transcript
+85612e0d2c4a1877b482ce60ac4281712a291be6|Sean Reed|seanreed1111@gmail.com|2025-10-15 13:23:54 -0400|adds stdout
+fe77dccaf7c93a1c4b8a5f2623d0f4a099209ee4|Sean Reed|seanreed1111@gmail.com|2025-10-15 13:22:50 -0400|add stderr to logger
+39fd482bfeb0e9b32671b55fd569b24315c120c6|Sean Reed|seanreed1111@gmail.com|2025-10-15 12:59:45 -0400|update
+83b035cbd540fa536ea7252b0448f84b3c7e2593|Sean Reed|seanreed1111@gmail.com|2025-10-15 12:55:01 -0400|shorten postgres healthcheck
+a744c792b6ce94ef3384aefcd31df578894b6e7d|Sean Reed|seanreed1111@gmail.com|2025-10-15 12:43:55 -0400|removes spanish language logs
+1f835e4a1ffc501b0a63577a256189adab26a925|Sean Reed|seanreed1111@gmail.com|2025-10-15 12:25:56 -0400|removes some items from pipeline
+c927a053157b6f10a1249177f2e12b9a00221a48|Sean Reed|seanreed1111@gmail.com|2025-10-15 12:06:40 -0400|suppress all logs
+d497e761bbce6ab7c6a7864ecf41c24e34bbb855|Sean Reed|seanreed1111@gmail.com|2025-10-14 10:01:29 -0400|changes startup sequence
+509b2bb354d86ca431f79a79ce3c9ba845bc6952|Sean Reed|seanreed1111@gmail.com|2025-10-14 09:55:51 -0400|updates docker-compose.yml
+99ed249746d1e2fc5f87b6e4d0c3f42665792568|Sean Reed|seanreed1111@gmail.com|2025-10-13 22:26:09 -0400|updates retries in docker compose
+67810a15f271da75f61461d2f1181f49da6dd717|Sean Reed|seanreed1111@gmail.com|2025-10-13 22:07:43 -0400|disable metrics on pipeline task
+e772f785062a39930a4473f7c219b70200848866|Sean Reed|seanreed1111@gmail.com|2025-10-13 22:02:17 -0400|changes default server name
+6750213bf0ce9b9c7c743e3925c60ddc986d6518|Sean Reed|seanreed1111@gmail.com|2025-10-13 21:59:51 -0400|changes default server name
+b5c7c873279a750eaea999b3fe95dca10b0539d6|Sean Reed|seanreed1111@gmail.com|2025-10-10 18:11:25 -0400|update exporters
+1cf80f8af904ea892e1fd71d52393ce7a43bca93|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+c0f42819e5aded0da24671d5d369c79095b1cbcb|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+f4786689ddcb2e178dc047fe9f7d5566bdbeb696|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+681262cb8f43044a2f969f163b4691ae28f534ec|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+de0c8cb98f6af29df50831208c635e5ea89f4135|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+8601d64fbc0483d7293ae656fc5272f3aa075cd5|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:05:12 -0400|normal debug
+35f14930a0e42236a1a2e4e17c153090599f6d92|Sean Reed|seanreed1111@gmail.com|2025-10-10 12:24:49 -0400|Otel hotfix (#692)
+6df9ebc8a05312850fdab3ff1473136c8aeaf86a|Sean Reed|seanreed1111@gmail.com|2025-10-10 09:16:09 -0400|merge dev
+3cd1b1bd4f60061996e6f6856b1378122d6bda50|Sean Reed|seanreed1111@gmail.com|2025-10-09 13:03:12 -0400|Brent/fixes/remove audio frame level language logging (#686)
+3a8e5bcc0efec3cc811734997a20dcaa059dbb3c|Sean Reed|seanreed1111@gmail.com|2025-10-06 12:44:19 -0400|remove spanish detection logging
+7bae33fc5320447960e6e01de5dd578116de0058|Sean Reed|seanreed1111@gmail.com|2025-10-06 11:28:50 -0400|update
+b09ea4145ba658169b990df1735e03796fd685e5|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:36:16 -0400|environment must be a mapping
+c59e54b4d0a7f5265af30f9eed9a0927bc630765|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:35:23 -0400|environment must be a mapping
+5848113990786fc78a6e9b2880fe08e4bbb3c61f|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:33:44 -0400|update
+067ffba24d88790ee3336cfcaa80dc97f06db5c7|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:32:10 -0400|more updates
+0e09c1339f76e851ae7b87aebf918d063dbe709f|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:30:23 -0400|more updates
+34527d2b92bf323c0d4e07ec06ac6088f88e9d45|Sean Reed|seanreed1111@gmail.com|2025-10-05 20:24:02 -0400|adds more config
+5039d0d274460bf6dd3efd213273bdcaa8105d3c|Sean Reed|seanreed1111@gmail.com|2025-10-05 19:32:48 -0400|update posrelay
+2beb14c732251db61809c2d85d86e1c351f9b48d|Sean Reed|seanreed1111@gmail.com|2025-10-02 10:36:23 -0400|turns on diarize
+ca0e0d87837189e439394f702bdfad56e1f1677a|Sean Reed|seanreed1111@gmail.com|2025-10-02 09:47:57 -0400|Merge branch 'dev' into deepgram-background-filter-explore
+e333cb4b21d96a2c7998d4e0292675bbda028555|Sean Reed|seanreed1111@gmail.com|2025-10-02 09:47:28 -0400|update
+5fc56ee139b8a37b3472d802bafddee564002c60|Sean Reed|seanreed1111@gmail.com|2025-10-01 17:09:22 -0400|initial commit
+8d70d37913a067ad8e492d36843acedd47021d5d|Sean Reed|seanreed1111@gmail.com|2025-09-30 15:08:59 -0400|add minimum memory (#658)
+9e42d697c2509e41421bbba4e6f00472f82f2b74|Sean Reed|seanreed1111@gmail.com|2025-09-30 13:48:25 -0400|merge commit
+7e6a8e065240f53aaff719a9ae8390a6ea300b8e|Sean Reed|seanreed1111@gmail.com|2025-09-30 12:38:07 -0400|add minimum memory
+dca6ddee626daa189fbc810322e9ddccb83c8dce|Sean Reed|seanreed1111@gmail.com|2025-09-29 17:01:45 -0400|put "Spanish v5"" back on the dev branch (#637)
+30171ad2f319e3a66463b74e604de8d2dd1076b9|Sean Reed|seanreed1111@gmail.com|2025-09-27 16:18:57 -0400|creates metrics server to stop errors (#645)
+13fcfa23049550a3a63b86958e2a5baa3f1e241a|Sean Reed|seanreed1111@gmail.com|2025-09-27 14:19:35 -0400|creates metrics server to stop errors
+5e2852d9f8ca83cd6c15a7276c070b9a712a0092|Sean Reed|seanreed1111@gmail.com|2025-09-26 11:11:48 -0400|Revert "Revert "Spanish v5 (#627)" (#630)"
+52f831204f374584f909a3d20ceb49fb537a9e1b|Sean Reed|seanreed1111@gmail.com|2025-09-26 10:49:17 -0400|adds line too long E501 to ignore (#636)
+418c7632277ef869eb233dec9e8df458ff5b3893|Sean Reed|seanreed1111@gmail.com|2025-09-26 10:48:25 -0400|adds line too long E501 to ignore
+5a9ac4680c46fb9848478f8225b7936276275da0|Sean Reed|seanreed1111@gmail.com|2025-09-24 18:33:35 -0400|Revert "Spanish v5 (#627)" (#630)
+9f6e7a16838f520030feb8b521d79b3e088c23e2|Sean Reed|seanreed1111@gmail.com|2025-09-24 18:33:21 -0400|Revert "Spanish v5 (#627)"
+cf50ae5ca8e701936c95040faadc1527345cc052|Sean Reed|seanreed1111@gmail.com|2025-09-24 17:40:02 -0400|Hotfix deepeval timeout (#629)
+b007d652e783352c7203193b98b287f93922c5d4|Sean Reed|seanreed1111@gmail.com|2025-09-24 17:28:07 -0400|supresses all flaky reporting
+d4d1f659771479ca0ac94cec190a774e1bcb1c43|Sean Reed|seanreed1111@gmail.com|2025-09-24 17:27:04 -0400|changes timeout to 10 mins
+f4ed09a2f9aa9af4af5f9f7f7d02d8791af145b9|Sean Reed|seanreed1111@gmail.com|2025-09-24 17:25:36 -0400|changes timeout to 8 mins
+d65b759bb8f8ab388ac9d9fcb789f5a10b0bbaaa|Sean Reed|seanreed1111@gmail.com|2025-09-24 12:57:42 -0400|adds flaky to requirements.txt and docker compose tests (#626)
+2bb9f17f432e4589daf4c4e7455f7076c983391c|Sean Reed|seanreed1111@gmail.com|2025-09-24 12:43:58 -0400|adds --no-success-flaky-report
+10d369f887cde596c66d95ea40e765f4d52bb713|Sean Reed|seanreed1111@gmail.com|2025-09-24 12:39:09 -0400|adds flaky to requirements.txt and docker compose tests
+0a531b1bd2b5492421c320d825f33f1be1346b6f|Sean Reed|seanreed1111@gmail.com|2025-09-23 15:00:25 -0400|merge complete
+061157f840d3b980b5f2a5e735060060eb7e5f72|Sean Reed|seanreed1111@gmail.com|2025-09-23 14:43:34 -0400|ruff check --fix .
+d55f2ddb3433c095873b7b5b14d768673f089676|Sean Reed|seanreed1111@gmail.com|2025-09-23 14:42:37 -0400|ruff format
+1871c2ce0559f0580a7e81dd3f81a62e8d0dcd96|Sean Reed|seanreed1111@gmail.com|2025-09-19 19:53:01 -0400|moves markdown files
+93815239d50347220d03ecf8c1a92dc14a141650|Sean Reed|seanreed1111@gmail.com|2025-09-19 17:38:58 -0400|initial commit
+6b16b6eea503ab814a903c0af1d0d9bde1e4b068|Sean Reed|seanreed1111@gmail.com|2025-09-18 21:14:28 -0400|adds docs
+a6547f4f6e36c47b6bf61968a69a532b8c4c54c1|Sean Reed|seanreed1111@gmail.com|2025-09-17 18:43:14 -0400|Ruff (#611)
+3c5f7a18f2e8728e9ee00741136723dcd2501a50|Sean Reed|seanreed1111@gmail.com|2025-09-17 17:27:43 -0400|deletes files
+77c0eaa59e5f7f1c61cf46620ee2562974d6e071|Sean Reed|seanreed1111@gmail.com|2025-09-17 17:27:43 -0400|Delete old files (#576)
+ad33783275a09f2cfa3dff508ca9ec4640feca5b|Sean Reed|seanreed1111@gmail.com|2025-09-17 17:14:32 -0400|with ruff check --fix .
+628c9949c4327e205b0504ee9234d41c7e343387|Sean Reed|seanreed1111@gmail.com|2025-09-17 17:12:32 -0400|after ruff format
+01eb06c9bb129d79b7878e5ba01415bb14f705e4|Sean Reed|seanreed1111@gmail.com|2025-09-17 17:11:15 -0400|update ruff.toml
+575cc8c5b46149ba3a69898ec58ecb6d4081fe39|Sean Reed|seanreed1111@gmail.com|2025-09-16 20:41:10 -0400|updates
+625f315a781a18d9cd3d0cb51fdbdee3acd748fe|Sean Reed|seanreed1111@gmail.com|2025-09-16 20:17:17 -0400|updates. working
+584fb49c630d9d8aae51b58c0a76acce1ac7bfec|Sean Reed|seanreed1111@gmail.com|2025-09-16 19:01:32 -0400|Merge branch 'dx/transaction-id-trace-id' into otel-pos-relay
+b707eb97f188103440c03c052f4fcfab11ff66fe|Sean Reed|seanreed1111@gmail.com|2025-09-16 19:00:41 -0400|adds redis
+11c41beea1e93a36938b4391fbfaf7fb58eb5fac|Sean Reed|seanreed1111@gmail.com|2025-09-13 13:29:34 -0400|ruff format
+c97acc13ab5587a4fd0a0cd5920b1d751465f09c|Sean Reed|seanreed1111@gmail.com|2025-09-13 13:27:59 -0400|updates and removes pyproject.toml files
+89e85a86e1f3691d59292f4f63fead2c0e48c65c|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:53:07 -0400|Ruff.toml update (#587)
+7f914c2d1618a63a1aa1954a586c885e72315e70|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:51:44 -0400|changes fixable and unfixable rules
+207b2250e259ace9398a6f9f376188ee9b6aff2b|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:47:04 -0400|adjusts ruff.toml
+f43d5b3aa3353cc01614e9af24061381b9a4b9ad|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:14:30 -0400|Update ruff toml (#585)
+24d7263f212bcf169a0b6846e18b853045c61348|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:13:59 -0400|adds protos and protobuf to excluded libs
+e960eebba463e385ccd65a1805de30936eb1fe83|Sean Reed|seanreed1111@gmail.com|2025-09-13 12:13:08 -0400|updates ruff before running on system
+058bdf5f08388972e8cd48d6cb99a1ea85b3d4a8|Sean Reed|seanreed1111@gmail.com|2025-09-12 11:19:11 -0400|update
+5ac1120ea086de714c2b881f64be636a7286240b|Sean Reed|seanreed1111@gmail.com|2025-09-12 10:56:10 -0400|update
+7cfe57463c60241665f5a1c1ee58f80b635a0a34|Sean Reed|seanreed1111@gmail.com|2025-09-12 10:31:51 -0400|change config
+3e94803d5f42156896691799382944ca21e95249|Sean Reed|seanreed1111@gmail.com|2025-09-12 10:30:26 -0400|removes root user
+399f2b99454a853b3aa9609e5db78c68cc025fff|Sean Reed|seanreed1111@gmail.com|2025-09-11 16:02:50 -0400|and another one
+7abd014b34c066f86ab9236a5916a12a5fda1763|Sean Reed|seanreed1111@gmail.com|2025-09-11 16:02:21 -0400|another file
+1f62ece9e05482435e33a97aaa2840cdec863077|Sean Reed|seanreed1111@gmail.com|2025-09-11 15:58:19 -0400|delete more files
+99eb9f56b8113e32e7d40763e8eb6971c24526c7|Sean Reed|seanreed1111@gmail.com|2025-09-11 15:56:10 -0400|prunes code
+a42ee689a0fce433036c32ddebd695051a2a9098|Sean Reed|seanreed1111@gmail.com|2025-09-11 11:29:20 -0400|update
+6bb72d47b563a1f36b2dc9229acc8d82addf2851|Sean Reed|seanreed1111@gmail.com|2025-09-11 11:22:57 -0400|update
+0aa35fb46be2a323bf33fff3337a9d6713d74b40|Sean Reed|seanreed1111@gmail.com|2025-09-11 11:06:26 -0400|updates entrypoint
+e2c7312f07d938e13250a1f600d03df6bebc4174|Sean Reed|seanreed1111@gmail.com|2025-09-11 09:22:04 -0400|fixes clobbered import (#573)
+b9a15ab09a074f0bba20cadc39d956dbf6387ec5|Sean Reed|seanreed1111@gmail.com|2025-09-11 09:21:06 -0400|Merge branch 'hotfix' into scalene-2
+1ecf8d13b4bc05ff723a9a7089e2708b29ca5491|Sean Reed|seanreed1111@gmail.com|2025-09-11 09:11:12 -0400|fixes clobbered import
+c187420f602d1770b1bca23d52de7141e4e89f49|Sean Reed|seanreed1111@gmail.com|2025-09-11 09:07:30 -0400|initial commit
+221db59c19e9aa063625a0fe367bfe0df0c340d3|Sean Reed|seanreed1111@gmail.com|2025-09-10 10:57:05 -0400|Merge branch 'dev' into yappi
+a9dd540ce502c1416969d04d72cd709f13d4ae6a|Sean Reed|seanreed1111@gmail.com|2025-09-10 10:34:31 -0400|Fix save to s3 for ec2 ds data (#540)
+d0021a0e7964f28458eed093fba32ef186d0ba61|Sean Reed|seanreed1111@gmail.com|2025-09-10 09:46:43 -0400|merges dev
+4985a85d208d891e54b515ca9df3790462ceb039|Sean Reed|seanreed1111@gmail.com|2025-09-10 09:44:11 -0400|removes deprecation from requirements.txt
+15b51dab9a300f5446abef7f13b8683aa3a0314d|Sean Reed|seanreed1111@gmail.com|2025-09-09 21:23:20 -0400|adds import for instrumented (#568)
+1108a64d46e4caaf1553ebbc2cd48f6c3cfbe416|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:52:44 -0400|remove semicolons
+a652040209ec66088170b2cfdc722030ddc8b147|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:43:16 -0400|adds instrumented import to spanglish_detector
+a67b801b81bdf5c4fc259cf5e7e15b70109970af|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:40:02 -0400|updates multi-shot
+212fcf3ef607ea9e6452064d59c00d46619ac7e7|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:33:57 -0400|updates search_and_retrieve
+a610c30e52c6830ee9479e953eae122135e6635f|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:11:13 -0400|Merge branch 'dev' into yappi
+63733dfe525fe3aaf38ae33c047e6058abd4a0f4|Sean Reed|seanreed1111@gmail.com|2025-09-09 20:02:02 -0400|File cleanup (#566)
+b84fb60f74688824cdec66b2f47346f7e5cc462b|Sean Reed|seanreed1111@gmail.com|2025-09-09 15:05:41 -0400|yappi works
+032f0cf196b06f395b5a7ca29605a6a769c3924a|Sean Reed|seanreed1111@gmail.com|2025-09-09 09:32:34 -0400|more
+9e9f023f2eb4a0a4eabee0e088d036dce8617fdd|Sean Reed|seanreed1111@gmail.com|2025-09-09 09:19:35 -0400|more deletions
+6b881f4529519eefa2b3940f900f314bfd33d523|Sean Reed|seanreed1111@gmail.com|2025-09-09 09:11:45 -0400|initial commit
+7245e2f0c6462122525e3d5c4a982f35d61c355a|Sean Reed|seanreed1111@gmail.com|2025-09-08 17:40:57 -0400|initial commit (#562)
+a0f284019b60a971b35eb42e2c8a5e6132bf4ed3|Sean Reed|seanreed1111@gmail.com|2025-09-08 17:36:00 -0400|Merge branch 'dev' into yappi
+f99bad794786a0ed5b0cf9e7432cc1427bad1081|Sean Reed|seanreed1111@gmail.com|2025-09-08 14:45:56 -0400|more documentation
+935935902aba595a8fbe8c3b399afce197cfca0d|Sean Reed|seanreed1111@gmail.com|2025-09-08 11:26:33 -0400|initial commit
+a1bea151490f0db891e5cd1012532ad08bd44eca|Sean Reed|seanreed1111@gmail.com|2025-09-05 16:16:14 -0400|initial commit
+5a89814d43ecaca91a2914f03215ee1d350bcd33|Sean Reed|seanreed1111@gmail.com|2025-09-05 15:24:29 -0400|changes intent_agent_add_item_v to intent_agent_order_complete (#557)
+c8ae171035cc72904fd8698a6fa3d861fa95be07|Sean Reed|seanreed1111@gmail.com|2025-09-05 15:10:19 -0400|Update readme (#556)
+3c7a73ea0797832edea6bdfa9600a225e1248682|Sean Reed|seanreed1111@gmail.com|2025-09-05 15:08:12 -0400|adds fastmode to readme
+2b8c106a2919bd6e9a8381240dcbfbf6428f0964|Sean Reed|seanreed1111@gmail.com|2025-09-05 15:07:28 -0400|adds fastmode to readme
+ff94015320bdf35dd5239cdede9820ecffec82a7|Sean Reed|seanreed1111@gmail.com|2025-09-05 14:54:52 -0400|Sync hotfix (#555)
+c43edc0e87808485eb6148cfc4aadfa7c236c1aa|Sean Reed|seanreed1111@gmail.com|2025-09-05 14:35:56 -0400|updates to remove awaits
+c74af7cf4200c076665dbb848fbe8f62a2b81fb8|Sean Reed|seanreed1111@gmail.com|2025-09-05 14:12:08 -0400|merge branch
+2c1b6719418c2943490c25b30182f19250a0c56a|Sean Reed|seanreed1111@gmail.com|2025-09-05 14:04:01 -0400|adds back DataFrame import
+0a9f457f9b4a928f156d3e44ca174d6551cbac82|Sean Reed|seanreed1111@gmail.com|2025-09-05 13:53:13 -0400|cursor slop
+cf926a09ac8cde83449ed8d7558abe497d4a57f2|Sean Reed|seanreed1111@gmail.com|2025-09-05 13:49:51 -0400|sync db calls
+6b464514af35a210fdf2827149d9ffe5cde36680|Sean Reed|seanreed1111@gmail.com|2025-09-05 13:36:04 -0400|make earnedil sync
+a733ccac6bf399b09d71a42f1642c0e1b9d36bbd|Sean Reed|seanreed1111@gmail.com|2025-09-05 12:55:40 -0400|initial commit
+ed1b3ee0e2d0485428675b6b3cdecdc1136064eb|Sean Reed|seanreed1111@gmail.com|2025-09-05 11:52:32 -0400|converts to get_running_loop
+49e04f12c4b60cb2e427e687f233efff6e3e44b1|Sean Reed|seanreed1111@gmail.com|2025-09-05 11:11:37 -0400|adds back colon
+304bddb0cd05e6c4fe623aaa8ce74b7a6171ce8b|Sean Reed|seanreed1111@gmail.com|2025-09-05 11:07:29 -0400|gets rid of sts tokens
+5980321a98a3501ed281725031d7664dfbc3eb21|Sean Reed|seanreed1111@gmail.com|2025-09-05 10:24:24 -0400|adds package structure diagram (#550)
+58547faf02409ed1c93c677df08cdb771e7a49a0|Sean Reed|seanreed1111@gmail.com|2025-09-05 09:58:12 -0400|adds package structure diagram
+1c877dfd73e1d9bcea487947e15767737a0051e4|Sean Reed|seanreed1111@gmail.com|2025-09-04 13:03:18 -0400|turn off language setting process frame (#547)
+c324486c04d80766f8df4fd33240867baa4920ac|Sean Reed|seanreed1111@gmail.com|2025-09-04 11:54:53 -0400|gets ride of initialize_memory_performance (#546)
+d1fbc7ce283808ed1887db9f0a649c0c0d37eb9c|Sean Reed|seanreed1111@gmail.com|2025-09-04 11:52:12 -0400|gets ride of initialize_memory_performance
+1e6f223b4c2c7179529dd001890701aabbb1824f|Sean Reed|seanreed1111@gmail.com|2025-09-04 10:27:21 -0400|removes threading from direct_to_state_machine=True path (#545)
+4a9345d67ad77e6fb67d4c3ed247b2c941d7afbb|Sean Reed|seanreed1111@gmail.com|2025-09-04 10:16:18 -0400|removes threading from direct_to_state_machine=True path
+5386abcb5b37c14958730d88ec62b75b5dfb5a68|Sean Reed|seanreed1111@gmail.com|2025-09-03 13:37:36 -0400|instruments posrelay code (#541)
+90274279c6ebda636ff0bc30aa830fd7da38be0f|Sean Reed|seanreed1111@gmail.com|2025-09-03 12:12:11 -0400|instruments posrelay code
+7adeb5e36e48677660674ca23a75324f39e0224c|Sean Reed|seanreed1111@gmail.com|2025-09-03 11:36:40 -0400|Merge branch 'dev' into feat/docker-nonroot-user
+999d77c2290b0e9f84756c67e78f4d0e99597e92|Sean Reed|seanreed1111@gmail.com|2025-09-03 10:42:05 -0400|updates bucket
+d401dccc6de7b365361eebccc07b21bb07c6d667|Sean Reed|seanreed1111@gmail.com|2025-09-03 10:16:32 -0400|adds s3 client
+0ea49c8a7afa8633cd671874f1203c93fe4ead8b|Sean Reed|seanreed1111@gmail.com|2025-09-02 21:27:46 -0400|removes deprecated library
+1dbbd7c6d6c9208c91fce7dcbacc797603f5f4f8|Sean Reed|seanreed1111@gmail.com|2025-09-02 21:17:36 -0400|updates deprecation version
+15e2f0fc7d6fa4f0785a00fae79191a12c94fd10|Sean Reed|seanreed1111@gmail.com|2025-09-02 21:07:32 -0400|adds establish_s3_client call to save_ds_data_consolidator_v2
+e6924ba669e801487fe0a1fd0f3ca57edfc4e83b|Sean Reed|seanreed1111@gmail.com|2025-09-02 19:46:50 -0400|test commit 1
+ca3d7ff8aa51ff14b96a5d43924c627aeae7d464|Sean Reed|seanreed1111@gmail.com|2025-09-02 18:49:25 -0400|Hotfix username (#538)
+7693e2d98dd32107a49263e0a06e6b0082e78e5d|Sean Reed|seanreed1111@gmail.com|2025-09-02 18:40:04 -0400|update
+acf1e461ab2044dd261d7e7aeb801d518269c9fa|Sean Reed|seanreed1111@gmail.com|2025-09-02 14:11:40 -0400|more fixes
+8795edbacc370dc6887be5fabf8a4f27776accea|Sean Reed|seanreed1111@gmail.com|2025-09-02 13:33:48 -0400|and another one
+ba7be0d32fd5e46a60c524380167bd8b25b0f831|Sean Reed|seanreed1111@gmail.com|2025-09-02 13:31:03 -0400|user-> username
+551a0091a69299e10f5054a46fe8d824ec371614|Sean Reed|seanreed1111@gmail.com|2025-09-02 12:53:23 -0400|typos dbase.DbConfig-> dbase.DbConfig() (#537)
+87a78daca68b81c906c3eb78141161e134cec5d0|Sean Reed|seanreed1111@gmail.com|2025-09-02 12:52:31 -0400|typos dbase.DbConfig-> dbase.DbConfig()
+a38ca3db2ac185d26ea87095410a61f59c6a62d2|Sean Reed|seanreed1111@gmail.com|2025-08-29 14:15:03 -0400|adds bucket #3
+5f382e786c8a6396d97312c839ce9ce5baa09da8|Sean Reed|seanreed1111@gmail.com|2025-08-29 12:22:48 -0400|add span
+81f58ad3de2e1b04a69e73ccbfa24fd9585a7eef|Sean Reed|seanreed1111@gmail.com|2025-08-28 14:46:22 -0400|turn off echo debug (#529)
+6a66507351506a29acf8ec91800212d750f71190|Sean Reed|seanreed1111@gmail.com|2025-08-28 14:20:55 -0400|turn off echo debug
+2f87cb85d8069e65a96a1509ff3d4bc8205438e6|Sean Reed|seanreed1111@gmail.com|2025-08-28 12:37:02 -0400|removes cache.db-shm and cache.db-wal (#528)
+21fab1c98bf23ee17c873a0ab91c3b5c5049118b|Sean Reed|seanreed1111@gmail.com|2025-08-28 11:40:34 -0400|update
+b13a205cd2e8a3a75af744ae040b96fd8a7f2748|Sean Reed|seanreed1111@gmail.com|2025-08-28 11:19:06 -0400|update tracing
+fce4e4cdc40f818ca47cfd3e33739c359996ed2e|Sean Reed|seanreed1111@gmail.com|2025-08-27 16:07:52 -0400|moves common_url -> connection_string (#522)
+32fcdf76ade1e28913ce5485777ef0039478f432|Sean Reed|seanreed1111@gmail.com|2025-08-27 15:49:32 -0400|moves common_url -> connection_string
+7d3cdd5dfecc5c0aab22f89b1c29beec7ebfcae9|Sean Reed|seanreed1111@gmail.com|2025-08-27 15:49:32 -0400|moves common_url -> connection_string
+f98eab22dcf2380c7d4f89d959e75ec6fd2b1d76|Sean Reed|seanreed1111@gmail.com|2025-08-27 14:34:15 -0400|Hotfix for scheduler container (#519)
+bbad1ce9ad69596a68d419d7fec54fccbec2b216|Sean Reed|seanreed1111@gmail.com|2025-08-27 14:34:15 -0400|Hotfix for scheduler container (#519)
+b377943af481c5cb7fe6e638aac8f4770190739b|Sean Reed|seanreed1111@gmail.com|2025-08-27 13:24:24 -0400|Make all database code and all code that touches it async (#479)
+66092ae35adea966ae3dbea712d0e72f160f26b6|Sean Reed|seanreed1111@gmail.com|2025-08-27 13:24:24 -0400|Make all database code and all code that touches it async (#479)
+33dd6882c401e8e220fdd6777151474f8fde5d1d|Sean Reed|seanreed1111@gmail.com|2025-08-27 11:30:05 -0400|adds parquet files to dockerignore (#517)
+db87c687729276d870cbe4a3ed1428e272095853|Sean Reed|seanreed1111@gmail.com|2025-08-27 11:30:05 -0400|adds parquet files to dockerignore (#517)
+47697a20cb8cc8f60ddb5e0a67dbb385f80c061f|Sean Reed|seanreed1111@gmail.com|2025-08-26 14:18:01 -0400|Hotfix otel ds data (#514)
+0116ee502937e4e427ab32d1d91478e2fc52985d|Sean Reed|seanreed1111@gmail.com|2025-08-26 14:18:01 -0400|Hotfix otel ds data (#514)
+a5eb0551930f8be279af3d160850f51614daef0b|Sean Reed|seanreed1111@gmail.com|2025-08-26 14:08:35 -0400|adds TELEMETRIX_WRITES_ON env var to telemetrix.py file
+47dbd4f738ce6b72906c9a3f1327fdbe33c34ad1|Sean Reed|seanreed1111@gmail.com|2025-08-26 13:33:51 -0400|fix otel errors
+15b69335898dc64a989f2e39bf49cf2f9d3a2694|Sean Reed|seanreed1111@gmail.com|2025-08-26 12:47:29 -0400|more formatting
+e608f8c80591b3e031164f7c525035aaa9d16e14|Sean Reed|seanreed1111@gmail.com|2025-08-26 12:20:23 -0400|formatting
+17cae9a9dacc5c0306907dfc3d40171ee2a4a8a8|Sean Reed|seanreed1111@gmail.com|2025-08-26 12:17:34 -0400|applies ruff format
+fc1b97dd7e53d75b2fcffca56c416259f8ba4730|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:45:49 -0400|Merge branch 'dev' into dbase-002
+f10c9726f2f469f78e42b3f619f9836c82407d74|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:41:12 -0400|Documents diagrams (#511)
+4b63a8bdaf2734e3fc9399120b36ffd32ac4d893|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:41:12 -0400|Documents diagrams (#511)
+9683edabdcdfb332fb8e74d470f412a152949d88|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:36:46 -0400|Streamline honeycomb (#510)
+d67d74a13850576db5919a9ff61bdc0ecf14c27c|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:36:46 -0400|Streamline honeycomb (#510)
+48eda1a197b6de56b08e3b211a41b87a9795b6e1|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:35:46 -0400|merge conflicts resolved
+e768b03d4a546b646e9507491178057f364fef7a|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:30:43 -0400|more
+2f97f2e721bb12a978d4b4640da9b44e3df880f0|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:25:34 -0400|more
+185110bd0d6bc1f37f198e4929648f7aae4ed8d0|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:11:20 -0400|more
+d2d3adfa605316ce8bc82319f031c4777e18dec1|Sean Reed|seanreed1111@gmail.com|2025-08-26 01:06:47 -0400|more
+8587da5b8fbf0c59a3e7a9ecede0f6f97e7e2b57|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:59:08 -0400|updates
+3da349aa861bd0bbf8a4f08e8a57f75fe86c6592|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:54:31 -0400|updates
+758d1b032b9673099e99857aa920c2aec3273388|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:40:01 -0400|Streamline honeycomb (#509)
+aeb2bb61099830e09b7744d33aa2e36ab3c75ba9|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:40:01 -0400|Streamline honeycomb (#509)
+6812535ccd655a764ef91d5719b2bf2c3b153ebe|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:36:41 -0400|Merge branch 'streamline-honeycomb' into scalene
+672f849cd9f1d53463da9393ff85e967d07d6680|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:36:17 -0400|removes more
+e3228859b31c522df10909b676d55b2dfa60330c|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:25:29 -0400|removes more honeycomb logs
+a4e2ed15fac4754e0a82317935b0a87356bfa37f|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:13:48 -0400|Merge branch 'streamline-honeycomb' into scalene
+5dace9701be935deccc63f94b5b264b1f9ebc4ad|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:12:11 -0400|removes some noisy honeycomb instrumentation
+20acc9d9a5e330594b80b04c744fa4989bbcd464|Sean Reed|seanreed1111@gmail.com|2025-08-26 00:01:22 -0400|updates docker-compose.yml
+86fe93cb359dd2771e6c3a69fb98c9cd62847654|Sean Reed|seanreed1111@gmail.com|2025-08-25 22:43:30 -0400|change interval to 90s
+b3272c54f20b505b9bee8976eb2d09988d4fe35e|Sean Reed|seanreed1111@gmail.com|2025-08-25 21:51:17 -0400|change interval to 60 secs
+2d0f6ac4067d54df5a39a76a46a195dbf96dabfc|Sean Reed|seanreed1111@gmail.com|2025-08-25 20:16:12 -0400|update
+9a2ffdca8151a9aa8f5a13c80518e9ea0af8ac61|Sean Reed|seanreed1111@gmail.com|2025-08-25 20:10:33 -0400|change scalene call to add profiler to pipeline.py
+c5bad93a3daa3fe6d237082a7e184a276797aa2c|Sean Reed|seanreed1111@gmail.com|2025-08-25 18:47:24 -0400|bump scalene to 1.5.54
+cabd80a9d0e169f9781fe6135f3d97ba8c58e73a|Sean Reed|seanreed1111@gmail.com|2025-08-25 14:15:19 -0400|updates docker-compose to use scalene
+c1a0f000ab1af27ff1e76390e7855b9980aa4af5|Sean Reed|seanreed1111@gmail.com|2025-08-22 11:46:56 -0400|comment out tracing
+a5e60a77ada38aba026f62b1edd682ac8b85d833|Sean Reed|seanreed1111@gmail.com|2025-08-22 09:29:14 -0400|adds debug to echo logs
+816a994643482151606d23a2861795bd4c66d2b7|Sean Reed|seanreed1111@gmail.com|2025-08-22 00:24:25 -0400|adds class analysis docs
+e3e21c1b54a81c57c0a7de6e3887ab288c833d72|Sean Reed|seanreed1111@gmail.com|2025-08-22 00:16:13 -0400|class constructor analysis
+b56c1e1c52515041f6fedd7b2f633cb0909d70e8|Sean Reed|seanreed1111@gmail.com|2025-08-21 19:15:07 -0400|Adds documents and diagrams (#508)
+867689f76052c0d4a64957e671ec20788c7184cf|Sean Reed|seanreed1111@gmail.com|2025-08-21 19:15:07 -0400|Adds documents and diagrams (#508)
+631dcd448be21a66af42d84e85a049abdda88c10|Sean Reed|seanreed1111@gmail.com|2025-08-21 14:51:09 -0400|fix vehicle diagram
+ea11d3ee7be3355ceb880e9142c8729afba777d4|Sean Reed|seanreed1111@gmail.com|2025-08-21 14:38:59 -0400|adds markdown files (#507)
+6a00505494fc9e8c68602ce33389a6dd1a464740|Sean Reed|seanreed1111@gmail.com|2025-08-21 14:38:59 -0400|adds markdown files (#507)
+1a7fdb7dc11857678d4eb7e612329f1522dbac65|Sean Reed|seanreed1111@gmail.com|2025-08-21 14:37:38 -0400|adds markdown files
+b940b162e25fb9ff985bd61c1548c9af34e17075|Sean Reed|seanreed1111@gmail.com|2025-08-20 21:42:25 -0400|updates async_engine params
+01d758ba7839f937523b711c049fb0220a9539b1|Sean Reed|seanreed1111@gmail.com|2025-08-20 17:01:25 -0400|changes output type to callgrind
+2c2580f943a5a2dcbb5804b55518e7c4f95f1014|Sean Reed|seanreed1111@gmail.com|2025-08-20 16:38:09 -0400|fixes timezone error
+f48031da73f66c615c0b7193170b899ce04d8f72|Sean Reed|seanreed1111@gmail.com|2025-08-20 16:31:51 -0400|turns on echo and echo_pool logging in sqlalchemy
+8a869c951df0113de7d945e8934ee6666466f1b9|Sean Reed|seanreed1111@gmail.com|2025-08-20 16:25:58 -0400|adjusts yappi
+23c975097504e9d664efa7dc5128f1b7dd1c0cd8|Sean Reed|seanreed1111@gmail.com|2025-08-20 15:58:59 -0400|update yappi output
+5f8a5da1ba82bd4178c969a94533324dbff04b95|Sean Reed|seanreed1111@gmail.com|2025-08-20 12:35:49 -0400|hardcode ports to 49999 and 59999
+439f9056e4d7dccc187fba6736b2a59f8912b5b1|Sean Reed|seanreed1111@gmail.com|2025-08-20 10:52:12 -0400|merge branch dev into feat/docker-nonroot-user
+1dec7d433fd0c7636fe1d583638a2e4fc5ee7227|Sean Reed|seanreed1111@gmail.com|2025-08-18 14:08:34 -0400|changes sort
+d907e81b38e8406d402eb2f03956dc665d7bab63|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:59:14 -0400|removes watch from headset code
+91567a00e15aa17711d5224d7faa13a32b939824|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:48:49 -0400|change sort order
+5c5aa890157638edc3c3a352aa3c6880565388f7|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:29:07 -0400|removes slim
+85020c4c6326317a3a7999b46d1e0c0c8b6d7fb3|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:24:59 -0400|typo
+d2281e4a90ba5adbd79bc30ff10e4b209b70d408|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:21:48 -0400|typos
+b697312f067abb16c210330b37f8798bd9cd2a0f|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:17:15 -0400|explicitly add in gcc
+0cd37d7f63a0178a5c415727094bc2f67747a8f3|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:15:10 -0400|adds build and setuptools
+02499d0a6300ddc4c35656b7efb9761c5d4c77da|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:12:03 -0400|adds build essential
+1ec0fc8b833aa305c5c366a4c443d3a566da8778|Sean Reed|seanreed1111@gmail.com|2025-08-18 13:04:13 -0400|adds output files
+375af60a4d3fd2afd98a5fd6b9b8d3963e305d75|Sean Reed|seanreed1111@gmail.com|2025-08-14 13:27:05 -0400|removes all uvloop code in preparation for future move to cython (#495)
+7b8f42e2e7160ca5843ef1a285e4d849a6c47185|Sean Reed|seanreed1111@gmail.com|2025-08-14 13:27:05 -0400|removes all uvloop code in preparation for future move to cython (#495)
+4f86dd8cf621dadb9350a26a0841897c0a32580f|Sean Reed|seanreed1111@gmail.com|2025-08-14 11:18:43 -0400|Diagrams (#494)
+f36ae53a7f20d6d338f89b3270c6459b10cff0fc|Sean Reed|seanreed1111@gmail.com|2025-08-14 11:18:43 -0400|Diagrams (#494)
+fe2b466430010cd2f264ca972c693757ac55beb7|Sean Reed|seanreed1111@gmail.com|2025-08-13 11:46:32 -0400|adds diagrams (#493)
+8dec9daa8ea6694f6b796bba3cb7c3d934c43a61|Sean Reed|seanreed1111@gmail.com|2025-08-13 11:46:32 -0400|adds diagrams (#493)
+3758b14caddea8a131616de6bff7906de7ba069a|Sean Reed|seanreed1111@gmail.com|2025-08-12 16:52:26 -0400|updates connection string to psycopg3
+d24c66616a1c4b6b5cb8d2d8819ea1c3c756170a|Sean Reed|seanreed1111@gmail.com|2025-08-09 17:12:03 -0400|Hotfix (#491)
+3f529773d5a58a692b33e6aa48e5d678a2be2827|Sean Reed|seanreed1111@gmail.com|2025-08-09 17:12:03 -0400|Hotfix (#491)
+111cc28709835895a0833a2e1893a79a11d71ff3|Sean Reed|seanreed1111@gmail.com|2025-08-07 17:14:36 -0400|removes uvloop
+4e9d15a441632e579f76990174e5799bc2371171|Sean Reed|seanreed1111@gmail.com|2025-08-07 14:29:33 -0400|adds cache
+b0aa4530189cf3b51702a2a36a8a2704ac1c151c|Sean Reed|seanreed1111@gmail.com|2025-08-05 21:30:07 -0400|error is gone
+82a6c13e1edbf7e8697135bc34614085679c20dc|Sean Reed|seanreed1111@gmail.com|2025-08-05 20:50:58 -0400|moooore
+721c279129614a776675e4262e7324f2f45fda96|Sean Reed|seanreed1111@gmail.com|2025-08-05 20:16:53 -0400|moore
+38725b5a58b8d738a76f9d06335e062f6c17ce8e|Sean Reed|seanreed1111@gmail.com|2025-08-05 17:23:06 -0400|rename firsts
+5762e33796821ccc3c7c8b7f2496d5c3d5c23440|Sean Reed|seanreed1111@gmail.com|2025-08-05 16:04:21 -0400|.scalars().first()
+5db7e13099eb05c92cb4cdc5678fed2077f7723e|Sean Reed|seanreed1111@gmail.com|2025-08-05 14:29:55 -0400|sqlalchemy.engine.result.ChunkedIteratorResult object resolved?
+3b7fe9f7c67261c67a27cae38f0ea83ee0cc949b|Sean Reed|seanreed1111@gmail.com|2025-08-05 14:23:09 -0400|sqlalchemy.engine.result.ChunkedIteratorResult object
+7f68748f36e9172fcb98d69bdcf24535e352b40d|Sean Reed|seanreed1111@gmail.com|2025-08-05 14:09:27 -0400|more
+a36ba964f75d8fa905d8690b49469a9f4ee27e73|Sean Reed|seanreed1111@gmail.com|2025-08-05 14:06:15 -0400|the saga continues
+2790ae8636f8d1ec7969ee502a23d236eda072ac|Sean Reed|seanreed1111@gmail.com|2025-08-05 13:49:27 -0400|one
+56cf78a5624f929fe5abbc924333d0be41e579c5|Sean Reed|seanreed1111@gmail.com|2025-08-05 12:43:48 -0400|Merge branch 'dbase-001' into merge-branch
+08fb556970ab6cabbe1a4a015677bb4320f5d284|Sean Reed|seanreed1111@gmail.com|2025-08-04 23:00:14 -0400|async does not like the filter on location_context.py:104
+ae270533ef8be15f1d1719dcd4d1f1e55289254e|Sean Reed|seanreed1111@gmail.com|2025-08-04 22:41:17 -0400|less await imports
+5041dda71a0aa8f3ae7636ff8bfad264cdc8788a|Sean Reed|seanreed1111@gmail.com|2025-08-04 22:29:32 -0400|more
+5605b21691c62ad31574f3b4077ea96e4358a9fc|Sean Reed|seanreed1111@gmail.com|2025-08-04 22:16:25 -0400|sql fixes
+0de1147e0808580999210d1330836b5404a91e90|Sean Reed|seanreed1111@gmail.com|2025-08-04 22:10:18 -0400|operator.py fixes
+3d4b47db450257dcde6203e6e693afd0e6acad49|Sean Reed|seanreed1111@gmail.com|2025-08-04 21:57:30 -0400|aha! many fixes
+991f5b222475424de97a535b7c254afe5a97314f|Sean Reed|seanreed1111@gmail.com|2025-08-04 21:04:25 -0400|aha
+1fbb69d52c670f0669c4a020f5c61f38584bd854|Sean Reed|seanreed1111@gmail.com|2025-08-04 20:03:19 -0400|mooore
+ba8f8b37e4e602521fa85462e0af36870ae35a38|Sean Reed|seanreed1111@gmail.com|2025-08-04 19:50:19 -0400|moore
+8eafc4d171d3711f71d648dd898e7378e59ecafe|Sean Reed|seanreed1111@gmail.com|2025-08-04 18:15:05 -0400|more sed search and replace
+d2705dce3e1803abe26adc72141c797129c883fe|Sean Reed|seanreed1111@gmail.com|2025-08-04 17:09:24 -0400|more
+22138733a41e101b4d240ab7c8aa925c0ce6037a|Sean Reed|seanreed1111@gmail.com|2025-07-29 13:50:13 -0400| This is a combination of 15 commits.
+272a2e09452a17a6eea26406c1fe614877118114|Sean Reed|seanreed1111@gmail.com|2025-08-02 11:19:05 -0400|removes write from otel collector to s3 bucket (#473)
+931e9f98ac2ab51618e56984b9ef1b7362a97278|Sean Reed|seanreed1111@gmail.com|2025-08-02 11:19:05 -0400|removes write from otel collector to s3 bucket (#473)
+98e45a4557747fd62004f65d420bdd5b05910a7a|Sean Reed|seanreed1111@gmail.com|2025-08-02 11:19:05 -0400|removes write from otel collector to s3 bucket (#473)
+18759b00972db6ccb6d2c2b071fde77ad4cf3e7b|Sean Reed|seanreed1111@gmail.com|2025-07-29 13:10:27 -0400|stops logspam warnings from bot/audivi_system/tracing.py about LogRecord function args (#462)
+f4bc334edf25907dd7b5662aba9b7cd970f1ba31|Sean Reed|seanreed1111@gmail.com|2025-07-29 13:10:27 -0400|stops logspam warnings from bot/audivi_system/tracing.py about LogRecord function args (#462)
+c5de344ef8c3ad165016e2b4a1e08771aaa5f3ba|Sean Reed|seanreed1111@gmail.com|2025-07-29 12:37:06 -0400|blah
+5edd57a98382113c3b46fac01e2e25378a107b54|Sean Reed|seanreed1111@gmail.com|2025-07-28 19:24:34 -0400|rabbit hole
+ed3446f1faaa0a04756a6276f57fc94c88139701|Sean Reed|seanreed1111@gmail.com|2025-07-28 19:04:28 -0400|adds debug
+b559435a6dfcee0339d1dcd85b1167f8f6f490df|Sean Reed|seanreed1111@gmail.com|2025-07-28 14:23:11 -0400|remove functions to see what breaks
+a5d8a2bf6bd016b303fd4003badb799f1a659734|Sean Reed|seanreed1111@gmail.com|2025-07-28 13:43:17 -0400|database.py at the beginning
+9e987d6a591f776ed9ba279da7c2b53605dbe189|Sean Reed|seanreed1111@gmail.com|2025-07-28 13:19:34 -0400|Merge branch 'dev' into migrate-db-code-to-psycopg3
+023e68da03d670d75075e2e7eb10458042538e87|Sean Reed|seanreed1111@gmail.com|2025-07-28 13:18:52 -0400|update
+e5497d64f1cc71f7fb1902edcd6c917e97caabf1|Sean Reed|seanreed1111@gmail.com|2025-07-28 13:17:55 -0400|Hotfix (#460)
+9a13e6a3e17a3cfaa5bfa4ca03f3313dd9a655a1|Sean Reed|seanreed1111@gmail.com|2025-07-28 13:17:55 -0400|Hotfix (#460)
+a87ac249baa43ce8d9c56ca4d491019698b62884|Sean Reed|seanreed1111@gmail.com|2025-07-24 16:36:28 -0400|[Cursor] Checkpoint at 2025-07-24T20:36:28.038Z
+da81df035f56864199ca1f313768f9733176b757|Sean Reed|seanreed1111@gmail.com|2025-07-22 19:23:52 -0400|comments out help
+42badccb94919c20934e215c3fe056ee1804987d|Sean Reed|seanreed1111@gmail.com|2025-07-22 19:21:12 -0400|comments out help
+9e2f9fb432e74f9c4637d7ecc479ae04c0e911fd|Sean Reed|seanreed1111@gmail.com|2025-07-22 19:21:12 -0400|comments out help
+79a6e0a36d406a77479557bbe48f3814d089d73f|Sean Reed|seanreed1111@gmail.com|2025-07-22 17:05:16 -0400|removes raise
+390b3641096043abcb9f99b6b92a5457e65523c9|Sean Reed|seanreed1111@gmail.com|2025-07-22 17:05:16 -0400|removes raise
+e1d38eeb84780637a27aac78033fa6dd7598cb3e|Sean Reed|seanreed1111@gmail.com|2025-07-21 19:11:46 -0400|Add utils to posrelay (#452)
+8e7b6366d0f6fb96d65efb02e8ca32b8e2e068ef|Sean Reed|seanreed1111@gmail.com|2025-07-21 19:11:46 -0400|Add utils to posrelay (#452)
+bebebef69c005ff148693b43b9895b23112eadf9|Sean Reed|seanreed1111@gmail.com|2025-07-21 18:37:47 -0400|adds grpcurl to docker container
+f6218995dba16918c581690b8818fc8ad08c8883|Sean Reed|seanreed1111@gmail.com|2025-07-21 18:07:46 -0400|updates curl and nslookup and ping
+0ac1e9560310811fd0a3174a77f11227e0dfbd40|Sean Reed|seanreed1111@gmail.com|2025-07-21 10:26:40 -0400|adds grpcurl
+6d0afacd11258b4f119a68099684b699dc0c52f0|Sean Reed|seanreed1111@gmail.com|2025-07-21 09:50:13 -0400|hardcodes 172.10.16.1
+020be7c8a2c10d7cf813904724be74ebdd48c05b|Sean Reed|seanreed1111@gmail.com|2025-07-21 09:32:35 -0400|adds extra_hosts
+e3e5f0028af797a5fdf529d4e925091dd221aa89|Sean Reed|seanreed1111@gmail.com|2025-07-20 23:51:14 -0400|found more hardcoding of container names
+e00f43ace2c963f1a3a4a3b3cc5888730dbae3b2|Sean Reed|seanreed1111@gmail.com|2025-07-20 23:42:41 -0400|initial commit
+6722c9bae87e4fed64a7cb96654a23b198baf8e0|Sean Reed|seanreed1111@gmail.com|2025-07-20 23:15:34 -0400|changes dns server route to 172.10.0.2
+01bc65a18d424ef82f84c70877eaf608abd94855|Sean Reed|seanreed1111@gmail.com|2025-07-20 23:09:44 -0400|update
+bd7a0d7338091fc2fb75dcab3d6929878edc7590|Sean Reed|seanreed1111@gmail.com|2025-07-20 22:57:21 -0400|adds curl to dockerfile
+eb8578583e148d6339bb56a4c07f228bfd6f7edb|Sean Reed|seanreed1111@gmail.com|2025-07-20 22:41:04 -0400|new
+286dafac8ca76fb3a904466ae812b05f171a431a|Sean Reed|seanreed1111@gmail.com|2025-07-20 21:52:33 -0400|more claude
+fba1f8679a8f07e50ace4f9fe75b9215f0b4b20f|Sean Reed|seanreed1111@gmail.com|2025-07-20 21:40:34 -0400|claude
+5bad74a3b70ba3b0f09fd33c7b137a0728ffa411|Sean Reed|seanreed1111@gmail.com|2025-07-20 21:38:01 -0400|claude
+5b63d6c2653eed10377816b605678033c5450cc7|Sean Reed|seanreed1111@gmail.com|2025-07-20 21:26:16 -0400|adds claude suggestion
+243faeddb782bba662a5067efb5a4d8cabc0bdae|Sean Reed|seanreed1111@gmail.com|2025-07-20 20:24:09 -0400|adds extrahosts
+2ee6835d7d173cd8ee5c952b9cec15a845403ebc|Sean Reed|seanreed1111@gmail.com|2025-07-20 20:19:18 -0400|fix scheduler rebuilds
+eebbe867c0e8aa9589faa2742c3bf111855d4314|Sean Reed|seanreed1111@gmail.com|2025-07-20 20:12:22 -0400|why not
+cb9af462cbeacc5e1a016e4f975890c8007c535c|Sean Reed|seanreed1111@gmail.com|2025-07-20 20:01:08 -0400|removes watch from Dockerfile.hme_headset
+0f95761da481f3ee26c17d6afbd2124f7df0173b|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:46:17 -0400|will try native resolver
+dfb812aa6012d4d687ecbd4d2069d0568a97df9d|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:29:54 -0400|adds 8.8.8.8
+d5164f7ef5cf6c9580b811c4d8c62f9086a15975|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:25:35 -0400|moves location of workdir in scheduler dockerfile
+1a6ba3655e1a945183ca3bc0a1c80dff894f9b4c|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:23:37 -0400|adds dns_search param
+557933ecf8a51def4df509cc582445ea474a2c43|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:19:10 -0400|removes dns
+601f43bab339b10d974bdee0831d7019c08687de|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:17:18 -0400|remove dns
+68e4db16dec6461009a2d6bfa9bc133c184addfd|Sean Reed|seanreed1111@gmail.com|2025-07-20 19:12:59 -0400|adds dns of open_vpn vpc
+7afb0b3288405339a098ebe14cc0ca42dd64f1cf|Sean Reed|seanreed1111@gmail.com|2025-07-20 18:58:39 -0400|dnsutils and iputils-ping
+0bfd77f09bec85ac1f955e9018f64d6bc8186766|Sean Reed|seanreed1111@gmail.com|2025-07-20 18:56:15 -0400|adds nslookup
+db78e11c8f8b2a562558025c4aaad6e5d56e3284|Sean Reed|seanreed1111@gmail.com|2025-07-20 18:55:29 -0400|adds ping
+d06a9970df0149caa05b07e41da7e77adfa83011|Sean Reed|seanreed1111@gmail.com|2025-07-20 18:01:34 -0400|updates docker ignore
+4bd2ed95e672864b756f1c690cebba07ef19bfa3|Sean Reed|seanreed1111@gmail.com|2025-07-20 17:59:14 -0400|adds dockerignore
+11bcbaaaa9d130764d6b7b367548c9437592df82|Sean Reed|seanreed1111@gmail.com|2025-07-19 14:59:10 -0400|configured for unbuntu
+d37d9a4e798cab5ae710ebf98b66d73682d108fa|Sean Reed|seanreed1111@gmail.com|2025-07-19 14:15:16 -0400|adds compose
+279748f76d6b9a468574853d8d8314a97b1b76fb|Sean Reed|seanreed1111@gmail.com|2025-07-19 13:41:54 -0400|failing due to ecr
+be05d53754b7a8a8d9bf44c599679cb885e63950|Sean Reed|seanreed1111@gmail.com|2025-07-17 15:19:19 -0400|updates migration env
+ced49664f6c016e337b1a570c2b097737991061b|Sean Reed|seanreed1111@gmail.com|2025-07-17 15:15:21 -0400|updates db connections
+f7b45b8814586e8b1bbaf7c863df984bcd27e2d0|Sean Reed|seanreed1111@gmail.com|2025-07-17 12:34:47 -0400|changes URL object to string
+2bed50719b5a144a0981abcc093386f44add3aae|Sean Reed|seanreed1111@gmail.com|2025-07-17 12:30:04 -0400|initial commit
+2f641e93da177322b23ba77b5c99592095d11dbe|Sean Reed|seanreed1111@gmail.com|2025-07-17 10:27:13 -0400|updates dockerfile
+a3128d89aedfa3f63f673d6695cb3f3749e31b8a|Sean Reed|seanreed1111@gmail.com|2025-07-16 18:16:46 -0400|change package name to audivi_package
+39a31470757d06a4ac2ae4d0d38277f7e7269849|Sean Reed|seanreed1111@gmail.com|2025-07-16 17:05:36 -0400|sets up subdir
+49ad1c0af9bc83f7f5fbab7d8bb755ba0401e377|Sean Reed|seanreed1111@gmail.com|2025-07-16 16:39:33 -0400|adds test to show import works correctly without and relative path info
+a01d8237c30ab3670d27ae0067826e18be5b1e4c|Sean Reed|seanreed1111@gmail.com|2025-07-16 16:33:02 -0400|adds build-essential to ubuntu requirements
+39735b4ae261a88b98ddc18421cc066d070267a1|Sean Reed|seanreed1111@gmail.com|2025-07-16 16:25:50 -0400|initial commit
+4c99454c58f27316aef1bfc45cc444a7cd52b50b|Sean Reed|seanreed1111@gmail.com|2025-07-16 15:53:31 -0400|changes return type of loguru_setup to None
+57d58bdc9b68e98aa2f9ef3dae5e23ee5424a6d4|Sean Reed|seanreed1111@gmail.com|2025-07-16 14:06:59 -0400|hacky sack in bot/pipeline.py to get analyze_exclusion function to download before first use (#429)
+232793962bef2e464a88dc8d661725219f624c4e|Sean Reed|seanreed1111@gmail.com|2025-07-16 14:06:59 -0400|hacky sack in bot/pipeline.py to get analyze_exclusion function to download before first use (#429)
+0e05b2001393272f56862179f6d65ce483c758d6|Sean Reed|seanreed1111@gmail.com|2025-07-16 13:52:47 -0400|hacky sack in bot/pipeline.py to get analyze_exclusion function to download before first use
+603e5b4c7610b51e7b7a3d0ee011c8b303874fa8|Sean Reed|seanreed1111@gmail.com|2025-07-16 09:20:33 -0400|Remove match case from audivi_system.state_machine (#426)
+e52695cc1385154e200008818bf57bd3530dd818|Sean Reed|seanreed1111@gmail.com|2025-07-16 09:20:33 -0400|Remove match case from audivi_system.state_machine (#426)
+f64a28d0646543466cb184e91f2caade2d86171e|Sean Reed|seanreed1111@gmail.com|2025-07-16 09:05:06 -0400|removes stray comments
+0d69e5b7119ea4b2043ec0fa723e3df5bd8cf7c9|Sean Reed|seanreed1111@gmail.com|2025-07-16 09:03:56 -0400|initial commit
+04c5a90320c93c3968b6d6b461e920cc7325260a|Sean Reed|seanreed1111@gmail.com|2025-07-15 18:03:07 -0400|fixes bug in match case for region choice (#424)
+f62ba8a70b5d7f9c58f23259bf0a918482895696|Sean Reed|seanreed1111@gmail.com|2025-07-15 18:03:07 -0400|fixes bug in match case for region choice (#424)
+fc4df7f96ba0f4168bb460e1be0c707222f84a02|Sean Reed|seanreed1111@gmail.com|2025-07-15 18:02:25 -0400|fixes bug in match case for region choice
+bff144530f3b822516b6abf8270782ce17bfbd61|Sean Reed|seanreed1111@gmail.com|2025-07-15 16:54:39 -0400|adds docstring needed for channel binding
+61ba959f36602da6b476599497d215929290c360|Sean Reed|seanreed1111@gmail.com|2025-07-15 14:54:08 -0400|Add neon us east 2 (#419)
+e04a2e66662a5d2a7bafbf1a392a8f6c4cc5cea8|Sean Reed|seanreed1111@gmail.com|2025-07-15 14:54:08 -0400|Add neon us east 2 (#419)
+cb5095f0bdc72b3421241c630db0793191376587|Sean Reed|seanreed1111@gmail.com|2025-07-15 14:52:59 -0400|Merge branch 'dev' into add-neon-us-east-2
+78e7601333f6b862f13049dcae74be53c3cfc045|Sean Reed|seanreed1111@gmail.com|2025-07-15 11:54:27 -0400|change dir structure
+63073158a5f7f59fc043c34c6fba64d77658ae92|Sean Reed|seanreed1111@gmail.com|2025-07-15 11:32:37 -0400|Merge branch 'dev' into cython
+44834b1f9086de9f679dbe3cd888b110ddd28517|Sean Reed|seanreed1111@gmail.com|2025-07-15 10:30:23 -0400|merge
+ce67bbcc00f2c7fece5b9a0c3c3b868029da73cd|Sean Reed|seanreed1111@gmail.com|2025-07-14 18:34:52 -0400|reverts introduction of bug  into try except logic
+792f94ca67df3f50b25730a1de55d4f51b7ababe|Sean Reed|seanreed1111@gmail.com|2025-07-14 18:31:51 -0400|removes pooler
+344e01e7e476adda0e0962901638ff9878a6ce09|Sean Reed|seanreed1111@gmail.com|2025-07-14 18:27:44 -0400|ignore audio files
+6e4c2b82e9eb4ac18980064860f3066583afb175|Sean Reed|seanreed1111@gmail.com|2025-07-14 18:18:23 -0400|removes pooler from neondb uri
+cceea485d6082af09a19c17d320cf62c628f61b1|Sean Reed|seanreed1111@gmail.com|2025-07-14 17:52:54 -0400|updates readme
+c78faaa0a5abb727bf591f6171769ce55adff0e0|Sean Reed|seanreed1111@gmail.com|2025-07-14 15:54:51 -0400|push ignore to 2025-07-14 19:50:23.743 | ERROR    | audivi_system.src.utils:_get_valid_operator:1094 - Database error verifying operators ('Whataburger Inc', 'Whataburger Inc'): (psycopg2.errors.UndefinedTable) relation operators does not exist
+36e0bceacc1b8717ff5e4d3c9e547256bb14f894|Sean Reed|seanreed1111@gmail.com|2025-07-14 14:45:46 -0400|updates db_url
+38ac97d84dec8846e08ae23401a5298c4920168b|Sean Reed|seanreed1111@gmail.com|2025-07-14 14:36:38 -0400|adds us-east-2 options to database.py and dbase.py
+e8da369e8b7580322a0e86f3e2cf8fe61fc06716|Sean Reed|seanreed1111@gmail.com|2025-07-14 12:46:16 -0400|updates neondb with new fields in lc data and agent_memory
+b152c5e14bfadd082e7f9912ccf8ab9de98f4afb|Sean Reed|seanreed1111@gmail.com|2025-07-14 12:31:38 -0400|adds schema upgrade
+645cfeb115f4363e3a4a1d7ea88be5d24da9fc5b|Sean Reed|seanreed1111@gmail.com|2025-07-12 11:00:26 -0400|removes uvloop from posrelay container (#408)
+db209fdd4df3b6b0b5c599547589e4ece5854e89|Sean Reed|seanreed1111@gmail.com|2025-07-12 11:00:26 -0400|removes uvloop from posrelay container (#408)
+dae7cbf38d2cd9b061567e531364a8719ac57be1|Sean Reed|seanreed1111@gmail.com|2025-07-11 22:10:41 -0400|moves bot/audivi_system/*.py to bot/audivi_system/src/
+e6221437a74a9494b26e2efd59a19e57422ed452|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:58:14 -0400|merges dev
+06b232eddba490d093cfa946eab69796b2812076|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:54:36 -0400|if you set `USE_UVLOOP=true` in `bot/.env` it will use uvloop instead of the default asyncio runloop (#407)
+7f0e8ca2acea8bf5434464d25ef5ac3a098b31dd|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:54:36 -0400|if you set `USE_UVLOOP=true` in `bot/.env` it will use uvloop instead of the default asyncio runloop (#407)
+af172ffd5d4c3e99b37c4d3ee43a53860421c485|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:44:48 -0400|stray log removal
+52e0096fecb32127354f8b0f84e75f54324891dd|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:39:21 -0400|adds debug statement for uvloop usage
+e26118bbe8283d509ac64e34c2207f43060163fc|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:29:30 -0400|adds uvloop to bot/requirements.txt
+ede343f861071baba7da804799e2f8ffa597d175|Sean Reed|seanreed1111@gmail.com|2025-07-11 21:24:12 -0400|initial commit
+e9634ca04572273d0ce21307cc5cee681196124e|Sean Reed|seanreed1111@gmail.com|2025-07-11 13:59:03 -0400|ignore pcm files (#405)
+d6c67a4a8021fc67449156d97157ea6214f902e9|Sean Reed|seanreed1111@gmail.com|2025-07-11 13:59:03 -0400|ignore pcm files (#405)
+4779bc67d24c82b464c2d4fcfbcf750f5578cfa9|Sean Reed|seanreed1111@gmail.com|2025-07-11 09:48:05 -0400|update number of returned items from StateMachine.transition (#403)
+917c77bce01845c463fa56df186cb10b2e760922|Sean Reed|seanreed1111@gmail.com|2025-07-11 09:48:05 -0400|update number of returned items from StateMachine.transition (#403)
+2a29cb637cc2930275246bf61f288ab0279ad881|Sean Reed|seanreed1111@gmail.com|2025-07-10 16:35:32 -0400|updates readme
+30d273cfe8deb5e420f7c68a07c9777cad15d764|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:22:48 -0400|Add headset notes (#401)
+7f38c9fd07ece0d579c11003c641ef3d06ade595|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:22:48 -0400|Add headset notes (#401)
+eee7ccf80e03b3557beb680db5eadc983318291e|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:21:17 -0400|more table nonsense
+7dd083dc0daa0c761b8ecf447839c79dc02c099c|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:17:09 -0400|updates table
+09245e46300db9e3a05f81eab0d9324d044423ff|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:15:53 -0400|renames markdown file
+752bc35f160d0bf62fea90a1dcac18225545acd2|Sean Reed|seanreed1111@gmail.com|2025-07-10 15:11:43 -0400|more notes and javascript added to markdown
+6fa29c472711cbd85852d511b690133e095fe05e|Sean Reed|seanreed1111@gmail.com|2025-07-10 14:01:12 -0400|initial commit
+9e1d4625f68285799e88f41367dcc656de08dabf|Sean Reed|seanreed1111@gmail.com|2025-07-10 11:58:16 -0400|Hotfix- fixes import of SimilarityModel (#398)
+88fd9802be118745d0655f7b2f858807ad312e47|Sean Reed|seanreed1111@gmail.com|2025-07-10 11:58:16 -0400|Hotfix- fixes import of SimilarityModel (#398)
+0033bbc9e94f3963239f55142f7da9dad49d4ce2|Sean Reed|seanreed1111@gmail.com|2025-07-10 10:23:06 -0400|makes new merge branch (#397)
+be824c4f3d790e0571b45f21300b0561601fdcae|Sean Reed|seanreed1111@gmail.com|2025-07-10 10:23:06 -0400|makes new merge branch (#397)
+2a913c6f5ce3fd6cccf1522d41fc67b6ced8e331|Sean Reed|seanreed1111@gmail.com|2025-07-10 10:15:15 -0400|makes new merge branch
+fc2ad77658925a04646e8b66caf1f91875cf3cf4|Sean Reed|seanreed1111@gmail.com|2025-07-09 16:35:35 -0400|adds uvloop to requirements
+653b2031ee0e0e08ea5cd14a8e4b78b5f8bd6aa2|Sean Reed|seanreed1111@gmail.com|2025-07-09 16:34:02 -0400|initial commit
+6e7b22c156d957ba5221160a9c418801af182007|Sean Reed|seanreed1111@gmail.com|2025-07-09 15:23:00 -0400|Hotfix (#395)
+64e8fb8bedc386d08dbd912d681766b134eb9067|Sean Reed|seanreed1111@gmail.com|2025-07-09 15:23:00 -0400|Hotfix (#395)
+e683306242f4cfd8d0f4acb1eb239fd3edaec840|Sean Reed|seanreed1111@gmail.com|2025-07-09 13:55:57 -0400|alembic migration: BREAKING CHANGES FOR LOCAL Schema updates for Neon,  (#361)
+b22f4b252df77c45f79ec9acca1a65240e519d66|Sean Reed|seanreed1111@gmail.com|2025-07-09 13:55:57 -0400|alembic migration: BREAKING CHANGES FOR LOCAL Schema updates for Neon,  (#361)
+fadbe772e8b440dd19ea6969b316c8ce16aa572a|Sean Reed|seanreed1111@gmail.com|2025-07-09 13:53:45 -0400|Merge branch 'dev' into schema-change
+4e5484c432a9dc624222d1510dcce1626e9ad585|Sean Reed|seanreed1111@gmail.com|2025-07-09 10:57:38 -0400|updates neon migration
+ad63f88be96c17377aac51b37e8be1077135c956|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:37:42 -0400|fixes typo
+9bfad2a1a7f78ed46f3c5e8b27bd8db8ad397537|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:42:47 -0400|fixes typo (#391)
+81d5e6fbd1307e4382325430b0c3159985d050d5|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:42:47 -0400|fixes typo (#391)
+0821d0de912fb4fb835c5ea16e74f1c608f005c1|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:20:26 -0400|adds warning about structural pattern matching to cython/README.md
+9ce5a96559308916b28cfbca2309f887c1d68c12|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:15:33 -0400|adds docker file
+93a2a9c0afd012d93f4ef1785b451286443b1f14|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:09:51 -0400|deletes old files
+ac6e129b5c223937b3f700a46a0f47ae1ba241b0|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:08:39 -0400|creates state_machine_v2
+48d0f0d4ff360a1fb69a15774482030d40ee8742|Sean Reed|seanreed1111@gmail.com|2025-07-08 13:03:54 -0400|merges dev
+0e42c664c7f44347dc3693e9555bf9d176a785de|Sean Reed|seanreed1111@gmail.com|2025-07-08 12:46:03 -0400|updates location manager to PR-388
+dc41533e783bdd4ff63297c55699df6e8eabd7c7|Sean Reed|seanreed1111@gmail.com|2025-07-08 10:23:35 -0400|updates bot/dockerfile
+e6cd9ec8ab0080efb08a4d708539ae7b795abb21|Sean Reed|seanreed1111@gmail.com|2025-07-07 19:39:36 -0400|works
+2784169ebb497b0dfc128608064bf3f07d08e8f5|Sean Reed|seanreed1111@gmail.com|2025-07-07 19:31:18 -0400|57.33 ERROR: state_machine_cy-1.0.0-cp312-cp312-macosx_11_0_arm64.whl is not a supported wheel on this platform.
+ded6c531cbe47e6902e285707c960cc7fe981b9c|Sean Reed|seanreed1111@gmail.com|2025-07-07 19:25:16 -0400|doesn't work
+1676d6b6fe8973cbdbe13f7413621c8748c7a417|Sean Reed|seanreed1111@gmail.com|2025-07-07 09:37:00 -0400|passes error in as param (#382)
+5cc9508c41882d5de979b8d228e6595224435713|Sean Reed|seanreed1111@gmail.com|2025-07-07 11:57:45 -0400|Merge branch 'dev' into schema-change
+a1b5e5c04ba9a1419e5d5f4717ab1ed79e06b78c|Sean Reed|seanreed1111@gmail.com|2025-07-07 11:57:04 -0400|updates system_status
+41c46cd474a27932b738561e89c243cb22bf1b59|Sean Reed|seanreed1111@gmail.com|2025-07-07 11:54:02 -0400|updates api/operations
+60ff2c71eb0c6bc4ad072bc4bbbf27931a9ce59b|Sean Reed|seanreed1111@gmail.com|2025-07-07 09:37:00 -0400|passes error in as param (#382)
+e2b80fe5d911331ecf585b9ad5adeaa6cb9a29e7|Sean Reed|seanreed1111@gmail.com|2025-07-07 09:37:00 -0400|passes error in as param (#382)
+2326b273e4c558702e93db6389d37b7ec8d4b9ce|Sean Reed|seanreed1111@gmail.com|2025-07-05 22:05:30 -0400|not working
+94795b8b2a6b403e446c0040b3ded5da66e231e6|Sean Reed|seanreed1111@gmail.com|2025-07-05 21:40:03 -0400|still have some sort of path issue for import from convo_relay.py
+73ab72b5b4597285ab8704c53635d417fae5d9ca|Sean Reed|seanreed1111@gmail.com|2025-07-05 21:20:32 -0400|updates ubuntu build and setup.py
+0151a3da7e35c8f3eccdebf739fdcca83dee552c|Sean Reed|seanreed1111@gmail.com|2025-07-05 20:18:15 -0400|builds file
+9c0c10945ebca5a74ea828a5b4709923bd6b1e7f|Sean Reed|seanreed1111@gmail.com|2025-07-05 19:55:42 -0400|initial commit
+16cb1dd698685011d8d4033876365f14b746c749|Sean Reed|seanreed1111@gmail.com|2025-07-03 15:18:25 -0400|i've broken generate_hourly_stats. need to fix
+ac5fb8820699e7e5b4dbe2bee8f0de139f077173|Sean Reed|seanreed1111@gmail.com|2025-07-03 14:56:32 -0400|Merge branch 'hotfix' into schema-change
+254db2ab2d735cb22e0f23fc9cae572073af4208|Sean Reed|seanreed1111@gmail.com|2025-07-03 10:55:50 -0400|passes error in as param
+28ec0b0b510f2964a46f7315ca0efb78ca313419|Sean Reed|seanreed1111@gmail.com|2025-07-03 10:24:50 -0400|blah
+21e1a438acbd84322b18aef8ba3ce64fa41bef12|Sean Reed|seanreed1111@gmail.com|2025-07-02 16:52:34 -0400|double quotes to single quotes
+b76b5caca789ef2c08b6f946057b39303122a910|Sean Reed|seanreed1111@gmail.com|2025-06-26 18:43:16 -0400|works
+8dd64c11f19237a6a24768540db07428f4035bcb|Sean Reed|seanreed1111@gmail.com|2025-06-27 17:27:44 -0400|restructure migrations folders
+53c3b9753777e55fe9217f42fd4e185af7feeb1c|Sean Reed|seanreed1111@gmail.com|2025-06-30 13:36:41 -0400|adds alembic migration for order_current column in ds_data
+a809ae727bfff9c0fbd5cffa7b6de92c0d078a2d|Sean Reed|seanreed1111@gmail.com|2025-06-30 13:21:34 -0400|changes bot/alembic/common migration
+48db5ec04fdefe33a11ab876e417a9aa2d7e2eb0|Sean Reed|seanreed1111@gmail.com|2025-06-29 12:00:29 -0400|adds 'set -euo pipefail' to improve error visibility (#371)
+695640c1a17351d8d803637f458b738bf7ced527|Sean Reed|seanreed1111@gmail.com|2025-06-29 12:00:29 -0400|adds 'set -euo pipefail' to improve error visibility (#371)
+286520a78759bf7354cee669b92d2c8f27ddc91e|Sean Reed|seanreed1111@gmail.com|2025-06-29 11:54:12 -0400|adds 'set -euo pipefail' to improve error visibility
+b10c1515c3a1d987dfb03f4988c4e3175942a9e4|Sean Reed|seanreed1111@gmail.com|2025-06-27 12:47:18 -0400|adds new revision
+7b5a6bf4d8ce2663f60d754d70910c1deccbb26e|Sean Reed|seanreed1111@gmail.com|2025-06-27 11:39:37 -0400|adds pool info (#363)
+8c3da1270071b40a131dffcdd3525a23929a0c82|Sean Reed|seanreed1111@gmail.com|2025-06-27 11:39:37 -0400|adds pool info (#363)
+82ff2b145bc6e136d7d0a85e0830f2ef22cdf53e|Sean Reed|seanreed1111@gmail.com|2025-06-27 10:40:02 -0400|adds pool info
+b3c2b50c019c008bd95c276c4a0194f205f001dc|Sean Reed|seanreed1111@gmail.com|2025-06-26 19:19:57 -0400|changes migration
+6951fe4709ad74872ffd4fba01c9f9d2c01439c2|Sean Reed|seanreed1111@gmail.com|2025-06-26 19:09:33 -0400|adds current_order to agent_memory table
+487212acfdb93a787e4ef40391c707faef1390c5|Sean Reed|seanreed1111@gmail.com|2025-06-26 18:53:29 -0400|removes pretty from column names before migration
+35f3494426d62f676d6a65c37028f3fc9f162b8b|Sean Reed|seanreed1111@gmail.com|2025-06-26 18:52:06 -0400|Merge branch 'temp_for_schema_change' into schema-change
+ef8daa658386a8df31dc6955da400d5e0602a973|Sean Reed|seanreed1111@gmail.com|2025-06-26 18:43:16 -0400|migration only
+e6bd39a838ce75418f56918ffd5192f69a29648a|Sean Reed|seanreed1111@gmail.com|2025-06-26 18:21:01 -0400|performs ds-data migration
+73322c05c1b0ac396ee61f9ccc9812e6910c9c82|Sean Reed|seanreed1111@gmail.com|2025-06-26 17:33:52 -0400|my changes
+ee03337f194368babfb41a3a59b28158f35e161b|Sean Reed|seanreed1111@gmail.com|2025-06-26 13:34:11 -0400|adds bot_secrets to agent_task_review_tool (#357)
+df98c12015321758014f1c749f6d3ec734a89eba|Sean Reed|seanreed1111@gmail.com|2025-06-26 13:34:11 -0400|adds bot_secrets to agent_task_review_tool (#357)
+573369d6f6adf4bcd0d863737ef2f0d4139a2602|Sean Reed|seanreed1111@gmail.com|2025-06-26 13:00:09 -0400|initial commit (#356)
+65c84eafc0140740b296a3770ae6b037353a3884|Sean Reed|seanreed1111@gmail.com|2025-06-26 13:00:09 -0400|initial commit (#356)
+b7ddff1ca7955e7037dcca9882283957e8347540|Sean Reed|seanreed1111@gmail.com|2025-06-26 09:42:13 -0400|initial commit
+27d8b623b3ac5434cf1f64ac3ad25ef89464b9d8|Sean Reed|seanreed1111@gmail.com|2025-06-25 21:05:38 -0400|Neon fixes (#354)
+90d94ddb213eabac100223d43af2b7621b51f66a|Sean Reed|seanreed1111@gmail.com|2025-06-25 21:05:38 -0400|Neon fixes (#354)
+73d36c2ceb91aea1804b9e62f155000214398651|Sean Reed|seanreed1111@gmail.com|2025-06-25 20:28:48 -0400|hardcoded string for clarity
+82d781bf9b1e5ae57dd0977a991670c0d2b39f0e|Sean Reed|seanreed1111@gmail.com|2025-06-25 20:26:43 -0400|hardcoded string for clarity
+b811526d19d77ea198d476970e162fe45521fba8|Sean Reed|seanreed1111@gmail.com|2025-06-25 20:25:45 -0400|hardcoded string for clarity
+b3bc4cf9808da0ac8ab8d8d62f45e4d2f4fd0c8a|Sean Reed|seanreed1111@gmail.com|2025-06-25 20:08:56 -0400|revert docker compose
+ebfc4f812e85695293f2252dbaedcd58f68edaff|Sean Reed|seanreed1111@gmail.com|2025-06-25 19:37:04 -0400|fixes docker-compose
+29caf593bedd2a38703cc75387059176bbcae14f|Sean Reed|seanreed1111@gmail.com|2025-06-25 19:31:18 -0400|removes otel from postgres and scheduler profiles
+f04c6644a9e739e44c331aafd45dc8f52bd3048c|Sean Reed|seanreed1111@gmail.com|2025-06-25 19:27:08 -0400|changes input.lang to enum before sending to parquet (#353)
+fa2bffb075d27accb32e790c70012832de3937b2|Sean Reed|seanreed1111@gmail.com|2025-06-25 19:27:08 -0400|changes input.lang to enum before sending to parquet (#353)
+49634261de90d73f9e8c2f317f261055380bc462|Sean Reed|seanreed1111@gmail.com|2025-06-25 19:21:12 -0400|changes input.lang to enum before sending to parquet
+b4bc2205998c0f92c0189c277501dab6b4b75aa8|Sean Reed|seanreed1111@gmail.com|2025-06-25 18:55:56 -0400|updates alembic_client.ini
+226c6716b0a0f97252448b0cb369afa8f2656251|Sean Reed|seanreed1111@gmail.com|2025-06-25 18:48:01 -0400|initial commit
+62eb5a94b03450cfb82ade854a14ebca8fe49250|Sean Reed|seanreed1111@gmail.com|2025-06-24 21:53:47 -0400|multiple migrations were writtten in the same dir
+d42e7d612aadb54023b6b31d6794aa7c2197a3c7|Sean Reed|seanreed1111@gmail.com|2025-06-24 21:22:22 -0400|Init neon (#350)
+a6692bea5f7fcdf1e2fd35e99e0151c637744e2f|Sean Reed|seanreed1111@gmail.com|2025-06-24 21:22:22 -0400|Init neon (#350)
+5f8ef1a7a5eb8219abee898423f7a3062c7c853b|Sean Reed|seanreed1111@gmail.com|2025-06-24 21:20:44 -0400|fixes f-string issue and adds required neondb connection strings to README.md
+afa6615954558e5e10f3c34f9a8a7226fbb1d890|Sean Reed|seanreed1111@gmail.com|2025-06-24 20:00:04 -0400|remove pool
+87de390fbf40494dfc4b18eb5a2bf37b664f8089|Sean Reed|seanreed1111@gmail.com|2025-06-24 18:51:57 -0400|initial commit
+5be0d4bc6a9d34a53c3fe6de32eafb94d963c1db|Sean Reed|seanreed1111@gmail.com|2025-06-24 17:38:23 -0400|v0.1 complete
+ecb8f53d80e83e812afc68399da884a03060c8d2|Sean Reed|seanreed1111@gmail.com|2025-06-24 17:09:47 -0400|adjusts database.DatabaseConfig
+9c43ee54898f2721a9d267ad025211786bd6e8ab|Sean Reed|seanreed1111@gmail.com|2025-06-24 14:25:47 -0400|initial commit
+4ce40d5a4444c655ccf768c83c0674f2103ed3e8|Sean Reed|seanreed1111@gmail.com|2025-06-24 13:05:12 -0400|Wat enhancements and updated requirements of google llm library plus httpx (#347)
+26c8b5d13c6dc57c52bbc196d6cbcb3820bff52f|Sean Reed|seanreed1111@gmail.com|2025-06-24 13:05:12 -0400|Wat enhancements and updated requirements of google llm library plus httpx (#347)
+763fea7e9a7f2d7b619bcf38eca016bfeca17ade|Sean Reed|seanreed1111@gmail.com|2025-06-23 15:33:29 -0400|Merge branch 'dev' into ppm3
+c90e164fb7757d597bc7eaec7c4ae8197d89a27a|Sean Reed|seanreed1111@gmail.com|2025-06-23 12:49:57 -0400|pins max processes to os.cpu_count -1
+faf2765ebf7d157763d020f2ec8496982c904ac6|Sean Reed|seanreed1111@gmail.com|2025-06-23 12:48:48 -0400|Drive-Thru (Error: Failed to start subprocess: Session bd587414-f480-4882-9403-5d18afc23f99 not found
+16d8c7d45e763f7d5a4a68ea1cb5f1b4185af137|Sean Reed|seanreed1111@gmail.com|2025-06-23 12:38:45 -0400|puts max tasks per child = 3
+1ccb60c3089d1319190c98da6cdacfc8656db795|Sean Reed|seanreed1111@gmail.com|2025-06-23 12:36:17 -0400|attempts new shutdown logic
+afa448af2956bbd76d3c4ef0322e36c385fc744c|Sean Reed|seanreed1111@gmail.com|2025-06-20 20:55:56 -0400|initial commit:
+b4c07d66d6dc9c65f7e9a2ac3bfddb59145765e8|Sean Reed|seanreed1111@gmail.com|2025-06-20 13:55:16 -0400|updates state_machine.md
+c7015201cabaa2c16b118368b838361c27674b21|Sean Reed|seanreed1111@gmail.com|2025-06-20 09:37:21 -0400|adds deepeval to requirements.txt
+51ba1a3f4d64e4fcb9e15d41fec4704540ee1718|Sean Reed|seanreed1111@gmail.com|2025-06-20 09:18:36 -0400|initial commit
+1eb29a7899a0898a473d83cdeb3261ca4a6488df|Sean Reed|seanreed1111@gmail.com|2025-06-19 16:46:27 -0400|Deepeval (#343)
+0d61afe51c37c6330d4f8e9a9318bbe295dfbff0|Sean Reed|seanreed1111@gmail.com|2025-06-19 16:46:27 -0400|Deepeval (#343)
+8e88808727b7bb51542af7dba803ce2df4c1d2ff|Sean Reed|seanreed1111@gmail.com|2025-06-19 16:45:17 -0400|adds aws bedrock inference profile script
+16ca34d88f1f9e525907f3a079263be8e579e516|Sean Reed|seanreed1111@gmail.com|2025-06-19 14:56:05 -0400|Touch log file (#342)
+6b1bb8409d43b045ad7e22d305a64b91011460ce|Sean Reed|seanreed1111@gmail.com|2025-06-19 14:56:05 -0400|Touch log file (#342)
+d1baf0fa45edc374e9a187e76e9cf73d558ba2d7|Sean Reed|seanreed1111@gmail.com|2025-06-19 14:49:22 -0400|updates input text to triple meat whataburger meal
+8e986bd3c340308161c1795232cac9753430b238|Sean Reed|seanreed1111@gmail.com|2025-06-19 14:39:51 -0400|Deepeval (#341)
+b726a8bb05d56fc1b12dc8dc12b4ab35fa3014b8|Sean Reed|seanreed1111@gmail.com|2025-06-19 14:39:51 -0400|Deepeval (#341)
+03b625dd9ba947ab6d3043bde4d429e7a492f95f|Sean Reed|seanreed1111@gmail.com|2025-06-19 11:56:16 -0400|updates bot/audivi_system/__init__.py
+9912b96671e2ec45b210ed2abd0a9a491b1defbf|Sean Reed|seanreed1111@gmail.com|2025-06-19 11:53:15 -0400|add mkdir exist_ok = True to bot/__init__.py
+21c8ce6b9fef6ede526608eafdc1e91b68714fa7|Sean Reed|seanreed1111@gmail.com|2025-06-19 11:43:08 -0400|adds touch so that log file is created
+d10cbd6c7db0567adf5c1ec3a03f8d165a389ea0|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:51:05 -0400|Merge branch 'dev' into brent/features/whataburger_lab_config
+1c90db570c73e941907eb7fdca2ef25e5b5aa4ed|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:27:20 -0400|Update 0617 (#340)
+a9a5c85ce1f1697e98a0abc93e94f2183ac3fc54|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:27:20 -0400|Update 0617 (#340)
+02aca89f6b33e03cca4a540c3ace52ffd260be08|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:15:40 -0400|create bot/audivi_system/__init__.py
+397b26510016b52478d1b7afb7b8f7136132635d|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:08:23 -0400|removes try-except
+b4c47c87b2327112d6b6bc16244fb0488ec93acc|Sean Reed|seanreed1111@gmail.com|2025-06-18 19:03:04 -0400|deletes bot server volume mount and --reload statements
+132d148228d71fc0c3d2829f389bebb446624952|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:58:20 -0400|adds cursor to gitignore
+96b18c4b3bc9c5aa23986c696522d91544aa7fdd|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:53:38 -0400|merge to dev
+d95b727f0afd5cf8dfed94580fa0e1351e88e2c2|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:49:23 -0400|Fix empty log error (#339)
+89658cd9bce36743fe637bb03d21bf7b2ee70d34|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:49:23 -0400|Fix empty log error (#339)
+e66e33981146a0c351ca742efadf7b6ca841281e|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:40:15 -0400|refactors and removes try except finally from read_last_n_bytes
+e756eb94ee072341a5dda044a80aa884499f5c6c|Sean Reed|seanreed1111@gmail.com|2025-06-18 18:31:41 -0400|adds increased error handling to log parsing
+ad9c040f991ee0d9ef16de2c86741dcea23e16b2|Sean Reed|seanreed1111@gmail.com|2025-06-18 14:10:10 -0400|deletes raise in ensemble.get_most_recent_log_file
+643802960f2236b2719256827edd110de672649a|Sean Reed|seanreed1111@gmail.com|2025-06-18 13:15:31 -0400|changes Fries to fries
+32c7d9c70f4d50ec8f8802648fb17a59357a8d3f|Sean Reed|seanreed1111@gmail.com|2025-06-18 13:09:25 -0400|add comments
+b8655e255d3bbf47bb1d779657cde310ebaa31bc|Sean Reed|seanreed1111@gmail.com|2025-06-18 11:21:40 -0400|Ds data merge branch (#337)
+13f9dd238f658b88a2d135c97fc389950adfb147|Sean Reed|seanreed1111@gmail.com|2025-06-18 11:21:40 -0400|Ds data merge branch (#337)
+82b2c513b761fd053d9a9272ea5bea2d611efa59|Sean Reed|seanreed1111@gmail.com|2025-06-18 09:53:19 -0400|merge to dev
+249c998e589d64a9cd97c329a1b0d1a5dad5dc64|Sean Reed|seanreed1111@gmail.com|2025-06-18 09:44:36 -0400|Improvements to scheduler (automation) (#334)
+7169fd54946155832eea519811b7e0fb8647cc65|Sean Reed|seanreed1111@gmail.com|2025-06-18 09:44:36 -0400|Improvements to scheduler (automation) (#334)
+184311abb1057206892e61e9e0be4beed7803df5|Sean Reed|seanreed1111@gmail.com|2025-06-18 09:43:09 -0400|updates scheduler/Dockerfile
+c552f157e039d854d916983a6ba3b6c48a12e95f|Sean Reed|seanreed1111@gmail.com|2025-06-18 09:43:09 -0400|updates scheduler/Dockerfile
+c7145cca887bf235ffd332a7d879372458a3ab99|Sean Reed|seanreed1111@gmail.com|2025-06-17 15:53:30 -0400|Merge branch 'dev' into brent/fixes/make_new_small_scheduler_pip_env
+39363b89da2cdbb729e0a57749f7d8f2bb595378|Sean Reed|seanreed1111@gmail.com|2025-06-17 15:53:30 -0400|Merge branch 'dev' into brent/fixes/make_new_small_scheduler_pip_env
+b593108b8f5f6535eab38bc54612da404d2b4917|Sean Reed|seanreed1111@gmail.com|2025-06-17 14:02:14 -0400|initial commit
+1912d2629607b5bda94ce7b38a003e31d7b5baea|Sean Reed|seanreed1111@gmail.com|2025-06-17 10:41:15 -0400|Remove vol mount (#333)
+5124dea7d946d082e1099238d43aec0abdd0569e|Sean Reed|seanreed1111@gmail.com|2025-06-17 10:41:15 -0400|Remove vol mount (#333)
+5b4f1d0d299e06c665a07a4b17f54a30b3653722|Sean Reed|seanreed1111@gmail.com|2025-06-17 10:30:40 -0400|updates requirements
+3530110879e4976b347f5f5b1d9321dec316585c|Sean Reed|seanreed1111@gmail.com|2025-06-17 00:51:35 -0400|creates otel-collector dockerfile
+23da5da7a8732f0ddb498cf76e9880ae89604ed6|Sean Reed|seanreed1111@gmail.com|2025-06-16 23:58:27 -0400|removes duplicate workdir statement in bot/Dockerfile
+63326359c48256427b74ad6f2bac5d0523d2ddb7|Sean Reed|seanreed1111@gmail.com|2025-06-16 23:30:04 -0400|Revert "updates scheduler/Dockerfile to include uv image and mounts build caches"
+606cb1bd519e3c6ed2ce83d7e4fa1f477c74c80b|Sean Reed|seanreed1111@gmail.com|2025-06-16 23:30:04 -0400|Revert "updates scheduler/Dockerfile to include uv image and mounts build caches"
+8d7e09a7f5bc6c3c5946090d7d5dda746d90ce8c|Sean Reed|seanreed1111@gmail.com|2025-06-16 23:24:34 -0400|updates scheduler/Dockerfile to include uv image and mounts build caches
+a82ce185224f08db0bafd6931fec31ece92eb993|Sean Reed|seanreed1111@gmail.com|2025-06-16 23:24:34 -0400|updates scheduler/Dockerfile to include uv image and mounts build caches
+f39a52f619c5c15c85baace6a6f12084658911f3|Sean Reed|seanreed1111@gmail.com|2025-06-16 22:53:44 -0400|update pyproject.toml
+696199f01e91ee6e4d3d34640fc7104790a98567|Sean Reed|seanreed1111@gmail.com|2025-06-16 20:13:40 -0400|begins conversation back to s3 for ds data
+355375c18a04e43f197b2ec9af1bda75ed828a94|Sean Reed|seanreed1111@gmail.com|2025-06-16 17:28:10 -0400|adds otel dockerfile. adds posrelay/__init__.py to read secrets
+d72acefc1388acd312f92ce964173d9b595eb980|Sean Reed|seanreed1111@gmail.com|2025-06-16 16:12:34 -0400|loads docker compose secrets
+e78dc8996abd04e743072a38804635c55a9bb40c|Sean Reed|seanreed1111@gmail.com|2025-06-11 19:24:56 -0400|adds compile bytecode flag (#330)
+b5730fe7341b47815d53223de5ee04098024a143|Sean Reed|seanreed1111@gmail.com|2025-06-11 19:24:56 -0400|adds compile bytecode flag (#330)
+d88fb433ac74c62b0731160801016c37db4e60f1|Sean Reed|seanreed1111@gmail.com|2025-06-11 15:20:13 -0400|implements option 3
+770bf94d58b80074f86ff17be57d5892e5169379|Sean Reed|seanreed1111@gmail.com|2025-06-11 14:09:53 -0400|Update 0611 (#328)
+2eab6e08faf1526981b90d962d2b9b7a48c231eb|Sean Reed|seanreed1111@gmail.com|2025-06-11 14:09:53 -0400|Update 0611 (#328)
+90b6e26107593ae880654e4560eb159e54d47932|Sean Reed|seanreed1111@gmail.com|2025-06-10 21:37:30 -0400|Remove appuser - HOTFIX (#327)
+1b3f58b244b9fc8612b284668e55d08dfcd93164|Sean Reed|seanreed1111@gmail.com|2025-06-10 21:37:30 -0400|Remove appuser - HOTFIX (#327)
+bcfc47f63c89b8377748a6ff1a3facec84ef4c39|Sean Reed|seanreed1111@gmail.com|2025-06-10 20:14:28 -0400|Docker build cache (#326)
+7a0dd15e3345a69d4ec24786ebe25ac2afdef232|Sean Reed|seanreed1111@gmail.com|2025-06-10 20:14:28 -0400|Docker build cache (#326)
+94c1a7dad7aa21f75bb5da0f937358d4a29a578c|Sean Reed|seanreed1111@gmail.com|2025-06-10 14:36:02 -0400|Hotfix2 (#324)
+e511702dc1151bc3839c7f554eb32cd45870837c|Sean Reed|seanreed1111@gmail.com|2025-06-10 14:36:02 -0400|Hotfix2 (#324)
+844b134e6c2ed47c1088b20f4bd2143fab543010|Sean Reed|seanreed1111@gmail.com|2025-06-10 14:04:55 -0400|Hotfix (#323)
+d48a916f943587aafcc3ee8b1298147ca820f12b|Sean Reed|seanreed1111@gmail.com|2025-06-10 14:04:55 -0400|Hotfix (#323)
+79023baf09a9e8150157c6b5cfa32023ed053b5b|Sean Reed|seanreed1111@gmail.com|2025-06-09 18:53:08 -0400|update to database.py and dbase.py (#322)
+1f94f6780e13431a50052b9ee33c374413039948|Sean Reed|seanreed1111@gmail.com|2025-06-09 18:53:08 -0400|update to database.py and dbase.py (#322)
+5e7a1dc78eaf8023abb4763182c2cc73753ea848|Sean Reed|seanreed1111@gmail.com|2025-06-09 17:24:15 -0400|initial commit (#321)
+1a1491dc2a2c532951160578125d33d90f9d918c|Sean Reed|seanreed1111@gmail.com|2025-06-09 17:24:15 -0400|initial commit (#321)
+1c6fe193d65bac3afab4107e3ca2434480890f47|Sean Reed|seanreed1111@gmail.com|2025-06-09 13:44:14 -0400|fixes naming error
+548394fae2ce83970227855ac8f90a7f473da6f4|Sean Reed|seanreed1111@gmail.com|2025-06-09 13:13:38 -0400|moves over to psycopg3
+bc347ddf1e5b2c769aedfd39b51cc92dcdbfb9dc|Sean Reed|seanreed1111@gmail.com|2025-06-09 11:37:41 -0400|updates get_connection_string_from_db_name
+5bd62777c9e8559415d8497c624468dee89ce8e2|Sean Reed|seanreed1111@gmail.com|2025-06-09 11:25:12 -0400|merge to dev
+d73c1aa866cd737930dabfa891ff1ae2a8a94982|Sean Reed|seanreed1111@gmail.com|2025-06-09 11:18:00 -0400|update
+4e825431fa3591db142d7df4df26b22b580bed82|Sean Reed|seanreed1111@gmail.com|2025-06-06 11:27:19 -0400|removes some imports
+54853b4fc341f7fb96ee4f6fe4e5dafcaeca095c|Sean Reed|seanreed1111@gmail.com|2025-06-06 11:12:01 -0400|initial commit
+51dfcc549e664cdd68cfdb3d50e7e74df0d43182|Sean Reed|seanreed1111@gmail.com|2025-06-05 22:54:45 -0400|implements USE_ECS env var that defaults to false (#316)
+80691e835c42890637e93c31a3a15d7fdf944694|Sean Reed|seanreed1111@gmail.com|2025-06-05 22:54:45 -0400|implements USE_ECS env var that defaults to false (#316)
+650eed62b5e22a3b60fb0e6fc00b2a99b7947668|Sean Reed|seanreed1111@gmail.com|2025-06-03 13:07:37 -0400|Update 0530 (#307)
+d3bc7f00c5d6d1dfc677e66ccd8fa498e3b9542f|Sean Reed|seanreed1111@gmail.com|2025-06-03 13:07:37 -0400|Update 0530 (#307)
+7bb4d9592444b0533c94f035b23e4c4e72b77ce7|Sean Reed|seanreed1111@gmail.com|2025-05-27 22:35:48 -0400|Elasticache (#302)
+dc0af6b0e4df23ac889ed8caeaa6a21204a91b86|Sean Reed|seanreed1111@gmail.com|2025-05-27 22:35:48 -0400|Elasticache (#302)
+2b1de04bff171b452d5e525a362f30633d046e25|Sean Reed|seanreed1111@gmail.com|2025-05-23 18:28:32 -0400|0522 merge branch - supercedes #298 (#300)
+ccb7c55aa62589431f0ef98fc02d772c974112a6|Sean Reed|seanreed1111@gmail.com|2025-05-23 18:28:32 -0400|0522 merge branch - supercedes #298 (#300)
+25fa20b7c6f20e5c8a4ff524db877c6846444b5f|Sean Reed|seanreed1111@gmail.com|2025-05-23 11:43:18 -0400|Otel update for 0515 (#297)
+8936583ba13728c49782b0949f98059398b2a3a9|Sean Reed|seanreed1111@gmail.com|2025-05-23 11:43:18 -0400|Otel update for 0515 (#297)
+a9313083ef4bb7f838ea9a03637dd428356328d6|Sean Reed|seanreed1111@gmail.com|2025-05-23 11:38:21 -0400|adds back pipeline.py file
+82b548cda40fae0ca34693972ec458491f92a3d8|Sean Reed|seanreed1111@gmail.com|2025-05-12 21:17:27 -0400|updates all files (#293)
+93813ac583876ea160c191d65443d352e8f57836|Sean Reed|seanreed1111@gmail.com|2025-05-12 21:17:27 -0400|updates all files (#293)
+4cdbc5fa260207b543384ac616c81dbb0a00cf1d|Sean Reed|seanreed1111@gmail.com|2025-05-12 16:49:46 -0400|Otel 05-12 (#292)
+9f53e4e1485f687102c65f810149f165146f773b|Sean Reed|seanreed1111@gmail.com|2025-05-12 16:49:46 -0400|Otel 05-12 (#292)
+f5e69c8a45f643d865f32dc3ff2b8997b1da8fa0|Sean Reed|seanreed1111@gmail.com|2025-05-12 14:23:56 -0400|Reapply "populate telemetrix._global_system_session_id at time of definition and reference where needed (#285)" (#288) (#290)
+6764ee51e06ece46c1c9b71becacbd799b356d19|Sean Reed|seanreed1111@gmail.com|2025-05-12 14:23:56 -0400|Reapply "populate telemetrix._global_system_session_id at time of definition and reference where needed (#285)" (#288) (#290)
+1be67b0cbaffcc5af05b42c20d8766ebf37d5836|Sean Reed|seanreed1111@gmail.com|2025-05-12 13:49:13 -0400|Revert "populate telemetrix._global_system_session_id at time of definition and reference where needed (#285)" (#288)
+146f0ad883048571fbc39bab3536aa06229b4498|Sean Reed|seanreed1111@gmail.com|2025-05-12 13:49:13 -0400|Revert "populate telemetrix._global_system_session_id at time of definition and reference where needed (#285)" (#288)
+2db78b85d7a25283ec5290e43a870929664e25aa|Sean Reed|seanreed1111@gmail.com|2025-05-10 11:31:14 -0400|Revert "Get common engine tweak (#281)"
+c699951881c03c604c7e5da9c3929fc5bab8c98c|Sean Reed|seanreed1111@gmail.com|2025-05-10 11:31:14 -0400|Revert "Get common engine tweak (#281)"
+4b723cb82b34d63352c9b7f459d63c5b3283e62f|Sean Reed|seanreed1111@gmail.com|2025-05-10 11:09:33 -0400|Get common engine tweak (#281)
+4cf8db5b6db2f9a207362b9098193f0b40a1c945|Sean Reed|seanreed1111@gmail.com|2025-05-10 11:09:33 -0400|Get common engine tweak (#281)
+4913bf677fec9414bf7d631615e58735e43f10bc|Sean Reed|seanreed1111@gmail.com|2025-05-09 19:02:20 -0400|adds --system flag
+5f8bb24c0505ab7d1ac18bd19a1f726d8a67aa12|Sean Reed|seanreed1111@gmail.com|2025-05-09 19:02:20 -0400|adds --system flag
+46e026d4406f71d9c7860633379fef9190583039|Sean Reed|seanreed1111@gmail.com|2025-05-09 18:56:54 -0400|adds back uv and upgrades posrelay dockerfile to python3.12 (#280)
+ee15098df386378304efcfb64139e7b2d24dc7b6|Sean Reed|seanreed1111@gmail.com|2025-05-09 18:56:54 -0400|adds back uv and upgrades posrelay dockerfile to python3.12 (#280)
+7eb1a940af6db3020dda4b774f31da136309c0d7|Sean Reed|seanreed1111@gmail.com|2025-05-09 18:14:50 -0400|Revert "Get common engine tweak (#274)"
+c4ef6ea4ccfc85c166cff6d373d882615511031e|Sean Reed|seanreed1111@gmail.com|2025-05-09 18:14:50 -0400|Revert "Get common engine tweak (#274)"
+a3cb2ce2988d875cd020ca7434939c26f4b69977|Sean Reed|seanreed1111@gmail.com|2025-05-09 17:43:43 -0400|update docker-compose
+5cfedc78756e6043dce3f4c0ac2bf7597a6574ea|Sean Reed|seanreed1111@gmail.com|2025-05-09 17:43:43 -0400|update docker-compose
+20c8327b5d1e964b1bcd7928ee3b9176541310f7|Sean Reed|seanreed1111@gmail.com|2025-05-09 17:02:08 -0400|updates docker-compose.yml otel profile
+c8adad112352e8bc6af4e59003ae9ff21d041bf9|Sean Reed|seanreed1111@gmail.com|2025-05-09 17:02:08 -0400|updates docker-compose.yml otel profile
+fc6da6d43fe7ed8679bed6e871bb31a64b9027d6|Sean Reed|seanreed1111@gmail.com|2025-05-09 12:35:29 -0400|Voltron client relay bypass merge branch posrelay (#276)
+4f80175bddf8242a8682d2a0e9264d85816ed6e8|Sean Reed|seanreed1111@gmail.com|2025-05-09 12:35:29 -0400|Voltron client relay bypass merge branch posrelay (#276)
+28e3a9b6f4ef16bea9bf36e718ae830414ed2686|Sean Reed|seanreed1111@gmail.com|2025-05-06 14:01:02 -0400|reduces default vad to 2.0 seconds (#265)
+cecc70fd1c35a79518f291efedc3ed2d9c99434c|Sean Reed|seanreed1111@gmail.com|2025-05-08 09:57:56 -0400|updates typo in readme
+b96f54cd3b4a702c9d9edb03d01cf4c461cc2f35|Sean Reed|seanreed1111@gmail.com|2025-05-08 09:57:56 -0400|updates typo in readme
+0f73c3cace1908292e4b1f26d79d3e2b5cebd862|Sean Reed|seanreed1111@gmail.com|2025-05-07 20:45:56 -0400|v1 instrumentation of telemetrix.py
+adc7bb1e18a40daafb12f5ff887c254ad4d0a69d|Sean Reed|seanreed1111@gmail.com|2025-05-07 20:45:56 -0400|v1 instrumentation of telemetrix.py
+92a26c59e4c1cba37971de272e78f67a8e55f780|Sean Reed|seanreed1111@gmail.com|2025-05-07 20:16:53 -0400|ruff format on runner
+3646b42190f52c1cea441078513aa50445f1fe23|Sean Reed|seanreed1111@gmail.com|2025-05-07 20:16:53 -0400|ruff format on runner
+5482c7eede2e09039fa7bd10bc5aa2e6be08d635|Sean Reed|seanreed1111@gmail.com|2025-05-07 10:16:47 -0400|reverts uvloop
+9d3f24bbf2125868977a061ed6a9ea21cb20fcba|Sean Reed|seanreed1111@gmail.com|2025-05-07 10:16:47 -0400|reverts uvloop
+e5e0f3d78dbd998a215d356cd3487238f7d3c8ef|Sean Reed|seanreed1111@gmail.com|2025-05-06 14:01:02 -0400|reduces default vad to 2.0 seconds (#265)
+772d05a2ae0b76940d97c6ab7d5c6e384260b91b|Sean Reed|seanreed1111@gmail.com|2025-05-06 14:01:02 -0400|reduces default vad to 2.0 seconds (#265)
+9ca60d5b7e5f8aaf1248404d18e9ac31f9731493|Sean Reed|seanreed1111@gmail.com|2025-05-02 16:18:16 -0400|Otel 0501 (#263)
+6910068e2f2fcafa5edc181f2ce6e328a84358a4|Sean Reed|seanreed1111@gmail.com|2025-05-02 16:18:16 -0400|Otel 0501 (#263)
+2929d40a9f70ca36675e75f466fc04328d6be97b|Sean Reed|seanreed1111@gmail.com|2025-04-30 18:58:04 -0400|addds back deleted code.
+3fe0846f7754a9344d369d83cc2024ed05d10f5e|Sean Reed|seanreed1111@gmail.com|2025-04-30 18:58:04 -0400|addds back deleted code.
+9615f5b6d4eaa08a06ce42f322caa3bbae0b1510|Sean Reed|seanreed1111@gmail.com|2025-04-30 18:28:02 -0400|readme typo
+894b43b57e08718c7971e2a3190b9a33855be8a1|Sean Reed|seanreed1111@gmail.com|2025-04-30 18:28:02 -0400|readme typo
+9990c918e4a910946f1475fb5b9fba098e918770|Sean Reed|seanreed1111@gmail.com|2025-04-30 17:58:57 -0400|fixes conflicts
+02ae4ffbb0ad7070af6b1b661a80d46bfcb4c361|Sean Reed|seanreed1111@gmail.com|2025-04-30 12:57:05 -0400|Otel update - to merge all threads and processes into a common span for honeycomb (#262)
+7b0d95bbd1e628b1cf6cc3f125ddb3aa769474c5|Sean Reed|seanreed1111@gmail.com|2025-04-30 12:57:05 -0400|Otel update - to merge all threads and processes into a common span for honeycomb (#262)
+c85181433d7bb6ec1a75d516870a6b4ab1a07f2b|Sean Reed|seanreed1111@gmail.com|2025-04-28 13:25:34 -0400|Revert "moves vad to 1.2"
+918d56c37ba3b12f947b615b792c5060ceeee810|Sean Reed|seanreed1111@gmail.com|2025-04-28 13:25:34 -0400|Revert "moves vad to 1.2"
+7afb30c0e6ff9690965a9f93ea61ba3eecc2e878|Sean Reed|seanreed1111@gmail.com|2025-04-28 13:09:02 -0400|moves vad to 1.2
+1b2ec0847791c99d2122f6d9201aae2987fd7f87|Sean Reed|seanreed1111@gmail.com|2025-04-28 13:09:02 -0400|moves vad to 1.2
+1367de66df574856971a8ff39472b537bdf060bc|Sean Reed|seanreed1111@gmail.com|2025-04-24 20:32:52 -0400|uvloop all the things (#252)
+ff8b31c719cf5e4c0e69244f7e6d403cd5aa3200|Sean Reed|seanreed1111@gmail.com|2025-04-24 20:32:52 -0400|uvloop all the things (#252)
+d66bd1806b6ac4df5e06525c46d100f98e8df7e7|Sean Reed|seanreed1111@gmail.com|2025-04-24 20:22:37 -0400|adds redis to tracing (#253)
+75779792dc9eb53197db118e3e9ce541ce492c75|Sean Reed|seanreed1111@gmail.com|2025-04-24 20:22:37 -0400|adds redis to tracing (#253)
+ba733973cb52110d5ebf61f712bc7174c0448b4f|Sean Reed|seanreed1111@gmail.com|2025-04-24 11:06:45 -0400|removes 'sending audio response' and writing audio frames (#249)
+1ff15f703074c40cbc8cba4b5522e6c48cd91fa8|Sean Reed|seanreed1111@gmail.com|2025-04-24 11:06:45 -0400|removes 'sending audio response' and writing audio frames (#249)
+3d3a98f963f2c502118e04bc7d8034279529a718|Sean Reed|seanreed1111@gmail.com|2025-04-23 11:29:26 -0400|Remove batch params from otel (#248)
+693c9ecf17b452ea7dff19c894e349e859293b97|Sean Reed|seanreed1111@gmail.com|2025-04-23 11:29:26 -0400|Remove batch params from otel (#248)
+a1f2d3b48a6d1c20067f5893bbed3930c13513b1|Sean Reed|seanreed1111@gmail.com|2025-04-22 12:48:14 -0400|reverts bot/audivi_system/requirements.txt file (#246)
+a760c785fc84fda55b01a1cc65ffac23e667ebcd|Sean Reed|seanreed1111@gmail.com|2025-04-22 12:48:14 -0400|reverts bot/audivi_system/requirements.txt file (#246)
+2107795f5e719a69670cfef5c5a9094db388e6b1|Sean Reed|seanreed1111@gmail.com|2025-04-22 07:08:31 -0400|Update requirements.txt (#245)
+928baf55709cd8d7be0f1234328e982682545724|Sean Reed|seanreed1111@gmail.com|2025-04-22 07:08:31 -0400|Update requirements.txt (#245)
+4816f85f7bf85a8ea675a54662f4d3b2a008334d|Sean Reed|seanreed1111@gmail.com|2025-04-22 06:42:13 -0400|Add docker stats receiver and other samples (#244)
+ebf3dbdd826229df61867004acf03d0974a14696|Sean Reed|seanreed1111@gmail.com|2025-04-22 06:42:13 -0400|Add docker stats receiver and other samples (#244)
+bc4961fb8cb1d51a801f5712f774759c1155db32|Sean Reed|seanreed1111@gmail.com|2025-04-17 13:31:20 -0400|change formatting of otel (#243)
+6b2c32119f14a909e5c743a0de2b37b53df050a9|Sean Reed|seanreed1111@gmail.com|2025-04-17 13:31:20 -0400|change formatting of otel (#243)
+28ab393bd3cabf6abf5f9daf5b78f0f5400eef3d|Sean Reed|seanreed1111@gmail.com|2025-04-15 14:43:05 -0400|Send otel to s3 (#241)
+5f9ab712dad73090956c29b7718d1794d66c7e6f|Sean Reed|seanreed1111@gmail.com|2025-04-15 14:43:05 -0400|Send otel to s3 (#241)
+436abba4afb32cd35556705f72ff592db3c2adc2|Sean Reed|seanreed1111@gmail.com|2025-04-14 20:27:57 -0400|removes process_frame otel attribute from pipeline. too noisy.
+b2c2946ee7d0708740c88b5c1f79b36ffcd91a0d|Sean Reed|seanreed1111@gmail.com|2025-04-14 20:27:57 -0400|removes process_frame otel attribute from pipeline. too noisy.
+1e7de1037256a7bd5234fccd4e041e20c6a98976|Sean Reed|seanreed1111@gmail.com|2025-04-14 10:35:17 -0400|remove pipeline-warning logger. unneeded
+e0b7f3b35ab9eab5441067f7e686867c90237222|Sean Reed|seanreed1111@gmail.com|2025-04-14 10:35:17 -0400|remove pipeline-warning logger. unneeded
+c4e0d2a2dffd468cd53bb2b40c0c8bae168ca441|Sean Reed|seanreed1111@gmail.com|2025-04-14 09:33:21 -0400|rewrite json to tables (#239)
+c4ba0b83961b2109e349d03a58482593082a82f5|Sean Reed|seanreed1111@gmail.com|2025-04-14 09:33:21 -0400|rewrite json to tables (#239)
+3bdce2e10da53fc44068451bf6434079dc62bd73|Sean Reed|seanreed1111@gmail.com|2025-04-13 21:17:45 -0400|Revert "updates pipeline file (#236)" (#238)
+4e6b8c56bd53824dfd33e84bf0b6598911014bbf|Sean Reed|seanreed1111@gmail.com|2025-04-13 21:17:45 -0400|Revert "updates pipeline file (#236)" (#238)
+a67a844f30b5520659e7fb332cd6c69e39ccae16|Sean Reed|seanreed1111@gmail.com|2025-04-11 19:43:13 -0400|updates pipeline file (#236)
+7102edc39efef19aadbe1cbbfa75a2ccc370777f|Sean Reed|seanreed1111@gmail.com|2025-04-11 19:43:13 -0400|updates pipeline file (#236)
+bda7b1793f892170396b8a20f692f583f1c47453|Sean Reed|seanreed1111@gmail.com|2025-04-11 19:39:39 -0400|Add ds data to otel (#235)
+0990f58bdafb497c5d0d0267a7eceac3aa69e7ad|Sean Reed|seanreed1111@gmail.com|2025-04-11 19:39:39 -0400|Add ds data to otel (#235)
+2bade0e6d8cce6da63b1df681b6440b0ac4fd202|Sean Reed|seanreed1111@gmail.com|2025-04-11 12:16:38 -0400|Add otel to ensemble 2 (#233)
+2196c67d72e4aa20d771634dccc37bbbc86b5e88|Sean Reed|seanreed1111@gmail.com|2025-04-11 12:16:38 -0400|Add otel to ensemble 2 (#233)
+5c624bbe1aceb14fe9f1f35562acac315f67e0ed|Sean Reed|seanreed1111@gmail.com|2025-04-10 22:53:52 -0400|Add otel to ensemble 2 (#231)
+0251509717dccf553d269bbd4afe9c0e056edec3|Sean Reed|seanreed1111@gmail.com|2025-04-10 22:53:52 -0400|Add otel to ensemble 2 (#231)
+dbfb5e36630b873eea65a741365f200e61e2abbb|Sean Reed|seanreed1111@gmail.com|2025-04-10 18:41:30 -0400|Add otel to agent (#228)
+2a346c974f6eaa48d832152dee5131226db57f76|Sean Reed|seanreed1111@gmail.com|2025-04-10 18:41:30 -0400|Add otel to agent (#228)
+7e005077e06caff9e16e36b1d329ed0300157f4f|Sean Reed|seanreed1111@gmail.com|2025-04-09 08:54:08 -0400|changes import to uv-native containers (#224)
+81c92852c824172e7f887abcde4af5e56d1b425e|Sean Reed|seanreed1111@gmail.com|2025-04-09 08:54:08 -0400|changes import to uv-native containers (#224)
+8673fa342bee8a876e576cd9ed311d12fce333ed|Sean Reed|seanreed1111@gmail.com|2025-04-08 18:12:07 -0400|adds qu code to repo
+4863eaf00109aef849a29d31daff8cb6e1045b2b|Sean Reed|seanreed1111@gmail.com|2025-04-08 18:12:07 -0400|adds qu code to repo
+98eaeccf838a55b15728dfcf3ee162fcca897b76|Sean Reed|seanreed1111@gmail.com|2025-04-08 14:47:42 -0400|Add span attributes and events (#226)
+783071665a785ca7e7f8ea620fdcbd90157f56b2|Sean Reed|seanreed1111@gmail.com|2025-04-08 14:47:42 -0400|Add span attributes and events (#226)
+37fcf8362f0be00f5eaf885eb76b8ab5dc016187|Sean Reed|seanreed1111@gmail.com|2025-04-08 12:48:37 -0400|updates otel collector config (#225)
+6adcf32e704d63cefab840b0e81ffaeffe960fdd|Sean Reed|seanreed1111@gmail.com|2025-04-08 12:48:37 -0400|updates otel collector config (#225)
+b4d5225a27c39c106d312cfd3d7ff1666e2bf758|Sean Reed|seanreed1111@gmail.com|2025-04-07 15:04:25 -0400|Bump sentence transformers (#223)
+77571aa065ff56fdce11ab81053846449a861418|Sean Reed|seanreed1111@gmail.com|2025-04-07 15:04:25 -0400|Bump sentence transformers (#223)
+5b101ec377e4fd52a34faa0ff1c093b29ed51072|Sean Reed|seanreed1111@gmail.com|2025-04-07 14:50:21 -0400|Add otel to dev (#222)
+d3906421b68f6047c2795fdfb958bee4bbe0e916|Sean Reed|seanreed1111@gmail.com|2025-04-07 14:50:21 -0400|Add otel to dev (#222)
+54ba64d7f738678403f2829689873edf89bd73ad|Sean Reed|seanreed1111@gmail.com|2025-04-07 13:44:37 -0400|let sentence transformers float, pin explicit accerate and transformers
+ed9235d84baf0eec7147fdc1a4e5f56401153dea|Sean Reed|seanreed1111@gmail.com|2025-04-07 13:44:06 -0400|let sentence transformers float, pin explicit accerate and transformers
+20fec970c1bbec313b0e26ed2b1eed5d7a475f4c|Sean Reed|seanreed1111@gmail.com|2025-04-07 10:14:49 -0400|Uvloop dev merge branch (#220)
+2a8c1ece1ae4468d71cebf4e4b28c1069cf228d9|Sean Reed|seanreed1111@gmail.com|2025-04-07 10:14:49 -0400|Uvloop dev merge branch (#220)
+ca137d676a8e6c3405249232563decb0fa8c4b0e|Sean Reed|seanreed1111@gmail.com|2025-04-04 11:55:15 -0400|change uv version to 0.6.10 in bot/Dockerfile and bot/audivi_system/Dockerfile (#221)
+99f2516b57e9a0dc101c6e866b4b14c492c4f5b5|Sean Reed|seanreed1111@gmail.com|2025-04-04 11:55:15 -0400|change uv version to 0.6.10 in bot/Dockerfile and bot/audivi_system/Dockerfile (#221)
+8b8dcaa02f57afbf5af071473d5f9f0a9a55fc5e|Sean Reed|seanreed1111@gmail.com|2025-04-02 22:20:55 -0400|updates mypyc.ini and mex_tran
+e43f95e3941134b128ab627d00f117b535babf30|Sean Reed|seanreed1111@gmail.com|2025-04-02 21:52:42 -0400|merges dev
+76cdc67ea2f77381fecddf88bca3cb47a53ed70c|Sean Reed|seanreed1111@gmail.com|2025-04-02 21:15:21 -0400|Revert "set interim_results=False"
+913a4c92a9179ee99ecb7bdb05a5c9e1a5394040|Sean Reed|seanreed1111@gmail.com|2025-04-02 21:15:21 -0400|Revert "set interim_results=False"
+a1ddbeda609ba357841cb94fd1f2a0e18d341093|Sean Reed|seanreed1111@gmail.com|2025-04-02 20:54:14 -0400|set interim_results=False
+14356d4c02111a07c8d45d9468ece4cebe07e804|Sean Reed|seanreed1111@gmail.com|2025-04-02 20:54:14 -0400|set interim_results=False
+d8040b8d1aa49067f485bb850e0b44e4d924a61a|Sean Reed|seanreed1111@gmail.com|2025-04-02 20:48:38 -0400|adds punctuate though it should be a default param
+ef17b8e74af7faa74fb3b12c8a2d15c7fcbcc680|Sean Reed|seanreed1111@gmail.com|2025-04-02 20:48:38 -0400|adds punctuate though it should be a default param
+5a44538bdb8676ff7b7ede1c649ed5b54bd9d5c8|Sean Reed|seanreed1111@gmail.com|2025-04-02 19:02:21 -0400|Nova3 multi lang dev merge branch (#214)
+8a8424cd6d71796a6e3f88439d6cc61deddd586b|Sean Reed|seanreed1111@gmail.com|2025-04-02 19:02:21 -0400|Nova3 multi lang dev merge branch (#214)
+e645f99a2a8708fb71136df180a02e245146c39f|Sean Reed|seanreed1111@gmail.com|2025-03-31 12:42:39 -0400|removes meter from Otel (#205)
+4265385d675510cd6ddbc3188eb0ef6fb4bd31eb|Sean Reed|seanreed1111@gmail.com|2025-03-31 12:42:39 -0400|removes meter from Otel (#205)
+3e07bbdc118d9e4da24f8e1fe4c44825184b92cb|Sean Reed|seanreed1111@gmail.com|2025-03-30 18:01:33 -0400|increases vad back to 3.0
+296610e22faf801d04eb9b1400552162036a8a1b|Sean Reed|seanreed1111@gmail.com|2025-03-30 16:50:56 -0400|restores dockerfile and adds multi to language enum
+7472aebaaf28577ac0a3132c8629cf8fb291d822|Sean Reed|seanreed1111@gmail.com|2025-03-29 15:22:22 -0400|removes monkeytrace from docker compose
+e63781f5816f3484e587e326e425611827157cb0|Sean Reed|seanreed1111@gmail.com|2025-03-29 14:41:08 -0400|restores agent.py from dev branch
+c39717da90212f4a988e5c9c1135cd1d990fc9bf|Sean Reed|seanreed1111@gmail.com|2025-03-29 12:22:21 -0400|replaces InputContext to SessionContext to eliminate one mypy error about cannot access attribute upsell_config for class InputContext
+c76642e1bb5d78900ee1619b8c7a83d965d9697c|Sean Reed|seanreed1111@gmail.com|2025-03-29 12:07:25 -0400|adds ruff.toml
+6db4eabe88a84d9b2c6671b46a1a9ae074b2e247|Sean Reed|seanreed1111@gmail.com|2025-03-28 21:54:20 -0400|adds mypy complaints for agent, ensemble, and state-machine
+7da1da72128e5dc741d826c64e1d57c842a6060c|Sean Reed|seanreed1111@gmail.com|2025-03-28 21:35:50 -0400|adjusts mypy.ini
+8da257784060d8440e3039ba6741f55a0207bae5|Sean Reed|seanreed1111@gmail.com|2025-03-28 21:22:02 -0400|updates runner.py for typechecking
+d9ef75bc04ea5e14e7b08b221c256268d9a9ac1a|Sean Reed|seanreed1111@gmail.com|2025-03-28 21:00:47 -0400|annotation of mextran.py
+0dea2811ea27526f408efc0450ff48481d74a82f|Sean Reed|seanreed1111@gmail.com|2025-03-28 20:43:54 -0400|updates
+169bd77cb8c9563af10f333eb126015808e48e6b|Sean Reed|seanreed1111@gmail.com|2025-03-28 19:33:25 -0400|adds mypy to requirements
+509bbb54de8fdcf0c9af102160a1febd2a08d57a|Sean Reed|seanreed1111@gmail.com|2025-03-28 17:46:25 -0400|deletes main.py (#204)
+3d81504d216a3def34d1e427222b0b4284ab3b96|Sean Reed|seanreed1111@gmail.com|2025-03-28 17:46:25 -0400|deletes main.py (#204)
+9bf6860c00cd86bbb043748a97402376832957d4|Sean Reed|seanreed1111@gmail.com|2025-03-28 13:03:41 -0400|remove some files (#203)
+0d06582d3857d72edf81231bdb88cba7d1a70218|Sean Reed|seanreed1111@gmail.com|2025-03-28 13:03:41 -0400|remove some files (#203)
+4a12713f3fd8e0ea0b5a0768b84072d5ca17401d|Sean Reed|seanreed1111@gmail.com|2025-03-27 12:46:43 -0400|audio out 24000
+f08d886bb7ee062e5e5e9cbb5c07cc479f9a1f1d|Sean Reed|seanreed1111@gmail.com|2025-03-27 12:35:24 -0400|moved to vad = 2.75
+370bbcb30dde56b352401517c46258e7fbd36867|Sean Reed|seanreed1111@gmail.com|2025-03-27 12:04:25 -0400|initial commit
+aca4f98a3902f0891bfa4229a3d87169077e4e07|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:39:36 -0400|update vad_stop_secs = 3
+f6b337544ffefdb216c8a50b7a135daf39a43dfa|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:31:14 -0400|turns off Deepgram vad events
+740e44afcd4ca7bb086df236cc4f2d1be8f6c4a9|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:24:43 -0400|updates logs again
+abf2121631f3550eaa37c561f91589077e9b6cd1|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:16:24 -0400|updates logs again
+a77885276b9aac57f833245b182109e8bf322a61|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:10:28 -0400|updates logs again
+05b9bf60e5eae16c41a0fa75cd7adf786bef3b5e|Sean Reed|seanreed1111@gmail.com|2025-03-26 10:00:01 -0400|updates pipeline logger
+daf3ba6f241dca45be4d8fbf454eed55d6059bd9|Sean Reed|seanreed1111@gmail.com|2025-03-26 09:56:04 -0400|adds logger to pipeline.py
+1299911e1a07a1f5f1ff47f44b420d256f22d27a|Sean Reed|seanreed1111@gmail.com|2025-03-26 09:24:32 -0400|adds test_audio.py
+ab225f75656d9c77791a29b67b6fd72e3e88df8f|Sean Reed|seanreed1111@gmail.com|2025-03-25 18:10:20 -0400|changes lang to en for deepgram
+bdc2f8b488cc9b7ba8b2fe3ca49033808bb8d73a|Sean Reed|seanreed1111@gmail.com|2025-03-25 18:05:44 -0400|moves to nova-3-general for deepgram
+0ddabbaaa617c5eb78a79dcbb28d3ffafb1c38e8|Sean Reed|seanreed1111@gmail.com|2025-03-25 17:50:12 -0400|updates liveoptions and sets sample rate to 16000
+8ac8aa7ab37dc61d8fe2625263f11321f8b8d21c|Sean Reed|seanreed1111@gmail.com|2025-03-25 17:43:02 -0400|Merge branch 'dev' into noise-filter-nova2-text
+7219d2455e5d92b9f1b055be558b0786916ad403|Sean Reed|seanreed1111@gmail.com|2025-03-25 17:42:46 -0400|Merge branch 'dev-fixes' into noise-filter-nova2-text
+f546a59d81fd1677f467a996a925743a6b8f2cab|Sean Reed|seanreed1111@gmail.com|2025-03-25 17:36:37 -0400|reduces vad_stop_secs to 1.6
+0cf1fb010e1da4c02df9acab2c6e83336f3606ee|Sean Reed|seanreed1111@gmail.com|2025-03-25 17:20:09 -0400|adds opts to Deepgram
+adbecbd0f6025e57911776d04f7aa1316340f47c|Sean Reed|seanreed1111@gmail.com|2025-03-25 16:56:28 -0400|reformatted document
+0068b167b155e58bfca376ed7d1c526ac941951a|Sean Reed|seanreed1111@gmail.com|2025-03-25 16:52:12 -0400|Merge branch 'noise-filter-nova2-text' of github.com:audivi-ai/realtime-experiment into noise-filter-nova2-text
+0e773d1ef6305fb7195e361e8321aa9d721effd8|Sean Reed|seanreed1111@gmail.com|2025-03-25 16:52:08 -0400|removes State
+1cfff6edb5bb7d97096a2d83805385f260e9546c|Sean Reed|seanreed1111@gmail.com|2025-03-25 01:30:54 -0400|fixes pipeline
+cdd2ce161f0e1231ca09b17256356766b6ceadd6|Sean Reed|seanreed1111@gmail.com|2025-03-25 01:14:47 -0400|add additional mermaid diagrams
+f7c2a78d09fd80b0ef721cc5a00324e63bb720ed|Sean Reed|seanreed1111@gmail.com|2025-03-24 18:57:13 -0400|Revert "react ti InterimTranscriptionFrame instead"
+6ac86dc50eb19c16406a57ea5433966d50bc0309|Sean Reed|seanreed1111@gmail.com|2025-03-24 17:48:27 -0400|adds print statement flush=True
+23759fdd055f3d3a6786c72beccbd10762a5d7c1|Sean Reed|seanreed1111@gmail.com|2025-03-24 16:09:37 -0400|Merge branch 'noise-filter-nova2-text' of github.com:audivi-ai/realtime-experiment into noise-filter-nova2-text
+43fb21e022c55f9526f508f191cbab6ff3ad1837|Sean Reed|seanreed1111@gmail.com|2025-03-24 16:09:30 -0400|changes print to log statement in mex_tran
+e119017e2fa00ea101c12a5d8502d4356d822529|Sean Reed|seanreed1111@gmail.com|2025-03-24 15:20:04 -0400|changes traces to debug
+b204e2ab40f43d2dca387e4ce3d3405544040ad5|Sean Reed|seanreed1111@gmail.com|2025-03-23 20:48:00 -0400|updates gitignore
+6602172efdeb7594ddbe77f3094bde99b58f9993|Sean Reed|seanreed1111@gmail.com|2025-03-23 20:48:00 -0400|updates gitignore
+af57bdd9c1e5ed1b305214a4298ce9cc3f04910d|Sean Reed|seanreed1111@gmail.com|2025-03-21 18:14:24 -0400|moved logger.debug to logger.trace
+174ad5c59e914673152b2a7b304787fd836527eb|Sean Reed|seanreed1111@gmail.com|2025-03-21 18:14:24 -0400|moved logger.debug to logger.trace
+574ab8244c974aba8f5565494994325813a47558|Sean Reed|seanreed1111@gmail.com|2025-03-16 11:29:06 -0400|Switches to non-root containers in Dockerfile (#185)
+62757bd84bca3be8373e4a3090de07f6fe6f49fc|Sean Reed|seanreed1111@gmail.com|2025-03-16 11:29:06 -0400|Switches to non-root containers in Dockerfile (#185)
+7c4dd88e614abc7facd45a4d7aeb620f35679990|Sean Reed|seanreed1111@gmail.com|2025-03-15 13:17:17 -0400|upgrades docker containers to uv 0.6.6 (#183)
+5d313b8c5d67491fe6e564f17ca910559693b579|Sean Reed|seanreed1111@gmail.com|2025-03-15 13:17:17 -0400|upgrades docker containers to uv 0.6.6 (#183)
+4ade29a1034f60173b1df92fd94a6a3e1bd1e7a7|Sean Reed|seanreed1111@gmail.com|2025-03-14 10:06:36 -0400|Python312 and mex tran (#181)
+810ebcf0b06ca25bdc5da59d45c6bada0f038892|Sean Reed|seanreed1111@gmail.com|2025-03-14 10:06:36 -0400|Python312 and mex tran (#181)
+eb77968298937b3a7b5428d445a3e91338325d6d|Sean Reed|seanreed1111@gmail.com|2025-03-13 10:04:48 -0400|adds simple mermaid diagram (#179)
+7e7bd8330db2e1e20744b87c70e5e3f2e5c5ad70|Sean Reed|seanreed1111@gmail.com|2025-03-13 10:04:48 -0400|adds simple mermaid diagram (#179)
+b3e61eb494f3289ce5a4b4654998ef9ff224429f|Sean Reed|seanreed1111@gmail.com|2025-03-10 15:03:22 -0400|adds get out of stock items
+173beb0f52bc89097d47bb3b463037096963edb5|Sean Reed|seanreed1111@gmail.com|2025-03-07 18:15:18 -0500|Papas fritas (#174)
+8066a33c7258cb5510b22b60729d04d37dd422ad|Sean Reed|seanreed1111@gmail.com|2025-03-07 18:15:18 -0500|Papas fritas (#174)
+f99310e36dd0a7636a4b1c8192479dcd4c845874|Sean Reed|seanreed1111@gmail.com|2025-03-07 17:15:43 -0500|Python3-12  integration (#170)
+db9af5591805ac70c89f9be4a000dabe5f26ac67|Sean Reed|seanreed1111@gmail.com|2025-03-07 17:15:43 -0500|Python3-12  integration (#170)
+e02737cab0d635d9e0447cb96f45ee5043500f47|Sean Reed|seanreed1111@gmail.com|2025-03-05 15:14:22 -0500|adds delete item, delete items, and delete modifier from item
+4c32c733b32c59ff9f8e2fba35343b1674a243af|Sean Reed|seanreed1111@gmail.com|2025-03-05 14:41:52 -0500|adds modifier to item test pass
+19c5d1000d4a45b9360c0692ed40bc410b987411|Sean Reed|seanreed1111@gmail.com|2025-03-05 14:30:46 -0500|updates to remove socket closed warnings using pytest
+569d3896b0aeb1d77efe7ff35b7d8f8d4940ed3d|Sean Reed|seanreed1111@gmail.com|2025-03-05 13:51:51 -0500|tests pass, but getting  <asyncio._SSLProtocolTransport object>   _warnings.warn( /opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/selector_events.py:868: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=18> error
+41220a90c77cce8abf8de92bc9323374e2dc9aa7|Sean Reed|seanreed1111@gmail.com|2025-03-05 13:39:25 -0500|finalizes adding modifiers with parent path key to Item
+6921c2e3f5b5f8b4808d37f8d12a327b6ec0948c|Sean Reed|seanreed1111@gmail.com|2025-03-05 13:21:13 -0500|v2 of modifiers with parents
+c3cac7944c7fbfa6f77a689f58726e96d2f4f36a|Sean Reed|seanreed1111@gmail.com|2025-03-05 12:27:03 -0500|updates Item object to include parent tree
+728756bf4cefd85a6c65c1c60ea8f5a190be5667|Sean Reed|seanreed1111@gmail.com|2025-03-05 04:17:45 -0500|updates Modifier and adds ModifierWithTree convenience class for injection into qu api
+8de87b1ab982eac8a7cc6498a07df8fc9135f0b3|Sean Reed|seanreed1111@gmail.com|2025-03-04 17:56:22 -0500|fixes modifiers and items in conftest
+bc6bb41faf3e7e6924752c6c96abf2b38b3faf79|Sean Reed|seanreed1111@gmail.com|2025-03-04 14:56:05 -0500|adds corrected items to conftest
+be71f2033aade3968d34be5a71d5034e14f26de3|Sean Reed|seanreed1111@gmail.com|2025-03-04 11:51:44 -0500|ruff formatting
+d591c8acee016b63bafdb44b79224dc4f6d13453|Sean Reed|seanreed1111@gmail.com|2025-03-04 11:49:11 -0500|adds awaitable type hin to async functions
+218e98d839de1072d46de78bb67801605ef2ec91|Sean Reed|seanreed1111@gmail.com|2025-03-04 09:58:20 -0500|changed types and imports
+5bf9d640929d6dab1fc0f32c6e2021d2c2d776d5|Sean Reed|seanreed1111@gmail.com|2025-03-04 07:12:44 -0500|adds protocol outline. Requires asyncio.gather for implementation of some methods
+e4f11537c0f1274ee419ac3af6adbb6170693583|Sean Reed|seanreed1111@gmail.com|2025-03-03 22:34:21 -0500|adds get order by id
+d852e529fe0073199df3f7a9fdcee49d873c5833|Sean Reed|seanreed1111@gmail.com|2025-03-03 17:49:25 -0500|merges dev
+b1733fee2f9caf8cbe70ee67c695929a41f94a23|Sean Reed|seanreed1111@gmail.com|2025-03-03 17:43:32 -0500|adds test get order by id to pytest
+7c9a66871c23cb993eca0dc4b7201c92626709dc|Sean Reed|seanreed1111@gmail.com|2025-03-02 14:44:19 -0500|adds validate order test
+caeccb1fb66508f8b071b2eb4a4bc86881ae38a7|Sean Reed|seanreed1111@gmail.com|2025-03-02 14:25:05 -0500|create order passes
+1e5e1b78f54928ff1609a4d1aadab1d8b69cd61d|Sean Reed|seanreed1111@gmail.com|2025-03-02 12:58:32 -0500|async class compiles
+516d5c91ad3c0eba5cbf932d470186c97a300f4e|Sean Reed|seanreed1111@gmail.com|2025-03-01 21:27:11 -0500|need to fix setup
+dfe6179a2872abd10541dfe963f76d58c1106dc0|Sean Reed|seanreed1111@gmail.com|2025-03-01 21:08:55 -0500|adds sync calls to prevent async init
+e053c55fa9ce6f3715560b6c73d43149d6e846b1|Sean Reed|seanreed1111@gmail.com|2025-02-28 19:02:48 -0500|need to integrate setup
+bf7438a5cce90a8ac95382e1880fc49874d46b1c|Sean Reed|seanreed1111@gmail.com|2025-02-28 18:41:53 -0500|adjusts init method
+9299e2ca3dc733a292c6745ec145001bcc0e705c|Sean Reed|seanreed1111@gmail.com|2025-02-28 17:33:25 -0500|removes an await put in by cursor
+602d8ff7e2ca073f2f90874c038a815d58ba2839|Sean Reed|seanreed1111@gmail.com|2025-02-28 17:01:06 -0500|adds pytest asyncio functionality
+f3ab6037b40178dba0214cf71678b32334aabe61|Sean Reed|seanreed1111@gmail.com|2025-02-28 09:24:52 -0500|begins v2
+7b63b051c3a414b64a8d1b223547f68bbb98b4e7|Sean Reed|seanreed1111@gmail.com|2025-02-27 19:30:42 -0500|changes pytest config
+e92b4e46b5879417502847e3bea0416153d23a92|Sean Reed|seanreed1111@gmail.com|2025-02-27 16:19:45 -0500|Merge branch 'dev' into 2025-02-25
+fce7a45012a7ea7feb3410027a4f90a38f042fa8|Sean Reed|seanreed1111@gmail.com|2025-02-27 16:13:48 -0500|removes qu certification items from bot/audivi_system
+079c3e4e7e36fddb060148434ad336ceb9fdbd2b|Sean Reed|seanreed1111@gmail.com|2025-02-27 16:11:45 -0500|merged protobufs
+74083c0be45f74e6c9ae2d3189182e9c7aa36e50|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:42:40 -0500|Qu integration 2025 02 24 (#151)
+9100ee6d7eb35f190e9c0e329073cbb9e9e9e237|Sean Reed|seanreed1111@gmail.com|2025-02-27 14:03:46 -0500|Merge branch 'dev' into 2025-02-25
+18c5a8c7a129114316b34d29edd8d01633973cf7|Sean Reed|seanreed1111@gmail.com|2025-02-27 14:03:21 -0500|typo
+60f8b9249673e4f8f6d702b22b9f09324dcabace|Sean Reed|seanreed1111@gmail.com|2025-02-27 13:54:56 -0500|fixes delete modifier from existing item
+5026e132fcaf5c02d7cd3eec4ec90bb2bb7008fb|Sean Reed|seanreed1111@gmail.com|2025-02-27 12:15:27 -0500|changes execution paths again
+ae972ce21f15014c52de4bd2993c9c4d51e400bd|Sean Reed|seanreed1111@gmail.com|2025-02-27 10:18:02 -0500|adds validate order
+e2fcf0dc53cacf503133ff2ab075d675885ea56d|Sean Reed|seanreed1111@gmail.com|2025-02-27 08:47:10 -0500|adds new typealias
+38157fdb100ccfec904a0d5aee328f17e86eec40|Sean Reed|seanreed1111@gmail.com|2025-02-27 05:35:27 -0500|completes add_modifiers_to_existing_item
+06fcadd2009e9b1ac3de5caa4ff860cc6d4f102f|Sean Reed|seanreed1111@gmail.com|2025-02-27 04:11:12 -0500|updates delete_items
+71e18703b6366b1b4bdc2c746361633a3c141779|Sean Reed|seanreed1111@gmail.com|2025-02-26 21:11:10 -0500|adds bulk delete items.
+091b48818e724d76709979e2b9d9dc86dfdc569a|Sean Reed|seanreed1111@gmail.com|2025-02-26 17:29:54 -0500|merged dev
+6656f8147c381d11a711b42e37c8e3d459ab25ab|Sean Reed|seanreed1111@gmail.com|2025-02-26 16:52:04 -0500|fixes tests
+eeae538b9b6df45b0e499fc872145dbbd77763b6|Sean Reed|seanreed1111@gmail.com|2025-02-26 16:42:06 -0500|intermediate commit
+3e367831c0320625a98f96381bda669ee74bd82a|Sean Reed|seanreed1111@gmail.com|2025-02-26 14:59:46 -0500|broke all tests by changing return values.
+507428aaebfe7f9cd5e69833cba1375acc7375eb|Sean Reed|seanreed1111@gmail.com|2025-02-25 18:09:40 -0500|Merge branch 'protobufs' into 2025-02-25
+1355884e36e1d0bcb989e2b1a34bf758e6d1f48c|Sean Reed|seanreed1111@gmail.com|2025-02-25 16:53:36 -0500|Merge branch 'protobufs' into 2025-02-25
+2f2a67d908f2cd719a5bf9241e7050deab4e3c3e|Sean Reed|seanreed1111@gmail.com|2025-02-25 16:52:26 -0500|update pytest.ini
+18c80374537263b4620f9557be1fb763d0db3dff|Sean Reed|seanreed1111@gmail.com|2025-02-25 16:51:51 -0500|update async client
+e71cb1f386d3e775b99107fde61238ed9a5cac0c|Sean Reed|seanreed1111@gmail.com|2025-02-25 14:57:04 -0500|adds more functions to qu utils
+2f21c4cded9eda49b56ce0c34ff350edb61fc2f1|Sean Reed|seanreed1111@gmail.com|2025-02-25 12:20:07 -0500|need to fix my defaults
+009d69956a7a2ee11ae2daa3da50749801f3387d|Sean Reed|seanreed1111@gmail.com|2025-02-25 06:10:40 -0500|adds async httpx client
+30ff4eeb738d8e2e8dcb4038ebea0ca47f8bc77a|Sean Reed|seanreed1111@gmail.com|2025-02-25 05:53:14 -0500|begins async client
+054ff18091da94558f395cee1bdfe7178e0e1857|Sean Reed|seanreed1111@gmail.com|2025-02-25 05:15:59 -0500|updates gitignore to ignore all extention caches
+81b6d47f0fe10429479eb90dbd7acf510a8ba3d7|Sean Reed|seanreed1111@gmail.com|2025-02-24 22:38:03 -0500|unbreaks add bulk items
+1591626199c0aca72bbe36b6b8368b7f1e3719af|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:51:58 -0500|moves qu directory into posrelay/src/pos
+08a5faeef5478a193d5c8fb0601c90f9e0703e7f|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:47:11 -0500|Merge branch 'qu-integration-2025-02-24' into protobufs
+ccdeeee49e189666957148cd5de55d29bdc6a54a|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:42:40 -0500|Qu integration 2025 02 24 (#151)
+cd9e6f0caa16c3b34d5cfd1fd19c72cdef72a1ff|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:42:40 -0500|Qu integration 2025 02 24 (#151)
+cb1444cb3a364dd52d633d0cbd1c42fad77659cb|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:38:51 -0500|Merge branch 'dev' into qu-integration-2025-02-24
+bdbca990c3439ded5bb31d0925a139b4a64a34f0|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:30:51 -0500|fixes restaurant context
+d566e5d907a5642326288a86a6dd0c42f63fc682|Sean Reed|seanreed1111@gmail.com|2025-02-24 20:07:54 -0500|updates company id
+e8fd103cc6d580ac87582c6a51c77687ac33947e|Sean Reed|seanreed1111@gmail.com|2025-02-24 18:05:08 -0500|refactor tests
+3f14af255df1185414cd4861a548dc4ab8f4a7b3|Sean Reed|seanreed1111@gmail.com|2025-02-24 17:01:21 -0500|update and refactor src dirs
+11882c6df30cb6c5db25b34c27837ee9f6f6d2e5|Sean Reed|seanreed1111@gmail.com|2025-02-24 15:22:05 -0500|deletes notebook checkpoints
+6f1505bd2be3887aa38b226a89d9f29000d1cdda|Sean Reed|seanreed1111@gmail.com|2025-02-24 15:19:42 -0500|deletes old tests
+0217be5cc685de3d74e0d89d2d1bd2b0ca4b52e5|Sean Reed|seanreed1111@gmail.com|2025-02-24 15:19:00 -0500|refactor model names
+dd50687a4ca59c1f2f9b5e13257045fd1978ed23|Sean Reed|seanreed1111@gmail.com|2025-02-24 14:24:18 -0500|Qu cert 2024 02 24 (#147)
+9e54a4d817d66768728bab567d3b99cdbc859871|Sean Reed|seanreed1111@gmail.com|2025-02-24 14:24:18 -0500|Qu cert 2024 02 24 (#147)
+cd03874e0629217ec485f629a84fa319d28e4413|Sean Reed|seanreed1111@gmail.com|2025-02-21 13:05:11 -0500|New qu certification (#141)
+0ea3e0de2f23e287c1d49be27ff17a5c91226670|Sean Reed|seanreed1111@gmail.com|2025-02-21 13:05:11 -0500|New qu certification (#141)
+ab75f50c344e490b71d2ddf414fadd6a5dd1470b|Sean Reed|seanreed1111@gmail.com|2025-02-03 09:15:37 -0500|moves to .bak files (#116)
+a00f1fe2451a7ac8d20df268f8a66c09deaeb968|Sean Reed|seanreed1111@gmail.com|2025-02-03 09:15:37 -0500|moves to .bak files (#116)
+5a53fbf3215f1421c242d3b27aa4582a7b26fe88|Sean Reed|seanreed1111@gmail.com|2025-02-03 09:11:48 -0500|Fix dev branch (#115)
+ffb864d69158ea1b541832517f227425157cb6ea|Sean Reed|seanreed1111@gmail.com|2025-02-03 09:11:48 -0500|Fix dev branch (#115)
+9298c12ed7eb0fce3bb82cb2a65ca37ef56db720|Sean Reed|seanreed1111@gmail.com|2025-02-02 21:28:36 -0500|Fix action errors (#114)
+c90dc3dde3072425fb3e2fa38c70ed442913c1f1|Sean Reed|seanreed1111@gmail.com|2025-02-02 21:28:36 -0500|Fix action errors (#114)
+555fcce2f50ab32482f6993122ce867610635dd4|Sean Reed|seanreed1111@gmail.com|2025-02-02 21:10:53 -0500|Fix action errors (#113)
+928dda81ef639d80815d5f3cf46c00d9d480fbe1|Sean Reed|seanreed1111@gmail.com|2025-02-02 21:10:53 -0500|Fix action errors (#113)
+076868ee223c07763763b284da605f6035e9f97e|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:53:42 -0500|updates checkout version (#112)
+adb48b109385f43ad14cbbe7ea8750e6b6db4104|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:53:42 -0500|updates checkout version (#112)
+58c33863688a73e4ad45b586581724dec5c04555|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:48:27 -0500|Run containers (#111)
+255b051887fcc63833b494cc84125fbf0baa06fd|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:48:27 -0500|Run containers (#111)
+28499cc55777368bd478c495e76d19c4267c8761|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:12:33 -0500|attempts to launch docker compose in gh actions (#110)
+12a32c5fef5e963cd61ff4b69aa17d5d3c578614|Sean Reed|seanreed1111@gmail.com|2025-02-02 20:12:33 -0500|attempts to launch docker compose in gh actions (#110)
+0a15158bbc4dc6e35885b7251360d29ceb32d776|Sean Reed|seanreed1111@gmail.com|2025-02-02 19:56:27 -0500|updates check-syntax (#109)
+5d6a1ea0585b2dc1760d3f1edc3904599d60d137|Sean Reed|seanreed1111@gmail.com|2025-02-02 19:56:27 -0500|updates check-syntax (#109)
+6be02fb927dee1f07701526a712ad0a1174d4c8b|Sean Reed|seanreed1111@gmail.com|2025-02-02 14:46:57 -0500|Adjust logs (#107)
+d767b3452635c9e54cc235fcd3e9ad8c6ad6652c|Sean Reed|seanreed1111@gmail.com|2025-02-02 14:46:57 -0500|Adjust logs (#107)
+5f4faadefa0ac89295374a89da893c0aea89646f|Sean Reed|seanreed1111@gmail.com|2025-01-21 00:23:51 -0500|changes enqueue=true to make for safe multiprocessing (#91)
+3434061a6989e7520cb4ea7d7f27dab3d008c005|Sean Reed|seanreed1111@gmail.com|2025-01-21 00:23:51 -0500|changes enqueue=true to make for safe multiprocessing (#91)
+5edc73899cbd3191bca161357bdbde548a7ba740|Sean Reed|seanreed1111@gmail.com|2024-11-25 13:15:45 -0500|removes try except block from load config and get keys (#45)
+52013e021bf96ad2994f044066033b93f84a2259|Sean Reed|seanreed1111@gmail.com|2024-11-25 13:15:45 -0500|removes try except block from load config and get keys (#45)
+ae74f1586471d015a8a05b1a38b3cf4526376110|Sean Reed|seanreed1111@gmail.com|2024-11-20 10:49:21 -0500|Create pytest gh action (#44)
+5ca54812001edb043a7f6fc6ce890e9fe01aa03f|Sean Reed|seanreed1111@gmail.com|2024-11-20 10:49:21 -0500|Create pytest gh action (#44)
+171f3f14a9d4843dcdecc37af37057b6c9fda8ea|Sean Reed|seanreed1111@gmail.com|2024-11-19 12:30:36 -0500|Adds two smoke tests (#42)
+16ac4e6b85ff01d7f6a4ce0b8cd24b0cc54196dd|Sean Reed|seanreed1111@gmail.com|2024-11-19 12:30:36 -0500|Adds two smoke tests (#42)
+7d205019b6d88ec3072bcfe8ae6cdb230cadb189|Sean Reed|seanreed1111@gmail.com|2024-11-18 22:54:29 -0500|fix pytest 'unit_tests'  so they do not error out when you run. (#40)
+97db3deef457555db2529f22bdfa92cc407e0ab9|Sean Reed|seanreed1111@gmail.com|2024-11-18 22:54:29 -0500|fix pytest 'unit_tests'  so they do not error out when you run. (#40)
+9fd3657f53823a4ecad4f797a4037fca427ae5aa|Sean Reed|seanreed1111@gmail.com|2024-10-06 14:05:27 -0400|Bug fix intent agent (#103)
+7a528bdec2c79836ec36f2854852f5e0c04c7e65|Sean Reed|seanreed1111@gmail.com|2024-10-06 14:05:27 -0400|Bug fix intent agent (#103)
+e67253cce81822e8413682fd3b46736c19c3bf06|Sean Reed|seanreed1111@gmail.com|2024-10-06 01:57:11 -0400|Add state machine transaction id to s3 data bucket (#102)
+22a54eaf9579eeb2bbad36dd44924db0a154425c|Sean Reed|seanreed1111@gmail.com|2024-10-06 01:57:11 -0400|Add state machine transaction id to s3 data bucket (#102)
+1b9d3e497a753723fdd8fade7db8119edc37ae86|Sean Reed|seanreed1111@gmail.com|2024-08-24 16:02:36 -0400|fix syntax error for dsconfig (#75)
+56349e40052b7c2f8273026ac0b798af090796ac|Sean Reed|seanreed1111@gmail.com|2024-08-24 16:02:36 -0400|fix syntax error for dsconfig (#75)
+d480c784c1c6d2a5238825731408ac7249a9baba|Sean Reed|seanreed1111@gmail.com|2024-08-22 19:36:37 -0400|Add debug flag and thumbs up down (#68)
+0b7b21013160b48e4916abae0ce06648eddcb994|Sean Reed|seanreed1111@gmail.com|2024-08-22 19:36:37 -0400|Add debug flag and thumbs up down (#68)
+a47133082657a311a5b638d4b8521fcbaaebe08a|Sean Reed|seanreed1111@gmail.com|2024-08-20 17:34:02 -0400|removes automatic run on pull request (#62)
+c6616bf99d5d2e18f11af26af41bd6c8a2a57772|Sean Reed|seanreed1111@gmail.com|2024-08-20 17:34:02 -0400|removes automatic run on pull request (#62)
+e52c992a9ecb1fa004b7c9847879edf97c1db96c|Sean Reed|seanreed1111@gmail.com|2024-08-20 17:18:37 -0400|renames test_conversation file to reflect it is only for menu_v004 (#61)
+3b17abf4880780a72ac87a6f3d8469722295aa2d|Sean Reed|seanreed1111@gmail.com|2024-08-20 17:18:37 -0400|renames test_conversation file to reflect it is only for menu_v004 (#61)
+866d38d5d9319c74e92bcc5725455992f65c602a|Sean Reed|seanreed1111@gmail.com|2024-08-20 16:06:50 -0400|Pytest update (#59)
+ba076e6e42121bd26531560d6e2a3f46a1482101|Sean Reed|seanreed1111@gmail.com|2024-08-20 16:06:50 -0400|Pytest update (#59)
+d10fe9d460b5177f26a612fdce11abc222eccae2|Sean Reed|seanreed1111@gmail.com|2024-08-19 20:47:03 -0400|Fix requirements (#57)
+82893f436f1a87e57482e0e4985041c1403267d1|Sean Reed|seanreed1111@gmail.com|2024-08-19 20:47:03 -0400|Fix requirements (#57)
+c56ccf6ba8c038dc6e6d7ef553cce582dd1dfb21|Sean Reed|seanreed1111@gmail.com|2024-08-19 18:41:41 -0400|adds pytest to github workflows (#53)
+277b488265cd2686125f69be5558f28cbc8f876d|Sean Reed|seanreed1111@gmail.com|2024-08-19 18:41:41 -0400|adds pytest to github workflows (#53)
+e1c5f29ba4d657df4bc3a7717b654bd474a53205|Sean Reed|seanreed1111@gmail.com|2024-08-19 18:12:06 -0400|Add state machine history obj (#52)
+2450a7b7888b453ccea4b089c1e57a5fc51b20d9|Sean Reed|seanreed1111@gmail.com|2024-08-19 18:12:06 -0400|Add state machine history obj (#52)
+84cdf698fb6de50ac97f9c241de876e43728ad1d|Sean Reed|seanreed1111@gmail.com|2024-08-02 09:23:18 -0400|GitHub actions (#37)
+c554a3e1cf34a6ca187d7d0689af3f91424fd69e|Sean Reed|seanreed1111@gmail.com|2024-08-02 09:23:18 -0400|GitHub actions (#37)
+4dec8b99294c23fb9ffe681275aa5c32456a2f0f|Sean Reed|seanreed1111@gmail.com|2024-07-31 20:07:53 -0400|adjusts to Dockerfile from Dockerfile.server (#36)
+41365b63786684d21f39a7a61d88046143c34628|Sean Reed|seanreed1111@gmail.com|2024-07-31 20:07:53 -0400|adjusts to Dockerfile from Dockerfile.server (#36)
+9cc9b4da8dfd1fe11e3cd8eaabd313f59911877d|Sean Reed|seanreed1111@gmail.com|2024-07-31 19:44:19 -0400|v1 of push-release-to-package.yml (#35)
+6d5f7861a294c82fe6f24fe21f73498edfb0f74e|Sean Reed|seanreed1111@gmail.com|2024-07-31 19:44:19 -0400|v1 of push-release-to-package.yml (#35)
+6496cd21caf75bf92c1c19d9e60b611c35f9c768|Sean Reed|seanreed1111@gmail.com|2024-07-27 22:06:22 -0400|does merge (#32)
+9dd26f278788957b477b1205ca57a57f6f2c9de3|Sean Reed|seanreed1111@gmail.com|2024-07-27 22:06:22 -0400|does merge (#32)
+0da8de086ce3602158e0c5d491bde1d901719649|Sean Reed|seanreed1111@gmail.com|2024-07-26 18:20:05 -0400|Pytest v004 (#30)
+01779b1bc663d4c18e8271b79a87bf2eb4971d64|Sean Reed|seanreed1111@gmail.com|2024-07-26 18:20:05 -0400|Pytest v004 (#30)
+bae1dd9090a86d28b3a807d25b86c23faa8d4db7|Sean Reed|seanreed1111@gmail.com|2024-07-24 21:24:06 -0400|adds a total of 21 tests to conversation_eval (#29)
+43de2dc8fab8a48023b4e564cd212aafcc6b71f1|Sean Reed|seanreed1111@gmail.com|2024-07-24 21:24:06 -0400|adds a total of 21 tests to conversation_eval (#29)
+bdc74932f7b9cce97066c41460a201e14ba0016c|Sean Reed|seanreed1111@gmail.com|2024-07-22 12:16:50 -0400|Pytest v002 (#28)
+0a9eb36cc09b9419e5473823a3cf5bc0f4362f4e|Sean Reed|seanreed1111@gmail.com|2024-07-22 12:16:50 -0400|Pytest v002 (#28)
+93483f5bc6e30ef76f0f61388be68324dd4b8244|Sean Reed|seanreed1111@gmail.com|2024-07-21 15:28:07 -0400|merges in v0.0.1 of  pytest functionality (#27)
+43f6c2d78c6b1f19c78f2394fe1a901633e46b46|Sean Reed|seanreed1111@gmail.com|2024-07-21 15:28:07 -0400|merges in v0.0.1 of  pytest functionality (#27)
+eb7f082247592c94bd3b8621acf7c3fa2374be2e|Sean Reed|seanreed1111@gmail.com|2024-07-12 11:38:24 -0400|Merge pull request #26 from audivi-ai/pytest-merge-branch
+a94da8ab7d8c41f8312149a63dd505f53db85d38|Sean Reed|seanreed1111@gmail.com|2024-07-12 11:38:24 -0400|Merge pull request #26 from audivi-ai/pytest-merge-branch
+b41b7d5c682afe23802a116c006e4737195b94b6|Sean Reed|seanreed1111@gmail.com|2024-07-12 15:37:11 +0000|updates pytest related items
+66c6eff36bbdc35c689a93191c0b2bb5f4b5a214|Sean Reed|seanreed1111@gmail.com|2024-07-12 15:37:11 +0000|updates pytest related items
+62932bef8f400b05a2dd024189ecc1165f70cddf|Sean Reed|seanreed1111@gmail.com|2024-07-12 15:29:53 +0000|updates requirements.txt to include pytest modules
+77442734e0084597983b4c8dd3715606b8fee763|Sean Reed|seanreed1111@gmail.com|2024-07-12 15:29:53 +0000|updates requirements.txt to include pytest modules
+6efc56088a629f3b286b114a30e8b07b25f02ebf|Sean Reed|seanreed1111@gmail.com|2024-07-12 11:43:08 +0000|workflow still doesn't work
+c9b6836f5994a0333a71dcdd525b30e477a6223a|Sean Reed|seanreed1111@gmail.com|2024-07-12 11:43:08 +0000|workflow still doesn't work
+0042d6893e305b7ce1cab5cfb03f09ca44125e73|Sean Reed|seanreed1111@gmail.com|2024-07-11 16:42:58 -0400|Merge pull request #25 from audivi-ai/checkout-action
+477a17a225f26a0dadb3429dae4db6cb4c8dc67c|Sean Reed|seanreed1111@gmail.com|2024-07-11 16:42:58 -0400|Merge pull request #25 from audivi-ai/checkout-action
+ad5616a7ae5f324e1ee9759fe8cee463dfae2a4b|Sean Reed|seanreed1111@gmail.com|2024-07-11 20:34:06 +0000|updates checkout action to v5
+81db5bc137c379fa28a845ac619235cc7a92f460|Sean Reed|seanreed1111@gmail.com|2024-07-11 20:34:06 +0000|updates checkout action to v5
+4442fe08c2c5c77722734db024df166f0798bdd9|Sean Reed|seanreed1111@gmail.com|2024-07-11 15:35:45 -0400|Merge pull request #24 from audivi-ai/update-python-app-yaml
+4c19e27b1a5a675686770ca8f3216c58a32bbfab|Sean Reed|seanreed1111@gmail.com|2024-07-11 15:35:45 -0400|Merge pull request #24 from audivi-ai/update-python-app-yaml
+f5d049f6f3e9301ddf10f37c9923ef62afd264bc|Sean Reed|seanreed1111@gmail.com|2024-07-11 19:33:52 +0000|addds caching and updates gh action to setup-python@v4
+e5891b61b45e82ebb1eda8fc7f690a29c36f4018|Sean Reed|seanreed1111@gmail.com|2024-07-11 19:33:52 +0000|addds caching and updates gh action to setup-python@v4
+e42f9109d63a38fdf1b59fb9410934f6a8b45966|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:45:14 -0400|Merge pull request #23 from audivi-ai/utils-load-config-and-get-keys
+76bb0602730b483d3bfba3c8af8a78ded351325d|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:45:14 -0400|Merge pull request #23 from audivi-ai/utils-load-config-and-get-keys
+e9502942b78cdf11574c06d8e3231b410d48a99f|Sean Reed|seanreed1111@gmail.com|2024-07-11 18:41:13 +0000|adds error handling to src/utils.py for loading config file
+7ef7a82881ef9f90b1659776269440264d3f823a|Sean Reed|seanreed1111@gmail.com|2024-07-11 18:41:13 +0000|adds error handling to src/utils.py for loading config file
+3c6656788d96e87ba0eead90056b3f4c00f9cafb|Sean Reed|seanreed1111@gmail.com|2024-07-11 12:31:57 -0400|Merge pull request #22 from audivi-ai/seanreed1111-patch-1
+43d99fca961542b35472280ca7f3c2587ee3628b|Sean Reed|seanreed1111@gmail.com|2024-07-11 12:31:57 -0400|Merge pull request #22 from audivi-ai/seanreed1111-patch-1
+5ccf5727864b332fdf597d03d64217914a7a765b|Sean Reed|seanreed1111@gmail.com|2024-07-11 12:31:30 -0400|to use secrets from prod env -python-app.yml
+58e3ae3d7f79155b34c08a4067bb774d1360a617|Sean Reed|seanreed1111@gmail.com|2024-07-11 12:31:30 -0400|to use secrets from prod env -python-app.yml
+a7ccfc7e1c8e31759d0129a9fa4a3db56591cfa3|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:34:14 -0400|Merge pull request #21 from audivi-ai/seanreed1111-patch-1
+3af9318776ce30a33813941ecb53420f1ca8f580|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:34:14 -0400|Merge pull request #21 from audivi-ai/seanreed1111-patch-1
+2e26b24b54ecca6ba605595519c29f0d53a29fdc|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:33:40 -0400|demo conversation-eval-app.yml
+ea92fe23c77943cf0ccea419c651b19944b0e55d|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:33:40 -0400|demo conversation-eval-app.yml
+c9e6fbdbe88bb8f7a8df70ea733874e98e7e3633|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:12:54 -0400|Merge pull request #20 from audivi-ai/github-actions
+858c0f3cd44560d26c0b528f1ee10c4489f646b4|Sean Reed|seanreed1111@gmail.com|2024-07-11 11:12:54 -0400|Merge pull request #20 from audivi-ai/github-actions
+42d6cce24b1c0c1e5a808e61da6934e76948d1d9|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:57:27 +0000|makes hello world gh action workflow
+dda6b9d3be5ac21ab283bf074c670bffae7711d6|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:57:27 +0000|makes hello world gh action workflow
+4933b3a9863beea66840e82016cf1b96d72591a1|Sean Reed|seanreed1111@gmail.com|2024-07-11 10:30:49 -0400|Merge pull request #19 from audivi-ai/merge-branch
+96bfc8ff711eb6b1eee336032561ab34142c7873|Sean Reed|seanreed1111@gmail.com|2024-07-11 10:30:49 -0400|Merge pull request #19 from audivi-ai/merge-branch
+97f773372e339c6beb0f5e95644efc549409dd28|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:20:29 +0000|merged audivi-demo-idk into master
+d75d1e0deb72973ebdef560f242660325134efa1|Sean Reed|seanreed1111@gmail.com|2024-07-11 14:20:29 +0000|merged audivi-demo-idk into master
+567ec48607b2265c2b9e20a920bf085483a33d2e|Sean Reed|seanreed1111@gmail.com|2024-07-10 16:31:48 +0000|adds github action poetry dependency
+fb32bfc6d1de8e4ab7803ef1e23610287bcd8af8|Sean Reed|seanreed1111@gmail.com|2024-07-10 16:31:48 +0000|adds github action poetry dependency
+10c0f92ea032b17d7c127ee3b9c6667887e70e1d|Sean Reed|seanreed1111@gmail.com|2024-07-10 16:24:13 +0000|begins github action flow
+652dfbbf1696dd4cce096e6fc2bfaebb08c0085e|Sean Reed|seanreed1111@gmail.com|2024-07-10 16:24:13 +0000|begins github action flow
+8de03a9ebfd74e7882f7ddc35f2abe472a82e166|Sean Reed|seanreed1111@gmail.com|2024-07-10 13:07:07 +0000|changes makefile so it will also build docker on local machine
+27e5afe515f578718a1f03e2398397ec5e7c47b4|Sean Reed|seanreed1111@gmail.com|2024-07-10 13:07:07 +0000|changes makefile so it will also build docker on local machine
+fbdd0b50db24b2913628ec6161550cbae694af6a|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:41:49 +0000|fixes typo
+bf1b7bfd967e1e6f635fc47e16741a2f63bd8d62|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:41:49 +0000|fixes typo
+377b5d47446364a3ac70969a3a5e14fba9a8948e|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:38:56 +0000|adds error message to all file exists checks
+cafd7dca6fb2dcd1c0341297d7b2f6e222794a5a|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:38:56 +0000|adds error message to all file exists checks
+09207e384c2b574a411199e64d9063dbe24f4414|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:18:44 +0000|checks if config.json and requirements.txt are present
+55fad54ed0cef17b56cad8fe01c55b4fb179f2ff|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:18:44 +0000|checks if config.json and requirements.txt are present
+f283b674774b6313b050bfdc1eb07e8c5d500286|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:01:05 +0000|fixes makefile to create tmp directory
+c80bdfd2764edfba527c5256d0f14e34bb623dac|Sean Reed|seanreed1111@gmail.com|2024-07-10 12:01:05 +0000|fixes makefile to create tmp directory
+3d65593f3e4c70cdeac5d1596244928b357fbb80|Sean Reed|seanreed1111@gmail.com|2024-07-10 01:04:32 +0000|adds Makefile
+b1929d4d2ab85234e99742c63dbdc9330f75894c|Sean Reed|seanreed1111@gmail.com|2024-07-10 01:04:32 +0000|adds Makefile
+38081772548ee0b214a4cfd325405e439143219e|Sean Reed|seanreed1111@gmail.com|2024-07-09 23:45:07 +0000|adds docker env setup script to get current branch name and sha
+77602ac7ebd5a4f2304472a1d895c97837530e81|Sean Reed|seanreed1111@gmail.com|2024-07-09 23:45:07 +0000|adds docker env setup script to get current branch name and sha
+076da1db84479a66e1a2002447368930dd716b1c|Sean Reed|seanreed1111@gmail.com|2024-07-09 23:40:13 +0000|adds docker bake build file
+1202b7d68ea5be3d962132c5e7c1d701d1d2b78c|Sean Reed|seanreed1111@gmail.com|2024-07-09 23:40:13 +0000|adds docker bake build file
+a67f76d98bb67e2cd8bc1ed1679577cb53612abb|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-07 11:57:05 +0000|changes add_to_conversation button color when ready to press
+da2d590652144a8171c6e049e175c44ea177c40e|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-07 11:57:05 +0000|changes add_to_conversation button color when ready to press
+572a82085bcc756fcb45aede8e7d51b901bdb11b|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-07 11:49:12 +0000|adds command line flag to docker server and gradio files to save data to s3
+80b5b39644bee4188e3faf739a34841b397ffd2c|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-07 11:49:12 +0000|adds command line flag to docker server and gradio files to save data to s3
+fe3e1aa991fe52b6ce02e97db1662b0118280959|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 23:36:23 +0000|resets save to s3 to False
+4f0c86a989b37fe29f5af8e7e0037b2bf96a1133|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 23:36:23 +0000|resets save to s3 to False
+799bd7dd6c7897cd509921abcedbca15b2c7a8bd|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 23:21:19 +0000|makes save to s3 default. fixes add to conversation button
+b87a18ad5603704745d2c3bd06797a2a3a31597d|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 23:21:19 +0000|makes save to s3 default. fixes add to conversation button
+4836fc859bfff0f867efa3a33026c63804e5bcb4|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 01:59:19 +0000|adds unused command line argument for save to s3
+f4cc1a4a6bb2dffbfc5e44bb26c75666fd9b7537|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 01:59:19 +0000|adds unused command line argument for save to s3
+166e09335c346dbb9a1d8f8e6101917348a4af9c|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 01:08:31 +0000|changes conversation_eval file name
+c96eb9bfdf9051ab3067a56458697cb84e5966f8|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-06 01:08:31 +0000|changes conversation_eval file name
+63e2a0d038d00ccfe29468f658871e0ecb49600c|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-05 13:29:49 +0000|updates conversation_eval/print_and_write_results to create results dir if needed
+0378e0de8f1c8490b36921cf4bfcec5195c24200|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-05 13:29:49 +0000|updates conversation_eval/print_and_write_results to create results dir if needed
+fec3ae3ea7578f1550d974d2eb2dc7f0afae8a49|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-05 13:15:41 +0000|updates all dockerfiles to remove healthchecks. adds new dockerfile.conv_eval. mv
+c093d614199a829bc9a28aa7980b85d9d5d334ef|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-05 13:15:41 +0000|updates all dockerfiles to remove healthchecks. adds new dockerfile.conv_eval. mv
+71387e364d89e2db7028818809ee8e8f52e72e1c|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-02 15:58:08 +0000|adds additional dockerfile. updates requirements.txt adds contextlib to audivi_demo.py file
+c4d7bed034468628d2a601f211720606c0f5f7b1|Sean Reed|ubuntu@ip-172-31-21-25.us-east-2.compute.internal|2024-07-02 15:58:08 +0000|adds additional dockerfile. updates requirements.txt adds contextlib to audivi_demo.py file
+cd3fd65163a1a49cf02fa8ef0ea4df6b38099e47|Sean Reed|sean.reed@gmail.com|2024-06-05 01:12:18 -0400|makes transaction id assignment into logger.success so it stands out more in the logs
+9cd4409056f6de84f117e55d6fc67eaafe21b3b2|Sean Reed|sean.reed@gmail.com|2024-06-05 01:12:18 -0400|makes transaction id assignment into logger.success so it stands out more in the logs
+903208076044f6ac68bed8d2b65f36cf8db25474|Sean Reed|sean.reed@gmail.com|2024-06-05 00:53:46 -0400|adds more logging statements in timing when entering and leaving functions
+eba4e717b34bcfcbaa04c47ff6ab66f2acb8cfba|Sean Reed|sean.reed@gmail.com|2024-06-05 00:53:46 -0400|adds more logging statements in timing when entering and leaving functions
+c849a3f9ff9dc8168c7b1aa82d694dc2fc077296|Sean Reed|sean.reed@gmail.com|2024-06-05 00:21:25 -0400|rationalizes logging, add source module to timing logs so can find the function easier
+6cb69af773709ec3a42b50789b27dd433645a26b|Sean Reed|sean.reed@gmail.com|2024-06-05 00:21:25 -0400|rationalizes logging, add source module to timing logs so can find the function easier
+66df3e80462410b467e081b85a82a4e916466777|Sean Reed|sean.reed@gmail.com|2024-06-04 19:53:06 -0400|adjusts set_transaction_id in state machine
+1d01dd58d26851efaf506f0b367e1118bb149577|Sean Reed|sean.reed@gmail.com|2024-06-04 19:53:06 -0400|adjusts set_transaction_id in state machine
+e9f43708c4162243f5bf11fd15a292f04f705c46|Sean Reed|sean.reed@gmail.com|2024-06-04 19:50:09 -0400|reformat state machine file with ruff
+5a7933e51271cda332f91378443ae6b5e599eb44|Sean Reed|sean.reed@gmail.com|2024-06-04 19:50:09 -0400|reformat state machine file with ruff
+8ceb2cf8f7f6101657e4262a1a53462310f8562c|Sean Reed|sean.reed@gmail.com|2024-06-04 19:46:37 -0400|adds transaction id to state machine
+72b3ae47ce24c332659c05fc78b4dd635e64ccf3|Sean Reed|sean.reed@gmail.com|2024-06-04 19:46:37 -0400|adds transaction id to state machine
+8bec77a6306d868b9f72a1186265feb8d799574a|Sean Reed|sean.reed@gmail.com|2024-06-04 19:20:35 -0400|adds self to state id call
+13d3ba93a3f2201fccbf1f7de9fc240ee39fa249|Sean Reed|sean.reed@gmail.com|2024-06-04 19:20:35 -0400|adds self to state id call
+a8576ec5711773203689847f24e162ffb5f4db7c|Sean Reed|sean.reed@gmail.com|2024-06-04 19:17:53 -0400|changes print to logging.debug in state machine
+1c9c38bbb8a79d42538a33115efe58b2a6b3d76a|Sean Reed|sean.reed@gmail.com|2024-06-04 19:17:53 -0400|changes print to logging.debug in state machine
+23ceb5c0d5a46492e0d90fdbf68597ee7cf732b3|Sean Reed|sean.reed@gmail.com|2024-06-04 17:26:53 -0400|changes logs and truncates timing function logs again. sets up debug
+71090e356fa9c032150c5e952bbb39d2ba7e583c|Sean Reed|sean.reed@gmail.com|2024-06-04 17:26:53 -0400|changes logs and truncates timing function logs again. sets up debug
+fa30606ddfc9fc6baf4cc3b4acb3bc9c507ab32e|Sean Reed|sean.reed@gmail.com|2024-06-04 14:44:32 -0400|change logging defaults for stderr and stdout
+60e0a2f4f3b2cfd2e8d060dc53842b405b7073fc|Sean Reed|sean.reed@gmail.com|2024-06-04 14:44:32 -0400|change logging defaults for stderr and stdout
+e93661b0336ce0ab358d7c3c0dc3acc674028df6|Sean Reed|sean.reed@gmail.com|2024-06-04 14:20:23 -0400|adds full args to the timing logger in debug mode.
+fd15f7a1b389d5248a972ad0fc896c8bc527176e|Sean Reed|sean.reed@gmail.com|2024-06-04 14:20:23 -0400|adds full args to the timing logger in debug mode.
+6b212182aafa266ee7abba47244dfb98783538a1|Sean Reed|sean.reed@gmail.com|2024-06-04 10:37:39 -0400|finishes logging changes on ensemble.py
+d7ed916c01510aaab77a731c0620b0c59295266e|Sean Reed|sean.reed@gmail.com|2024-06-04 10:37:39 -0400|finishes logging changes on ensemble.py
+f6a43db2af0c98509f51b5534cabecdb13d78c2d|Sean Reed|sean.reed@gmail.com|2024-06-04 10:32:38 -0400|changes ensemble.py logging.
+9a494b95fe56fe70e585001e971e0c38747f5fc9|Sean Reed|sean.reed@gmail.com|2024-06-04 10:32:38 -0400|changes ensemble.py logging.
+9b157cf25e9709274116719fe45553a3f98fde01|Sean Reed|sean.reed@gmail.com|2024-06-04 10:24:18 -0400|changed logger in agent.py
+4a7613f1d24298215e42b34d18421ae79e59f6cf|Sean Reed|sean.reed@gmail.com|2024-06-04 10:24:18 -0400|changed logger in agent.py
+3b991f4a83145c1f985f7a95281d9bcd8f4aca28|Sean Reed|sean.reed@gmail.com|2024-06-04 10:18:27 -0400|adjusts logger in audivi_demo and utils.py
+b7aeb9ba2be9625f620bef40376ed03d1c8b7864|Sean Reed|sean.reed@gmail.com|2024-06-04 10:18:27 -0400|adjusts logger in audivi_demo and utils.py
+54b7a9f5382fc526be3a4c23bb69809bb1e1f5f5|Sean Reed|sean.reed@gmail.com|2024-06-03 18:16:38 -0400|update Dockerfile to add non-root user
+1beb0052c8ec20eaa31eec5a1b40fffa7db70bcb|Sean Reed|sean.reed@gmail.com|2024-06-03 18:16:38 -0400|update Dockerfile to add non-root user
+4f5930ccf7443bdd5be65ff313e759baa4812126|Sean Reed|sean.reed@gmail.com|2024-06-03 10:43:51 -0400|adds default level of 'warning' to logger in audivi-demo.py file
+6de1181d3ebca2f1a4466bb055da72cf6aa0c45a|Sean Reed|sean.reed@gmail.com|2024-06-03 10:43:51 -0400|adds default level of 'warning' to logger in audivi-demo.py file
+712f59276d7d91354bd1d15f7d7818d8c4dd8147|Sean Reed|sean.reed@gmail.com|2024-06-03 10:42:12 -0400|adds default level of debug to logger in audivi-demo.py file
+1df4b8af2b08f21cfb9424ee6628ebcfd8804f93|Sean Reed|sean.reed@gmail.com|2024-06-03 10:42:12 -0400|adds default level of debug to logger in audivi-demo.py file
+3da613f495bf9f55f00efb5052f44c2ddb945127|Sean Reed|sean.reed@gmail.com|2024-06-03 10:10:03 -0400|undo logger changes
+aaa0fb6c13e329631469d3406daca096f6524655|Sean Reed|sean.reed@gmail.com|2024-06-03 10:10:03 -0400|undo logger changes
+e0fe177b1f8f4c09fd43871278c20a11f3249e0c|Sean Reed|sean.reed@gmail.com|2024-05-31 16:08:31 -0400|adds argparse
+8eb71931df1f2fd90590fe4d1db57de48a641b07|Sean Reed|sean.reed@gmail.com|2024-05-31 16:08:31 -0400|adds argparse
+fe3ed41adf21aa18e4759d0c0f7dc704f051ec24|Sean Reed|sean.reed@gmail.com|2024-05-31 15:40:21 -0400|updates requirements.txt. unfinished startup.sh script
+4cc990a1ba4da1db31f75a53c053c36b10329e53|Sean Reed|sean.reed@gmail.com|2024-05-31 15:40:21 -0400|updates requirements.txt. unfinished startup.sh script
+7fd42e7e0d8562e4c0dfbce9f1a09beaba101675|Sean Reed|sean.reed@gmail.com|2024-05-30 23:29:01 -0400|adds timing to agent.py
+88db5f3e7292b045d580ac2458efd78df3aefccc|Sean Reed|sean.reed@gmail.com|2024-05-30 23:29:01 -0400|adds timing to agent.py
+d37951d577299110bab4efacc67d1b93bb1ef0c7|Sean Reed|sean.reed@gmail.com|2024-05-30 22:40:06 -0400|ruff formatting
+b1ee395d36937cea60f6f0ad036f269d4818037a|Sean Reed|sean.reed@gmail.com|2024-05-30 22:40:06 -0400|ruff formatting
+f09f8e7f384097d241210ca9788749d0ff902e77|Sean Reed|sean.reed@gmail.com|2024-05-30 22:36:40 -0400|removes some imports
+e5416cf1dca5dbccefa78858d7a66503e84515a9|Sean Reed|sean.reed@gmail.com|2024-05-30 22:36:40 -0400|removes some imports
+1a2cbbf86ec7a41022b139d1174b52b51bd2cec8|Sean Reed|sean.reed@gmail.com|2024-05-30 14:08:22 -0400|explicitly mentioned truncation in timing function
+08066000855937876a14d6f193248c0dfa6e16dc|Sean Reed|sean.reed@gmail.com|2024-05-30 14:08:22 -0400|explicitly mentioned truncation in timing function
+529705fc819e934aae309134f848959df483aab2|Sean Reed|sean.reed@gmail.com|2024-05-30 13:54:52 -0400|updated truncated strings in timing function
+7d0d968877fbe22d826097fc6b0a8bf0e998c962|Sean Reed|sean.reed@gmail.com|2024-05-30 13:54:52 -0400|updated truncated strings in timing function
+05290581451f744451d493f96dc05de27e5b16f9|Sean Reed|sean.reed@gmail.com|2024-05-30 13:46:40 -0400|truncates logging timing function. args and kwargs limited to 100 characters
+b96024f7c1540dc00e9482ee1bb084e7c76cb0db|Sean Reed|sean.reed@gmail.com|2024-05-30 13:46:40 -0400|truncates logging timing function. args and kwargs limited to 100 characters
+da7010d06cddb51bdf55c88da56c8f7fb519273b|Sean Reed|sean.reed@gmail.com|2024-05-30 13:33:15 -0400|adds timing to ensemble.py
+321ccb7276d1b6bd4fa2975fee9f43d4d33ce310|Sean Reed|sean.reed@gmail.com|2024-05-30 13:33:15 -0400|adds timing to ensemble.py
+876eafedb1ed44e39255ca80351a6038ec8c7723|Sean Reed|sean.reed@gmail.com|2024-05-30 12:23:27 -0400|adds timing functions and logging
+090a71c06544555a1531e6012249a8b20fbacff4|Sean Reed|sean.reed@gmail.com|2024-05-30 12:23:27 -0400|adds timing functions and logging
+edd821d4d275f0c50a743ff94e3cdd57dc2aabb7|Sean Reed|sean.reed@gmail.com|2024-05-28 22:30:29 -0400|changed audio source to reponse from bot
+7f0156016656df9e02aeebb171c7b84d16635638|Sean Reed|sean.reed@gmail.com|2024-05-28 22:30:29 -0400|changed audio source to reponse from bot
+1986083d0c1893d0c77ab0a94e182421e6393acf|Sean Reed|sean.reed@gmail.com|2024-05-28 20:10:40 -0400|adds .then to the second function
+cb2a8aa68e7796ffdb668beec990155af7d4d51e|Sean Reed|sean.reed@gmail.com|2024-05-28 20:10:40 -0400|adds .then to the second function
+f4eef04270b1c2e48b52825971534e7de6b1f20e|Sean Reed|sean.reed@gmail.com|2024-05-28 18:53:41 -0400|updated to add server certs
+3ffe6157efa04f421e417c5e6de2f496e1ef1e91|Sean Reed|sean.reed@gmail.com|2024-05-28 18:53:41 -0400|updated to add server certs
+7aafc5ca654bfed41409a907c7e442365bc08a10|Sean Reed|sean.reed@gmail.com|2024-05-28 15:01:48 -0400|moves all files to graveyard
+303e8df9e6f74cf4970fb5f785725823f867dae8|Sean Reed|sean.reed@gmail.com|2024-05-28 15:01:48 -0400|moves all files to graveyard
+c3c1153faef21021fb7851df875b22ee00a46d96|Sean Reed|sean.reed@gmail.com|2024-04-19 10:21:40 -0400|updates readme
+a287546c301e5a1be5947c6ce6732e6df918035a|Sean Reed|sean.reed@gmail.com|2024-04-19 10:21:40 -0400|updates readme
+e5938fd3a119cae3ab683c1180bd1a92c21662dd|Sean Reed|sean.reed@gmail.com|2024-04-19 09:58:05 -0400|working docker example with chat_with_audio_plus_intent.py
+24b1bc3673c36b02d38ea9169615d83e6e64c19f|Sean Reed|sean.reed@gmail.com|2024-04-19 09:58:05 -0400|working docker example with chat_with_audio_plus_intent.py
+13e98d0f6ed98ba003023b095954f6e91642185d|Sean Reed|sean.reed@gmail.com|2024-04-19 09:23:17 -0400|working version of chat_with_audio_plus_intent.py
+e3b3cea95e985a82ddfab8f9df4d80f69288b506|Sean Reed|sean.reed@gmail.com|2024-04-19 09:23:17 -0400|working version of chat_with_audio_plus_intent.py
+43a9acd5b8cac1176b46e8fd0ef98206ca5def83|Sean Reed|sean.reed@gmail.com|2024-04-19 09:11:22 -0400|working commit of chat_with_audio.py
+e3a27012040d1d93f2457f44d2d94e690bc4bc97|Sean Reed|sean.reed@gmail.com|2024-04-19 09:11:22 -0400|working commit of chat_with_audio.py
+c799f5f2a24ed21e752b04840b4a7ec8f7778819|Sean Reed|sean.reed@gmail.com|2024-04-19 08:50:08 -0400|fixes requirements.txt
+387930100dce8bfb9fc56d38307e2a4ce2c50dd7|Sean Reed|sean.reed@gmail.com|2024-04-19 08:50:08 -0400|fixes requirements.txt
+d9e521951d16ffe78cc3a98d883358b90ced2c25|Sean Reed|sean.reed@gmail.com|2024-04-15 09:58:46 -0400|demo for chat_with_audio reproduced
+016b65e33c887004a16fa5f3f9791ac2488f3436|Sean Reed|sean.reed@gmail.com|2024-04-15 09:58:46 -0400|demo for chat_with_audio reproduced
+20e3e94b7489fc9ef0aa47f8c509170fcaa0c44d|Sean Reed|sean.reed@gmail.com|2024-04-14 23:06:01 -0400|initial commit
+9a9af7b4f21fa658c7e9ceb1dc69d0a0c9535892|Sean Reed|sean.reed@gmail.com|2024-04-14 23:06:01 -0400|initial commit
+996172356707e033e5afc030570b67466fc8b334|Sean Reed|sean.reed@gmail.com|2024-04-14 22:11:03 -0400|adds json schema files. adds requirement.txt generated with pipreqs
+4ada5f7af911e476ec41bc281da7f419a25a9bcc|Sean Reed|sean.reed@gmail.com|2024-04-14 22:11:03 -0400|adds json schema files. adds requirement.txt generated with pipreqs

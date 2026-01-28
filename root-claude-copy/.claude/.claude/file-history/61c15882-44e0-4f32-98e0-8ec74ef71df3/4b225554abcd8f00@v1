@@ -1,0 +1,29 @@
+import { ContactMethod } from '@/types'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+
+export const contactMethods: ContactMethod[] = [
+  {
+    id: 'github',
+    type: 'github',
+    label: 'GitHub',
+    value: '@seanreed1111',
+    href: 'https://github.com/seanreed1111',
+    IconComponent: FaGithub,
+  },
+  {
+    id: 'email',
+    type: 'email',
+    label: 'Email',
+    value: 'your.email@example.com',
+    href: 'mailto:your.email@example.com',
+    IconComponent: FaEnvelope,
+  },
+  {
+    id: 'linkedin',
+    type: 'linkedin',
+    label: 'LinkedIn',
+    value: 'Connect with me',
+    href: 'https://linkedin.com/in/your-profile',
+    IconComponent: FaLinkedin,
+  },
+]

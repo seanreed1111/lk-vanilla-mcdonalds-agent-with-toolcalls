@@ -1,0 +1,184 @@
+# Portfolio Website - Next.js 15
+
+A modern, responsive portfolio website built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
+
+## Features
+
+- **Modern Stack**: Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Smooth Animations**: Fade-in animations using Intersection Observer API
+- **Interactive Navigation**: Sticky navigation with active section highlighting
+- **Mobile Menu**: Slide-in mobile menu with backdrop and keyboard support
+- **Type-Safe**: Full TypeScript implementation with strict mode
+- **Optimized**: Production-ready build with static generation
+- **Accessible**: Keyboard navigation, ARIA labels, and focus states
+
+## Tech Stack
+
+- **Framework**: Next.js 15.5.9
+- **React**: 19.2.3
+- **TypeScript**: 5.9.3
+- **Styling**: Tailwind CSS 3.4.19
+- **Icons**: React Icons 5.5.0
+- **Utilities**: clsx, tailwind-merge
+- **Package Manager**: pnpm 10.26.2
+- **Node.js**: 22.22.0 (pinned with Volta)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 22 (managed by Volta)
+- pnpm 10 (or npm/yarn as alternative)
+
+### Installation
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+### Development
+
+Start the development server:
+
+```bash
+pnpm dev
+```
+
+The site will be available at [http://localhost:3000](http://localhost:3000)
+
+### Production Build
+
+Build for production:
+
+```bash
+pnpm build
+```
+
+Start the production server:
+
+```bash
+pnpm start
+```
+
+### Other Commands
+
+- **Lint**: `pnpm lint`
+- **Type Check**: `tsc --noEmit`
+
+## Project Structure
+
+```
+my-project-site/
+├── app/
+│   ├── layout.tsx              # Root layout with metadata
+│   ├── page.tsx                # Main portfolio page
+│   └── globals.css             # Tailwind + custom styles
+├── components/
+│   ├── layout/                 # Navigation, MobileMenu, Footer
+│   │   ├── Navigation.tsx
+│   │   ├── MobileMenu.tsx
+│   │   └── Footer.tsx
+│   ├── sections/               # Hero, About, Projects, Contact
+│   │   ├── HeroSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   └── ContactSection.tsx
+│   └── ui/                     # Reusable components
+│       ├── Button.tsx
+│       ├── AnimatedSection.tsx
+│       ├── SkillBadge.tsx
+│       ├── ProjectCard.tsx
+│       └── ContactCard.tsx
+├── hooks/                      # Custom React hooks
+│   ├── useScrollPosition.ts
+│   ├── useActiveSection.ts
+│   ├── useIntersectionObserver.ts
+│   └── useMobileMenu.ts
+├── types/                      # TypeScript definitions
+│   └── index.ts
+├── data/                       # Content data
+│   ├── personal-info.ts
+│   ├── projects.ts
+│   ├── skills.ts
+│   ├── contacts.ts
+│   ├── navigation.ts
+│   └── social-links.ts
+├── lib/                        # Utilities
+│   ├── utils.ts                # cn(), scrollToSection()
+│   └── constants.ts            # App constants
+└── public/images/              # Static assets
+```
+
+## Customization
+
+### Update Personal Information
+
+Edit the files in the `data/` directory:
+
+- `data/personal-info.ts` - Name, tagline, bio, avatar, contact info
+- `data/projects.ts` - Project portfolio items
+- `data/skills.ts` - Technical skills and proficiencies
+- `data/contacts.ts` - Contact methods (email, GitHub, LinkedIn)
+- `data/social-links.ts` - Footer social links
+
+### Add New Sections
+
+1. Create a new component in `components/sections/`
+2. Import and add to `app/page.tsx`
+3. Add section ID to navigation in `data/navigation.ts`
+
+### Styling
+
+- Modify Tailwind config in `tailwind.config.ts`
+- Add custom CSS in `app/globals.css`
+- Use the `cn()` utility for conditional classes
+
+## Key Features Explained
+
+### Custom Hooks
+
+- **useScrollPosition**: Tracks window scroll position for sticky nav effects
+- **useActiveSection**: Determines which section is in viewport for nav highlighting
+- **useIntersectionObserver**: Generic hook for fade-in animations
+- **useMobileMenu**: Manages mobile menu state with body scroll lock
+
+### Animations
+
+- Fade-in effects on scroll using Intersection Observer
+- Smooth scroll with offset for fixed navigation
+- Staggered delays for sequential animations
+- CSS transitions for hover states
+
+### Responsive Design
+
+- Mobile-first approach
+- Breakpoints: md (768px), lg (1024px)
+- Mobile menu for small screens
+- Flexible grid layouts
+
+## Deployment
+
+This site can be deployed to:
+
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- Any static hosting service
+
+For static export (if needed), update `next.config.ts`:
+
+```typescript
+const nextConfig = {
+  output: 'export',
+}
+```
+
+## License
+
+MIT
+
+## Author
+
+Sean Reed - [@seanreed1111](https://github.com/seanreed1111)

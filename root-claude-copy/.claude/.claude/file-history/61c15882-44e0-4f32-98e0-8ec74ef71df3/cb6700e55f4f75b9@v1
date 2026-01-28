@@ -1,0 +1,26 @@
+import { Skill } from '@/types'
+import { cn } from '@/lib/utils'
+
+interface SkillBadgeProps {
+  skill: Skill
+  className?: string
+}
+
+export default function SkillBadge({ skill, className }: SkillBadgeProps) {
+  const Icon = skill.IconComponent
+
+  return (
+    <div
+      className={cn(
+        'inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg',
+        'hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200',
+        className
+      )}
+    >
+      {Icon && <Icon className="w-5 h-5 text-gray-700 dark:text-gray-300" />}
+      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">
+        {skill.name}
+      </span>
+    </div>
+  )
+}

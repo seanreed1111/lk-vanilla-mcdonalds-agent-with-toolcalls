@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""
+Delete GitHub forked repositories.
+"""
+
+import json
+import subprocess
+import sys
+
+
+def get_forks(username):
+    """Get all forked repositories."""
+    print(f"Fetching forked repositories for {username}...")
+
+    try:
+        result = subprocess.run(
+            ["gh", "repo", "list", username, "--limit", "1000", "--json", "name,isFork,parent"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+
+        repos = json.loads(result.stdout)
+
+        # Filter only forks
+        forks = []
+        for repo in repos:
+            if repo.get("isFork", False):
+                parent = repo.get("parent", {}).get("nameWithOwner", "unknown")
+                forks.append({
+                    "name": repo["name"],
+                    "parent": parent
+                })
+
+        return forks
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error fetching repositories: {e.stderr}")
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON: {e}")
+        sys.exit(1)
+
+
+def delete_repo(username, repo_name):
+    """Delete a single repository."""
+    full_name = f"{username}/{repo_name}"
+
+    try:
+        subprocess.run(
+            ["gh", "repo", "delete", full_name, "--yes"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return True, None
+    except subprocess.CalledProcessError as e:
+        return False, e.stderr
+
+
+def main():
+    username = "seanreed1111"
+
+    # Get forks to delete
+    forks_to_delete = get_forks(username)
+
+    if not forks_to_delete:
+        print("No forked repositories found.")
+        return
+
+    # Show list
+    print(f"\nFound {len(forks_to_delete)} forked repositories:")
+    for i, fork in enumerate(forks_to_delete, 1):
+        print(f"  {i}. {fork['name']} (from {fork['parent']})")
+
+    # Confirm deletion
+    print(f"\n⚠️  WARNING: This will permanently delete {len(forks_to_delete)} forked repositories!")
+    print("Note: You can always re-fork these repositories later if needed.")
+    response = input("\nType 'DELETE' to confirm: ")
+
+    if response != "DELETE":
+        print("Aborted.")
+        return
+
+    # Delete forks
+    print(f"\nDeleting {len(forks_to_delete)} forked repositories...")
+    deleted = 0
+    failed = []
+
+    for i, fork in enumerate(forks_to_delete, 1):
+        repo_name = fork["name"]
+        print(f"[{i}/{len(forks_to_delete)}] Deleting {repo_name}...", end=" ")
+
+        success, error = delete_repo(username, repo_name)
+
+        if success:
+            print("✓")
+            deleted += 1
+        else:
+            print("✗")
+            failed.append((repo_name, error))
+
+    # Summary
+    print(f"\n{'='*60}")
+    print(f"Deleted: {deleted}/{len(forks_to_delete)}")
+
+    if failed:
+        print(f"Failed: {len(failed)}")
+        print("\nFailed repositories:")
+        for name, error in failed:
+            print(f"  - {name}: {error.strip()}")
+
+
+if __name__ == "__main__":
+    main()

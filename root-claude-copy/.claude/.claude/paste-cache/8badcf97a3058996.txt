@@ -1,0 +1,40 @@
+=> ERROR [10/10] RUN uv run src/agent.py download-files                     7.3s
+------                                                                            
+ > [10/10] RUN uv run src/agent.py download-files:                                
+0.614    Building agent-starter-python @ file:///app                              
+1.746       Built agent-starter-python @ file:///app                              
+1.763 Uninstalled 1 package in 9ms
+1.763 Installed 1 package in 0.85ms
+6.233 Downloading Silero VAD model...
+6.296 ✓ Silero VAD model downloaded
+6.296 Downloading multilingual turn detector...
+6.296 Traceback (most recent call last):
+6.296   File "/app/src/agent.py", line 214, in <module>
+6.296     agent_cli()
+6.296   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1485, in __call__
+6.297     return self.main(*args, **kwargs)
+6.297            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.297   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1406, in main
+6.297     rv = selfnvoke(ctx)
+6.297          ^^^^^^^^^^^^^^^^
+6.297   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1873, in invoke
+6.298     return _process_result(sub_ctx.command.invoke(sub_ctx))
+6.298                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.298   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 1269, in invoke
+6.298     return ctx.invoke(self.callback, **ctx.params)
+6.298            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.298   File "/app/.venv/lib/python3.11/site-packages/click/core.py", line 824, in invoke
+6.299     return callback(*args, **kwargs)
+6.301            ^^^^^^^^^^^^^^^^^^^^^^^^^
+6.301   File "/app/src/agent.py", line 207, in download_files
+6.301     MultilingualModel()
+6.301   File "/app/.venv/lib/python3.11/site-packages/livekit/plugins/turn_detector/multilingual.py", line 28, in __init__
+6.301     super().__init__(
+6.301   File "/app/.venv/lib/python3.11/site-packages/livekit/plugins/turn_detector/base.py", line 211, in __init__
+6.301     self._executor = inference_executor or get_job_context().inference_executor
+6.301                                            ^^^^^^^^^^^^^^^^^
+6.301   File "/app/.venv/lib/python3.11/site-packages/livekit/agents/job.py", line 59, in get_job_context
+6.301     raise RuntimeError(
+6.301 RuntimeError: no job context found, are you running this code inside a job entrypoint?
+------
+unable to create agent: build failed for iad.ocir.io/axyci3pr8vxm/production-cloud-agents:p-3a490f7eyi4-ca-i3mptkphmsza-v20260122201739: failed to solve: process "/bin/sh -c uv run src/agent.py download-files" did not complete successfully: exit code: 1

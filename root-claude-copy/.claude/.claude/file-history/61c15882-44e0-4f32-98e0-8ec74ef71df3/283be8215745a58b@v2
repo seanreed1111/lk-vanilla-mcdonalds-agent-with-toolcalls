@@ -1,0 +1,36 @@
+import { contactMethods } from '@/data/contacts'
+import AnimatedSection from '@/components/ui/AnimatedSection'
+import ContactCard from '@/components/ui/ContactCard'
+import { ANIMATION_DELAYS } from '@/lib/constants'
+
+export default function ContactSection() {
+  return (
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-6">
+        <AnimatedSection>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Get In Touch
+          </h2>
+        </AnimatedSection>
+
+        <AnimatedSection delay={ANIMATION_DELAYS.MEDIUM}>
+          <p className="text-center text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+            I&apos;m always interested in hearing about new opportunities and
+            collaborations. Feel free to reach out!
+          </p>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          {contactMethods.map((contact, index) => (
+            <AnimatedSection
+              key={contact.id}
+              delay={ANIMATION_DELAYS.LONG + index * ANIMATION_DELAYS.SHORT}
+            >
+              <ContactCard contact={contact} />
+            </AnimatedSection>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

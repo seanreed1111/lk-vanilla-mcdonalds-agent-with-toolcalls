@@ -113,7 +113,7 @@ def console():
 
     async def run_console():
         """Async console runner."""
-        from livekit.agents import AgentSession, NOT_GIVEN
+        from livekit.agents import NOT_GIVEN, AgentSession
 
         from factories import create_stt, create_tts
 

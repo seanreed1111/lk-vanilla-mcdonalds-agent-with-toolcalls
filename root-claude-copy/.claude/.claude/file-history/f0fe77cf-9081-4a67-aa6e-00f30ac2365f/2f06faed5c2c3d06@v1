@@ -1,0 +1,381 @@
+---
+name: analyze-git-contributions
+description: Analyze git contributions and organize by functional components using AI
+---
+
+# Analyze Git Contributions
+
+This skill analyzes a user's git contributions and intelligently groups them by functional components using AI-powered semantic analysis, producing a comprehensive markdown report.
+
+## Core Principles
+
+1. **Semantic Grouping**: Group commits by functionality and purpose, not directory structure
+2. **Comprehensive Context**: Include commit messages, file changes, statistics, and temporal patterns
+3. **Actionable Output**: Generate markdown reports that clearly communicate contribution themes
+4. **Reusability**: Work across different repositories and authors without modification
+
+## Workflow
+
+### Phase 1: Setup and Validation
+1. Determine repository path (use current directory or prompt for path)
+2. Validate git repository using scripts
+3. Detect or prompt for author name/email
+4. Verify author has commits in repository
+
+### Phase 2: Data Collection
+
+#### Step 1: Count commits
+1. Run `scripts/count-user-commits.sh` to get total commit count
+2. Store count for decision logic
+
+#### Step 2: Decide strategy based on count
+
+**If count < 500:**
+- Proceed with full analysis (existing workflow)
+- Run `collect-user-commits.sh` to gather all commits
+- For each commit, run `extract-commit-details.sh`
+
+**If count 500-2000:**
+- Present user with options using AskUserQuestion:
+  1. **Segmented analysis (Recommended)** - Create multiple reports, one per time period (e.g., quarterly)
+  2. Intelligent sampling - Analyze 200 representative commits
+  3. Date range filter - Specify a time period (e.g., last 6 months)
+  4. Full analysis - Process all commits (may take longer)
+
+**If count > 2000:**
+- Inform user: "Found X commits. Please narrow the scope:"
+- Options:
+  1. **Segmented analysis (Recommended)** - Multiple reports by time period
+  2. Date range filter - Specify a time period
+  3. Intelligent sampling - 200 commits across entire timeline
+- Do not offer "full analysis" option (would hit token limits)
+
+#### Step 3: Collect based on strategy
+
+**For full analysis:**
+- Use `collect-user-commits.sh` without date filters
+- Process all commit details
+- Proceed to Phase 3 with complete dataset
+
+**For segmented analysis:**
+- Run `scripts/calculate-time-segments.sh <repo> <author> <target_commits_per_segment>`
+  - Script calculates date ranges and divides into segments
+  - Target: 250-400 commits per segment (default: 300)
+  - Returns: List of date ranges with commit counts
+- For each segment:
+  - Run `collect-user-commits.sh <repo> <author> <segment_start> <segment_end>`
+  - Analyze commits for that period (Phase 3)
+  - Generate separate markdown file: `git-contributions-analysis-2024-Q1.md`
+  - Include header: "Part X of Y - Period: YYYY-MM-DD to YYYY-MM-DD"
+- Create index file listing all segments with links
+- Each segment is analyzed independently (avoids token limits)
+
+**For intelligent sampling:**
+- Run `scripts/sample-commits.sh <repo> <author> 200`
+- Get evenly distributed sample across entire timeline
+- Process sampled commit details
+- Add note in report: "Analysis based on 200 representative commits sampled across YYYY-MM-DD to YYYY-MM-DD"
+- Proceed to Phase 3 with sampled dataset
+
+**For date range filter:**
+- Run `collect-user-commits.sh <repo> <author> <since> <until>`
+- Process filtered commits
+- Add note in report: "Analysis for period: YYYY-MM-DD to YYYY-MM-DD (X commits out of Y total)"
+- Proceed to Phase 3 with filtered dataset
+
+#### Step 4: Token budget check (safety)
+- Before processing commit details, estimate token usage
+- Rule of thumb: ~65 tokens per commit on average
+- If estimated tokens > 20,000, reduce sample size or warn user
+- This prevents edge cases (commits with huge diffs)
+- For segmented analysis, each segment is checked independently
+
+### Phase 3: AI Analysis
+1. **Analyze commit semantics**: Read commit messages, file changes, and timing patterns
+2. **Identify functional components**: Group commits by related functionality
+   - Examples: "Authentication System", "Payment Processing", "UI/UX Improvements", "Bug Fixes", "Database Schema", "API Endpoints", "Test Coverage"
+   - Look beyond directory structure - related changes across commits indicate a component
+   - Consider temporal relationships (commits close in time often relate to same feature)
+   - Examine file patterns (same files modified = related work)
+3. **Generate component descriptions**: Summarize each component's purpose and impact
+4. **Identify contribution themes**: High-level overview of major work areas
+
+### Phase 4: Report Generation
+1. Create markdown structure with metadata section
+2. Add summary of contribution themes
+3. For each component:
+   - Component name and description
+   - List commits with hash, date, subject
+   - Show file changes with additions/deletions
+4. Add statistics section:
+   - Total files changed
+   - Total additions/deletions
+   - Most active areas
+5. Write report to file or output directly
+
+## Usage Patterns
+
+### From Within Repository
+```bash
+# Run in current directory
+/analyze-git-contributions
+
+# Script auto-detects git config user.name
+```
+
+### External Repository
+```bash
+# Specify path
+/analyze-git-contributions /path/to/repo
+
+# Or when prompted
+# Agent asks: "Enter repository path:"
+# User provides: /Users/seanreed/projects/my-app
+```
+
+### Different Author
+```bash
+# Agent auto-detects from git config
+# If not found or wrong author, agent asks:
+# "Enter author name or email pattern:"
+# User provides: "John Doe" or "john@example.com"
+```
+
+## Output Structure Example
+
+```markdown
+# Git Contributions Analysis
+**Repository:** /path/to/repo
+**Author:** Sean Reed
+**Date Range:** 2025-01-01 to 2026-01-25
+**Total Commits:** 42
+
+## Summary
+Implemented comprehensive real-time communication system with WebSocket support,
+authentication mechanisms, and extensive test coverage. Major focus on payment
+integration and API stability.
+
+## Component: Real-Time Communication System
+**Description:** Built WebSocket-based real-time messaging with presence detection
+and reconnection logic.
+
+**Commits (8):**
+- `a1b2c3d` (2026-01-20) Add WebSocket connection manager
+  - Files: websocket/manager.py (+245, -0), websocket/events.py (+120, -0)
+
+- `e4f5g6h` (2026-01-19) Implement presence detection
+  - Files: websocket/presence.py (+180, -0), tests/test_presence.py (+95, -0)
+
+[... more commits ...]
+
+## Component: Authentication & Security
+**Description:** JWT-based authentication with session management and rate limiting.
+
+**Commits (6):**
+[... commits with details ...]
+
+## Component: Bug Fixes & Maintenance
+**Description:** Various bug fixes and code maintenance across the codebase.
+
+**Commits (5):**
+[... commits ...]
+
+## Statistics
+- Total files changed: 127
+- Total additions: 3,450 lines
+- Total deletions: 890 lines
+- Most active areas: websocket/ (15 commits), auth/ (12 commits), api/ (10 commits)
+```
+
+## Error Handling
+
+### Invalid Repository
+```bash
+# If not a git repo
+echo "Error: Not a git repository. Please specify a valid git repository path."
+# Offer to navigate to correct directory or provide path
+```
+
+### No Commits Found
+```bash
+# If author has no commits
+echo "No commits found for author: $AUTHOR"
+# List top 5 contributors and ask user to select:
+# 1. John Doe (john@example.com) - 150 commits
+# 2. Jane Smith (jane@example.com) - 87 commits
+# ...
+```
+
+### Large Repository
+```bash
+# If >500 commits for author
+echo "Found 1,247 commits. This may take a while to analyze."
+# Offer to filter by date range:
+# "Analyze all commits or specify date range? (e.g., --since='2025-01-01')"
+```
+
+### Author Matching
+```bash
+# Multiple email addresses detected for same author
+echo "Detected multiple identities for this author:"
+echo "  - Sean Reed <sean@work.com> - 250 commits"
+echo "  - Sean Reed <sean@personal.com> - 45 commits"
+echo "Group all commits together? (yes/no)"
+```
+
+## Script Usage
+
+### collect-user-commits.sh
+```bash
+# Usage
+./scripts/collect-user-commits.sh <repo_path> <author_pattern>
+
+# Example
+./scripts/collect-user-commits.sh /path/to/repo "Sean Reed"
+
+# Output format (one line per commit)
+# hash|author_name|author_email|date|subject
+# a1b2c3d4e5f6|Sean Reed|sean@example.com|2026-01-20 14:30:00 -0800|Add WebSocket manager
+
+# Exit codes
+# 0 - Success
+# 1 - Invalid repository
+# 2 - No commits found
+```
+
+### extract-commit-details.sh
+```bash
+# Usage
+./scripts/extract-commit-details.sh <repo_path> <commit_hash>
+
+# Example
+./scripts/extract-commit-details.sh /path/to/repo a1b2c3d4e5f6
+
+# Output format
+# === COMMIT MESSAGE ===
+# [full commit message]
+# === FILES CHANGED ===
+# filename|additions|deletions
+# [one line per file]
+
+# Exit codes
+# 0 - Success
+# 1 - Invalid commit hash
+```
+
+## Implementation Details
+
+### Step 1: Detect Repository
+```bash
+# If no argument provided, use current directory
+REPO_PATH=${1:-.}
+
+# Validate it's a git repository
+if ! git -C "$REPO_PATH" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    echo "Error: Not a git repository: $REPO_PATH"
+    # Ask user for correct path
+fi
+```
+
+### Step 2: Detect Author
+```bash
+# Try to auto-detect from git config
+AUTHOR=$(git -C "$REPO_PATH" config user.name 2>/dev/null)
+
+# If not found or need confirmation
+if [ -z "$AUTHOR" ]; then
+    # Ask user for author name or email
+    # Use AskUserQuestion tool to prompt
+fi
+```
+
+### Step 3: Collect Data
+```bash
+# Run collection script
+commits=$(bash ~/.claude/skills/analyze-git-contributions/scripts/collect-user-commits.sh "$REPO_PATH" "$AUTHOR")
+
+# Check exit code
+if [ $? -eq 2 ]; then
+    # No commits found - list top contributors
+fi
+
+# For each commit, get details
+while IFS='|' read -r hash author email date subject; do
+    details=$(bash ~/.claude/skills/analyze-git-contributions/scripts/extract-commit-details.sh "$REPO_PATH" "$hash")
+    # Store for analysis
+done <<< "$commits"
+```
+
+### Step 4: AI Analysis
+- Parse all commit data into structured format
+- Analyze commit messages for semantic patterns
+- Look for file co-modification patterns
+- Identify temporal clusters (related commits close in time)
+- Group commits into functional components
+- Generate descriptions for each component
+
+### Step 5: Generate Report
+- Create markdown with metadata
+- Add summary section
+- For each component, list commits with details
+- Calculate and add statistics
+- Write to file (default: `git-contributions-analysis.md`) or output directly
+
+## Reusability Features
+
+### Flexible Repository Input
+- Current directory (default)
+- Absolute path
+- Relative path
+- Validates and resolves to absolute path
+
+### Smart Author Detection
+- Auto-detect from `git config user.name`
+- Pattern matching for partial names
+- Email-based filtering
+- Case-insensitive matching
+- Handle multiple email addresses
+
+### Output Options
+- Generate markdown file in repository root
+- Or output to stdout for piping
+- Filename: `git-contributions-analysis-{author}-{date}.md`
+
+## Optional Enhancements (Future)
+
+### Date Range Filtering
+```bash
+/analyze-git-contributions --since="2025-01-01" --until="2026-01-01"
+```
+
+### Branch Filtering
+```bash
+/analyze-git-contributions --branch=main
+```
+
+### Multiple Authors
+```bash
+/analyze-git-contributions --authors="John Doe,Jane Smith"
+```
+
+### Export Formats
+- JSON for programmatic use
+- HTML with interactive visualization
+- CSV for spreadsheet analysis
+
+## Success Criteria
+
+- ✅ Auto-discovers repository and author
+- ✅ Efficiently collects git data using scripts
+- ✅ AI produces semantically meaningful component groupings
+- ✅ Markdown output is readable and well-organized
+- ✅ Works across different repositories without modification
+- ✅ Handles edge cases gracefully (no commits, large repos, binary files)
+- ✅ Scripts have proper error handling and exit codes
+- ✅ Reusable for different authors and repositories
+
+## Reference
+
+For bash script patterns and error handling, refer to existing skills:
+- `~/.claude/skills/reading-logs/scripts/aggregate-errors.sh` - Error handling patterns
+- Standard git command patterns and output parsing

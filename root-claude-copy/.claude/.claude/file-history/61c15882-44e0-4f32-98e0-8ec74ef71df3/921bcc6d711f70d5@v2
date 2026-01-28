@@ -1,0 +1,19 @@
+import { SocialLink } from '@/types'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
+export const socialLinks: SocialLink[] = [
+  {
+    id: 'github',
+    platform: 'GitHub',
+    url: 'https://github.com/seanreed1111',
+    IconComponent: FaGithub,
+    label: 'GitHub Profile',
+  },
+  {
+    id: 'linkedin',
+    platform: 'LinkedIn',
+    url: 'https://linkedin.com/in/your-profile',
+    IconComponent: FaLinkedin,
+    label: 'LinkedIn Profile',
+  },
+]

@@ -1,0 +1,22 @@
+2026-01-22T20:52:47.234Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T20:52:47.234Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T20:52:47.248Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.15/claude
+2026-01-22T20:52:47.249Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T20:52:47.249Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T20:52:47.249Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T20:52:47.249Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T20:52:47.249Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T20:52:47.249Z [DEBUG] Cleared all session hooks for session 304ade8b-7f09-494d-8f2b-0865a9c4436d
+2026-01-22T20:52:47.250Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T20:52:47.250Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T20:52:47.250Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T20:52:47.255Z [DEBUG] FileHistory: Added snapshot for e68cdc33-97ee-493e-a804-8a5fef9f102d, tracking 0 files
+2026-01-22T20:52:47.283Z [DEBUG] Full reset (shrink->below): prevHeight=248, nextHeight=12, viewport=36
+2026-01-22T20:52:47.285Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T20:52:47.285Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T20:52:47.285Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T20:52:47.287Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T20:52:47.562Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.15 -> 2.1.16
+2026-01-22T20:55:46.153Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-22T20:55:46.153Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T20:55:46.153Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

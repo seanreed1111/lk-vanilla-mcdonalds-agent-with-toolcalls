@@ -1,0 +1,137 @@
+2026-01-20T16:53:39.990Z [DEBUG] Watching for changes in setting files /Users/seanreed/.claude...
+2026-01-20T16:53:39.991Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-20T16:53:39.991Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-20T16:53:39.991Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-20T16:53:39.991Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-20T16:53:39.993Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-20T16:53:39.993Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-20T16:53:39.993Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-20T16:53:39.993Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-20T16:53:39.995Z [DEBUG] Loading plugin pyright-lsp from source: "./plugins/pyright-lsp"
+2026-01-20T16:53:39.996Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-20T16:53:39.996Z [DEBUG] Plugin pyright-lsp@claude-plugins-official version 1.0.0 already cached at /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-20T16:53:39.996Z [DEBUG] Copied local plugin pyright-lsp to versioned cache: /Users/seanreed/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0
+2026-01-20T16:53:39.996Z [DEBUG] Plugin pyright-lsp has no entry.skills defined
+2026-01-20T16:53:39.996Z [DEBUG] Found 1 plugins (1 enabled, 0 disabled)
+2026-01-20T16:53:39.996Z [DEBUG] [STARTUP] MCP configs loaded in 3ms
+2026-01-20T16:53:39.996Z [DEBUG] [STARTUP] Running setup()...
+2026-01-20T16:53:39.997Z [DEBUG] Stats cache is up to date
+2026-01-20T16:53:39.999Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[]
+2026-01-20T16:53:40.002Z [DEBUG] Loaded 1 installed plugins from /Users/seanreed/.claude/plugins/installed_plugins.json
+2026-01-20T16:53:40.002Z [DEBUG] Error log sink initialized
+2026-01-20T16:53:40.004Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/7738e15f-5cce-48aa-8cf0-94ad71a7e8cd-agent-7738e15f-5cce-48aa-8cf0-94ad71a7e8cd.json.tmp.91978.1768928020004
+2026-01-20T16:53:40.004Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-20T16:53:40.004Z [DEBUG] Renaming /Users/seanreed/.claude/todos/7738e15f-5cce-48aa-8cf0-94ad71a7e8cd-agent-7738e15f-5cce-48aa-8cf0-94ad71a7e8cd.json.tmp.91978.1768928020004 to /Users/seanreed/.claude/todos/7738e15f-5cce-48aa-8cf0-94ad71a7e8cd-agent-7738e15f-5cce-48aa-8cf0-94ad71a7e8cd.json
+2026-01-20T16:53:40.004Z [DEBUG] File /Users/seanreed/.claude/todos/7738e15f-5cce-48aa-8cf0-94ad71a7e8cd-agent-7738e15f-5cce-48aa-8cf0-94ad71a7e8cd.json written atomically
+2026-01-20T16:53:40.006Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-20T16:53:40.006Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-20T16:53:40.006Z [DEBUG] Total plugin skills loaded: 0
+2026-01-20T16:53:40.006Z [DEBUG] Total plugin commands loaded: 0
+2026-01-20T16:53:40.006Z [DEBUG] Registered 0 hooks from 1 plugins
+2026-01-20T16:53:40.009Z [DEBUG] [STARTUP] setup() completed in 13ms
+2026-01-20T16:53:40.009Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-20T16:53:40.011Z [DEBUG] Total plugin agents loaded: 0
+2026-01-20T16:53:40.011Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-20T16:53:40.011Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-20T16:53:40.012Z [DEBUG] [STARTUP] Commands and agents loaded in 3ms
+2026-01-20T16:53:40.012Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-20T16:53:40.012Z [DEBUG] [render] initYoga starting
+2026-01-20T16:53:40.013Z [DEBUG] Loaded 1 LSP server(s) from plugin: pyright-lsp
+2026-01-20T16:53:40.013Z [DEBUG] Total LSP servers loaded: 1
+2026-01-20T16:53:40.013Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 1 server(s)
+2026-01-20T16:53:40.013Z [DEBUG] Queued request handler for plugin:pyright-lsp:pyright.workspace/configuration (connection not ready)
+2026-01-20T16:53:40.013Z [DEBUG] Starting LSP server instance: plugin:pyright-lsp:pyright
+2026-01-20T16:53:40.015Z [DEBUG] LSP manager initialized with 1 servers
+2026-01-20T16:53:40.015Z [DEBUG] LSP server manager initialized successfully
+2026-01-20T16:53:40.015Z [DEBUG] Queued notification handler for plugin:pyright-lsp:pyright.textDocument/publishDiagnostics (connection not ready)
+2026-01-20T16:53:40.015Z [DEBUG] Registered diagnostics handler for plugin:pyright-lsp:pyright
+2026-01-20T16:53:40.015Z [DEBUG] LSP notification handlers registered successfully for all 1 server(s)
+2026-01-20T16:53:40.015Z [DEBUG] Applied queued notification handler for plugin:pyright-lsp:pyright.textDocument/publishDiagnostics
+2026-01-20T16:53:40.015Z [DEBUG] Applied queued request handler for plugin:pyright-lsp:pyright.workspace/configuration
+2026-01-20T16:53:40.015Z [DEBUG] LSP client started for plugin:pyright-lsp:pyright
+2026-01-20T16:53:40.016Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Sending request 'initialize - (0)'.
+2026-01-20T16:53:40.017Z [DEBUG] [render] initYoga complete
+2026-01-20T16:53:40.018Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default, Profile 4, Profile 3, Profile 2, Profile 5
+2026-01-20T16:53:40.032Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-20T16:53:40.043Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-20T16:53:40.044Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-20T16:53:40.459Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/homebrew/Caskroom/claude-code/2.1.12/claude)
+2026-01-20T16:53:40.553Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-20T16:53:40.553Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-20T16:53:40.555Z [DEBUG] Using provided version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-01-20T16:53:42.197Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Received response 'initialize - (0)' in 2181ms.
+2026-01-20T16:53:42.198Z [DEBUG] [LSP PROTOCOL plugin:pyright-lsp:pyright] Sending notification 'initialized'.
+2026-01-20T16:53:42.198Z [DEBUG] LSP server plugin:pyright-lsp:pyright initialized
+2026-01-20T16:53:42.198Z [DEBUG] LSP server instance started: plugin:pyright-lsp:pyright
+2026-01-20T16:53:44.323Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.91978.1768928024323
+2026-01-20T16:53:44.323Z [DEBUG] Preserving file permissions: 100600
+2026-01-20T16:53:44.324Z [DEBUG] Temp file written successfully, size: 8980 bytes
+2026-01-20T16:53:44.324Z [DEBUG] Applied original permissions to temp file
+2026-01-20T16:53:44.324Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.91978.1768928024323 to /Users/seanreed/.claude.json
+2026-01-20T16:53:44.324Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-20T16:53:44.336Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-20T16:53:44.338Z [DEBUG] [STARTUP] showSetupScreens() completed in 4326ms
+2026-01-20T16:53:44.338Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-20T16:53:44.338Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-20T16:53:44.341Z [DEBUG] All plugins already exist, skipping migration
+2026-01-20T16:53:44.341Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-20T16:53:44.341Z [DEBUG] Initialized versioned plugins system with 1 plugins
+2026-01-20T16:53:44.349Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.91978.1768928024349
+2026-01-20T16:53:44.349Z [DEBUG] Preserving file permissions: 100600
+2026-01-20T16:53:44.349Z [DEBUG] Temp file written successfully, size: 8980 bytes
+2026-01-20T16:53:44.349Z [DEBUG] Applied original permissions to temp file
+2026-01-20T16:53:44.349Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.91978.1768928024349 to /Users/seanreed/.claude.json
+2026-01-20T16:53:44.349Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-20T16:53:44.506Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-20T16:53:44.506Z [DEBUG] Found 0 hook matchers in settings
+2026-01-20T16:53:44.506Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-20T16:53:44.508Z [DEBUG] [render] initYoga starting
+2026-01-20T16:53:44.508Z [DEBUG] [render] initYoga complete
+2026-01-20T16:53:44.516Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 403
+2026-01-20T16:53:44.516Z [ERROR] AxiosError: Error
+    at nb (/$bunfs/root/claude:42:1143)
+    at <anonymous> (/$bunfs/root/claude:47:10085)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:49:2147)
+    at processTicksAndRejections (native:7:39)
+2026-01-20T16:53:44.517Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.91978.1768928024517
+2026-01-20T16:53:44.517Z [DEBUG] Preserving file permissions: 100600
+2026-01-20T16:53:44.517Z [DEBUG] Temp file written successfully, size: 8980 bytes
+2026-01-20T16:53:44.517Z [DEBUG] Applied original permissions to temp file
+2026-01-20T16:53:44.517Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.91978.1768928024517 to /Users/seanreed/.claude.json
+2026-01-20T16:53:44.517Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-20T16:53:44.522Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-20T16:53:44.522Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-20T16:53:44.522Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-20T16:53:44.522Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-20T16:53:44.523Z [DEBUG] Git remote URL: null
+2026-01-20T16:53:44.523Z [DEBUG] No git remote URL found
+2026-01-20T16:53:44.523Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-01-20T16:53:44.526Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-20T16:53:44.542Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-20T16:53:44.543Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-20T16:53:44.543Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-20T16:53:44.543Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-20T16:53:44.543Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-20T16:53:44.543Z [DEBUG] performStartupChecks called
+2026-01-20T16:53:44.543Z [DEBUG] Starting background plugin installations
+2026-01-20T16:53:44.543Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-20T16:53:44.572Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-20T16:53:44.580Z [DEBUG] Found 1 enabled plugins
+2026-01-20T16:53:44.580Z [DEBUG] All plugins already exist, skipping migration
+2026-01-20T16:53:44.580Z [DEBUG] Found 1 installed plugins (V2 format)
+2026-01-20T16:53:44.580Z [DEBUG] Loaded plugins - Enabled: 1, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-20T16:53:44.580Z [DEBUG] Found 0 missing plugins (not installed):
+2026-01-20T16:53:44.580Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-20T16:53:44.585Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.12/claude
+2026-01-20T16:53:44.589Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-20T16:53:44.593Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.91978.1768928024593
+2026-01-20T16:53:44.593Z [DEBUG] Preserving file permissions: 100600
+2026-01-20T16:53:44.593Z [DEBUG] Temp file written successfully, size: 9161 bytes
+2026-01-20T16:53:44.593Z [DEBUG] Applied original permissions to temp file
+2026-01-20T16:53:44.593Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.91978.1768928024593 to /Users/seanreed/.claude.json
+2026-01-20T16:53:44.593Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-20T16:53:44.597Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 9ms
+2026-01-20T16:53:44.597Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.11"}}

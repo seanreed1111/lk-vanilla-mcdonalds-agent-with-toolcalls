@@ -1,0 +1,371 @@
+# Harmonize Planning Mechanisms Implementation Plan
+
+> **Status:** DRAFT
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Current State Analysis](#current-state-analysis)
+- [Desired End State](#desired-end-state)
+- [What We're NOT Doing](#what-were-not-doing)
+- [Implementation Approach](#implementation-approach)
+- [Phase 1: Simplify Skill to Router](#phase-1-simplify-skill-to-router)
+- [Phase 2: Enhance Command with Merged Content](#phase-2-enhance-command-with-merged-content)
+- [Phase 3: Testing & Validation](#phase-3-testing--validation)
+- [References](#references)
+
+## Overview
+
+Harmonize the `writing-plans` skill and `create_plan` command into a unified planning system where:
+- **Skill** = Lightweight router that delegates to the command
+- **Command** = Single source of truth with comprehensive planning process
+
+This follows "Option 2" from the initial discussion: the skill tells agents to invoke the command, and the command becomes the primary mechanism with merged best practices from both.
+
+## Current State Analysis
+
+**Two separate planning mechanisms exist:**
+
+1. **`.claude/skills/writing-plans/SKILL.md`** (252 lines)
+   - Template-focused with execution-ready structure
+   - Emphasizes task grouping by subsystem for parallel execution
+   - Clear template with: Table of Contents, Dependencies, Context Loading, Tasks
+   - Save location: `**/plans/YYYY-MM-DD-<feature-name>.md`
+   - Shorter, assumes you know what to build
+
+2. **`.claude/commands/create_plan.md`** (450 lines)
+   - Interactive, research-heavy planning process
+   - 5-step workflow with human collaboration
+   - Spawns sub-agents for codebase analysis
+   - Success criteria split into automated vs manual
+   - Save location: `thoughts/shared/plans/YYYY-MM-DD-ENG-XXXX-description.md`
+   - Uses `humanlayer thoughts sync` command
+   - Process-focused, guides discovery
+
+**Key Conflicts:**
+- Different template structures
+- Different save locations
+- Different file naming conventions
+- Command has project-specific references (`humanlayer`, `thoughts/`)
+- Overlapping but inconsistent guidance
+
+## Desired End State
+
+**Success Criteria:**
+- [ ] Skill is reduced to ~80 lines and clearly delegates to command
+- [ ] Command contains unified template combining best of both
+- [ ] Plans save to `plan/YYYY-MM-DD-<feature-name>.md`
+- [ ] All project-specific references removed (`humanlayer`, `thoughts/`)
+- [ ] No redundant guidance between skill and command
+- [ ] Clear documentation of when to use planning
+- [ ] Template includes: Context Loading, Dependencies with parallelization, separated success criteria
+
+**How to Verify:**
+- Invoke skill → delegates to command
+- Command produces plans with unified template
+- Plans save to correct location
+- No broken references to removed concepts
+
+## What We're NOT Doing
+
+- Not removing the skill entirely (it serves as a user-friendly entry point)
+- Not creating a third mechanism or intermediate layer
+- Not changing the fundamental interactive process of the command
+- Not adding new features beyond harmonization
+
+## Implementation Approach
+
+Use a phased approach to:
+1. Simplify skill to minimal router (~80 lines)
+2. Enhance command with merged template and guidance
+3. Remove project-specific references
+4. Test and validate the unified system
+
+Each phase is independently verifiable.
+
+---
+
+## Phase 1: Simplify Skill to Router
+
+### Overview
+Reduce `.claude/skills/writing-plans/SKILL.md` from 252 lines to ~80 lines, making it a clear router to the command.
+
+### Context
+**Files to read:**
+- `.claude/skills/writing-plans/SKILL.md` - Current skill content
+
+### Changes Required
+
+#### 1.1: Rewrite Skill File
+**File:** `.claude/skills/writing-plans/SKILL.md`
+
+**Changes:**
+- Keep frontmatter with name and description (update description)
+- Replace entire content with router guidance
+- Add "When to Use" section
+- Add "What Happens" section explaining delegation
+- Add "Output Location" section
+- Add quick examples
+- Remove all template details (moved to command)
+
+**New Content Structure:**
+```markdown
+---
+name: writing-plans
+description: Create implementation plans through interactive research and discovery. Routes to /create_plan command.
+---
+
+# Writing Plans
+
+## When to Use
+[4-5 bullet points of when to invoke planning]
+
+## What Happens
+This skill **delegates to the /create_plan command**, which provides:
+[3-4 bullet points about the command's capabilities]
+
+## Invocation
+[Show how it delegates]
+
+## Output Location
+[Where plans are saved]
+
+## Quick Examples
+[2-3 invocation examples]
+```
+
+**Target:** ~80 lines total
+
+### Success Criteria
+
+#### Automated Verification:
+- [ ] File exists and is valid markdown
+- [ ] Frontmatter has correct name and description
+- [ ] File size is reduced to ~80 lines (±10 lines)
+
+#### Manual Verification:
+- [ ] Skill clearly states it delegates to `/create_plan`
+- [ ] "When to Use" guidance is clear and helpful
+- [ ] Examples show correct invocation patterns
+- [ ] No template details remain (all moved to command)
+
+**Verify:** `wc -l .claude/skills/writing-plans/SKILL.md` (should show ~80 lines)
+
+---
+
+## Phase 2: Enhance Command with Merged Content
+
+### Overview
+Update `.claude/commands/create_plan.md` to include the best template elements from the skill while maintaining its interactive process.
+
+### Context
+**Files to read:**
+- `.claude/commands/create_plan.md` - Current command
+- `.claude/skills/writing-plans/SKILL.md` - Original skill (for reference)
+
+### Changes Required
+
+#### 2.1: Add Task Organization Principles (NEW - after line 177)
+**Location:** After "Step 4: Detailed Plan Writing" heading, before template
+
+**Add:**
+```markdown
+## Task Organization Principles
+
+Plans should organize work into **phases grouped by subsystem** to enable parallel execution.
+
+### Grouping Strategy
+[Explanation of how tasks are grouped]
+
+### Task Sizing
+[What makes a well-sized task]
+
+### Context Loading
+[How to specify context per phase]
+```
+
+**Lines to add:** ~60
+
+#### 2.2: Replace Template Structure (REPLACE lines 182-277)
+**Location:** "Use this template structure" section
+
+**Replace with:**
+- Unified template combining skill's structure + command's detail
+- Include: Table of Contents, Overview, Current State Analysis, Desired End State, What We're NOT Doing, Dependencies (with parallelization), Context Loading, Phases with Tasks, Testing Strategy, References
+- Two versions: Single file (standard) and Multi-file (for large plans >400 lines)
+- Each phase includes: Overview, Context, Dependencies, Changes Required, Success Criteria (automated + manual)
+
+**Lines to replace:** ~95 lines → ~200 lines
+
+#### 2.3: Update Save Location (MODIFY line 172)
+**Change from:**
+```markdown
+`thoughts/shared/plans/YYYY-MM-DD-ENG-XXXX-description.md`
+```
+
+**Change to:**
+```markdown
+`plan/YYYY-MM-DD-<feature-name>.md`
+```
+
+Also update examples to remove `ENG-XXXX` requirement (make it optional in References section instead).
+
+#### 2.4: Remove Sync Command References (DELETE lines 281-283, 303)
+**Remove:**
+- Section about running `humanlayer thoughts sync`
+- All references to syncing the thoughts directory
+- Update Step 5 to remove sync mentions
+
+#### 2.5: Update Step 5 Presentation (MODIFY lines 285-303)
+**Change presentation message to:**
+- Reference `plan/` directory instead of `thoughts/shared/plans/`
+- Add questions about subsystem grouping and parallelization
+- Remove sync command
+
+#### 2.6: Add Planning Rules Section (NEW - after line 377)
+**Location:** After "Success Criteria Guidelines" section
+
+**Add:**
+```markdown
+## Planning Rules
+
+When creating plans, follow these rules:
+
+1. **Table of contents required**: Every plan must start with a linked TOC
+2. **Document dependencies**: Show execution order, dependency graph, parallelization
+3. **Phase dependencies**: Each phase specifies dependencies
+4. **Explicit paths**: Use exact file paths
+5. **Context per phase**: List files to read first
+6. **Verify every phase**: Automated AND manual success criteria
+7. **One agent per task**: All steps within a task handled by same agent
+8. **Split large plans**: >400 lines → multiple files with bidirectional links
+9. **Status tracking**: Include status badge (DRAFT/IN_PROGRESS/COMPLETED)
+10. **No open questions**: Resolve all questions before finalizing plan
+```
+
+**Lines to add:** ~30
+
+#### 2.7: Update "Be Thorough" Guideline (MODIFY line 320)
+**Add to existing guideline:**
+- Identify subsystem boundaries for task grouping
+- Document context loading needs
+- Bundle trivial changes together
+
+### Success Criteria
+
+#### Automated Verification:
+- [ ] File exists and is valid markdown
+- [ ] All section headings are present
+- [ ] No references to `thoughts/` directory remain
+- [ ] No references to `humanlayer thoughts sync` remain
+- [ ] Save location uses `plan/` directory
+
+#### Manual Verification:
+- [ ] Template includes "Context Loading" section from skill
+- [ ] Template includes "Dependencies" with parallelization from skill
+- [ ] Template includes separated success criteria from command
+- [ ] Task organization principles are clear
+- [ ] Planning rules section is comprehensive
+- [ ] Large plan structure (multi-file) is documented
+- [ ] Examples use correct file paths
+
+**Verify:** Read through entire command file to ensure coherent flow
+
+---
+
+## Phase 3: Testing & Validation
+
+### Overview
+Test the harmonized system to ensure skill delegates properly and command produces correct plans.
+
+### Context
+**Files to verify:**
+- `.claude/skills/writing-plans/SKILL.md` - Updated skill
+- `.claude/commands/create_plan.md` - Enhanced command
+
+### Testing Steps
+
+#### 3.1: Skill Routing Test
+**Manual test:** Simulate skill invocation
+- Read skill file
+- Verify it clearly states delegation to `/create_plan`
+- Confirm no template details remain
+- Check examples are accurate
+
+#### 3.2: Command Template Review
+**Manual test:** Review command template
+- Verify unified template includes all key sections
+- Check Context Loading section exists
+- Check Dependencies includes parallelization guidance
+- Check Success Criteria are separated (automated/manual)
+- Verify save location is `plan/` directory
+
+#### 3.3: Reference Cleanup Check
+**Automated check:** Search for removed concepts
+```bash
+grep -n "thoughts/" .claude/commands/create_plan.md
+grep -n "humanlayer" .claude/commands/create_plan.md
+grep -n "ENG-" .claude/commands/create_plan.md
+```
+**Expected:** No matches for `thoughts/` or `humanlayer`, only optional examples for `ENG-`
+
+#### 3.4: Documentation Completeness
+**Manual review:**
+- Skill has clear "When to Use" guidance
+- Command has all template sections documented
+- Planning rules are comprehensive
+- No contradictions between skill and command
+
+### Success Criteria
+
+#### Automated Verification:
+- [ ] No `thoughts/` references: `! grep -q "thoughts/" .claude/commands/create_plan.md`
+- [ ] No `humanlayer` references: `! grep -q "humanlayer" .claude/commands/create_plan.md`
+- [ ] Skill file is ~80 lines: `test $(wc -l < .claude/skills/writing-plans/SKILL.md) -lt 100`
+
+#### Manual Verification:
+- [ ] Skill clearly delegates to command (not ambiguous)
+- [ ] Command template is coherent and complete
+- [ ] All conflicts resolved (save location, naming, structure)
+- [ ] No redundant content between files
+- [ ] Plans would save to `plan/` directory
+- [ ] Template supports both single-file and multi-file plans
+
+**Verify:** Manual review of both files for quality and clarity
+
+---
+
+## Testing Strategy
+
+### Manual Testing
+1. Read the updated skill file - confirm it's concise and clear
+2. Read the updated command file - confirm template is comprehensive
+3. Search for removed concepts - confirm none remain
+4. Review template structure - confirm it includes best of both
+5. Check save locations - confirm `plan/` directory is used
+
+### Validation Checklist
+- [ ] Skill is ~80 lines
+- [ ] Skill delegates to command
+- [ ] Command has unified template
+- [ ] Template includes: Context Loading, Dependencies (with parallelization), separated success criteria
+- [ ] No `thoughts/` references
+- [ ] No `humanlayer` references
+- [ ] Save location is `plan/YYYY-MM-DD-<feature-name>.md`
+- [ ] Large plan structure documented (>400 lines → directory)
+
+## References
+
+### Critical Files
+- `.claude/skills/writing-plans/SKILL.md` - Skill to simplify (252 → 80 lines)
+- `.claude/commands/create_plan.md` - Command to enhance (~450 → ~550 lines)
+
+### Key Decisions
+- **Save location:** `plan/` (not `thoughts/shared/plans/` or `**/plans/`)
+- **File naming:** `YYYY-MM-DD-<feature-name>.md` (ENG-XXXX optional)
+- **Template:** Merged - skill's structure + command's detail
+- **Removed:** `humanlayer thoughts sync`, `thoughts/` references
+- **Terminology:** Phase (top-level group) → Task (individual work item)
+
+### Design Document
+- Plan agent analysis: Comprehensive harmonization strategy (see agent output above)

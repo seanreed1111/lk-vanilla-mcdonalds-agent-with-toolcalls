@@ -1,0 +1,774 @@
+2026-01-22T01:16:29.909Z [DEBUG] High write ratio: blit=16018, write=21001 (56.7% writes), screen=696x65
+2026-01-22T01:16:29.911Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.14/claude
+2026-01-22T01:16:29.912Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T01:16:29.912Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T01:16:29.912Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:16:29.912Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:16:29.913Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T01:16:29.913Z [DEBUG] Cleared all session hooks for session c250a775-a406-45e6-b4ca-75b119185b41
+2026-01-22T01:16:29.913Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T01:16:29.913Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:16:29.913Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T01:16:29.917Z [DEBUG] FileHistory: Added snapshot for 335ca2a1-a19b-4155-a32d-2a2f0038873f, tracking 0 files
+2026-01-22T01:16:29.936Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T01:16:29.936Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T01:16:29.936Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T01:16:29.937Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T01:16:29.974Z [DEBUG] Full reset (shrink->below): prevHeight=696, nextHeight=12, viewport=19
+2026-01-22T01:16:30.226Z [DEBUG] PackageManagerAutoUpdater: Update available 2.1.14 -> 2.1.15
+2026-01-22T01:17:35.306Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:17:35.306Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:17:35.306Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:17:35.306Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:17:35.306Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:17:35.306Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:17:35.313Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-22T01:17:35.313Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:35.313Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T01:17:35.313Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T01:17:35.313Z [DEBUG] FileHistory: Making snapshot for message c8e05511-b62e-4855-b763-faff758a7474
+2026-01-22T01:17:35.314Z [DEBUG] FileHistory: Added snapshot for c8e05511-b62e-4855-b763-faff758a7474, tracking 0 files
+2026-01-22T01:17:35.317Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-22T01:17:35.317Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-22T01:17:35.317Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at e3 (/$bunfs/root/claude:11:34695)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at n6R (/$bunfs/root/claude:1465:380)
+    at n6R (/$bunfs/root/claude:1465:1350)
+    at <anonymous> (/$bunfs/root/claude:1465:4440)
+    at <anonymous> (/$bunfs/root/claude:1465:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at zC8 (/$bunfs/root/claude:4096:4342)
+2026-01-22T01:17:35.322Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-22T01:17:35.322Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-22T01:17:35.322Z [DEBUG] Total plugin skills loaded: 0
+2026-01-22T01:17:35.322Z [DEBUG] Total plugin commands loaded: 0
+2026-01-22T01:17:35.324Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:35.324Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:35.324Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:35.333Z [DEBUG] Loaded 48 unique skills (managed: 0, user: 17, project: 4, legacy commands: 27)
+2026-01-22T01:17:35.333Z [DEBUG] getSkills returning: 48 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-22T01:17:35.337Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:17:35.349Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:35.349Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:35.349Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:35.707Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:17:36.632Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:17:37.719Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T01:17:37.722Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T01:17:37.722Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:37.722Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:17:37.732Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T01:17:37.732Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:37.732Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:17:37.735Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:17:37.735Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:17:37.735Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:17:37.735Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:17:37.735Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:17:37.735Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:17:37.742Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:17:37.745Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:37.745Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:37.745Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:38.933Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:17:40.878Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T01:17:40.881Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T01:17:40.881Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:40.881Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:17:40.895Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T01:17:40.895Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:40.895Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:17:40.897Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:17:40.897Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:17:40.897Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:17:40.897Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:17:40.897Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:17:40.897Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:17:40.906Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:17:40.911Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:40.911Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:40.911Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:41.883Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:17:48.750Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:17:48.755Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:17:48.755Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:48.755Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:17:48.762Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044668762
+2026-01-22T01:17:48.762Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:48.762Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044668762 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:17:48.762Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:17:48.763Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044668763
+2026-01-22T01:17:48.763Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:48.763Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044668763 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:17:48.763Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:17:48.763Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044668763
+2026-01-22T01:17:48.763Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:48.763Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044668763 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:17:48.763Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:17:48.763Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044668763
+2026-01-22T01:17:48.763Z [DEBUG] Temp file written successfully, size: 1662 bytes
+2026-01-22T01:17:48.763Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044668763 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:17:48.763Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:17:48.769Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:17:48.769Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:48.769Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:17:48.774Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:17:48.774Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:17:48.774Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:17:48.774Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:17:48.774Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:17:48.774Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:17:48.780Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:17:48.783Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:48.783Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:48.783Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:49.663Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:17:55.234Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:17:55.236Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:17:55.236Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:55.236Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:17:55.246Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044675246
+2026-01-22T01:17:55.246Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:17:55.246Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:55.246Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:17:55.246Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044675246 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:17:55.246Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:17:55.246Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044675246
+2026-01-22T01:17:55.246Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:17:55.246Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:55.246Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:17:55.246Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044675246 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:17:55.246Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:17:55.246Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044675246
+2026-01-22T01:17:55.246Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:17:55.246Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:17:55.246Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:17:55.246Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044675246 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:17:55.247Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:17:55.247Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044675247
+2026-01-22T01:17:55.247Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:17:55.247Z [DEBUG] Temp file written successfully, size: 1666 bytes
+2026-01-22T01:17:55.247Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:17:55.247Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044675247 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:17:55.247Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:17:55.251Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:17:55.251Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:17:55.251Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:17:55.253Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:17:55.253Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:17:55.253Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:17:55.253Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:17:55.253Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:17:55.253Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:17:55.260Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:17:55.264Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:17:55.264Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:17:55.264Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:17:56.217Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:09.892Z [DEBUG] executePreToolHooks called for tool: Write
+2026-01-22T01:18:09.894Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-01-22T01:18:09.894Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:09.894Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-01-22T01:18:09.901Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:09.902Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:09.902Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py.tmp.4012.1769044689902
+2026-01-22T01:18:09.902Z [DEBUG] Temp file written successfully, size: 5068 bytes
+2026-01-22T01:18:09.902Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py.tmp.4012.1769044689902 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py
+2026-01-22T01:18:09.902Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py written atomically
+2026-01-22T01:18:09.902Z [ERROR] Error: Error: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at J (/$bunfs/root/claude:1535:26959)
+    at J (/$bunfs/root/claude:1535:27173)
+    at q (/$bunfs/root/claude:1535:33832)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:09.902Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:09.902Z [DEBUG] LSP: Failed to notify server of file change for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+2026-01-22T01:18:09.902Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:09.903Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/src/menu_provider.py
+2026-01-22T01:18:09.905Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .py
+2026-01-22T01:18:09.907Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-01-22T01:18:09.907Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:09.907Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-01-22T01:18:09.908Z [DEBUG] [lspRecommendation] Skipping pyright-lsp@claude-plugins-official (already installed)
+2026-01-22T01:18:09.915Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:09.915Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:09.915Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:09.915Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:09.915Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:09.915Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:09.921Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:09.929Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:09.929Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:09.929Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:10.862Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:16.089Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:18:16.093Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:18:16.093Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:16.093Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:18:16.104Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044696104
+2026-01-22T01:18:16.104Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:16.104Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:16.104Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:16.104Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044696104 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:18:16.104Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:18:16.104Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044696104
+2026-01-22T01:18:16.104Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:16.105Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:16.105Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:16.105Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044696104 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:18:16.105Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:18:16.105Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044696105
+2026-01-22T01:18:16.105Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:16.105Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:16.105Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:16.105Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044696105 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:18:16.105Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:18:16.105Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044696105
+2026-01-22T01:18:16.105Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:16.105Z [DEBUG] Temp file written successfully, size: 1674 bytes
+2026-01-22T01:18:16.105Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:16.105Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044696105 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:18:16.105Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:18:16.110Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:18:16.110Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:16.110Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:18:16.112Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:16.112Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:16.112Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:16.112Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:16.112Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:16.112Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:16.117Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:16.122Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:16.122Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:16.122Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:16.979Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:43.881Z [DEBUG] executePreToolHooks called for tool: Write
+2026-01-22T01:18:43.883Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-01-22T01:18:43.883Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:43.883Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-01-22T01:18:43.891Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:43.891Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:43.891Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044723891
+2026-01-22T01:18:43.892Z [DEBUG] Temp file written successfully, size: 12128 bytes
+2026-01-22T01:18:43.892Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044723891 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py
+2026-01-22T01:18:43.892Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py written atomically
+2026-01-22T01:18:43.892Z [ERROR] Error: Error: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at J (/$bunfs/root/claude:1535:26959)
+    at J (/$bunfs/root/claude:1535:27173)
+    at q (/$bunfs/root/claude:1535:33832)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:43.892Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:43.892Z [DEBUG] LSP: Failed to notify server of file change for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+2026-01-22T01:18:43.892Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:18:43.893Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py
+2026-01-22T01:18:43.896Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .py
+2026-01-22T01:18:43.898Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-01-22T01:18:43.898Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:43.898Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-01-22T01:18:43.898Z [DEBUG] [lspRecommendation] Skipping pyright-lsp@claude-plugins-official (already installed)
+2026-01-22T01:18:43.906Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:43.906Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:43.906Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:43.906Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:43.906Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:43.906Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:43.914Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:43.917Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:43.917Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:43.917Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:44.960Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:49.942Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:18:49.946Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:18:49.946Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:49.946Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:18:49.958Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044729958
+2026-01-22T01:18:49.958Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:49.958Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:49.958Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:49.958Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044729958 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:18:49.958Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:18:49.958Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044729958
+2026-01-22T01:18:49.958Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:49.958Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:49.958Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:49.958Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044729958 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:18:49.958Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:18:49.958Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044729958
+2026-01-22T01:18:49.958Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:49.958Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:18:49.958Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:49.958Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044729958 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:18:49.959Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:18:49.959Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044729959
+2026-01-22T01:18:49.959Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:18:49.959Z [DEBUG] Temp file written successfully, size: 1682 bytes
+2026-01-22T01:18:49.959Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:18:49.959Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044729959 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:18:49.959Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:18:49.964Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:18:49.964Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:49.964Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:18:49.967Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:49.967Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:49.967Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:49.967Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:49.967Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:49.967Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:49.972Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:49.978Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:49.978Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:49.978Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:50.995Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:51.986Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:18:51.995Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:18:51.995Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:51.995Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:18:52.071Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-01-22T01:18:52.071Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:52.071Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:18:52.074Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:52.074Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:52.074Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:52.074Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:52.074Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:52.074Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:52.082Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:52.086Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:52.086Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:52.086Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:53.234Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:18:54.123Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:18:54.127Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:18:54.127Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:54.127Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:18:54.460Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-01-22T01:18:54.460Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:18:54.460Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:18:54.466Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:18:54.466Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:18:54.466Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:18:54.466Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:18:54.466Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:18:54.466Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:18:54.471Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:18:54.478Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:18:54.478Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:18:54.478Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:18:55.610Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:00.119Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-22T01:19:00.122Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-22T01:19:00.122Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:00.122Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:19:00.140Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-22T01:19:00.140Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:00.140Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-22T01:19:00.144Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:00.144Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:00.144Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:00.144Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:00.144Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:00.144Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:00.151Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:00.157Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:00.157Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:00.157Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:01.066Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:03.234Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:03.241Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:03.241Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:03.241Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:03.308Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-22T01:19:03.308Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:03.308Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:03.312Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:03.312Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:03.312Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:03.312Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:03.312Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:03.312Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:03.321Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:03.326Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:03.326Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:03.326Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:04.519Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:12.038Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T01:19:12.041Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T01:19:12.041Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:12.041Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:12.050Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:12.050Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:12.051Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044752051
+2026-01-22T01:19:12.051Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:12.051Z [DEBUG] Temp file written successfully, size: 11517 bytes
+2026-01-22T01:19:12.051Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:12.051Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044752051 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py
+2026-01-22T01:19:12.052Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py written atomically
+2026-01-22T01:19:12.052Z [ERROR] Error: Error: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at J (/$bunfs/root/claude:1535:26959)
+    at J (/$bunfs/root/claude:1535:27173)
+    at q (/$bunfs/root/claude:1535:33832)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:12.052Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:12.052Z [DEBUG] LSP: Failed to notify server of file change for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+2026-01-22T01:19:12.052Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:12.062Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T01:19:12.062Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:12.062Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:12.073Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:12.073Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:12.073Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:12.073Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:12.073Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:12.073Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:12.085Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:12.089Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:12.089Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:12.089Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:12.097Z [DEBUG] High write ratio: blit=4282, write=6145 (58.9% writes), screen=210x65
+2026-01-22T01:19:12.987Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:13.949Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:13.956Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:13.956Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:13.956Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:13.978Z [DEBUG] High write ratio: blit=4945, write=6182 (55.6% writes), screen=215x65
+2026-01-22T01:19:14.017Z [DEBUG] High write ratio: blit=4945, write=6182 (55.6% writes), screen=215x65
+2026-01-22T01:19:14.236Z [DEBUG] High write ratio: blit=4945, write=6182 (55.6% writes), screen=215x65
+2026-01-22T01:19:14.242Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-01-22T01:19:14.242Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:14.242Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:14.246Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:14.246Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:14.246Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:14.246Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:14.246Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:14.246Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:14.254Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:14.259Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:14.259Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:14.259Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:14.271Z [DEBUG] High write ratio: blit=4945, write=6735 (57.7% writes), screen=231x65
+2026-01-22T01:19:15.240Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:21.436Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T01:19:21.440Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T01:19:21.440Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:21.440Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:21.455Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:21.455Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:21.455Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044761455
+2026-01-22T01:19:21.455Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:21.456Z [DEBUG] Temp file written successfully, size: 11525 bytes
+2026-01-22T01:19:21.456Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:21.456Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py.tmp.4012.1769044761455 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py
+2026-01-22T01:19:21.456Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py written atomically
+2026-01-22T01:19:21.456Z [ERROR] Error: Error: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at J (/$bunfs/root/claude:1535:26959)
+    at J (/$bunfs/root/claude:1535:27173)
+    at q (/$bunfs/root/claude:1535:33832)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:21.456Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:21.456Z [DEBUG] LSP: Failed to notify server of file change for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+2026-01-22T01:19:21.456Z [ERROR] Error: Error: Failed to sync file open /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/tests/test_menu_provider.py: Cannot send notification to LSP server 'plugin:pyright-lsp:pyright': server is error
+    at q (/$bunfs/root/claude:1535:33997)
+    at processTicksAndRejections (native:7:39)
+2026-01-22T01:19:21.467Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T01:19:21.467Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:21.467Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:21.478Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:21.478Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:21.478Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:21.478Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:21.478Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:21.478Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:21.486Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:21.491Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:21.491Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:21.491Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:21.514Z [DEBUG] High write ratio: blit=6310, write=6937 (52.4% writes), screen=257x65
+2026-01-22T01:19:22.459Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:23.397Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:23.407Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:23.407Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:23.407Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:23.425Z [DEBUG] High write ratio: blit=6463, write=6989 (52.0% writes), screen=260x65
+2026-01-22T01:19:23.464Z [DEBUG] High write ratio: blit=6463, write=6989 (52.0% writes), screen=260x65
+2026-01-22T01:19:23.670Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-22T01:19:23.670Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:23.670Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:23.681Z [DEBUG] High write ratio: blit=6463, write=7147 (52.5% writes), screen=265x65
+2026-01-22T01:19:23.681Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:23.681Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:23.682Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:23.682Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:23.682Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:23.682Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:23.691Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:23.699Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:23.699Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:23.699Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:23.720Z [DEBUG] High write ratio: blit=6853, write=6976 (50.4% writes), screen=265x65
+2026-01-22T01:19:24.812Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:30.059Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:19:30.066Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:19:30.066Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:30.066Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:30.082Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044770082
+2026-01-22T01:19:30.082Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:30.082Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:30.082Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:30.082Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044770082 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:19:30.082Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:19:30.082Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044770082
+2026-01-22T01:19:30.083Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:30.083Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:30.083Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:30.083Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044770082 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:19:30.083Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:19:30.083Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044770083
+2026-01-22T01:19:30.083Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:30.083Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:30.083Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:30.083Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044770083 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:19:30.083Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:19:30.083Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044770083
+2026-01-22T01:19:30.083Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:30.083Z [DEBUG] Temp file written successfully, size: 1684 bytes
+2026-01-22T01:19:30.083Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:30.083Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044770083 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:19:30.083Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:19:30.098Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:19:30.098Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:30.098Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:30.103Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:30.103Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:30.103Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:30.103Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:30.103Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:30.103Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:30.112Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:30.119Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:30.119Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:30.119Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:31.051Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:32.161Z [DEBUG] High write ratio: blit=7048, write=7081 (50.1% writes), screen=273x65
+2026-01-22T01:19:32.162Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:32.171Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:32.171Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:32.171Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:32.207Z [DEBUG] High write ratio: blit=7048, write=7081 (50.1% writes), screen=273x65
+2026-01-22T01:19:32.262Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-22T01:19:32.262Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:32.262Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:32.266Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:32.266Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:32.266Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:32.266Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:32.266Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:32.266Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:32.281Z [DEBUG] High write ratio: blit=7048, write=7092 (50.2% writes), screen=273x65
+2026-01-22T01:19:32.287Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:32.296Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:32.296Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:32.296Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:33.296Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:34.245Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:34.254Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:34.254Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:34.254Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:34.264Z [DEBUG] High write ratio: blit=7113, write=7154 (50.1% writes), screen=277x65
+2026-01-22T01:19:34.304Z [DEBUG] High write ratio: blit=7113, write=7154 (50.1% writes), screen=277x65
+2026-01-22T01:19:34.354Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-01-22T01:19:34.354Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:34.354Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:34.359Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:34.359Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:34.359Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:34.359Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:34.359Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:34.359Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:34.370Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:34.375Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:34.375Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:34.375Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:34.384Z [DEBUG] High write ratio: blit=7113, write=7503 (51.3% writes), screen=289x65
+2026-01-22T01:19:35.445Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:36.302Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:36.311Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:36.311Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:36.311Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:36.411Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-22T01:19:36.411Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:36.411Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:36.416Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:36.417Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:36.417Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:36.417Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:36.417Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:36.417Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:36.429Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:36.439Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:36.439Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:36.439Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:37.612Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:38.625Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-22T01:19:38.641Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-22T01:19:38.641Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:38.641Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:38.909Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-22T01:19:38.909Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:38.909Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-22T01:19:38.914Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:38.914Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:38.914Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:38.914Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:38.914Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:38.914Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:38.923Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:38.928Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:38.928Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:38.928Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:40.055Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:45.466Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:19:45.478Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:19:45.478Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:45.478Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:45.493Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044785493
+2026-01-22T01:19:45.493Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:45.493Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:45.494Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:45.494Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044785493 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:19:45.494Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:19:45.494Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044785494
+2026-01-22T01:19:45.494Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:45.494Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:45.494Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:45.494Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044785494 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:19:45.494Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:19:45.494Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044785494
+2026-01-22T01:19:45.494Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:45.494Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:45.494Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:45.494Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044785494 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:19:45.494Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:19:45.494Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044785494
+2026-01-22T01:19:45.494Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:45.494Z [DEBUG] Temp file written successfully, size: 1686 bytes
+2026-01-22T01:19:45.494Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:45.494Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044785494 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:19:45.494Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:19:45.504Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:19:45.504Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:45.504Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:45.514Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:45.514Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:45.514Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:45.514Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:45.514Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:45.514Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:45.527Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:45.533Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:45.533Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:45.533Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:46.588Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:50.636Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-22T01:19:50.643Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-22T01:19:50.643Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:50.643Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:50.666Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:50.666Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:50.667Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/README.md.tmp.4012.1769044790667
+2026-01-22T01:19:50.667Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:50.667Z [DEBUG] Temp file written successfully, size: 13529 bytes
+2026-01-22T01:19:50.667Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:50.667Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/README.md.tmp.4012.1769044790667 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/README.md
+2026-01-22T01:19:50.667Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/README.md written atomically
+2026-01-22T01:19:50.670Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/README.md
+2026-01-22T01:19:50.680Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-22T01:19:50.680Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:50.680Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-22T01:19:50.689Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:50.689Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:50.689Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:50.689Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:50.689Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:50.689Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:50.707Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:50.713Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:50.713Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:50.713Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:51.781Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:19:54.202Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-22T01:19:54.207Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-22T01:19:54.207Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:54.207Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:54.231Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044794231
+2026-01-22T01:19:54.231Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:54.231Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:54.231Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:54.231Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json.tmp.4012.1769044794231 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json
+2026-01-22T01:19:54.231Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-4cf43f87-139d-4340-ba8c-8f9b2dee1c9b.json written atomically
+2026-01-22T01:19:54.231Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044794231
+2026-01-22T01:19:54.231Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:54.231Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:54.231Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:54.231Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json.tmp.4012.1769044794231 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json
+2026-01-22T01:19:54.231Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-a724ec13-ed78-4a7d-9eda-03d558761f32.json written atomically
+2026-01-22T01:19:54.231Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044794231
+2026-01-22T01:19:54.231Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:54.231Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:54.231Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:54.231Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json.tmp.4012.1769044794231 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json
+2026-01-22T01:19:54.232Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-c250a775-a406-45e6-b4ca-75b119185b41.json written atomically
+2026-01-22T01:19:54.232Z [DEBUG] Writing to temp file: /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044794232
+2026-01-22T01:19:54.232Z [DEBUG] Preserving file permissions: 100644
+2026-01-22T01:19:54.232Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-22T01:19:54.232Z [DEBUG] Applied original permissions to temp file
+2026-01-22T01:19:54.232Z [DEBUG] Renaming /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json.tmp.4012.1769044794232 to /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json
+2026-01-22T01:19:54.232Z [DEBUG] File /Users/seanreed/.claude/todos/ea312872-8365-41e6-bde3-90f1c302eb51-agent-ea312872-8365-41e6-bde3-90f1c302eb51.json written atomically
+2026-01-22T01:19:54.242Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-22T01:19:54.242Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:19:54.242Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-22T01:19:54.247Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-22T01:19:54.247Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-22T01:19:54.247Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-22T01:19:54.247Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-22T01:19:54.247Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-22T01:19:54.247Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-22T01:19:54.264Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:19:54.269Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:19:54.269Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:19:54.269Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:19:55.261Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:20:05.975Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-22T01:20:05.975Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:20:05.975Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-22T01:20:05.976Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:20:05.997Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:20:05.997Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:20:05.997Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:20:06.000Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T01:20:07.807Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:20:14.898Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-22T01:20:14.911Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-22T01:20:14.911Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-22T01:20:14.911Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-22T01:20:15.893Z [DEBUG] Stream started - received first chunk
+2026-01-22T01:20:21.368Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-22T01:20:21.368Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T01:20:21.368Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

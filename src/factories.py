@@ -9,12 +9,12 @@ removing that layer, these factories still provide separation of concerns:
 The returned objects are concrete LiveKit Inference implementations.
 """
 
+from keyword_intercept_llm import KeywordInterceptLLM
 from livekit.agents import inference
 from loguru import logger
+from mock_llm import SimpleMockLLM
 
 from config import PipelineConfig
-from keyword_intercept_llm import KeywordInterceptLLM
-from mock_llm import SimpleMockLLM
 
 
 def create_stt(config: PipelineConfig) -> inference.STT:

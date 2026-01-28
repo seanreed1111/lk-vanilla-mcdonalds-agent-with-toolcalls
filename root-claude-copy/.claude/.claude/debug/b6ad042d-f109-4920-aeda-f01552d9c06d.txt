@@ -1,0 +1,30 @@
+2026-01-22T14:55:28.847Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T14:55:28.848Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-22T14:55:28.894Z [DEBUG] High write ratio: blit=18521, write=27364 (59.6% writes), screen=796x74
+2026-01-22T14:55:28.897Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.15/claude
+2026-01-22T14:55:28.897Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-22T14:55:28.897Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-22T14:55:28.897Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T14:55:28.897Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T14:55:28.898Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-22T14:55:28.898Z [DEBUG] Cleared all session hooks for session 5254e4e8-191b-49b4-989b-82b9701c44b2
+2026-01-22T14:55:28.898Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-22T14:55:28.898Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T14:55:28.898Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-22T14:55:28.903Z [DEBUG] FileHistory: Added snapshot for ad5c3d23-97b7-4406-991b-efcc3fd3748d, tracking 0 files
+2026-01-22T14:55:28.923Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-22T14:55:28.923Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-22T14:55:28.923Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-22T14:55:28.923Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-22T14:55:28.924Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-22T14:55:28.931Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 9ms
+2026-01-22T14:55:28.931Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.15"}}
+2026-01-22T14:55:28.931Z [DEBUG] MCP server "ide": WS-IDE connection closed after 0s (cleanly)
+2026-01-22T14:55:28.931Z [DEBUG] MCP server "ide": Cleared connection cache for reconnection
+2026-01-22T14:55:28.931Z [ERROR] MCP server "ide" Failed to fetch tools: MCP error -32000: Connection closed
+2026-01-22T14:55:28.971Z [DEBUG] Full reset (scrollback changes): scrollbackRows=784, changes=57361/58249, firstChangeY=8
+  prev: "❯ '/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/thoughts/d     "
+  next: "──────────────────────────────────────────────────────────────────────────"
+2026-01-22T14:55:32.438Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-22T14:55:32.438Z [DEBUG] Found 0 hook matchers in settings
+2026-01-22T14:55:32.438Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

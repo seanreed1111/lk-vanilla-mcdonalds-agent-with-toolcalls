@@ -9,8 +9,8 @@ from typing import Any
 
 from livekit.agents.llm import LLM, ChatContext, LLMStream
 
-from menus.mcdonalds.models import Item
 from menu_provider import MenuProvider
+from menus.mcdonalds.models import Item
 
 
 class DriveThruLLM(LLM):

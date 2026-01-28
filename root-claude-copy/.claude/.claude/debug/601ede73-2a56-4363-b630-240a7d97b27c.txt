@@ -1,0 +1,1602 @@
+2026-01-23T18:21:43.993Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.17/claude
+2026-01-23T18:21:43.995Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-23T18:21:44.441Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:44.441Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:44.452Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-23T18:21:44.453Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2026-01-23T18:21:44.453Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:44.453Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T18:21:44.453Z [DEBUG] Cleared all session hooks for session 2699dc23-d51a-49bf-a2a2-714b6a619389
+2026-01-23T18:21:44.453Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2026-01-23T18:21:44.453Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:44.453Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2026-01-23T18:21:44.459Z [DEBUG] FileHistory: Added snapshot for 7ac4b54e-61f8-45a2-93b5-f1426f8284a1, tracking 0 files
+2026-01-23T18:21:44.483Z [DEBUG] Full reset (shrink->below): prevHeight=62, nextHeight=14, viewport=23
+2026-01-23T18:21:44.492Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T18:21:44.492Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T18:21:44.492Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T18:21:44.493Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-23T18:21:45.486Z [DEBUG] High write ratio: blit=728, write=802 (52.4% writes), screen=17x104
+2026-01-23T18:21:46.073Z [DEBUG] High write ratio: blit=728, write=804 (52.5% writes), screen=17x104
+2026-01-23T18:21:46.135Z [DEBUG] High write ratio: blit=728, write=774 (51.5% writes), screen=17x104
+2026-01-23T18:21:47.003Z [DEBUG] Detected Homebrew cask installation: /opt/homebrew/Caskroom/claude-code/2.1.17/claude
+2026-01-23T18:21:47.003Z [DEBUG] AutoUpdaterWrapper: Installation type: package-manager
+2026-01-23T18:21:53.889Z [DEBUG] Writing to temp file: /Users/seanreed/.claude.json.tmp.17148.1769192513889
+2026-01-23T18:21:53.889Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T18:21:53.890Z [DEBUG] Temp file written successfully, size: 14140 bytes
+2026-01-23T18:21:53.890Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:21:53.890Z [DEBUG] Renaming /Users/seanreed/.claude.json.tmp.17148.1769192513889 to /Users/seanreed/.claude.json
+2026-01-23T18:21:53.890Z [DEBUG] File /Users/seanreed/.claude.json written atomically
+2026-01-23T18:21:53.891Z [DEBUG] Metadata string for iterate_plan:
+2026-01-23T18:21:53.891Z [DEBUG] <command-message>iterate_plan</command-message>
+<command-name>/iterate_plan</command-name>
+<command-args>'/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-ag
+2026-01-23T18:21:53.891Z [DEBUG] command-message tags in metadata: 1
+2026-01-23T18:21:53.892Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.892Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.899Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-23T18:21:53.900Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:21:53.900Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:21:53.900Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:21:53.900Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:21:53.900Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:21:53.900Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:21:53.900Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.900Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.903Z [DEBUG] processPromptSlashCommand creating 3 messages for iterate_plan
+2026-01-23T18:21:53.903Z [DEBUG] Message 1: <command-message>iterate_plan</command-message>
+<command-name>/iterate_plan</command-name>
+<command-args>'/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-ag
+2026-01-23T18:21:53.903Z [DEBUG] Message 2 [META]: [{"type":"text","text":"# Iterate Implementation Plan\n\nYou are tasked with updating existing implementation plans based on user feedback. You should be skeptical, thorough, and ensure changes are gr
+2026-01-23T18:21:53.903Z [DEBUG] Message 3: [ATTACHMENT]
+2026-01-23T18:21:53.904Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.904Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.907Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-23T18:21:53.907Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:53.907Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T18:21:53.907Z [DEBUG] FileHistory: Making snapshot for message 12d949b4-8b71-46a6-8d4e-411344577855
+2026-01-23T18:21:53.907Z [DEBUG] FileHistory: Added snapshot for 12d949b4-8b71-46a6-8d4e-411344577855, tracking 0 files
+2026-01-23T18:21:53.909Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-01-23T18:21:53.910Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/seanreed/.claude/skills, project=[/Users/seanreed/PythonProjects/voice-ai/lk-agent-1/.claude/skills]
+2026-01-23T18:21:53.910Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/Library/Application Support/ClaudeCode/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at vW (/$bunfs/root/claude:11:35097)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at y2R (/$bunfs/root/claude:1479:380)
+    at y2R (/$bunfs/root/claude:1479:1350)
+    at <anonymous> (/$bunfs/root/claude:1479:4440)
+    at <anonymous> (/$bunfs/root/claude:1479:5171)
+    at A (/$bunfs/root/claude:11:7244)
+    at pX8 (/$bunfs/root/claude:4784:4342)
+2026-01-23T18:21:53.913Z [DEBUG] getPluginSkills: Processing 1 enabled plugins
+2026-01-23T18:21:53.913Z [DEBUG] Checking plugin pyright-lsp: skillsPath=none, skillsPaths=0 paths
+2026-01-23T18:21:53.913Z [DEBUG] Total plugin skills loaded: 0
+2026-01-23T18:21:53.913Z [DEBUG] Total plugin commands loaded: 0
+2026-01-23T18:21:53.915Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 6ms
+2026-01-23T18:21:53.922Z [DEBUG] Loaded 37 unique skills (managed: 0, user: 17, project: 7, legacy commands: 13)
+2026-01-23T18:21:53.922Z [DEBUG] getSkills returning: 37 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-23T18:21:53.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.926Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:21:53.927Z [DEBUG] Skills and commands included in Skill tool: design, documenting-code-comments, systematic-debugging, handling-errors, migrating-code, optimizing-performance, reading-logs, visualizing-with-mermaid, fixing-flaky-tests, executing-plans, architecting-systems, documenting-systems, refactoring-code, condition-based-waiting, writing-plans, writing-tests, verification-before-completion, design, review-plan, makefile, architecting-systems, changelog-generator, writing-plans, writing-tests, debug, review_plan, implement_plan, ci_describe_pr, create_plan, validate_plan, commit-push-pr, iterate_plan, describe_pr, commit, resume_handoff, research_codebase, create_handoff
+2026-01-23T18:21:53.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.931Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:21:53.931Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:21:53.931Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:21:53.931Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:21:53.932Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:53.932Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:56.076Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:21:57.909Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.909Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.914Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.914Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.917Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:21:57.917Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:21:57.917Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.918Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.920Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:21:57.920Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:57.920Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:21:57.920Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:21:57.920Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:57.920Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:21:57.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.923Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.927Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.931Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.935Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.935Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.937Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.937Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.939Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:21:57.939Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:57.939Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:21:57.939Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:21:57.939Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:21:57.939Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:21:57.939Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.939Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.942Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.942Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.945Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:21:57.945Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:21:57.945Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:21:57.945Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:21:57.945Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:21:57.945Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:21:57.946Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.946Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.948Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.948Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.950Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:21:57.951Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.951Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.953Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:21:57.953Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:21:57.953Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:21:57.953Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:21:57.954Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:57.954Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:21:59.941Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:22:08.586Z [DEBUG] High write ratio: blit=1560, write=1950 (55.6% writes), screen=64x104
+2026-01-23T18:22:08.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:08.595Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:08.603Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:08.603Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:08.607Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-23T18:22:08.607Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:08.607Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T18:22:08.612Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-23T18:22:26.099Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.099Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.111Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:22:26.111Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:22:26.111Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:22:26.112Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:22:26.112Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:22:26.112Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:22:26.112Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.112Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.117Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.117Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.121Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-23T18:22:26.121Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:26.121Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T18:22:26.125Z [DEBUG] Started caffeinate to prevent sleep
+2026-01-23T18:22:26.125Z [DEBUG] FileHistory: Making snapshot for message 8d227585-124b-4c4a-93dc-101ddac05a46
+2026-01-23T18:22:26.126Z [DEBUG] FileHistory: Added snapshot for 8d227585-124b-4c4a-93dc-101ddac05a46, tracking 0 files
+2026-01-23T18:22:26.130Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2026-01-23T18:22:26.131Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-23T18:22:26.132Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.132Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.132Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.c85; cc_entrypoint=cli
+2026-01-23T18:22:26.132Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:22:26.132Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:22:26.132Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:22:26.134Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2026-01-23T18:22:26.135Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.135Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.138Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:22:26.142Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.142Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.145Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:22:26.145Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:22:26.145Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:22:26.145Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:22:26.147Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.147Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:26.878Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:22:28.292Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:22:36.180Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.180Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.184Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.184Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.187Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:22:36.187Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:22:36.187Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.187Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.190Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:22:36.190Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:36.190Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:36.190Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:22:36.190Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:36.190Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:36.193Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.193Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.197Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.197Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.200Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.200Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.204Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.204Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.207Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.207Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.209Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:22:36.209Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:36.209Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:36.209Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:22:36.209Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:36.209Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:36.209Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.209Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.209Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.209Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.213Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:22:36.213Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:22:36.213Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:22:36.213Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:22:36.213Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:22:36.214Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:22:36.216Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.216Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.220Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.220Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.222Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:22:36.223Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.223Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.226Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:22:36.226Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:22:36.226Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:22:36.226Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:22:36.227Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:36.227Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:38.341Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:22:41.825Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.825Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.836Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.836Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.841Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:22:41.841Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:22:41.841Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-23T18:22:41.841Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.841Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.846Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:22:41.846Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.847Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.847Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:22:41.847Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.847Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.847Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-23T18:22:41.847Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.847Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.847Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.847Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.850Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.850Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.856Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.856Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.861Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.861Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.865Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.865Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.868Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:22:41.868Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.868Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.868Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:22:41.868Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.868Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.868Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-23T18:22:41.868Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:41.868Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-23T18:22:41.868Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.868Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.868Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.868Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.868Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.872Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:22:41.872Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:22:41.872Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:22:41.872Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:22:41.872Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:22:41.872Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:22:41.873Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.873Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.878Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.878Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.883Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:22:41.885Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.885Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.888Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:22:41.889Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:22:41.889Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:22:41.889Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:22:41.890Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:41.890Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:43.974Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:22:57.288Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.288Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.295Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.295Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.300Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:22:57.300Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.301Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.304Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:22:57.304Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:57.304Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:22:57.306Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.306Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.310Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.310Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.313Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.313Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.316Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:22:57.316Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:22:57.317Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192577317
+2026-01-23T18:22:57.317Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:22:57.317Z [DEBUG] Temp file written successfully, size: 13667 bytes
+2026-01-23T18:22:57.317Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:22:57.317Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192577317 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:22:57.317Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:22:57.318Z [DEBUG] FileHistory: Tracked file modification for /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:22:57.318Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.318Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.321Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .md
+2026-01-23T18:22:57.322Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.322Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.325Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:22:57.325Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:22:57.325Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:22:57.325Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.327Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.327Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.339Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:22:57.339Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:22:57.339Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:22:57.339Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:22:57.339Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:22:57.339Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:22:57.340Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.340Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.344Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.346Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.350Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:22:57.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.354Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.355Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:22:57.355Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:22:57.355Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:22:57.355Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:22:57.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:57.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:22:59.266Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:03.432Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.432Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.443Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.443Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.447Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:23:03.447Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.447Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.451Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:23:03.451Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:03.451Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:03.451Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.451Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.455Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.455Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.458Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.458Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.462Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:03.462Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:03.462Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192583462
+2026-01-23T18:23:03.462Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:23:03.463Z [DEBUG] Temp file written successfully, size: 13698 bytes
+2026-01-23T18:23:03.463Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:23:03.463Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192583462 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:23:03.463Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:23:03.465Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.465Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.469Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.469Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.472Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:23:03.472Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:03.472Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:03.472Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.472Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.472Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.483Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:03.483Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:23:03.483Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:23:03.483Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:23:03.483Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:23:03.483Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:03.486Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.486Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.490Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.490Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.494Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:23:03.495Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.495Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.498Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.499Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:23:03.499Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:23:03.499Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:23:03.499Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:23:03.500Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:03.500Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:05.675Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:18.493Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.493Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.509Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.509Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.515Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:23:18.518Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.518Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.523Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:23:18.523Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:18.523Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:18.523Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.523Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.528Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.528Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.533Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.533Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.537Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:18.537Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:18.537Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192598537
+2026-01-23T18:23:18.537Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:23:18.538Z [DEBUG] Temp file written successfully, size: 14870 bytes
+2026-01-23T18:23:18.538Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:23:18.538Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192598537 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:23:18.538Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:23:18.538Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.538Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.542Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.542Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.545Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:23:18.545Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:18.545Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:18.545Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.545Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.545Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.562Z [DEBUG] High write ratio: blit=6832, write=7942 (53.8% writes), screen=195x104
+2026-01-23T18:23:18.566Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:18.566Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:23:18.566Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:23:18.566Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:23:18.566Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:23:18.566Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:18.568Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.569Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.574Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.574Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.578Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:23:18.579Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.579Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.583Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:23:18.583Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:23:18.583Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:23:18.583Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:23:18.586Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.586Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:18.607Z [DEBUG] High write ratio: blit=7234, write=7906 (52.2% writes), screen=195x104
+2026-01-23T18:23:20.578Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:28.335Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.335Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.346Z [DEBUG] High write ratio: blit=7234, write=7966 (52.4% writes), screen=197x104
+2026-01-23T18:23:28.350Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.350Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.355Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:23:28.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.360Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:23:28.360Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:28.360Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:28.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.360Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.364Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.364Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.370Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.370Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.374Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:28.374Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:28.375Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192608375
+2026-01-23T18:23:28.375Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:23:28.375Z [DEBUG] Temp file written successfully, size: 15373 bytes
+2026-01-23T18:23:28.375Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:23:28.375Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192608375 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:23:28.375Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:23:28.376Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.376Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.384Z [DEBUG] High write ratio: blit=7234, write=7966 (52.4% writes), screen=197x104
+2026-01-23T18:23:28.385Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.385Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.388Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:23:28.388Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:28.388Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:28.389Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.390Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.390Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.402Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:28.402Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:23:28.402Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:23:28.402Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:23:28.402Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:23:28.402Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:28.403Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.403Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.408Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.408Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.411Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:23:28.414Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.414Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.423Z [DEBUG] High write ratio: blit=7234, write=10438 (59.1% writes), screen=229x104
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.426Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:23:28.426Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:23:28.426Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:23:28.426Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:23:28.427Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.428Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:28.466Z [DEBUG] High write ratio: blit=7486, write=10419 (58.2% writes), screen=229x104
+2026-01-23T18:23:30.717Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:37.483Z [DEBUG] High write ratio: blit=7486, write=10421 (58.2% writes), screen=229x104
+2026-01-23T18:23:42.569Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.569Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.587Z [DEBUG] High write ratio: blit=7486, write=10479 (58.3% writes), screen=231x104
+2026-01-23T18:23:42.590Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.590Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.597Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:23:42.597Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.597Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.602Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:23:42.602Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:42.602Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:42.603Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.603Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.609Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.609Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.615Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.615Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.625Z [DEBUG] High write ratio: blit=7486, write=10479 (58.3% writes), screen=231x104
+2026-01-23T18:23:42.626Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:42.627Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:42.627Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192622627
+2026-01-23T18:23:42.627Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:23:42.627Z [DEBUG] Temp file written successfully, size: 16361 bytes
+2026-01-23T18:23:42.627Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:23:42.627Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192622627 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:23:42.628Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:23:42.628Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.630Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.635Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.635Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.640Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:23:42.640Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:42.640Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:42.640Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.640Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.640Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.652Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:42.652Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:23:42.652Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:23:42.652Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:23:42.652Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:23:42.653Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:42.655Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.655Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.668Z [DEBUG] High write ratio: blit=7486, write=16165 (68.3% writes), screen=300x104
+2026-01-23T18:23:42.674Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.674Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.680Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:23:42.681Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.681Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.686Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:23:42.686Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:23:42.686Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:23:42.686Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:23:42.688Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.688Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:42.716Z [DEBUG] High write ratio: blit=7923, write=16129 (67.1% writes), screen=300x104
+2026-01-23T18:23:45.309Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:50.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.263Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.263Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.268Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:23:50.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.268Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.273Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:23:50.273Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:50.273Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:50.275Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.275Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.290Z [DEBUG] High write ratio: blit=7923, write=16187 (67.1% writes), screen=302x104
+2026-01-23T18:23:50.290Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.290Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.297Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.297Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.302Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:50.303Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:50.303Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192630303
+2026-01-23T18:23:50.303Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:23:50.304Z [DEBUG] Temp file written successfully, size: 16531 bytes
+2026-01-23T18:23:50.304Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:23:50.304Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192630303 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:23:50.304Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:23:50.304Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.304Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.309Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.309Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.314Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:23:50.314Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:23:50.314Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:23:50.314Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.314Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.314Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.331Z [DEBUG] High write ratio: blit=7923, write=17474 (68.8% writes), screen=323x104
+2026-01-23T18:23:50.332Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:23:50.332Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:23:50.332Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:23:50.332Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:23:50.332Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:23:50.332Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:23:50.335Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.335Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.342Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.342Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.347Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:23:50.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.348Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.353Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:23:50.353Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:23:50.353Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:23:50.353Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:23:50.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.356Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:23:50.382Z [DEBUG] High write ratio: blit=8120, write=17439 (68.2% writes), screen=323x104
+2026-01-23T18:23:52.584Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:23:57.485Z [DEBUG] High write ratio: blit=8120, write=17439 (68.2% writes), screen=323x104
+2026-01-23T18:24:02.422Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.422Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.448Z [DEBUG] High write ratio: blit=8120, write=17497 (68.3% writes), screen=325x104
+2026-01-23T18:24:02.452Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.452Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.460Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:24:02.460Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.460Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.467Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:24:02.467Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:02.467Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:02.467Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.467Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.474Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.474Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.480Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.480Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.485Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:02.485Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:02.486Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192642486
+2026-01-23T18:24:02.486Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:24:02.486Z [DEBUG] Temp file written successfully, size: 16663 bytes
+2026-01-23T18:24:02.486Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:24:02.486Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192642486 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:24:02.486Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:24:02.487Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.487Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.500Z [DEBUG] High write ratio: blit=8120, write=17497 (68.3% writes), screen=325x104
+2026-01-23T18:24:02.503Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.503Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.508Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:24:02.508Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:02.508Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:02.508Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.509Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.509Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.518Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:02.518Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:24:02.518Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:24:02.518Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:24:02.518Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:24:02.518Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:02.521Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.521Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.527Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.527Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.532Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:24:02.533Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.533Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.546Z [DEBUG] High write ratio: blit=8120, write=19008 (70.1% writes), screen=349x104
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.548Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:24:02.548Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:24:02.549Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:24:02.549Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:24:02.550Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.552Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:02.591Z [DEBUG] High write ratio: blit=8332, write=18973 (69.5% writes), screen=349x104
+2026-01-23T18:24:04.361Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:24:14.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.236Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.246Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.246Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.252Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:24:14.253Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.253Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.258Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:24:14.258Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:14.258Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:14.258Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.258Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.265Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.265Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.280Z [DEBUG] High write ratio: blit=8332, write=19031 (69.6% writes), screen=351x104
+2026-01-23T18:24:14.281Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.281Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.287Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:14.287Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:14.288Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192654288
+2026-01-23T18:24:14.288Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:24:14.288Z [DEBUG] Temp file written successfully, size: 17005 bytes
+2026-01-23T18:24:14.288Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:24:14.288Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192654288 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:24:14.288Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:24:14.291Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.291Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.297Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.297Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.302Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:24:14.302Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:14.302Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:14.302Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.302Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.302Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.326Z [DEBUG] High write ratio: blit=8332, write=21155 (71.7% writes), screen=392x104
+2026-01-23T18:24:14.329Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:14.329Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:24:14.329Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:24:14.329Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:24:14.329Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:24:14.329Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:14.333Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.333Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.340Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.340Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.346Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:24:14.349Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.349Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.355Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:24:14.355Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:24:14.355Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:24:14.355Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:24:14.357Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.357Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:14.372Z [DEBUG] High write ratio: blit=8813, write=21113 (70.6% writes), screen=392x104
+2026-01-23T18:24:16.555Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:24:17.555Z [DEBUG] High write ratio: blit=8813, write=21124 (70.6% writes), screen=392x104
+2026-01-23T18:24:23.207Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.207Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.239Z [DEBUG] High write ratio: blit=8813, write=21171 (70.6% writes), screen=394x104
+2026-01-23T18:24:23.241Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.241Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.248Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:24:23.249Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.249Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.255Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:24:23.255Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:23.255Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:23.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.255Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.261Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.261Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.271Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.287Z [DEBUG] High write ratio: blit=8813, write=21171 (70.6% writes), screen=394x104
+2026-01-23T18:24:23.288Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:23.288Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:23.289Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192663289
+2026-01-23T18:24:23.289Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:24:23.289Z [DEBUG] Temp file written successfully, size: 17272 bytes
+2026-01-23T18:24:23.289Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:24:23.289Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192663289 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:24:23.289Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:24:23.292Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.292Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.299Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.299Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.305Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:24:23.305Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:23.305Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:23.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.305Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.314Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:23.314Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:24:23.314Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:24:23.314Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:24:23.314Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:24:23.314Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:23.316Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.317Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.333Z [DEBUG] High write ratio: blit=8813, write=21948 (71.4% writes), screen=405x104
+2026-01-23T18:24:23.337Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.337Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.344Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:24:23.345Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.345Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.351Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.352Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:24:23.352Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:24:23.352Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:24:23.352Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:24:23.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.353Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:23.383Z [DEBUG] High write ratio: blit=8960, write=21930 (71.0% writes), screen=405x104
+2026-01-23T18:24:25.371Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:24:35.571Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.571Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.582Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.582Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.601Z [DEBUG] High write ratio: blit=8960, write=21987 (71.0% writes), screen=407x104
+2026-01-23T18:24:35.602Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-01-23T18:24:35.604Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.604Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.610Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-01-23T18:24:35.610Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:35.610Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:35.611Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.611Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.617Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.617Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.624Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.624Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.630Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:35.630Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:35.631Z [DEBUG] Writing to temp file: /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192675631
+2026-01-23T18:24:35.631Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T18:24:35.631Z [DEBUG] Temp file written successfully, size: 18110 bytes
+2026-01-23T18:24:35.631Z [DEBUG] Applied original permissions to temp file
+2026-01-23T18:24:35.631Z [DEBUG] Renaming /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md.tmp.17148.1769192675631 to /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md
+2026-01-23T18:24:35.631Z [DEBUG] File /Users/seanreed/PythonProjects/voice-ai/lk-agent-1/plan/future-plans/remove-mcdonalds-voice-agent.md written atomically
+2026-01-23T18:24:35.632Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.632Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.647Z [DEBUG] High write ratio: blit=8960, write=21987 (71.0% writes), screen=407x104
+2026-01-23T18:24:35.650Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.650Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.656Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-01-23T18:24:35.656Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:35.656Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-01-23T18:24:35.657Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.657Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.657Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.668Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:35.669Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:24:35.669Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:24:35.669Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:24:35.669Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:24:35.669Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:35.671Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.671Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.678Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.678Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.695Z [DEBUG] High write ratio: blit=8960, write=23922 (72.8% writes), screen=433x104
+2026-01-23T18:24:35.697Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:24:35.699Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.700Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.707Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:24:35.708Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:24:35.708Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:24:35.708Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:24:35.709Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.709Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:35.742Z [DEBUG] High write ratio: blit=9182, write=23904 (72.2% writes), screen=433x104
+2026-01-23T18:24:37.612Z [DEBUG] High write ratio: blit=9182, write=23904 (72.2% writes), screen=433x104
+2026-01-23T18:24:37.786Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:24:40.408Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.408Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.424Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-23T18:24:40.428Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.428Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.452Z [DEBUG] High write ratio: blit=9494, write=24000 (71.7% writes), screen=439x104
+2026-01-23T18:24:40.453Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-23T18:24:40.453Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:40.453Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-23T18:24:40.456Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.456Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.463Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.463Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.471Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.471Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.479Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.479Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.497Z [DEBUG] High write ratio: blit=9494, write=24000 (71.7% writes), screen=439x104
+2026-01-23T18:24:40.537Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.537Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.545Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.545Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.551Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-23T18:24:40.551Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:40.551Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-23T18:24:40.551Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.552Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.552Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.558Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2026-01-23T18:24:40.558Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T18:24:40.558Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T18:24:40.558Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T18:24:40.558Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T18:24:40.558Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2026-01-23T18:24:40.558Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.558Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.565Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.567Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.584Z [DEBUG] High write ratio: blit=9494, write=24122 (71.8% writes), screen=440x104
+2026-01-23T18:24:40.585Z [DEBUG] Auto tool search disabled: 400 chars (threshold: 50000, 10% of context) [source: query]
+2026-01-23T18:24:40.589Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.589Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.596Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.17.7fe; cc_entrypoint=cli
+2026-01-23T18:24:40.597Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T18:24:40.597Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T18:24:40.597Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T18:24:40.598Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.598Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:40.632Z [DEBUG] High write ratio: blit=9702, write=23987 (71.2% writes), screen=440x104
+2026-01-23T18:24:42.804Z [DEBUG] Stream started - received first chunk
+2026-01-23T18:24:57.689Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:57.689Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:57.697Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:57.698Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-23T18:24:57.717Z [DEBUG] High write ratio: blit=16878, write=23976 (58.7% writes), screen=509x104
+2026-01-23T18:24:57.718Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-23T18:24:57.718Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:24:57.718Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T18:24:57.725Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-01-23T18:26:48.789Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:48.790Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:48.810Z [DEBUG] High write ratio: blit=17086, write=23923 (58.3% writes), screen=509x104
+2026-01-23T18:26:48.823Z [DEBUG] MCP server "ide": Connection failed after 34ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:48.823Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:48.823Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:48.823Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:48.875Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:49.826Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:49.858Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:49.865Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 40ms
+2026-01-23T18:26:49.865Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:49.867Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 42ms (attempt 2)
+2026-01-23T18:26:49.867Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:49.868Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:49.881Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 14ms
+2026-01-23T18:26:49.881Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:49.882Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 15ms (attempt 1)
+2026-01-23T18:26:49.891Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:49.891Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:49.912Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:49.923Z [DEBUG] MCP server "ide": Connection failed after 32ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:49.923Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:49.923Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:49.923Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:49.969Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:50.926Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:50.966Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:50.972Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 48ms
+2026-01-23T18:26:50.972Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:50.972Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 48ms (attempt 2)
+2026-01-23T18:26:50.982Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:50.983Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:51.016Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:51.017Z [DEBUG] MCP server "ide": Connection failed after 34ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:51.017Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:51.017Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:51.017Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:52.022Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:52.052Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:52.058Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 36ms
+2026-01-23T18:26:52.058Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:52.058Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 36ms (attempt 2)
+2026-01-23T18:26:52.068Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:52.069Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:52.099Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:52.100Z [DEBUG] MCP server "ide": Connection failed after 32ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:52.100Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:52.101Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:52.101Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:53.103Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:53.123Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:53.128Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 25ms
+2026-01-23T18:26:53.128Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:53.129Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 26ms (attempt 2)
+2026-01-23T18:26:53.138Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:53.138Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:53.168Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:53.169Z [DEBUG] MCP server "ide": Connection failed after 31ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:53.169Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:53.169Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:53.169Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:54.171Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:54.202Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:54.207Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 36ms
+2026-01-23T18:26:54.207Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:54.208Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 37ms (attempt 2)
+2026-01-23T18:26:54.217Z [DEBUG] MCP server "ide": WebSocket transport closed/disconnected, attempting automatic reconnection
+2026-01-23T18:26:54.218Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:54.250Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:54.251Z [DEBUG] MCP server "ide": Connection failed after 33ms: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:54.251Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-01-23T18:26:54.251Z [DEBUG] MCP server "ide": WebSocket reconnection attempt 1 completed with status: failed
+2026-01-23T18:26:54.251Z [DEBUG] MCP server "ide": Scheduling reconnection attempt 2 in 1000ms
+2026-01-23T18:26:55.254Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-01-23T18:26:55.280Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:55.285Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 32ms
+2026-01-23T18:26:55.285Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.1.17"}}
+2026-01-23T18:26:55.285Z [DEBUG] MCP server "ide": WS-IDE connection closed after 0s (cleanly)
+2026-01-23T18:26:55.285Z [DEBUG] MCP server "ide": Cleared connection cache for reconnection
+2026-01-23T18:26:55.285Z [ERROR] MCP server "ide" Failed to fetch tools: MCP error -32000: Connection closed
+2026-01-23T18:26:55.285Z [DEBUG] MCP server "ide": WebSocket reconnection successful after 32ms (attempt 2)
+2026-01-23T18:26:55.344Z [DEBUG] High write ratio: blit=17086, write=23941 (58.4% writes), screen=510x104
+2026-01-23T18:26:56.850Z [DEBUG] High write ratio: blit=17086, write=23923 (58.3% writes), screen=509x104
+2026-01-23T18:27:37.867Z [DEBUG] High write ratio: blit=17086, write=23903 (58.3% writes), screen=509x104
+2026-01-23T18:28:51.488Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-23T18:28:51.488Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T18:28:51.488Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

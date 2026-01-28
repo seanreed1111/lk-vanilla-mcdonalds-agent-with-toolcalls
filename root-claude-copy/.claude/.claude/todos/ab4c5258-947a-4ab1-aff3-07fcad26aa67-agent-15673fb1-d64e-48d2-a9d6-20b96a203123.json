@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create project directory structure",
+    "status": "in_progress",
+    "activeForm": "Creating project directory structure"
+  },
+  {
+    "content": "Create index.html with complete portfolio layout",
+    "status": "pending",
+    "activeForm": "Creating index.html with complete portfolio layout"
+  },
+  {
+    "content": "Create custom CSS file for additional styles",
+    "status": "pending",
+    "activeForm": "Creating custom CSS file"
+  },
+  {
+    "content": "Create JavaScript file for interactivity",
+    "status": "pending",
+    "activeForm": "Creating JavaScript file"
+  },
+  {
+    "content": "Create placeholder project image",
+    "status": "pending",
+    "activeForm": "Creating placeholder project image"
+  },
+  {
+    "content": "Create README with deployment instructions",
+    "status": "pending",
+    "activeForm": "Creating README with deployment instructions"
+  }
+]

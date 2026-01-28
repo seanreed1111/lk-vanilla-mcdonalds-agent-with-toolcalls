@@ -1,0 +1,70 @@
+import { Skill } from '@/types'
+import {
+  SiPython,
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiGit,
+  SiDocker
+} from 'react-icons/si'
+
+export const skills: Skill[] = [
+  {
+    id: 'python',
+    name: 'Python',
+    category: 'backend',
+    IconComponent: SiPython,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'javascript',
+    name: 'JavaScript',
+    category: 'frontend',
+    IconComponent: SiJavascript,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'react',
+    name: 'React',
+    category: 'frontend',
+    IconComponent: SiReact,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'nodejs',
+    name: 'Node.js',
+    category: 'backend',
+    IconComponent: SiNodedotjs,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'typescript',
+    name: 'TypeScript',
+    category: 'frontend',
+    IconComponent: SiTypescript,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'postgresql',
+    name: 'PostgreSQL',
+    category: 'database',
+    IconComponent: SiPostgresql,
+    proficiency: 'intermediate',
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    category: 'tools',
+    IconComponent: SiGit,
+    proficiency: 'advanced',
+  },
+  {
+    id: 'docker',
+    name: 'Docker',
+    category: 'tools',
+    IconComponent: SiDocker,
+    proficiency: 'intermediate',
+  },
+]
